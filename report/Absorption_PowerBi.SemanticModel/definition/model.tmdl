@@ -1,0 +1,19 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["`qa_wb` `digitalfactory` `vw_cs_absorption_fs_data`","`qa_wb` `digitalfactory` `vw_cs_absorption_material_master`"]
+
+ref table '`qa_wb` `digitalfactory` `vw_cs_absorption_fs_data`'
+ref table '`qa_wb` `digitalfactory` `vw_cs_absorption_material_master`'
+
+ref cultureInfo en-US
+

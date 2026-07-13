@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Absorption_PowerBi"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7e8935e1-a7b6-4af4-9939-94f53c04fcd3"
+  }
+}
