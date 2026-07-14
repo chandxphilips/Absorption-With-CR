@@ -1,0 +1,100 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Fact_FS_Absorption",
+          "nodeLineageTag": "dfe75e92-e170-47b8-8069-2a6f08078e80",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 891.75,
+            "y": 0
+          },
+          "nodeIndex": "Fact_MB51_Units",
+          "nodeLineageTag": "e106ce7a-bf15-497c-86ae-c0e79573a069",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 461.5,
+            "y": 0
+          },
+          "nodeIndex": "Dim_Material_Master",
+          "nodeLineageTag": "615412e3-05d3-4bed-8b90-a2ea69ab2da3",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1287.25,
+            "y": 43.25
+          },
+          "nodeIndex": "Fact_AOP",
+          "nodeLineageTag": "9e34b721-8261-4936-b629-4002a810f999",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 888.75,
+            "y": 439.25
+          },
+          "nodeIndex": "Dim_Subassemblies_Counted",
+          "nodeLineageTag": "f75f28ad-6620-42b0-ba41-088bd634b49d",
+          "size": {
+            "height": 224,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 289.49999237060547,
+            "y": 451.25
+          },
+          "nodeIndex": "Dim_Product_Tree_Leaf",
+          "nodeLineageTag": "78e88612-07af-4069-bc9c-23431554182c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 80,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

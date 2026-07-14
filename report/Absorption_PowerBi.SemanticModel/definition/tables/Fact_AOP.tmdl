@@ -1,0 +1,108 @@
+table Fact_AOP
+	lineageTag: 9e34b721-8261-4936-b629-4002a810f999
+
+	column oracle_name
+		dataType: string
+		lineageTag: 0eade44a-7ba8-483a-a050-5bc12cd00ce8
+		summarizeBy: none
+		sourceColumn: oracle_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column bu
+		dataType: string
+		lineageTag: 2c0d4483-cbd8-4045-a71d-9d8fb336c490
+		summarizeBy: none
+		sourceColumn: bu
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_line
+		dataType: string
+		lineageTag: c33cbb62-ca8b-46cf-b65e-83dbb473789a
+		summarizeBy: none
+		sourceColumn: product_line
+
+		annotation SummarizationSetBy = Automatic
+
+	column category
+		dataType: string
+		lineageTag: 29b16e06-3618-40a1-824f-5454ec18d18c
+		summarizeBy: none
+		sourceColumn: category
+
+		annotation SummarizationSetBy = Automatic
+
+	column period
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ed7a9382-ceff-4d91-9930-5316ed222bba
+		summarizeBy: none
+		sourceColumn: period
+
+		variation Variation
+			isDefault
+			relationship: 2f0b5489-7657-44e0-b08e-789dd09e6748
+			defaultHierarchy: LocalDateTable_4744bac1-ec5b-478a-9db0-d036d8b7f768.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column period_label
+		dataType: string
+		lineageTag: 521c2611-2b37-4f74-a4e1-4ca3cb08c868
+		summarizeBy: none
+		sourceColumn: period_label
+
+		annotation SummarizationSetBy = Automatic
+
+	column aop_units
+		dataType: double
+		lineageTag: 754e2481-5239-49b7-b9ff-0137db2470e1
+		summarizeBy: sum
+		sourceColumn: aop_units
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column aop_dollars
+		dataType: double
+		lineageTag: 008c1f8a-4756-490e-adaf-0a7b2b573f2e
+		summarizeBy: sum
+		sourceColumn: aop_dollars
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column aop_fcp_loh
+		dataType: double
+		lineageTag: 9a6c7084-0ea9-4b7f-b332-f84e65eb27b7
+		summarizeBy: sum
+		sourceColumn: aop_fcp_loh
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Fact_AOP = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Query(
+				        "adb-8587249103137143.3.azuredatabricks.net",
+				        "/sql/1.0/warehouses/25534f8556d30920",
+				        [Catalog="qa_wb"]
+				    )("
+				        SELECT *
+				        FROM qa_wb.digitalfactory.ref_cs_aop_monthly_clean
+				    ")
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

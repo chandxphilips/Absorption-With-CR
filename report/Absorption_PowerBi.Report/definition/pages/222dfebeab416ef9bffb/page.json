@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
-  "name": "84f6ff485b83754d73ef",
-  "displayName": "FS_Pivot",
+  "name": "222dfebeab416ef9bffb",
+  "displayName": "Page 1",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280

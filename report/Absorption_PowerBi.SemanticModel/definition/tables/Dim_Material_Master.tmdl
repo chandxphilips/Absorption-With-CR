@@ -1,13 +1,5 @@
-table '`qa_wb` `digitalfactory` `vw_cs_absorption_material_master`'
+table Dim_Material_Master
 	lineageTag: 615412e3-05d3-4bed-8b90-a2ea69ab2da3
-
-	column plnt
-		dataType: string
-		lineageTag: 36daac56-8ba3-44e9-9de4-395c39f2a5f0
-		summarizeBy: none
-		sourceColumn: plnt
-
-		annotation SummarizationSetBy = Automatic
 
 	column material
 		dataType: string
@@ -109,7 +101,7 @@ table '`qa_wb` `digitalfactory` `vw_cs_absorption_material_master`'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition '`qa_wb` `digitalfactory` `vw_cs_absorption_material_master`' = m
+	partition Dim_Material_Master = m
 		mode: import
 		source =
 				let
@@ -119,4 +111,6 @@ table '`qa_wb` `digitalfactory` `vw_cs_absorption_material_master`'
 				    vw_cs_absorption_material_master_digitalfactory_qa_wb
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 

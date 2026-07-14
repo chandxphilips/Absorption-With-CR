@@ -1,0 +1,21 @@
+relationship 2f0b5489-7657-44e0-b08e-789dd09e6748
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Fact_AOP.period
+	toColumn: LocalDateTable_4744bac1-ec5b-478a-9db0-d036d8b7f768.Date
+
+relationship cb82b664-29ca-65b6-e8e9-40aa5eb6fde8
+	fromColumn: Dim_Material_Master.product_hierarchy
+	toColumn: Dim_Product_Tree_Leaf.product_hierarchy_no_dashes
+
+relationship 60634429-2748-e3bc-6c35-f6a715352899
+	fromColumn: Fact_FS_Absorption.part_number_lookup
+	toColumn: Dim_Material_Master.material
+
+relationship f507ad39-56aa-b417-e199-dab141ea22b5
+	fromColumn: Fact_MB51_Units.material
+	toColumn: Dim_Material_Master.material
+
+relationship d9f52d93-0cdf-668e-799d-adba65a90bd7
+	fromColumn: Fact_MB51_Units.material
+	toColumn: Dim_Subassemblies_Counted.TLA
+

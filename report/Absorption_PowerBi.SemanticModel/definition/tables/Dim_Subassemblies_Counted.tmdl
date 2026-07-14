@@ -1,0 +1,71 @@
+table Dim_Subassemblies_Counted
+	lineageTag: f75f28ad-6620-42b0-ba41-088bd634b49d
+
+	column Product_Line
+		dataType: string
+		lineageTag: faf6ba91-a055-4604-b8a4-bbea8979dc32
+		summarizeBy: none
+		sourceColumn: Product_Line
+
+		annotation SummarizationSetBy = Automatic
+
+	column FPA
+		dataType: string
+		lineageTag: a6ea01a2-3bb3-4b69-9437-1d9899cb8099
+		summarizeBy: none
+		sourceColumn: FPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Material_Text
+		dataType: string
+		lineageTag: b1480e77-3009-4fb9-a662-a23b4887f5ce
+		summarizeBy: none
+		sourceColumn: Material_Text
+
+		annotation SummarizationSetBy = Automatic
+
+	column TLA
+		dataType: string
+		lineageTag: 2b1ea573-3c43-4160-8c7e-265803f4ff4f
+		summarizeBy: none
+		sourceColumn: TLA
+
+		annotation SummarizationSetBy = Automatic
+
+	column Site
+		dataType: string
+		lineageTag: d5a425c0-bf04-4172-9411-af66f507f448
+		summarizeBy: none
+		sourceColumn: Site
+
+		annotation SummarizationSetBy = Automatic
+
+	column UOM
+		dataType: int64
+		formatString: 0
+		lineageTag: 90e79cde-7924-40ec-80c6-7b3d816a356f
+		summarizeBy: none
+		sourceColumn: UOM
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Subassemblies_Counted = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Query(
+				        "adb-8587249103137143.3.azuredatabricks.net",
+				        "/sql/1.0/warehouses/25534f8556d30920",
+				        [Catalog="qa_wb"]
+				    )("
+				        SELECT *
+				        FROM qa_wb.digitalfactory.ref_subassemblies_counted
+				    ")
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

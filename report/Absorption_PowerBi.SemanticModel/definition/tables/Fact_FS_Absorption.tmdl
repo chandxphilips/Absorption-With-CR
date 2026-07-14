@@ -1,5 +1,15 @@
-table '`qa_wb` `digitalfactory` `vw_cs_absorption_fs_data`'
+table Fact_FS_Absorption
 	lineageTag: dfe75e92-e170-47b8-8069-2a6f08078e80
+
+	measure 'Total Absorption' = SUM(Fact_FS_Absorption[amount_cc_currency]) * -1
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: eaf5ec15-dfc7-4565-b0b7-e083ff17878c
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Total Postings' = COUNTROWS(Fact_FS_Absorption)
+		formatString: 0
+		lineageTag: 307943d7-aea4-4103-9527-6d395530aafd
 
 	column document_line
 		dataType: string
@@ -295,7 +305,7 @@ table '`qa_wb` `digitalfactory` `vw_cs_absorption_fs_data`'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition '`qa_wb` `digitalfactory` `vw_cs_absorption_fs_data`' = m
+	partition Fact_FS_Absorption = m
 		mode: import
 		source =
 				let
@@ -305,4 +315,6 @@ table '`qa_wb` `digitalfactory` `vw_cs_absorption_fs_data`'
 				    vw_cs_absorption_fs_data_digitalfactory_qa_wb
 
 	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
 
