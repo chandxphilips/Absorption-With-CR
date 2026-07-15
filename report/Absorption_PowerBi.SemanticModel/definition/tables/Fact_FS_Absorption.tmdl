@@ -144,12 +144,20 @@ table Fact_FS_Absorption
 		annotation SummarizationSetBy = Automatic
 
 	column document_date
-		dataType: string
+		dataType: dateTime
+		formatString: Long Date
 		lineageTag: bcd00148-a404-494b-9d86-d11df02a48a5
 		summarizeBy: none
 		sourceColumn: document_date
 
+		variation Variation
+			isDefault
+			relationship: 2eeee480-b351-4911-9d15-c0729b4707c5
+			defaultHierarchy: LocalDateTable_2ee12b28-1578-4fa6-b8eb-fdae569558b2.'Date Hierarchy'
+
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column supplier
 		dataType: string
@@ -208,20 +216,36 @@ table Fact_FS_Absorption
 		annotation SummarizationSetBy = Automatic
 
 	column entry_date
-		dataType: string
+		dataType: dateTime
+		formatString: Long Date
 		lineageTag: fbb23ed8-6335-4c50-b3f8-04678996dfbb
 		summarizeBy: none
 		sourceColumn: entry_date
 
+		variation Variation
+			isDefault
+			relationship: 08260d27-11a9-4657-b88b-1ba26598f762
+			defaultHierarchy: LocalDateTable_39369c3d-80a7-47a0-b11e-69fcda9b2dfe.'Date Hierarchy'
+
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column posting_date
-		dataType: string
+		dataType: dateTime
+		formatString: Long Date
 		lineageTag: bedcc5b0-cd46-4ba2-879e-4daa2fd65d35
 		summarizeBy: none
 		sourceColumn: posting_date
 
+		variation Variation
+			isDefault
+			relationship: 959b0d10-c5d6-4f56-9cc4-fddd04e4cfb7
+			defaultHierarchy: LocalDateTable_ea48cc2e-a8e6-4ba5-b0ea-2bad566c4f53.'Date Hierarchy'
+
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column activity_type
 		dataType: string

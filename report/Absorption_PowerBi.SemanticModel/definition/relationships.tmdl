@@ -11,11 +11,36 @@ relationship 60634429-2748-e3bc-6c35-f6a715352899
 	fromColumn: Fact_FS_Absorption.part_number_lookup
 	toColumn: Dim_Material_Master.material
 
-relationship f507ad39-56aa-b417-e199-dab141ea22b5
-	fromColumn: Fact_MB51_Units.material
-	toColumn: Dim_Material_Master.material
+relationship 2eeee480-b351-4911-9d15-c0729b4707c5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Fact_FS_Absorption.document_date
+	toColumn: LocalDateTable_2ee12b28-1578-4fa6-b8eb-fdae569558b2.Date
 
-relationship d9f52d93-0cdf-668e-799d-adba65a90bd7
+relationship 08260d27-11a9-4657-b88b-1ba26598f762
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Fact_FS_Absorption.entry_date
+	toColumn: LocalDateTable_39369c3d-80a7-47a0-b11e-69fcda9b2dfe.Date
+
+relationship 959b0d10-c5d6-4f56-9cc4-fddd04e4cfb7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Fact_FS_Absorption.posting_date
+	toColumn: LocalDateTable_ea48cc2e-a8e6-4ba5-b0ea-2bad566c4f53.Date
+
+relationship 55ac5fff-d2eb-4908-818a-8ba2de6af4be
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Fact_MB51_Units.posting_date
+	toColumn: LocalDateTable_329c7c85-f586-43fe-977e-7992c764317b.Date
+
+relationship 00536162-bd54-4a9d-b1a5-dad77a050dad
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Fact_MB51_Units.entry_date
+	toColumn: LocalDateTable_0e40a3fe-6fcc-44b8-aad6-8c8d1e14d02e.Date
+
+relationship bd114d87-511b-b56f-b3e6-733ba6593b44
 	fromColumn: Fact_MB51_Units.material
 	toColumn: Dim_Subassemblies_Counted.TLA
+
+relationship ddaaea65-0da0-6afa-8d4a-e239c60560b1
+	fromColumn: Fact_MB51_Units.material
+	toColumn: Dim_Material_Master.material
 

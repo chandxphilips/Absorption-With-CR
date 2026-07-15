@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "13b1a71c8c76d675c900",
   "position": {
-    "x": 16.25,
-    "y": 55,
+    "x": 0,
+    "y": 55.555555555555557,
     "z": 2,
-    "height": 78.75,
+    "height": 77.777777777777771,
     "width": 300,
     "tabOrder": 2
   },
@@ -178,5 +178,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "69b265d68f734af59135",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "plant"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

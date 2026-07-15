@@ -23,19 +23,6 @@
         },
         {
           "location": {
-            "x": 891.75,
-            "y": 0
-          },
-          "nodeIndex": "Fact_MB51_Units",
-          "nodeLineageTag": "e106ce7a-bf15-497c-86ae-c0e79573a069",
-          "size": {
-            "height": 300,
-            "width": 234
-          },
-          "zIndex": 0
-        },
-        {
-          "location": {
             "x": 461.5,
             "y": 0
           },
@@ -80,6 +67,18 @@
           },
           "nodeIndex": "Dim_Product_Tree_Leaf",
           "nodeLineageTag": "78e88612-07af-4069-bc9c-23431554182c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 825,
+            "y": 3.125
+          },
+          "nodeIndex": "Fact_MB51_Units",
           "size": {
             "height": 300,
             "width": 234

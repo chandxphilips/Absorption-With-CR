@@ -1,0 +1,204 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "6afcdb41ca41208a7e88",
+  "position": {
+    "x": 8.3333333333333339,
+    "y": 40.833333333333336,
+    "z": 0,
+    "height": 319.16666666666669,
+    "width": 335.83333333333337,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "posting_period"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.posting_period",
+              "nativeQueryRef": "posting_period",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "cost_center"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.cost_center",
+              "nativeQueryRef": "cost_center",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "acc_text"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.acc_text",
+              "nativeQueryRef": "acc_text",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "Total Absorption"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.Total Absorption",
+              "nativeQueryRef": "Total Absorption"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Fact_FS_Absorption"
+                  }
+                },
+                "Property": "cost_center"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "Fact_FS_Absorption.cost_center"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "cost_center"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "Fact_FS_Absorption.acc_text"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ec496a4a242356172aa0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "cost_center"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "945ab55adb6932f3c075",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "acc_text"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8e833887623cb9e00862",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "posting_period"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "64917afc2466509c962b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "Total Absorption"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

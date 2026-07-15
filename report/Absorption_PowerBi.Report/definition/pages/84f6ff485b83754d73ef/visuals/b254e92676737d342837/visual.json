@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "b254e92676737d342837",
   "position": {
-    "x": 3.75,
+    "x": 0,
     "y": 142.5,
     "z": 1,
     "height": 577.5,
-    "width": 1160,
+    "width": 957.5,
     "tabOrder": 1
   },
   "visual": {
@@ -62,7 +62,7 @@
               },
               "queryRef": "`qa_wb` `digitalfactory` `vw_cs_absorption_fs_data`.order_no",
               "nativeQueryRef": "order_no",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -116,7 +116,6 @@
             "queryRefs": [
               "`qa_wb` `digitalfactory` `vw_cs_absorption_fs_data`.plant"
             ],
-            "isCollapsed": true,
             "isPinned": true
           },
           {
@@ -415,6 +414,20 @@
               }
             },
             "Property": "order_no"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "98c371faccb539c97a16",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "part_number_lookup"
           }
         },
         "type": "Categorical"

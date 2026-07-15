@@ -1,0 +1,212 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "8475df5059fe4935a705",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "height": 677.77777777777771,
+    "width": 700,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "plant"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.plant",
+              "nativeQueryRef": "plant",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Product_Tree_Leaf"
+                    }
+                  },
+                  "Property": "long_description"
+                }
+              },
+              "queryRef": "Dim_Product_Tree_Leaf.long_description",
+              "nativeQueryRef": "long_description",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Material_Master"
+                    }
+                  },
+                  "Property": "material"
+                }
+              },
+              "queryRef": "Dim_Material_Master.material",
+              "nativeQueryRef": "material",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Fact_FS_Absorption"
+                        }
+                      },
+                      "Property": "amount_cc_currency"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Fact_FS_Absorption.amount_cc_currency)",
+              "nativeQueryRef": "amount_cc_currency"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dim_Material_Master"
+                  }
+                },
+                "Property": "material"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "Dim_Product_Tree_Leaf.long_description"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Product_Tree_Leaf"
+                    }
+                  },
+                  "Property": "long_description"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "Dim_Material_Master.material"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Material_Master"
+                    }
+                  },
+                  "Property": "material"
+                }
+              }
+            ],
+            "isPinned": true
+          }
+        ],
+        "root": {}
+      }
+    ],
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8c6f144bda010a391627",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Material_Master"
+              }
+            },
+            "Property": "material"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "fd3daeb7b94ba4301cd1",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Fact_FS_Absorption"
+                  }
+                },
+                "Property": "amount_cc_currency"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "1cf0f7a6303b02f48b5a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "plant"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

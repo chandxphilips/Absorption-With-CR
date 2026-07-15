@@ -1,19 +1,38 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "23e367b411968e6d002d",
+  "name": "6d40fc7bda4626a22536",
   "position": {
-    "x": 44.186171949298092,
-    "y": 47.674553945295308,
+    "x": 350,
+    "y": 40.833333333333336,
     "z": 1,
-    "height": 176.74468779719237,
-    "width": 743.02536514740734,
+    "height": 290.83333333333337,
+    "width": 482.5,
     "tabOrder": 1
   },
   "visual": {
-    "visualType": "cardVisual",
+    "visualType": "barChart",
     "query": {
       "queryState": {
-        "Data": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "user_name"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.user_name",
+              "nativeQueryRef": "user_name",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
           "projections": [
             {
               "field": {

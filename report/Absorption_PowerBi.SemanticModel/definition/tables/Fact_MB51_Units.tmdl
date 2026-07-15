@@ -1,9 +1,9 @@
 table Fact_MB51_Units
-	lineageTag: e106ce7a-bf15-497c-86ae-c0e79573a069
+	lineageTag: 6211e09c-497a-46c6-963f-a5b9d2a3b15f
 
 	column material
 		dataType: string
-		lineageTag: 35884d2d-5c71-4e2c-b4c4-6bca9d315e8a
+		lineageTag: c81f00be-9721-4f60-b759-ebe1e2389b8c
 		summarizeBy: none
 		sourceColumn: material
 
@@ -11,7 +11,7 @@ table Fact_MB51_Units
 
 	column material_description
 		dataType: string
-		lineageTag: 55d024d5-6635-4a47-94b1-a0f2a5689aa8
+		lineageTag: 90298fbf-c547-42b4-95f8-479e047d61a0
 		summarizeBy: none
 		sourceColumn: material_description
 
@@ -19,7 +19,7 @@ table Fact_MB51_Units
 
 	column qty_in_unit_of_entry
 		dataType: double
-		lineageTag: f501f84f-07ac-4213-afba-7a8bdcaf7f6d
+		lineageTag: bf3ff1fa-fa86-485a-948a-a5ae12f0a707
 		summarizeBy: sum
 		sourceColumn: qty_in_unit_of_entry
 
@@ -29,7 +29,7 @@ table Fact_MB51_Units
 
 	column batch
 		dataType: string
-		lineageTag: 94665886-6c80-4438-b47b-f4b2798a4cbe
+		lineageTag: f9a48a36-c26e-442c-888d-18c8c420ef88
 		summarizeBy: none
 		sourceColumn: batch
 
@@ -37,7 +37,7 @@ table Fact_MB51_Units
 
 	column plant
 		dataType: string
-		lineageTag: a02201d9-6d5b-4d35-b8f2-0bb492ec1bc0
+		lineageTag: 7d2e7efb-29de-4deb-b02a-d7dadf04ed7d
 		summarizeBy: none
 		sourceColumn: plant
 
@@ -45,7 +45,7 @@ table Fact_MB51_Units
 
 	column material_document
 		dataType: string
-		lineageTag: e5e5f728-c149-4c0c-92d7-689fa73f4bf8
+		lineageTag: a96fe2b3-79d7-4a64-a49d-50d4b8abe171
 		summarizeBy: none
 		sourceColumn: material_document
 
@@ -53,7 +53,7 @@ table Fact_MB51_Units
 
 	column movement_type
 		dataType: string
-		lineageTag: d4e46187-ae9d-4882-a2be-eef8e6c41a6e
+		lineageTag: ae38b081-313e-42a1-9267-ea2c3ebcd56f
 		summarizeBy: none
 		sourceColumn: movement_type
 
@@ -61,7 +61,7 @@ table Fact_MB51_Units
 
 	column amt_in_loc_cur
 		dataType: double
-		lineageTag: 3b61243d-2c74-44b8-bcb8-388b82dee9fe
+		lineageTag: b156e7ae-8cb0-4ea9-99be-5dffc67267db
 		summarizeBy: sum
 		sourceColumn: amt_in_loc_cur
 
@@ -70,16 +70,24 @@ table Fact_MB51_Units
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column posting_date
-		dataType: string
-		lineageTag: bf9be8d6-5377-4ae8-b039-2fc5a02d603d
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 9a819635-1ecf-41bc-8732-c0a4722e9112
 		summarizeBy: none
 		sourceColumn: posting_date
 
+		variation Variation
+			isDefault
+			relationship: 55ac5fff-d2eb-4908-818a-8ba2de6af4be
+			defaultHierarchy: LocalDateTable_329c7c85-f586-43fe-977e-7992c764317b.'Date Hierarchy'
+
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column order_number
 		dataType: string
-		lineageTag: 9c45fd42-d8ad-46a2-93e6-9a741ec404f0
+		lineageTag: 68479fa0-8125-4ba0-9718-24c933c639d1
 		summarizeBy: none
 		sourceColumn: order_number
 
@@ -87,7 +95,7 @@ table Fact_MB51_Units
 
 	column company_code
 		dataType: string
-		lineageTag: aec3c4ee-6ffa-4a91-820f-df9bb5580738
+		lineageTag: f564d6f0-01a9-4c41-b677-04b30bd8ef3e
 		summarizeBy: none
 		sourceColumn: company_code
 
@@ -95,23 +103,31 @@ table Fact_MB51_Units
 
 	column cost_center
 		dataType: string
-		lineageTag: 7671bce3-9309-4d9b-beb7-7447e94b08a1
+		lineageTag: 4a91e65c-e4a3-4d6d-acdf-8475934bf764
 		summarizeBy: none
 		sourceColumn: cost_center
 
 		annotation SummarizationSetBy = Automatic
 
 	column entry_date
-		dataType: string
-		lineageTag: db493c34-f722-4d50-a02d-9379e1657789
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 27e41da2-5437-4d28-8568-adb4d9474420
 		summarizeBy: none
 		sourceColumn: entry_date
 
+		variation Variation
+			isDefault
+			relationship: 00536162-bd54-4a9d-b1a5-dad77a050dad
+			defaultHierarchy: LocalDateTable_0e40a3fe-6fcc-44b8-aad6-8c8d1e14d02e.'Date Hierarchy'
+
 		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
 
 	column purchase_order
 		dataType: string
-		lineageTag: 6567e2b0-2311-4496-9327-ec73827b2653
+		lineageTag: 788dcffa-0c99-462d-9a85-4dccf4a1ccac
 		summarizeBy: none
 		sourceColumn: purchase_order
 
@@ -119,7 +135,7 @@ table Fact_MB51_Units
 
 	column user_name
 		dataType: string
-		lineageTag: 6dea683e-da2f-4fa2-82aa-678283e0090a
+		lineageTag: 170d9fba-a73c-44b4-be04-e373bdbbf4db
 		summarizeBy: none
 		sourceColumn: user_name
 
@@ -127,7 +143,7 @@ table Fact_MB51_Units
 
 	column qty_in_order_unit
 		dataType: double
-		lineageTag: 59288293-8b44-490c-af86-bae4210642fc
+		lineageTag: 61d2aee3-4308-45d4-91df-1a8aa9f7c413
 		summarizeBy: sum
 		sourceColumn: qty_in_order_unit
 
@@ -137,7 +153,7 @@ table Fact_MB51_Units
 
 	column order_unit
 		dataType: string
-		lineageTag: 8411f671-46e4-417c-a7ce-4b58d4dd28f4
+		lineageTag: f874e67d-059c-499d-9a5b-dbf0ab1a3f5a
 		summarizeBy: none
 		sourceColumn: order_unit
 
@@ -145,7 +161,7 @@ table Fact_MB51_Units
 
 	column base_unit_of_measure
 		dataType: string
-		lineageTag: 3f6bf617-953c-4276-af14-1b2b56ec1d34
+		lineageTag: 81ac6d36-005e-41b1-b2fb-fa1201e167a9
 		summarizeBy: none
 		sourceColumn: base_unit_of_measure
 
@@ -162,11 +178,11 @@ table Fact_MB51_Units
 				    )("
 				        SELECT *
 				        FROM qa_wb.digitalfactory.vw_cs_absorption_mb51
-				        WHERE posting_date >= '20260601'
-				          AND posting_date <= '20260731'
 				    ")
 				in
 				    Source
+
+	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navigation
 
