@@ -36,11 +36,11 @@ relationship 00536162-bd54-4a9d-b1a5-dad77a050dad
 	fromColumn: Fact_MB51_Units.entry_date
 	toColumn: LocalDateTable_0e40a3fe-6fcc-44b8-aad6-8c8d1e14d02e.Date
 
-relationship bd114d87-511b-b56f-b3e6-733ba6593b44
-	fromColumn: Fact_MB51_Units.material
-	toColumn: Dim_Subassemblies_Counted.TLA
-
 relationship ddaaea65-0da0-6afa-8d4a-e239c60560b1
 	fromColumn: Fact_MB51_Units.material
 	toColumn: Dim_Material_Master.material
+
+relationship f9ba60b6-7f3c-4d50-18a2-d04fe2822a33
+	fromColumn: Fact_MB51_Units.material
+	toColumn: Dim_Subassemblies_Counted.Material_Text
 

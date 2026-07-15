@@ -4,10 +4,10 @@
   "position": {
     "x": 0,
     "y": 55.555555555555557,
-    "z": 2,
+    "z": 1000,
     "height": 77.777777777777771,
     "width": 300,
-    "tabOrder": 2
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -178,23 +178,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "69b265d68f734af59135",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "plant"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

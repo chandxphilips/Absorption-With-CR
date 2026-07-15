@@ -1,6 +1,18 @@
 table Fact_MB51_Units
 	lineageTag: 6211e09c-497a-46c6-963f-a5b9d2a3b15f
 
+	measure 'Actual Units' = ```
+			
+			SUMX (
+			    Fact_MB51_Units,
+			    Fact_MB51_Units[qty_in_order_unit] 
+			        * RELATED ( Dim_Subassemblies_Counted[UOM] )
+			)
+			```
+		lineageTag: e1237539-37e5-46e8-a1b0-9c7c7a986eff
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column material
 		dataType: string
 		lineageTag: c81f00be-9721-4f60-b759-ebe1e2389b8c
@@ -181,8 +193,6 @@ table Fact_MB51_Units
 				    ")
 				in
 				    Source
-
-	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navigation
 

@@ -157,56 +157,5 @@
       }
     ],
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "8c6f144bda010a391627",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Material_Master"
-              }
-            },
-            "Property": "material"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "fd3daeb7b94ba4301cd1",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_FS_Absorption"
-                  }
-                },
-                "Property": "amount_cc_currency"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "1cf0f7a6303b02f48b5a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "plant"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

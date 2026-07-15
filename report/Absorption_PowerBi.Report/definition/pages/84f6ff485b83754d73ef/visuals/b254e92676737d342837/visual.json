@@ -4,10 +4,10 @@
   "position": {
     "x": 0,
     "y": 142.5,
-    "z": 1,
+    "z": 0,
     "height": 577.5,
     "width": 957.5,
-    "tabOrder": 1
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "pivotTable",
@@ -354,84 +354,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f65d31194d03a214a51a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "plant"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "59165d85fe35ca601f1f",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "account_number"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c6c60e7671f2b71e6fcc",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_FS_Absorption"
-                  }
-                },
-                "Property": "amount_cc_currency"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c1e6cff1db8334e972e9",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "order_no"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "98c371faccb539c97a16",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "part_number_lookup"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
