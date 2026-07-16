@@ -1,14 +1,30 @@
 table Fact_MB51_Units
 	lineageTag: 6211e09c-497a-46c6-963f-a5b9d2a3b15f
 
-	measure 'Actual Units' = ```
+	measure 'Actual Units' =
 			
 			SUMX (
 			    Fact_MB51_Units,
-			    Fact_MB51_Units[qty_in_order_unit] 
-			        * RELATED ( Dim_Subassemblies_Counted[UOM] )
+			    VAR CurrentUOM      = RELATED ( Dim_Subassemblies_Counted[UOM] )
+			    VAR IsCountedMat    = NOT ISBLANK ( CurrentUOM )
+			    VAR CurrentPlant    = Fact_MB51_Units[plant]
+			    VAR CurrentOrder    = Fact_MB51_Units[order_number]
+			    VAR IncludeRow =
+			        SWITCH (
+			            TRUE(),
+			            CurrentPlant = "US9M",
+			                IsCountedMat && LEFT ( CurrentOrder, 1 ) <> "5",
+			            CurrentPlant = "US9G",
+			                IsCountedMat && NOT ISBLANK ( CurrentOrder ) && CurrentOrder <> "",
+			            IsCountedMat  -- All other plants (US9F, US9E) → original logic
+			        )
+			    RETURN
+			        IF (
+			            IncludeRow,
+			            Fact_MB51_Units[qty_in_order_unit] * CurrentUOM,
+			            0
+			        )
 			)
-			```
 		lineageTag: e1237539-37e5-46e8-a1b0-9c7c7a986eff
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}

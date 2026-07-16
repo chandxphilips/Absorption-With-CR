@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "0356b106c069e37d424e",
+  "name": "b27c9956449c5c4cbebd",
   "position": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
-    "height": 422.680412371134,
-    "width": 285.56701030927837,
-    "tabOrder": 0
+    "x": 285.56701030927837,
+    "y": 12.371134020618557,
+    "z": 2,
+    "height": 174.22680412371133,
+    "width": 289.69072164948454,
+    "tabOrder": 2
   },
   "visual": {
     "visualType": "tableEx",
@@ -59,46 +59,14 @@
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_MB51_Units"
-                  }
-                },
-                "Property": "plant"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
-    },
-    "visualContainerObjects": {
-      "stylePreset": [
-        {
-          "properties": {
-            "name": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Default'"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "1fb829b97b04d0e36b97",
+        "name": "8b3d143a09b1fe0a4a3c",
         "field": {
           "Column": {
             "Expression": {
@@ -112,21 +80,7 @@
         "type": "Categorical"
       },
       {
-        "name": "c8030a0b3fc72f3205a2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "Actual Units"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2e11ec4de39007fc23cc",
+        "name": "9e6dd7336a1269a9f0b7",
         "field": {
           "Column": {
             "Expression": {
@@ -167,7 +121,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'US9F'"
+                          "Value": "'US9M'"
                         }
                       }
                     ]
@@ -176,7 +130,28 @@
               }
             }
           ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
         }
+      },
+      {
+        "name": "ee85173813172bc75d66",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "Actual Units"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
