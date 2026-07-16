@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 1122.2499952316284,
-            "y": 13.25
+            "x": 1287.25,
+            "y": 43.25
           },
           "nodeIndex": "Fact_AOP",
           "nodeLineageTag": "9e34b721-8261-4936-b629-4002a810f999",
@@ -83,20 +83,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
-        },
-        {
-          "location": {
-            "x": 613.24998378753662,
-            "y": 446.625
-          },
-          "nodeIndex": "Table",
-          "nodeLineageTag": "cb2580b7-db63-444a-b343-87a1d7c6ba78",
-          "size": {
-            "height": 128,
-            "width": 234
-          },
-          "zIndex": 0
+          "zIndex": 5
         }
       ],
       "name": "All tables",

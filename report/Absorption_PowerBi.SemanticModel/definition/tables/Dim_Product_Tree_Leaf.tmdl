@@ -81,23 +81,6 @@ table Dim_Product_Tree_Leaf
 
 		annotation SummarizationSetBy = Automatic
 
-	column Disposables = ```
-			
-			SWITCH (
-			    TRUE (),
-			    'Dim_Product_Tree_Leaf'[bu] = "9331", "ELCA",
-			    'Dim_Product_Tree_Leaf'[bu] = "9333", "Turbo Elite, Turbo Power, CavaClear, QC, QC Extreme, QC Select, Peripheral Vascular Undivided",
-			    'Dim_Product_Tree_Leaf'[bu] = "9334", "LLD, VisiSheath, Bridge, SLS, LM Accessories, Mechanical Tools, LM Undivided",
-			    'Dim_Product_Tree_Leaf'[bu] = "9688", "IGT Devices Undivided",
-			    BLANK ()
-			)
-			
-			```
-		lineageTag: b7c550b7-f80b-4a47-a910-aef28b054821
-		summarizeBy: none
-
-		annotation SummarizationSetBy = Automatic
-
 	partition Dim_Product_Tree_Leaf = m
 		mode: import
 		source =
