@@ -10,7 +10,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Fact_FS_Absorption","Dim_Material_Master","Fact_AOP","Dim_Subassemblies_Counted","Dim_Product_Tree_Leaf","Fact_MB51_Units"]
+annotation PBI_QueryOrder = ["Fact_FS_Absorption","Dim_Material_Master","Fact_AOP","Dim_Subassemblies_Counted","Dim_Product_Tree_Leaf","Fact_MB51_Units","Table"]
 
 ref table Fact_FS_Absorption
 ref table Dim_Material_Master
@@ -25,6 +25,7 @@ ref table LocalDateTable_ea48cc2e-a8e6-4ba5-b0ea-2bad566c4f53
 ref table Fact_MB51_Units
 ref table LocalDateTable_329c7c85-f586-43fe-977e-7992c764317b
 ref table LocalDateTable_0e40a3fe-6fcc-44b8-aad6-8c8d1e14d02e
+ref table Table
 
 ref cultureInfo en-US
 

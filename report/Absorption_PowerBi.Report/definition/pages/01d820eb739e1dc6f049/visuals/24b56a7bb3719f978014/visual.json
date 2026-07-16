@@ -1,0 +1,301 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "24b56a7bb3719f978014",
+  "position": {
+    "x": 10,
+    "y": 0,
+    "z": 0,
+    "height": 700,
+    "width": 878.88888888888891,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "plant"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.plant",
+              "nativeQueryRef": "plant",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Product_Tree_Leaf"
+                    }
+                  },
+                  "Property": "bu"
+                }
+              },
+              "queryRef": "Dim_Product_Tree_Leaf.bu",
+              "nativeQueryRef": "bu",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Product_Tree_Leaf"
+                    }
+                  },
+                  "Property": "long_description"
+                }
+              },
+              "queryRef": "Dim_Product_Tree_Leaf.long_description",
+              "nativeQueryRef": "long_description",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_MB51_Units"
+                    }
+                  },
+                  "Property": "Actual Units"
+                }
+              },
+              "queryRef": "Fact_MB51_Units.Actual Units",
+              "nativeQueryRef": "Actual Units"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "Total Absorption"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.Total Absorption",
+              "nativeQueryRef": "Total Absorption"
+            }
+          ]
+        }
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "Fact_FS_Absorption.plant"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "plant"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "Dim_Product_Tree_Leaf.bu"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Product_Tree_Leaf"
+                    }
+                  },
+                  "Property": "bu"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "Dim_Product_Tree_Leaf.long_description"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          }
+        ],
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'US9M'"
+                  }
+                }
+              ],
+              "isToggled": true
+            }
+          ]
+        }
+      }
+    ],
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "97e7b2f2fa7dbe85538c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Product_Tree_Leaf"
+              }
+            },
+            "Property": "bu"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "Dim_Product_Tree_Leaf",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "d"
+                              }
+                            },
+                            "Property": "bu"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "8cced6c54c505a8d2ce9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Product_Tree_Leaf"
+              }
+            },
+            "Property": "long_description"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a3bad893f7a48fae61b8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "Actual Units"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7d08321e466d40c13658",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "Total Absorption"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "93d236c5c1818a3ca307",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "plant"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}

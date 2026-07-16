@@ -4,6 +4,7 @@ relationship 2f0b5489-7657-44e0-b08e-789dd09e6748
 	toColumn: LocalDateTable_4744bac1-ec5b-478a-9db0-d036d8b7f768.Date
 
 relationship cb82b664-29ca-65b6-e8e9-40aa5eb6fde8
+	crossFilteringBehavior: bothDirections
 	fromColumn: Dim_Material_Master.product_hierarchy
 	toColumn: Dim_Product_Tree_Leaf.product_hierarchy_no_dashes
 
@@ -37,6 +38,7 @@ relationship 00536162-bd54-4a9d-b1a5-dad77a050dad
 	toColumn: LocalDateTable_0e40a3fe-6fcc-44b8-aad6-8c8d1e14d02e.Date
 
 relationship ddaaea65-0da0-6afa-8d4a-e239c60560b1
+	crossFilteringBehavior: bothDirections
 	fromColumn: Fact_MB51_Units.material
 	toColumn: Dim_Material_Master.material
 
