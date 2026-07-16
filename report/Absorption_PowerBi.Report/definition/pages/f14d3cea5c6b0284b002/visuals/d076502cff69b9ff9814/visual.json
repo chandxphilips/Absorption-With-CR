@@ -1,38 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "0356b106c069e37d424e",
+  "name": "d076502cff69b9ff9814",
   "position": {
-    "x": 9.6055210305030236,
-    "y": 0,
-    "z": 0,
-    "height": 419.89849076198936,
-    "width": 459.6927921740733,
-    "tabOrder": 0
+    "x": 611.340206185567,
+    "y": 12.371134020618557,
+    "z": 3,
+    "height": 300,
+    "width": 289.69072164948454,
+    "tabOrder": 3
   },
   "visual": {
-    "visualType": "pivotTable",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
-        "Columns": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Fact_MB51_Units"
-                    }
-                  },
-                  "Property": "plant"
-                }
-              },
-              "queryRef": "Fact_MB51_Units.plant",
-              "nativeQueryRef": "plant",
-              "active": true
-            }
-          ]
-        },
-        "Rows": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -46,13 +27,8 @@
                 }
               },
               "queryRef": "Dim_Subassemblies_Counted.Product_Line",
-              "nativeQueryRef": "Product_Line",
-              "active": true
-            }
-          ]
-        },
-        "Values": {
-          "projections": [
+              "nativeQueryRef": "Product_Line"
+            },
             {
               "field": {
                 "Measure": {
@@ -66,49 +42,31 @@
               },
               "queryRef": "Fact_MB51_Units.Actual Units",
               "nativeQueryRef": "Actual Units"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_MB51_Units"
+                    }
+                  },
+                  "Property": "plant"
+                }
+              },
+              "queryRef": "Fact_MB51_Units.plant",
+              "nativeQueryRef": "plant"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_MB51_Units"
-                  }
-                },
-                "Property": "plant"
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
-    },
-    "visualContainerObjects": {
-      "stylePreset": [
-        {
-          "properties": {
-            "name": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Default'"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "2e11ec4de39007fc23cc",
+        "name": "9e6dd7336a1269a9f0b7",
         "field": {
           "Column": {
             "Expression": {
@@ -149,28 +107,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'US9E'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'US9F'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
                           "Value": "'US9G'"
-                        }
-                      }
-                    ],
-                    [
-                      {
-                        "Literal": {
-                          "Value": "'US9M'"
                         }
                       }
                     ]
@@ -179,10 +116,17 @@
               }
             }
           ]
+        },
+        "objects": {
+          "general": [
+            {
+              "properties": {}
+            }
+          ]
         }
       },
       {
-        "name": "22cbd99833a66a914e3f",
+        "name": "203f3ca2793b251ed3ad",
         "field": {
           "Column": {
             "Expression": {
@@ -196,7 +140,7 @@
         "type": "Categorical"
       },
       {
-        "name": "ae4608b811d1b61090c9",
+        "name": "3951cd78ef0780b41f8e",
         "field": {
           "Measure": {
             "Expression": {
