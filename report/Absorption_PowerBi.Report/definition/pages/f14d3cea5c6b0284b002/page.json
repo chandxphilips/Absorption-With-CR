@@ -4,20 +4,5 @@
   "displayName": "Test Chand",
   "displayOption": "FitToPage",
   "height": 720,
-  "width": 1280,
-  "objects": {
-    "outspacePane": [
-      {
-        "properties": {
-          "width": {
-            "expr": {
-              "Literal": {
-                "Value": "184L"
-              }
-            }
-          }
-        }
-      }
-    ]
-  }
+  "width": 1280
 }

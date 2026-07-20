@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "0356b106c069e37d424e",
   "position": {
-    "x": 15,
-    "y": 648,
+    "x": 0,
+    "y": 0,
     "z": 0,
-    "height": 54,
-    "width": 415,
+    "height": 422.680412371134,
+    "width": 285.56701030927837,
     "tabOrder": 0
   },
   "visual": {
@@ -64,16 +64,16 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
                     "Entity": "Fact_MB51_Units"
                   }
                 },
-                "Property": "Actual Units"
+                "Property": "plant"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -97,6 +97,34 @@
   },
   "filterConfig": {
     "filters": [
+      {
+        "name": "1fb829b97b04d0e36b97",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "Product_Line"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c8030a0b3fc72f3205a2",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "Actual Units"
+          }
+        },
+        "type": "Advanced"
+      },
       {
         "name": "2e11ec4de39007fc23cc",
         "field": {
@@ -149,34 +177,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "9f93666a9d5cb3c23430",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Subassemblies_Counted"
-              }
-            },
-            "Property": "Product_Line"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "8dfc615dded6a76876fd",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "Actual Units"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

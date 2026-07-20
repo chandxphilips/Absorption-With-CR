@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
   "name": "b27c9956449c5c4cbebd",
   "position": {
-    "x": 285.45454545454544,
-    "y": 12.727272727272727,
-    "z": 1000,
-    "height": 155.45454545454544,
-    "width": 290,
-    "tabOrder": 1000
+    "x": 285.56701030927837,
+    "y": 12.371134020618557,
+    "z": 2,
+    "height": 174.22680412371133,
+    "width": 289.69072164948454,
+    "tabOrder": 2
   },
   "visual": {
     "visualType": "tableEx",
@@ -65,6 +65,20 @@
   },
   "filterConfig": {
     "filters": [
+      {
+        "name": "8b3d143a09b1fe0a4a3c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "Product_Line"
+          }
+        },
+        "type": "Categorical"
+      },
       {
         "name": "9e6dd7336a1269a9f0b7",
         "field": {
@@ -124,6 +138,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "ee85173813172bc75d66",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "Actual Units"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }
