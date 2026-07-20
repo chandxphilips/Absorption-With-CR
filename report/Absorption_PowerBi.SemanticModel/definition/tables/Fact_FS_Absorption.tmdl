@@ -11,6 +11,11 @@ table Fact_FS_Absorption
 		formatString: 0
 		lineageTag: 307943d7-aea4-4103-9527-6d395530aafd
 
+	measure 'Actual Absorption $' = SUM ( Fact_FS_Absorption[amount_cc_currency] )
+		lineageTag: c4720823-e24a-4e55-b4be-5b9dc024975c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column document_line
 		dataType: string
 		lineageTag: 602b04f3-c3a9-470e-bdab-168b3bf66347
@@ -326,6 +331,74 @@ table Fact_FS_Absorption
 		lineageTag: a7f484d3-f00e-4328-a732-32c02faa2dd4
 		summarizeBy: none
 		sourceColumn: part_number_lookup
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Effective Material' = ```
+			
+			VAR PNL = Fact_FS_Absorption[part_number_lookup]
+			VAR MAT = Fact_FS_Absorption[material]
+			VAR PNLExists = 
+			    NOT ISBLANK ( 
+			        LOOKUPVALUE ( 
+			            Dim_Material_Master[material], 
+			            Dim_Material_Master[material], PNL 
+			        ) 
+			    )
+			VAR MATExists = 
+			    NOT ISBLANK ( 
+			        LOOKUPVALUE ( 
+			            Dim_Material_Master[material], 
+			            Dim_Material_Master[material], MAT 
+			        ) 
+			    )
+			RETURN 
+			    SWITCH ( 
+			        TRUE(),
+			        PNLExists, PNL,
+			        MATExists, MAT,
+			        PNL
+			    )
+			```
+		lineageTag: ffeda981-e3c6-47c8-883c-c2b2a45a544d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'BU Desc Final' = ```
+			
+			VAR NaturalBU = RELATED ( Dim_Product_Tree_Leaf[long_description] )
+			VAR BA = Fact_FS_Absorption[business_area]
+			VAR HasMaterial = 
+			    NOT ISBLANK ( Fact_FS_Absorption[material] ) 
+			    && Fact_FS_Absorption[material] <> ""
+			RETURN
+			    SWITCH ( TRUE(),
+			        NOT ISBLANK ( NaturalBU ), NaturalBU,
+			        BA = "CO02" && HasMaterial, "Laser CVX300",
+			        BA = "CO02", "Philips Laser System",  -- blank materials in laser BA
+			        BA = "CO01", "IGT Devices Undivided",  -- Colorado disposable fallback
+			        BA = "FR01", "IGT Devices Undivided",
+			        BA = "PL01", "IGT Devices Undivided",
+			        "Unassigned"
+			    )
+			```
+		lineageTag: 0f31fb7f-8e67-4512-bc6f-c7a720cadd50
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'BU Desc Final Column' =
+			
+			VAR NaturalBU = RELATED ( Dim_Product_Tree_Leaf[long_description] )
+			RETURN
+			    SWITCH ( TRUE(),
+			        NOT ISBLANK ( NaturalBU ), NaturalBU,
+			        Fact_FS_Absorption[profit_center] = "P84", "Philips Laser System",
+			        BLANK ()
+			    )
+		lineageTag: f8c770c5-6ed0-46c8-b0a0-b7e78bdfb9dc
+		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 

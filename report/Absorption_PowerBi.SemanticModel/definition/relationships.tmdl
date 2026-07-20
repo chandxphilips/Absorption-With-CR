@@ -7,10 +7,6 @@ relationship cb82b664-29ca-65b6-e8e9-40aa5eb6fde8
 	fromColumn: Dim_Material_Master.product_hierarchy
 	toColumn: Dim_Product_Tree_Leaf.product_hierarchy_no_dashes
 
-relationship 60634429-2748-e3bc-6c35-f6a715352899
-	fromColumn: Fact_FS_Absorption.part_number_lookup
-	toColumn: Dim_Material_Master.material
-
 relationship 2eeee480-b351-4911-9d15-c0729b4707c5
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Fact_FS_Absorption.document_date
@@ -43,4 +39,8 @@ relationship ddaaea65-0da0-6afa-8d4a-e239c60560b1
 relationship f9ba60b6-7f3c-4d50-18a2-d04fe2822a33
 	fromColumn: Fact_MB51_Units.material
 	toColumn: Dim_Subassemblies_Counted.Material_Text
+
+relationship 12ecd08a-b14f-b31e-ad46-13a9d06fc921
+	fromColumn: Fact_FS_Absorption.part_number_lookup
+	toColumn: Dim_Material_Master.material
 

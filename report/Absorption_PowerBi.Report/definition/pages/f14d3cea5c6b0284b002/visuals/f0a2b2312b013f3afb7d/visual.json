@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "0356b106c069e37d424e",
+  "name": "f0a2b2312b013f3afb7d",
   "position": {
-    "x": 15,
-    "y": 648,
-    "z": 0,
-    "height": 54,
-    "width": 415,
-    "tabOrder": 0
+    "x": 430,
+    "y": 289,
+    "z": 3001,
+    "height": 214,
+    "width": 389,
+    "tabOrder": 3001
   },
   "visual": {
     "visualType": "tableEx",
@@ -20,42 +20,61 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Dim_Subassemblies_Counted"
+                      "Entity": "Fact_FS_Absorption"
                     }
                   },
-                  "Property": "Product_Line"
+                  "Property": "plant"
                 }
               },
-              "queryRef": "Dim_Subassemblies_Counted.Product_Line",
-              "nativeQueryRef": "Product_Line"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Fact_MB51_Units"
-                    }
-                  },
-                  "Property": "Actual Units"
-                }
-              },
-              "queryRef": "Fact_MB51_Units.Actual Units",
-              "nativeQueryRef": "Actual Units"
+              "queryRef": "Fact_FS_Absorption.plant",
+              "nativeQueryRef": "plant"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Fact_MB51_Units"
+                      "Entity": "Dim_Product_Tree_Leaf"
                     }
                   },
-                  "Property": "plant"
+                  "Property": "bu"
                 }
               },
-              "queryRef": "Fact_MB51_Units.plant",
-              "nativeQueryRef": "plant"
+              "queryRef": "Dim_Product_Tree_Leaf.bu",
+              "nativeQueryRef": "bu"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Product_Tree_Leaf"
+                    }
+                  },
+                  "Property": "long_description"
+                }
+              },
+              "queryRef": "Dim_Product_Tree_Leaf.long_description",
+              "nativeQueryRef": "long_description"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Fact_FS_Absorption"
+                        }
+                      },
+                      "Property": "amount_cc_currency"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Fact_FS_Absorption.amount_cc_currency)",
+              "nativeQueryRef": "Sum of amount_cc_currency"
             }
           ]
         }
@@ -64,46 +83,31 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Fact_MB51_Units"
+                    "Entity": "Dim_Product_Tree_Leaf"
                   }
                 },
-                "Property": "Actual Units"
+                "Property": "long_description"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
-    },
-    "visualContainerObjects": {
-      "stylePreset": [
-        {
-          "properties": {
-            "name": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Default'"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {
     "filters": [
       {
-        "name": "2e11ec4de39007fc23cc",
+        "name": "b3cb945286489568efee",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Fact_MB51_Units"
+                "Entity": "Fact_FS_Absorption"
               }
             },
             "Property": "plant"
@@ -115,7 +119,7 @@
           "From": [
             {
               "Name": "f",
-              "Entity": "Fact_MB51_Units",
+              "Entity": "Fact_FS_Absorption",
               "Type": 0
             }
           ],
@@ -139,7 +143,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'US9F'"
+                          "Value": "'US9G'"
                         }
                       }
                     ]
@@ -148,35 +152,55 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       },
       {
-        "name": "9f93666a9d5cb3c23430",
+        "name": "2764d7ed0f16cb9d4c69",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Dim_Subassemblies_Counted"
+                "Entity": "Dim_Product_Tree_Leaf"
               }
             },
-            "Property": "Product_Line"
+            "Property": "long_description"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "8dfc615dded6a76876fd",
+        "name": "d8f2df0938fa0eec6de0",
         "field": {
-          "Measure": {
+          "Aggregation": {
             "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Fact_FS_Absorption"
+                  }
+                },
+                "Property": "amount_cc_currency"
               }
             },
-            "Property": "Actual Units"
+            "Function": 0
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "fb29eae845709e51ca08",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Product_Tree_Leaf"
+              }
+            },
+            "Property": "bu"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }
