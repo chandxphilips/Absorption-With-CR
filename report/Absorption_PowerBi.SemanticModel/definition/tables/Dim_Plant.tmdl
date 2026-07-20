@@ -1,0 +1,46 @@
+table Dim_Plant
+	lineageTag: b69dca8a-7a71-4bb5-ac65-8f731e00bdd3
+
+	column 'Plant Code'
+		lineageTag: bdeed1a9-bcea-4584-a858-4a79f3931e0d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Plant Code]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Plant Name'
+		lineageTag: 05678099-2724-43b9-8d54-fef47f1effe9
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Plant Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		lineageTag: c1ac83e0-8050-4d31-9be4-dd238edab99f
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Location]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Plant = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "Plant Code", STRING,
+				    "Plant Name", STRING,
+				    "Location", STRING,
+				    {
+				        {"US9E", "Rancho Cordova", "California"},
+				        {"US9F", "Colorado Springs", "Colorado"},
+				        {"US9G", "Plymouth", "Minnesota"},
+				        {"US9M", "Fremont", "California"},
+				        {"US9H", "Colorado Springs (Corp)", "Colorado"}
+				    }
+				)
+
+	annotation PBI_Id = dcce54e1cf064864816109796cef05b5
+

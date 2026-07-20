@@ -17,16 +17,6 @@ relationship 08260d27-11a9-4657-b88b-1ba26598f762
 	fromColumn: Fact_FS_Absorption.entry_date
 	toColumn: LocalDateTable_39369c3d-80a7-47a0-b11e-69fcda9b2dfe.Date
 
-relationship 959b0d10-c5d6-4f56-9cc4-fddd04e4cfb7
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Fact_FS_Absorption.posting_date
-	toColumn: LocalDateTable_ea48cc2e-a8e6-4ba5-b0ea-2bad566c4f53.Date
-
-relationship 55ac5fff-d2eb-4908-818a-8ba2de6af4be
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Fact_MB51_Units.posting_date
-	toColumn: LocalDateTable_329c7c85-f586-43fe-977e-7992c764317b.Date
-
 relationship 00536162-bd54-4a9d-b1a5-dad77a050dad
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Fact_MB51_Units.entry_date
@@ -40,7 +30,30 @@ relationship f9ba60b6-7f3c-4d50-18a2-d04fe2822a33
 	fromColumn: Fact_MB51_Units.material
 	toColumn: Dim_Subassemblies_Counted.Material_Text
 
+<<<<<<< Updated upstream
 relationship 12ecd08a-b14f-b31e-ad46-13a9d06fc921
 	fromColumn: Fact_FS_Absorption.part_number_lookup
 	toColumn: Dim_Material_Master.material
+=======
+relationship 537107be-0250-436d-a09f-899498954019
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendar.Date
+	toColumn: LocalDateTable_eec5fda3-a7b8-4181-90d8-f1dfdf8fbbba.Date
+
+relationship e9621bc4-15f6-5b9e-40b6-1525aad342fb
+	fromColumn: Fact_FS_Absorption.posting_date
+	toColumn: Calendar.Date
+
+relationship 47e0c24e-a752-f5a4-f2bb-26751084c2e3
+	fromColumn: Fact_MB51_Units.posting_date
+	toColumn: Calendar.Date
+
+relationship 9782c00f-9e82-0140-c049-d9fd94a1bba2
+	fromColumn: Fact_FS_Absorption.plant
+	toColumn: Dim_Plant.'Plant Code'
+
+relationship 767696bd-c9df-9ad7-0b61-3c68226d74db
+	fromColumn: Fact_MB51_Units.plant
+	toColumn: Dim_Plant.'Plant Code'
+>>>>>>> Stashed changes
 

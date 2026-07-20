@@ -11,8 +11,73 @@ table Fact_FS_Absorption
 		formatString: 0
 		lineageTag: 307943d7-aea4-4103-9527-6d395530aafd
 
+<<<<<<< Updated upstream
 	measure 'Actual Absorption $' = SUM ( Fact_FS_Absorption[amount_cc_currency] )
 		lineageTag: c4720823-e24a-4e55-b4be-5b9dc024975c
+=======
+	measure 'YTD Absorption' =
+			
+			VAR MaxDateInFacts = MAX(Fact_FS_Absorption[posting_date])
+			VAR YearOfMax = YEAR(MaxDateInFacts)
+			RETURN
+			CALCULATE(
+			    [Total Absorption],
+			    Calendar[Year] = YearOfMax,
+			    Calendar[Date] <= MaxDateInFacts
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 0134b7e8-92c7-4519-94b4-17ebc5427f7d
+
+	measure 'Prior Month Absorption' =
+			
+			CALCULATE(
+			    [Total Absorption],
+			    DATEADD(Calendar[Date], -1, MONTH)
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 8d9f6012-bcbd-4764-b3eb-8f9ef6a2a28c
+
+	measure 'Absorption MoM Change' =
+			
+			[Total Absorption] - [Prior Month Absorption]
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 3ed8eb7c-437d-4a3b-8c95-8db12c659250
+
+	measure 'Absorption MoM %' =
+			
+			DIVIDE(
+			    [Absorption MoM Change],
+			    [Prior Month Absorption],
+			    BLANK()
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 97d0a346-3561-45ac-9e40-fd1ff01af186
+
+	measure 'Test YTD Detailed' =
+			
+			VAR CurrentDates = FILTER(Calendar, Calendar[Year] = 2026)
+			VAR MinDate = MIN(Calendar[Date])
+			VAR MaxDate = MAX(Calendar[Date])
+			VAR YTDValue = CALCULATE([Total Absorption], DATESYTD(Calendar[Date]))
+			RETURN
+			"Min: " & FORMAT(MinDate, "MMM-YYYY") &
+			UNICHAR(10) &
+			"Max: " & FORMAT(MaxDate, "MMM-YYYY") &
+			UNICHAR(10) &
+			"YTD Absorption: " & FORMAT(YTDValue, "$#,##0") &
+			UNICHAR(10) &
+			"Absorption in June: " & FORMAT(CALCULATE([Total Absorption], Calendar[Year Month] = "2026-06"), "$#,##0")
+		lineageTag: f98fedf8-4399-4f5f-83b5-1391b661da4e
+
+	measure 'Absorption per Unit' =
+			
+			DIVIDE(
+			    [Total Absorption],
+			    [Actual Units],
+			    BLANK()
+			)
+		lineageTag: 2ebb7a95-7dfa-40de-b412-38d0cb739851
+>>>>>>> Stashed changes
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
@@ -242,11 +307,6 @@ table Fact_FS_Absorption
 		lineageTag: bedcc5b0-cd46-4ba2-879e-4daa2fd65d35
 		summarizeBy: none
 		sourceColumn: posting_date
-
-		variation Variation
-			isDefault
-			relationship: 959b0d10-c5d6-4f56-9cc4-fddd04e4cfb7
-			defaultHierarchy: LocalDateTable_ea48cc2e-a8e6-4ba5-b0ea-2bad566c4f53.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 

@@ -104,11 +104,6 @@ table Fact_MB51_Units
 		summarizeBy: none
 		sourceColumn: posting_date
 
-		variation Variation
-			isDefault
-			relationship: 55ac5fff-d2eb-4908-818a-8ba2de6af4be
-			defaultHierarchy: LocalDateTable_329c7c85-f586-43fe-977e-7992c764317b.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
