@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "4ababb0488641be1c5cd",
-  "displayName": "Page 3",
+  "displayName": "SAP Prod Fam Pivot",
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280
