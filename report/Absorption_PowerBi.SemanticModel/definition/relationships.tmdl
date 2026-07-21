@@ -7,10 +7,6 @@ relationship cb82b664-29ca-65b6-e8e9-40aa5eb6fde8
 	fromColumn: Dim_Material_Master.product_hierarchy
 	toColumn: Dim_Product_Tree_Leaf.product_hierarchy_no_dashes
 
-relationship 60634429-2748-e3bc-6c35-f6a715352899
-	fromColumn: Fact_FS_Absorption.part_number_lookup
-	toColumn: Dim_Material_Master.material
-
 relationship 2eeee480-b351-4911-9d15-c0729b4707c5
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Fact_FS_Absorption.document_date
@@ -34,6 +30,10 @@ relationship f9ba60b6-7f3c-4d50-18a2-d04fe2822a33
 	fromColumn: Fact_MB51_Units.material
 	toColumn: Dim_Subassemblies_Counted.Material_Text
 
+relationship 60634429-2748-e3bc-6c35-f6a715352899
+	fromColumn: Fact_FS_Absorption.part_number_lookup
+	toColumn: Dim_Material_Master.material
+
 relationship 537107be-0250-436d-a09f-899498954019
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Calendar.Date
@@ -53,5 +53,21 @@ relationship 9782c00f-9e82-0140-c049-d9fd94a1bba2
 
 relationship 767696bd-c9df-9ad7-0b61-3c68226d74db
 	fromColumn: Fact_MB51_Units.plant
+	toColumn: Dim_Plant.'Plant Code'
+
+relationship e5cd28ef-56ef-2958-5b39-f717eed10bdc
+	fromColumn: Fact_FS_Absorption.'BU Desc Final'
+	toColumn: Product_Line_Map.fs_bu_desc
+
+relationship 9add830f-b514-9488-6e81-b43da663886f
+	fromColumn: Dim_Subassemblies_Counted.Product_Line
+	toColumn: Product_Line_Map.subassemblies_product_line
+
+relationship e92b99a0-df06-56ad-6778-4b7768d3855d
+	fromColumn: Fact_AOP.product_line
+	toColumn: Product_Line_Map.product_line
+
+relationship 78f0da04-0729-f9d4-1664-d017f33db6bc
+	fromColumn: Fact_AOP.Plant
 	toColumn: Dim_Plant.'Plant Code'
 

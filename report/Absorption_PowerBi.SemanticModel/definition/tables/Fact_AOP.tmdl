@@ -1,6 +1,16 @@
 table Fact_AOP
 	lineageTag: 9e34b721-8261-4936-b629-4002a810f999
 
+	measure 'AOP Units' = SUM ( Fact_AOP[aop_units] )
+		lineageTag: c8c5d23a-d38b-405f-91b9-c029c10a2da6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'AOP $' = SUM ( Fact_AOP[aop_dollars] )
+		lineageTag: 21e88f7d-eb68-480f-bc54-7f4b567f0e59
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column oracle_name
 		dataType: string
 		lineageTag: 0eade44a-7ba8-483a-a050-5bc12cd00ce8
@@ -86,6 +96,16 @@ table Fact_AOP
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Plant = ```
+			VAR cat = Fact_AOP[category]
+			        RETURN IF(cat = "COS - Disposables", "US9F", IF(cat = "COS - LASERS", "US9F", IF(cat = "FREMONT", "US9M", IF(cat = "PLYMOUTH", "US9G"))))
+			               
+			```
+		lineageTag: 20cd534c-fbfc-4638-8db2-90be25cb9e2d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
 
 	partition Fact_AOP = m
 		mode: import

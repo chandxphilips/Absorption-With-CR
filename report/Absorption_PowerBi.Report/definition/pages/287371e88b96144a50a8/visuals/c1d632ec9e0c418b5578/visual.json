@@ -3,11 +3,11 @@
   "name": "c1d632ec9e0c418b5578",
   "position": {
     "x": 10,
-    "y": 372.5,
-    "z": 5,
-    "height": 232.5,
-    "width": 415,
-    "tabOrder": 5
+    "y": 372.72727272727269,
+    "z": 5000,
+    "height": 218.18181818181816,
+    "width": 534.5454545454545,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -251,20 +251,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "7db8fcf7c5c6486341c6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "Total Absorption"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

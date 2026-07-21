@@ -1,0 +1,173 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "823c41a7d217c3063594",
+  "position": {
+    "x": 414,
+    "y": 196,
+    "z": 1003,
+    "height": 415,
+    "width": 519,
+    "tabOrder": 1003
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_MB51_Units"
+                    }
+                  },
+                  "Property": "plant"
+                }
+              },
+              "queryRef": "Fact_MB51_Units.plant",
+              "nativeQueryRef": "plant",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Product_Line_Map"
+                    }
+                  },
+                  "Property": "product_line"
+                }
+              },
+              "queryRef": "Product_Line_Map.product_line",
+              "nativeQueryRef": "product_line",
+              "active": true
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_MB51_Units"
+                    }
+                  },
+                  "Property": "Actual Units"
+                }
+              },
+              "queryRef": "Fact_MB51_Units.Actual Units",
+              "nativeQueryRef": "Actual Units"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "Actual Absorption $"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.Actual Absorption $",
+              "nativeQueryRef": "Actual Absorption $"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "188D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Product_Line_Map.product_line"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ae925b17ed34bdddba6c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product_Line_Map"
+              }
+            },
+            "Property": "product_line"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "83a59ebe626676184e71",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "plant"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "3c86656b0ed87240030d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "Actual Units"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "592f9b30408d67ab3c01",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "Actual Absorption $"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

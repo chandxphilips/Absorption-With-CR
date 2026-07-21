@@ -5,7 +5,7 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 30
       },
       "nodes": [
         {
@@ -19,7 +19,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 2
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 3
         },
         {
           "location": {
@@ -45,12 +45,12 @@
             "height": 296,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 8
         },
         {
           "location": {
-            "x": 888.75,
-            "y": 439.25
+            "x": 880,
+            "y": 446.75
           },
           "nodeIndex": "Dim_Subassemblies_Counted",
           "nodeLineageTag": "f75f28ad-6620-42b0-ba41-088bd634b49d",
@@ -87,15 +87,16 @@
         },
         {
           "location": {
-            "x": 1172.75,
-            "y": 275.625
+            "x": 1367.75,
+            "y": 54.375
           },
           "nodeIndex": "Calendar",
+          "nodeLineageTag": "371a3b96-95f4-4454-a907-75aa771f5928",
           "size": {
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -107,7 +108,20 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 878.75,
+            "y": 812.125
+          },
+          "nodeIndex": "Product_Line_Map",
+          "nodeLineageTag": "68f23385-d6d8-49a0-94ff-f608100ba510",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 7
         }
       ],
       "name": "All tables",

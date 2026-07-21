@@ -76,6 +76,13 @@ table Fact_FS_Absorption
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Actual Absorption $' =
+			
+			SUM ( Fact_FS_Absorption[amount_cc_currency] )
+		lineageTag: 66093662-a281-4831-aa24-b4af3099d8a5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column document_line
 		dataType: string
 		lineageTag: 602b04f3-c3a9-470e-bdab-168b3bf66347
@@ -386,6 +393,20 @@ table Fact_FS_Absorption
 		lineageTag: a7f484d3-f00e-4328-a732-32c02faa2dd4
 		summarizeBy: none
 		sourceColumn: part_number_lookup
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'BU Desc Final' =
+			
+			VAR NaturalBU = RELATED ( Dim_Product_Tree_Leaf[long_description] )
+			RETURN
+			    SWITCH ( TRUE(),
+			        NOT ISBLANK ( NaturalBU ), NaturalBU,
+			        Fact_FS_Absorption[profit_center] = "P84", "Philips Laser System",
+			        BLANK ()
+			    )
+		lineageTag: 3d23c3ca-c4ba-4442-b796-1d3cd9018b1e
+		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 

@@ -98,34 +98,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "1fb829b97b04d0e36b97",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Subassemblies_Counted"
-              }
-            },
-            "Property": "Product_Line"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c8030a0b3fc72f3205a2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "Actual Units"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "2e11ec4de39007fc23cc",
         "field": {
           "Column": {

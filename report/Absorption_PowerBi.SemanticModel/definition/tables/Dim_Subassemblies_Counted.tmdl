@@ -45,7 +45,7 @@ table Dim_Subassemblies_Counted
 		dataType: int64
 		formatString: 0
 		lineageTag: 90e79cde-7924-40ec-80c6-7b3d816a356f
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: UOM
 
 		annotation SummarizationSetBy = Automatic

@@ -4,10 +4,10 @@
   "position": {
     "x": 10,
     "y": 206.25,
-    "z": 3,
+    "z": 3000,
     "height": 166.25,
     "width": 630,
-    "tabOrder": 3
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -173,48 +173,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "363ad5e870690d8b804a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Product_Tree_Leaf"
-              }
-            },
-            "Property": "long_description"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "31d33d4803a26e6607a5",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "Total Absorption"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "979c3327a7839916d6c1",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "Actual Units"
-          }
-        },
-        "type": "Advanced"
-      },
       {
         "name": "17fef140d4d8d571d36e",
         "field": {

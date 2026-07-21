@@ -159,23 +159,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "dd3c4ca3327669c2208c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "Total Absorption"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

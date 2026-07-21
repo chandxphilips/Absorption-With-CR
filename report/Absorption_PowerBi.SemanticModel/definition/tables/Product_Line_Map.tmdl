@@ -1,0 +1,38 @@
+table Product_Line_Map
+	lineageTag: 68f23385-d6d8-49a0-94ff-f608100ba510
+
+	column product_line
+		dataType: string
+		lineageTag: 78a74f37-84b6-42e6-b1b5-cd96942ad463
+		summarizeBy: none
+		sourceColumn: product_line
+
+		annotation SummarizationSetBy = Automatic
+
+	column fs_bu_desc
+		dataType: string
+		lineageTag: 40271028-2654-4456-9ddd-5421f8bd8ce3
+		summarizeBy: none
+		sourceColumn: fs_bu_desc
+
+		annotation SummarizationSetBy = Automatic
+
+	column subassemblies_product_line
+		dataType: string
+		lineageTag: 28bdbc57-d69b-43c4-a20e-ea69f347cd7c
+		summarizeBy: none
+		sourceColumn: subassemblies_product_line
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Product_Line_Map = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    qa_wb_Database = Source{[Name="qa_wb",Kind="Database"]}[Data],
+				    digitalfactory_Schema = qa_wb_Database{[Name="digitalfactory",Kind="Schema"]}[Data],
+				    ref_cs_product_line_map_Table = digitalfactory_Schema{[Name="ref_cs_product_line_map",Kind="Table"]}[Data]
+				in
+				    ref_cs_product_line_map_Table
+
