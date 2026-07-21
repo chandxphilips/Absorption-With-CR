@@ -5,25 +5,23 @@ table Fact_MB51_Units
 			
 			SUMX (
 			    Fact_MB51_Units,
-			    VAR CurrentUOM      = RELATED ( Dim_Subassemblies_Counted[UOM] )
-			    VAR IsCountedMat    = NOT ISBLANK ( CurrentUOM )
-			    VAR CurrentPlant    = Fact_MB51_Units[plant]
-			    VAR CurrentOrder    = Fact_MB51_Units[order_number]
+			    VAR CurrentUOM   = RELATED ( Dim_Subassemblies_Counted[UOM] )
+			    VAR IsCountedMat = NOT ISBLANK ( CurrentUOM )
+			    VAR CurrentPlant = Fact_MB51_Units[plant]
+			    VAR CurrentOrder = Fact_MB51_Units[order_number]
+			    VAR CurrentProdLine = RELATED ( Dim_Subassemblies_Counted[Product_Line] )
 			    VAR IncludeRow =
-			        SWITCH (
-			            TRUE(),
+			        SWITCH ( TRUE(),
 			            CurrentPlant = "US9M",
 			                IsCountedMat && LEFT ( CurrentOrder, 1 ) <> "5",
 			            CurrentPlant = "US9G",
 			                IsCountedMat && NOT ISBLANK ( CurrentOrder ) && CurrentOrder <> "",
-			            IsCountedMat  -- All other plants (US9F, US9E) → original logic
+			            CurrentPlant = "US9F" && CurrentProdLine = "BRIDGE",
+			                FALSE (),                                          -- ⬅ NEW: exclude Bridge from US9F
+			            IsCountedMat
 			        )
 			    RETURN
-			        IF (
-			            IncludeRow,
-			            Fact_MB51_Units[qty_in_order_unit] * CurrentUOM,
-			            0
-			        )
+			        IF ( IncludeRow, Fact_MB51_Units[qty_in_order_unit] * CurrentUOM, 0 )
 			)
 		lineageTag: e1237539-37e5-46e8-a1b0-9c7c7a986eff
 

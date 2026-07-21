@@ -4,10 +4,10 @@
   "position": {
     "x": 188.75,
     "y": 16.25,
-    "z": 1,
+    "z": 1000,
     "height": 81.25,
     "width": 168.75,
-    "tabOrder": 1
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -160,23 +160,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "32d45d1e160e3b1abd4c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "Actual Units"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

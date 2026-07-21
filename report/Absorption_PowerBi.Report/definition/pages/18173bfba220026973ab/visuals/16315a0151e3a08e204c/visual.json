@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
-  "name": "d076502cff69b9ff9814",
+  "name": "16315a0151e3a08e204c",
   "position": {
-    "x": 611.340206185567,
-    "y": 12.371134020618557,
-    "z": 2000,
-    "height": 300,
-    "width": 289.69072164948454,
-    "tabOrder": 2000
+    "x": 12,
+    "y": 419,
+    "z": 1002,
+    "height": 116,
+    "width": 383,
+    "tabOrder": 1002
   },
   "visual": {
     "visualType": "tableEx",
@@ -20,42 +20,47 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Dim_Subassemblies_Counted"
+                      "Entity": "Fact_FS_Absorption"
                     }
                   },
-                  "Property": "Product_Line"
+                  "Property": "BU Desc Final"
                 }
               },
-              "queryRef": "Dim_Subassemblies_Counted.Product_Line",
-              "nativeQueryRef": "Product_Line"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Fact_MB51_Units"
-                    }
-                  },
-                  "Property": "Actual Units"
-                }
-              },
-              "queryRef": "Fact_MB51_Units.Actual Units",
-              "nativeQueryRef": "Actual Units"
+              "queryRef": "Fact_FS_Absorption.BU Desc Final",
+              "nativeQueryRef": "BU Desc Final"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Fact_MB51_Units"
+                      "Entity": "Fact_FS_Absorption"
                     }
                   },
                   "Property": "plant"
                 }
               },
-              "queryRef": "Fact_MB51_Units.plant",
+              "queryRef": "Fact_FS_Absorption.plant",
               "nativeQueryRef": "plant"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Fact_FS_Absorption"
+                        }
+                      },
+                      "Property": "amount_cc_currency"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(Fact_FS_Absorption.amount_cc_currency)",
+              "nativeQueryRef": "Sum of amount_cc_currency"
             }
           ]
         }
@@ -66,12 +71,12 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "9e6dd7336a1269a9f0b7",
+        "name": "85bfdede0c2500900131",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Fact_MB51_Units"
+                "Entity": "Fact_FS_Absorption"
               }
             },
             "Property": "plant"
@@ -83,7 +88,7 @@
           "From": [
             {
               "Name": "f",
-              "Entity": "Fact_MB51_Units",
+              "Entity": "Fact_FS_Absorption",
               "Type": 0
             }
           ],
@@ -107,7 +112,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'US9G'"
+                          "Value": "'US9M'"
                         }
                       }
                     ]
@@ -116,14 +121,40 @@
               }
             }
           ]
-        },
-        "objects": {
-          "general": [
-            {
-              "properties": {}
-            }
-          ]
         }
+      },
+      {
+        "name": "d29ec881e5eb738d328c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_FS_Absorption"
+              }
+            },
+            "Property": "BU Desc Final"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "25334140de23a3894284",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Fact_FS_Absorption"
+                  }
+                },
+                "Property": "amount_cc_currency"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

@@ -4,10 +4,10 @@
   "position": {
     "x": 376.25,
     "y": 16.25,
-    "z": 2,
+    "z": 2000,
     "height": 81.25,
     "width": 156.25,
-    "tabOrder": 2
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -160,23 +160,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e45457246915a0eed0b6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "YTD Absorption"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
