@@ -1,8 +1,3 @@
-relationship 2f0b5489-7657-44e0-b08e-789dd09e6748
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Fact_AOP.period
-	toColumn: LocalDateTable_4744bac1-ec5b-478a-9db0-d036d8b7f768.Date
-
 relationship cb82b664-29ca-65b6-e8e9-40aa5eb6fde8
 	fromColumn: Dim_Material_Master.product_hierarchy
 	toColumn: Dim_Product_Tree_Leaf.product_hierarchy_no_dashes
@@ -70,4 +65,25 @@ relationship e92b99a0-df06-56ad-6778-4b7768d3855d
 relationship 78f0da04-0729-f9d4-1664-d017f33db6bc
 	fromColumn: Fact_AOP.Plant
 	toColumn: Dim_Plant.'Plant Code'
+
+relationship d029203e-3d8b-9332-acf7-e877244ab20e
+	fromColumn: Fact_AOP.period
+	toColumn: Calendar.Date
+
+relationship 0f522485-1563-9163-b599-e06b8376d8e3
+	fromColumn: Fact_FS_Absorption.'Site Codes'
+	toColumn: Dim_Site_Dim.site_code
+
+relationship e6f74814-6615-89f4-2f06-1fee3f69c074
+	fromColumn: Fact_MB51_Units.'Site Code'
+	toColumn: Dim_Site_Dim.site_code
+
+relationship a146b413-428b-9238-8741-212b95e0a098
+	fromColumn: Fact_AOP.'Site Code'
+	toColumn: Dim_Site_Dim.site_code
+
+relationship 1710dd13-2cbe-488a-aa31-8eb798287934
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Dim_Holidays.holiday_date
+	toColumn: LocalDateTable_fecc3dff-65e0-45ef-8fd6-4bbd77d8d9e6.Date
 

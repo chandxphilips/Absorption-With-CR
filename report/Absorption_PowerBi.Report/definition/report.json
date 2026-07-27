@@ -39,6 +39,9 @@
       }
     ]
   },
+  "publicCustomVisuals": [
+    "BulletChart1443347686880"
+  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -48,6 +51,17 @@
           "name": "CY26SU05",
           "path": "BaseThemes/CY26SU05.json",
           "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "Philips_logo_blue_2025_RGB08093119154151485.png",
+          "path": "Philips_logo_blue_2025_RGB08093119154151485.png",
+          "type": "Image"
         }
       ]
     }

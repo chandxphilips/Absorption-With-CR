@@ -20,7 +20,7 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Fact_MB51_Units"
+                      "Entity": "_Measures"
                     }
                   },
                   "Property": "Actual Units"
@@ -39,7 +39,7 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Fact_MB51_Units"
+                    "Entity": "_Measures"
                   }
                 },
                 "Property": "Actual Units"

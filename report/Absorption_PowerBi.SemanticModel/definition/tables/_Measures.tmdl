@@ -1,0 +1,359 @@
+table _Measures
+	lineageTag: e7cdf2b0-5178-46e4-8fce-f82e59af5d84
+
+	measure 'Var Units' = [Actual Units] - [AOP Units]
+		lineageTag: f1c91e5b-de23-4780-8e1c-45aa80618924
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Var Units %' =
+			
+			DIVIDE ( [Var Units], [AOP Units], BLANK () )
+		lineageTag: 6d17014f-2dd4-41ea-9fa5-67b9534d2aea
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Var $' = [Actual Absorption $] - [AOP $]
+		lineageTag: 5674856a-8be9-4407-b7f5-487f22ef1c74
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Var $ %' =
+			
+			DIVIDE ( [Var $], [AOP $], BLANK () )
+		lineageTag: 772553b9-8df8-41a9-a160-1e70957bb9ed
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Std Cost per Unit' = ```
+			
+			DIVIDE ( 
+			    ABS ( [Actual Absorption $] ), 
+			    [Actual Units], 
+			    BLANK () 
+			)
+			```
+		lineageTag: a5995768-a46b-4e1c-a64e-afe7d12d76d0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Units Variance Direction' =
+			
+			VAR v = [Var Units %]
+			RETURN
+			    SWITCH ( TRUE(),
+			        v > 0, "▲ Favorable",
+			        v < 0, "▼ Unfavorable",
+			        "— On Plan"
+			    )
+		lineageTag: eb2977bf-c914-4ab3-8d43-2749933806de
+
+	measure '$ Variance Direction' =
+			
+			VAR v = [Var $ %]
+			RETURN
+			    SWITCH ( TRUE(),
+			        v < 0, "▲ Favorable",     -- for absorption, MORE negative = better
+			        v > 0, "▼ Unfavorable",
+			        "— On Plan"
+			    )
+		lineageTag: 5d87e38d-7318-4c3d-86dc-e239943fb642
+
+	measure 'Page 2 Title' =
+			
+			"Selected Product: " & SELECTEDVALUE ( Product_Line_Map[product_line], "All Products" ) &
+			" | Site: " & SELECTEDVALUE ( Dim_Plant[Plant Name], "All Sites" ) &
+			" | " & SELECTEDVALUE ( Calendar[Year Month Short], "All Periods" )
+		lineageTag: a4b3d863-94b5-4519-a257-65c7cb7ad926
+
+	measure 'Actual Units' = ```
+			
+			SUMX (
+			    Fact_MB51_Units,
+			    VAR CurrentUOM   = RELATED ( Dim_Subassemblies_Counted[UOM] )
+			    VAR IsCountedMat = NOT ISBLANK ( CurrentUOM )
+			    VAR CurrentPlant = Fact_MB51_Units[plant]
+			    VAR CurrentOrder = Fact_MB51_Units[order_number]
+			    VAR CurrentProdLine = RELATED ( Dim_Subassemblies_Counted[Product_Line] )
+			    VAR PostDate = Fact_MB51_Units[posting_date]
+			    VAR PostYear = YEAR ( PostDate )
+			    VAR PostMonth = MONTH ( PostDate )
+			    -- Bridge is allowed at US9F only in Jan & Feb 2026
+			    VAR BridgeAllowedAtUS9F = 
+			        PostYear = 2026 && PostMonth IN { 1, 2 }
+			    VAR IncludeRow =
+			        SWITCH ( TRUE(),
+			            CurrentPlant = "US9M",
+			                IsCountedMat && LEFT ( CurrentOrder, 1 ) <> "5",
+			            CurrentPlant = "US9G",
+			                IsCountedMat && NOT ISBLANK ( CurrentOrder ) && CurrentOrder <> "",
+			            CurrentPlant = "US9F" && CurrentProdLine = "BRIDGE",
+			                IsCountedMat && BridgeAllowedAtUS9F,   -- ⭐ Include only Jan/Feb 2026
+			            IsCountedMat
+			        )
+			    RETURN
+			        IF ( IncludeRow, Fact_MB51_Units[qty_in_order_unit] * CurrentUOM, 0 )
+			)
+			```
+		lineageTag: e1237539-37e5-46e8-a1b0-9c7c7a986eff
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'AOP Units' = SUM ( Fact_AOP[aop_units] )
+		lineageTag: c8c5d23a-d38b-405f-91b9-c029c10a2da6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Actual Absorption' = SUM(Fact_FS_Absorption[amount_cc_currency]) * -1
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: eaf5ec15-dfc7-4565-b0b7-e083ff17878c
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Variance Units % Display' = ```
+			
+			VAR VarPct = DIVIDE ( [Actual Units] - [AOP Units], [AOP Units], 0 )
+			VAR Arrow = 
+			    SWITCH ( 
+			        TRUE(),
+			        VarPct > 0, UNICHAR ( 8593 ),   -- ↑ Up arrow
+			        VarPct < 0, UNICHAR ( 8595 ),   -- ↓ Down arrow
+			        ""
+			    )
+			VAR Sign = IF ( VarPct >= 0, "+", "" )
+			RETURN
+			    Arrow & " " & Sign & FORMAT ( VarPct, "0.0%" ) & " vs AOP"
+			```
+		lineageTag: 4b0e9e56-a3d9-443a-8c1b-4571d1cb6ada
+
+	measure 'Variance $ % Display' = ```
+			
+			VAR VarPct = DIVIDE ( [Actual Absorption $ (Abs)] - [AOP $ (Abs)], [AOP $ (Abs)], 0 )
+			VAR Arrow = 
+			    SWITCH ( 
+			        TRUE(),
+			        VarPct > 0, UNICHAR ( 8593 ),
+			        VarPct < 0, UNICHAR ( 8595 ),
+			        ""
+			    )
+			VAR Sign = IF ( VarPct >= 0, "+", "" )
+			RETURN
+			    Arrow & " " & Sign & FORMAT ( VarPct, "0.0%" ) & " vs AOP"
+			```
+		lineageTag: 67e9a140-cf90-473e-902b-0084d5ea0709
+
+	measure Site
+		lineageTag: 0396e01c-f394-4bac-9346-b6d8daa11383
+
+	measure 'AOP Daily Average'
+		lineageTag: 51764564-d766-45d3-a702-1d8cd0e7d116
+
+	measure 'AOP Daily Average updated' = ```
+			
+			VAR CurrentDate = MAX ( 'Calendar'[Date] )
+			VAR MonthStart = EOMONTH ( CurrentDate, -1 ) + 1
+			VAR MonthEnd = EOMONTH ( CurrentDate, 0 )
+			
+			-- Determine which site is selected
+			VAR CurrentSite = SELECTEDVALUE ( Dim_Site_Dim[site_code], "ALL" )
+			
+			-- Monthly AOP total (respects current filters)
+			VAR MonthlyAOP = 
+			    CALCULATE (
+			        SUM ( Fact_AOP[aop_units] ),
+			        ALL ( 'Calendar' ),
+			        'Calendar'[Date] >= MonthStart,
+			        'Calendar'[Date] <= MonthEnd
+			    )
+			
+			-- Count working days based on site schedule
+			VAR WorkingDays = 
+			    SWITCH (
+			        CurrentSite,
+			        "US9F - CO01",  -- Mon-Thu
+			            CALCULATE (
+			                COUNTROWS ( 'Calendar' ),
+			                ALL ( 'Calendar' ),
+			                'Calendar'[Date] >= MonthStart,
+			                'Calendar'[Date] <= MonthEnd,
+			                'Calendar'[Is WorkDay MonThu] = TRUE ()
+			            ),
+			        "US9G",  -- Mon-Thu
+			            CALCULATE (
+			                COUNTROWS ( 'Calendar' ),
+			                ALL ( 'Calendar' ),
+			                'Calendar'[Date] >= MonthStart,
+			                'Calendar'[Date] <= MonthEnd,
+			                'Calendar'[Is WorkDay MonThu] = TRUE ()
+			            ),
+			        "US9F - CO02",  -- Mon-Fri
+			            CALCULATE (
+			                COUNTROWS ( 'Calendar' ),
+			                ALL ( 'Calendar' ),
+			                'Calendar'[Date] >= MonthStart,
+			                'Calendar'[Date] <= MonthEnd,
+			                'Calendar'[Is WorkDay MonFri] = TRUE ()
+			            ),
+			        "US9M",  -- Mon-Fri
+			            CALCULATE (
+			                COUNTROWS ( 'Calendar' ),
+			                ALL ( 'Calendar' ),
+			                'Calendar'[Date] >= MonthStart,
+			                'Calendar'[Date] <= MonthEnd,
+			                'Calendar'[Is WorkDay MonFri] = TRUE ()
+			            ),
+			        -- Default (no site selected): use Mon-Fri as a general estimate
+			            CALCULATE (
+			                COUNTROWS ( 'Calendar' ),
+			                ALL ( 'Calendar' ),
+			                'Calendar'[Date] >= MonthStart,
+			                'Calendar'[Date] <= MonthEnd,
+			                'Calendar'[Is WorkDay MonFri] = TRUE ()
+			            )
+			    )
+			RETURN
+			    DIVIDE ( MonthlyAOP, WorkingDays, BLANK () )
+			```
+		lineageTag: 456e048b-2dc4-43c4-9107-392473c5c9a1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Units' = ```
+			
+			SUMX ( 
+			    Fact_MB51_Units,
+			    Fact_MB51_Units[qty_in_order_unit] * RELATED ( Dim_Subassemblies_Counted[UOM] )
+			)
+			```
+		lineageTag: 12cb44d5-c1fd-4ca6-bb06-964e8f055f1f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Satisfactory Units' = [AOP Units] * 0.9
+		lineageTag: e9fa9897-9342-4714-a9df-f49321862328
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Good Units' = [AOP Units] * 1.1
+		lineageTag: aa6ebb01-ee81-4a5b-8128-f6671176c696
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Very Good Units' = [AOP Units] * 1.3
+		lineageTag: 5db1d9b6-203e-4e87-8e17-01d1d11cc8e0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Max Units Scale' = [AOP Units] * 1.5
+		lineageTag: 577cb60e-1ab2-471a-8630-3e36ee496563
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Min Units' = 0
+		formatString: 0
+		lineageTag: bad8effc-3ebe-4900-ba0f-879bc8434b0d
+
+	measure 'Bullet Needs Improvement Units' = [AOP Units] * 0.7
+		lineageTag: 65e6a29d-c98f-4587-83b0-645b802f365f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Max Units' = [AOP Units] * 1.5
+		lineageTag: 78639187-73db-49b6-a749-3e80a220d27e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'AOP $ (Abs)' = ABS ( [AOP $] )
+		formatString: 0
+		lineageTag: 502e6021-6d14-4bce-9827-9a72fee9de29
+
+	measure 'Actual Absorption $ (Abs)' = ABS ( [Actual Absorption $] )
+		lineageTag: 6eb06334-342d-4d41-bf0e-df01f964a2ec
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Min Absorption' = 0
+		formatString: 0
+		lineageTag: 13d4085a-aaaf-464a-8d22-37d489cae33f
+
+	measure 'Bullet Needs Improvement Absorption' = [AOP $ (Abs)] * 0.7
+		lineageTag: 2fc0a8b2-04a8-4c0b-9460-9b83b1006359
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Satisfactory Absorption' = [AOP $ (Abs)] * 0.9
+		lineageTag: 6050ee2a-2e40-49f4-9692-7dfb541d3273
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Good Absorption' = [AOP $ (Abs)] * 1.1
+		lineageTag: 9cf58f5d-e81b-45ea-85e4-d0a1d4e5df2f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Very Good Absorption' = [AOP $ (Abs)] * 1.3
+		lineageTag: 0ebce807-0aa6-4ace-9876-6cdaf895e78b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Bullet Max Absorption' = [AOP $ (Abs)] * 1.5
+		lineageTag: 4abed880-ef13-4106-8433-19ad91fa4078
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Selected Product' =
+			
+			"Selected Product: " & SELECTEDVALUE ( Product_Line_Map[product_line], "All Products" )
+		lineageTag: ad9d2372-f089-4a26-9a56-23d4453c5dfd
+
+	measure 'Selected Site' =
+			
+			"Site: " & SELECTEDVALUE ( Dim_Plant[Plant Name], "All Sites" )
+		lineageTag: 464f70a5-7ae7-4ad8-b1b7-c7cca4b0a2f2
+
+	measure 'Selected Period' = ```
+			
+			SELECTEDVALUE ( Calendar[Month Name], "All Periods" ) & " " & 
+			SELECTEDVALUE ( Calendar[Year], "" )
+			```
+		lineageTag: ec973906-ff2b-4019-8b27-ac274da22d6f
+
+	measure 'Is Working Day (Selected Site)' =
+			
+			VAR CurrentSite = SELECTEDVALUE ( Dim_Site_Dim[site_code], "ALL" )
+			VAR MonThuFlag = SELECTEDVALUE ( 'Calendar'[Is WorkDay MonThu] )
+			VAR MonFriFlag = SELECTEDVALUE ( 'Calendar'[Is WorkDay MonFri] )
+			VAR Result =
+			    SWITCH (
+			        CurrentSite,
+			        "US9F - CO01", MonThuFlag,
+			        "US9G",        MonThuFlag,
+			        "US9F - CO02", MonFriFlag,
+			        "US9M",        MonFriFlag,
+			        MonFriFlag   -- default
+			    )
+			RETURN
+			    IF ( Result = TRUE (), 1, 0 )
+		formatString: 0
+		lineageTag: 71672e4a-0d86-4423-bc29-44437d0c1333
+
+	column Column1
+		dataType: string
+		lineageTag: edd6ec33-ab2a-4031-8b38-cc675c9e7876
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t])
+				in
+				  Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
