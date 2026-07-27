@@ -1,12 +1,6 @@
 table Fact_FS_Absorption
 	lineageTag: dfe75e92-e170-47b8-8069-2a6f08078e80
 
-	measure 'Total Absorption' = SUM(Fact_FS_Absorption[amount_cc_currency]) * -1
-		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
-		lineageTag: eaf5ec15-dfc7-4565-b0b7-e083ff17878c
-
-		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
-
 	measure 'Total Postings' = COUNTROWS(Fact_FS_Absorption)
 		formatString: 0
 		lineageTag: 307943d7-aea4-4103-9527-6d395530aafd
@@ -17,7 +11,7 @@ table Fact_FS_Absorption
 			VAR YearOfMax = YEAR(MaxDateInFacts)
 			RETURN
 			CALCULATE(
-			    [Total Absorption],
+			    [Actual Absorption],
 			    Calendar[Year] = YearOfMax,
 			    Calendar[Date] <= MaxDateInFacts
 			)
@@ -27,7 +21,7 @@ table Fact_FS_Absorption
 	measure 'Prior Month Absorption' =
 			
 			CALCULATE(
-			    [Total Absorption],
+			    [Actual Absorption],
 			    DATEADD(Calendar[Date], -1, MONTH)
 			)
 		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
@@ -35,7 +29,7 @@ table Fact_FS_Absorption
 
 	measure 'Absorption MoM Change' =
 			
-			[Total Absorption] - [Prior Month Absorption]
+			[Actual Absorption] - [Prior Month Absorption]
 		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: 3ed8eb7c-437d-4a3b-8c95-8db12c659250
 
@@ -54,7 +48,7 @@ table Fact_FS_Absorption
 			VAR CurrentDates = FILTER(Calendar, Calendar[Year] = 2026)
 			VAR MinDate = MIN(Calendar[Date])
 			VAR MaxDate = MAX(Calendar[Date])
-			VAR YTDValue = CALCULATE([Total Absorption], DATESYTD(Calendar[Date]))
+			VAR YTDValue = CALCULATE([Actual Absorption], DATESYTD(Calendar[Date]))
 			RETURN
 			"Min: " & FORMAT(MinDate, "MMM-YYYY") &
 			UNICHAR(10) &
@@ -62,13 +56,13 @@ table Fact_FS_Absorption
 			UNICHAR(10) &
 			"YTD Absorption: " & FORMAT(YTDValue, "$#,##0") &
 			UNICHAR(10) &
-			"Absorption in June: " & FORMAT(CALCULATE([Total Absorption], Calendar[Year Month] = "2026-06"), "$#,##0")
+			"Absorption in June: " & FORMAT(CALCULATE([Actual Absorption], Calendar[Year Month] = "2026-06"), "$#,##0")
 		lineageTag: f98fedf8-4399-4f5f-83b5-1391b661da4e
 
 	measure 'Absorption per Unit' =
 			
 			DIVIDE(
-			    [Total Absorption],
+			    [Actual Absorption],
 			    [Actual Units],
 			    BLANK()
 			)
@@ -406,6 +400,23 @@ table Fact_FS_Absorption
 			        BLANK ()
 			    )
 		lineageTag: 3d23c3ca-c4ba-4442-b796-1d3cd9018b1e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site Codes' =
+			
+			VAR BUDesc = Fact_FS_Absorption[BU Desc Final]
+			VAR IsLaser = BUDesc IN { "Philips Laser System", "Laser CVX300" }
+			RETURN
+			    SWITCH ( TRUE(),
+			        Fact_FS_Absorption[plant] = "US9F" && IsLaser, "US9F - CO02",   -- Lasers → always CO02
+			        Fact_FS_Absorption[plant] = "US9F", "US9F - CO01",              -- Everything else US9F → CO01
+			        Fact_FS_Absorption[plant] = "US9G", "US9G",
+			        Fact_FS_Absorption[plant] = "US9M", "US9M",
+			        Fact_FS_Absorption[plant]
+			    )
+		lineageTag: 5f6357c2-efbf-4cae-8db6-9e10ebb1f431
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic

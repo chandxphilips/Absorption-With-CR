@@ -20,10 +20,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Fact_FS_Absorption"
+                      "Entity": "_Measures"
                     }
                   },
-                  "Property": "Total Absorption"
+                  "Property": "Actual Absorption"
                 }
               },
               "queryRef": "Fact_FS_Absorption.Total Absorption",
@@ -40,10 +40,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Fact_FS_Absorption"
+                    "Entity": "_Measures"
                   }
                 },
-                "Property": "Total Absorption"
+                "Property": "Actual Absorption"
               }
             },
             "direction": "Descending"

@@ -4,10 +4,10 @@
   "position": {
     "x": 414,
     "y": 196,
-    "z": 1003,
+    "z": 4000,
     "height": 415,
     "width": 519,
-    "tabOrder": 1003
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "pivotTable",
@@ -58,7 +58,7 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Fact_MB51_Units"
+                      "Entity": "_Measures"
                     }
                   },
                   "Property": "Actual Units"
@@ -109,65 +109,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ae925b17ed34bdddba6c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Product_Line_Map"
-              }
-            },
-            "Property": "product_line"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "83a59ebe626676184e71",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "plant"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "3c86656b0ed87240030d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "Actual Units"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "592f9b30408d67ab3c01",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "Actual Absorption $"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

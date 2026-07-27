@@ -4,10 +4,10 @@
   "position": {
     "x": 12,
     "y": 419,
-    "z": 1002,
+    "z": 3000,
     "height": 116,
     "width": 383,
-    "tabOrder": 1002
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "tableEx",
@@ -122,39 +122,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "d29ec881e5eb738d328c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "BU Desc Final"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "25334140de23a3894284",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_FS_Absorption"
-                  }
-                },
-                "Property": "amount_cc_currency"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

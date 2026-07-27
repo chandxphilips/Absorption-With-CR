@@ -25,6 +25,15 @@ table Product_Line_Map
 
 		annotation SummarizationSetBy = Automatic
 
+	column is_laser
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f2878535-6761-4bfd-ae2b-16af0811f896
+		summarizeBy: none
+		sourceColumn: is_laser
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Product_Line_Map = m
 		mode: import
 		source =

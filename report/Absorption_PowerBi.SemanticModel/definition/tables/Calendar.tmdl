@@ -126,6 +126,43 @@ table Calendar
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Is Holiday' =
+			
+			IF (
+			    NOT ISEMPTY (
+			        FILTER ( Dim_Holidays, Dim_Holidays[holiday_date] = 'Calendar'[Date] )
+			    ),
+			    TRUE (),
+			    FALSE ()
+			)
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ad62a4e7-b3b7-4d4b-8a6c-74c30d090c6b
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is WorkDay MonThu' =
+			
+			VAR DOW = WEEKDAY ( 'Calendar'[Date], 2 )   -- Monday=1 ... Sunday=7
+			RETURN
+			    IF ( DOW >= 1 && DOW <= 4 && NOT 'Calendar'[Is Holiday], TRUE (), FALSE () )
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3c767265-af7d-4100-8d84-8c42a0722138
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is WorkDay MonFri' =
+			
+			VAR DOW = WEEKDAY ( 'Calendar'[Date], 2 )
+			RETURN
+			    IF ( DOW >= 1 && DOW <= 5 && NOT 'Calendar'[Is Holiday], TRUE (), FALSE () )
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 436667dc-d2c4-4c6f-a9e3-ccf90e89be19
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Calendar = calculated
 		mode: import
 		source =

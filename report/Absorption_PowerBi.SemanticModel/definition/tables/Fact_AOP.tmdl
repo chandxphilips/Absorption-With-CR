@@ -1,11 +1,6 @@
 table Fact_AOP
 	lineageTag: 9e34b721-8261-4936-b629-4002a810f999
 
-	measure 'AOP Units' = SUM ( Fact_AOP[aop_units] )
-		lineageTag: c8c5d23a-d38b-405f-91b9-c029c10a2da6
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	measure 'AOP $' = SUM ( Fact_AOP[aop_dollars] )
 		lineageTag: 21e88f7d-eb68-480f-bc54-7f4b567f0e59
 
@@ -49,11 +44,6 @@ table Fact_AOP
 		lineageTag: ed7a9382-ceff-4d91-9930-5316ed222bba
 		summarizeBy: none
 		sourceColumn: period
-
-		variation Variation
-			isDefault
-			relationship: 2f0b5489-7657-44e0-b08e-789dd09e6748
-			defaultHierarchy: LocalDateTable_4744bac1-ec5b-478a-9db0-d036d8b7f768.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -103,6 +93,23 @@ table Fact_AOP
 			               
 			```
 		lineageTag: 20cd534c-fbfc-4638-8db2-90be25cb9e2d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site Code' =
+			
+			VAR ProductLine = Fact_AOP[product_line]
+			VAR IsLaser = ProductLine IN { "Philips Laser System", "Laser CVX300" }
+			RETURN
+			    SWITCH ( TRUE(),
+			        Fact_AOP[Plant] = "US9F" && IsLaser, "US9F - CO02",
+			        Fact_AOP[Plant] = "US9F", "US9F - CO01",
+			        Fact_AOP[Plant] = "US9G", "US9G",
+			        Fact_AOP[Plant] = "US9M", "US9M",
+			        Fact_AOP[Plant]
+			    )
+		lineageTag: 49b9121b-0e51-43a8-a97b-39740ad0b20f
 		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic

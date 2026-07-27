@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "name": "6184e544a5c9d599eb82",
+  "position": {
+    "x": 980,
+    "y": 420,
+    "z": 1000,
+    "height": 300,
+    "width": 300,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Fact_FS_Absorption"
+                    }
+                  },
+                  "Property": "profit_center"
+                }
+              },
+              "queryRef": "Fact_FS_Absorption.profit_center",
+              "nativeQueryRef": "profit_center"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

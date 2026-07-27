@@ -1,32 +1,6 @@
 table Fact_MB51_Units
 	lineageTag: 6211e09c-497a-46c6-963f-a5b9d2a3b15f
 
-	measure 'Actual Units' =
-			
-			SUMX (
-			    Fact_MB51_Units,
-			    VAR CurrentUOM   = RELATED ( Dim_Subassemblies_Counted[UOM] )
-			    VAR IsCountedMat = NOT ISBLANK ( CurrentUOM )
-			    VAR CurrentPlant = Fact_MB51_Units[plant]
-			    VAR CurrentOrder = Fact_MB51_Units[order_number]
-			    VAR CurrentProdLine = RELATED ( Dim_Subassemblies_Counted[Product_Line] )
-			    VAR IncludeRow =
-			        SWITCH ( TRUE(),
-			            CurrentPlant = "US9M",
-			                IsCountedMat && LEFT ( CurrentOrder, 1 ) <> "5",
-			            CurrentPlant = "US9G",
-			                IsCountedMat && NOT ISBLANK ( CurrentOrder ) && CurrentOrder <> "",
-			            CurrentPlant = "US9F" && CurrentProdLine = "BRIDGE",
-			                FALSE (),                                          -- ⬅ NEW: exclude Bridge from US9F
-			            IsCountedMat
-			        )
-			    RETURN
-			        IF ( IncludeRow, Fact_MB51_Units[qty_in_order_unit] * CurrentUOM, 0 )
-			)
-		lineageTag: e1237539-37e5-46e8-a1b0-9c7c7a986eff
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
 	column material
 		dataType: string
 		lineageTag: c81f00be-9721-4f60-b759-ebe1e2389b8c
@@ -97,7 +71,7 @@ table Fact_MB51_Units
 
 	column posting_date
 		dataType: dateTime
-		formatString: Long Date
+		formatString: mmmm d\, yyyy
 		lineageTag: 9a819635-1ecf-41bc-8732-c0a4722e9112
 		summarizeBy: none
 		sourceColumn: posting_date
@@ -105,6 +79,8 @@ table Fact_MB51_Units
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
 
 	column order_number
 		dataType: string
@@ -185,6 +161,23 @@ table Fact_MB51_Units
 		lineageTag: 81ac6d36-005e-41b1-b2fb-fa1201e167a9
 		summarizeBy: none
 		sourceColumn: base_unit_of_measure
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site Code' =
+			
+			VAR ProductLine = RELATED ( Dim_Subassemblies_Counted[Product_Line] )
+			VAR IsLaser = ProductLine IN { "PLS", "Laser CVX300" }
+			RETURN
+			    SWITCH ( TRUE(),
+			        Fact_MB51_Units[plant] = "US9F" && IsLaser, "US9F - CO02",
+			        Fact_MB51_Units[plant] = "US9F", "US9F - CO01",
+			        Fact_MB51_Units[plant] = "US9G", "US9G",
+			        Fact_MB51_Units[plant] = "US9M", "US9M",
+			        Fact_MB51_Units[plant]
+			    )
+		lineageTag: d3f4e2da-4503-40b5-82f3-80e4893d0cfc
+		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 

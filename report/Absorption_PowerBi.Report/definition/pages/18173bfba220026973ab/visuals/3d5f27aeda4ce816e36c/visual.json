@@ -122,39 +122,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "2eb0b0af1c0093b70eb4",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_FS_Absorption"
-              }
-            },
-            "Property": "BU Desc Final"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f9c66fcab739654b50c9",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_FS_Absorption"
-                  }
-                },
-                "Property": "amount_cc_currency"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

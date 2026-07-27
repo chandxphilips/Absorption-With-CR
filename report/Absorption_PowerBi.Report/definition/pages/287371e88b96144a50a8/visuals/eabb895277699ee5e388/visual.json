@@ -54,7 +54,7 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Fact_MB51_Units"
+                      "Entity": "_Measures"
                     }
                   },
                   "Property": "Actual Units"
@@ -68,10 +68,10 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Fact_FS_Absorption"
+                      "Entity": "_Measures"
                     }
                   },
-                  "Property": "Total Absorption"
+                  "Property": "Actual Absorption"
                 }
               },
               "queryRef": "Fact_FS_Absorption.Total Absorption",
