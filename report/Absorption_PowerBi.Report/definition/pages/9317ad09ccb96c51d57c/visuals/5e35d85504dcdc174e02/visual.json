@@ -71,7 +71,7 @@
                                       "Entity": "_Measures"
                                     }
                                   },
-                                  "Property": "Var Units %"
+                                  "Property": "Var $ %"
                                 }
                               },
                               "Right": {
@@ -89,21 +89,45 @@
                         },
                         {
                           "Condition": {
-                            "Comparison": {
-                              "ComparisonKind": 1,
+                            "And": {
                               "Left": {
-                                "Measure": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Entity": "_Measures"
+                                "Comparison": {
+                                  "ComparisonKind": 1,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_Measures"
+                                        }
+                                      },
+                                      "Property": "Var $ %"
                                     }
                                   },
-                                  "Property": "Var Units %"
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "0D"
+                                    }
+                                  }
                                 }
                               },
                               "Right": {
-                                "Literal": {
-                                  "Value": "0D"
+                                "Comparison": {
+                                  "ComparisonKind": 4,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_Measures"
+                                        }
+                                      },
+                                      "Property": "Var $ %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "1D"
+                                    }
+                                  }
                                 }
                               }
                             }
@@ -133,6 +157,33 @@
                   "expr": {
                     "Conditional": {
                       "Cases": [
+                        {
+                          "Condition": {
+                            "Comparison": {
+                              "ComparisonKind": 0,
+                              "Left": {
+                                "Measure": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Entity": "_Measures"
+                                    }
+                                  },
+                                  "Property": "Var $ %"
+                                }
+                              },
+                              "Right": {
+                                "Literal": {
+                                  "Value": "0D"
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#000000'"
+                            }
+                          }
+                        },
                         {
                           "Condition": {
                             "Comparison": {

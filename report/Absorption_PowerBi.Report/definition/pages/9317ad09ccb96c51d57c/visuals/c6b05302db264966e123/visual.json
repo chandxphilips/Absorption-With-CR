@@ -50,6 +50,7 @@
       ],
       "general": [
         {
+<<<<<<< Updated upstream
           "properties": {
             "filter": {
               "filter": {
@@ -93,6 +94,9 @@
               }
             }
           }
+=======
+          "properties": {}
+>>>>>>> Stashed changes
         }
       ],
       "selection": [
