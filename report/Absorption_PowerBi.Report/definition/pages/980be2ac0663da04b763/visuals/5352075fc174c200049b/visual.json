@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "5352075fc174c200049b",
   "position": {
-    "x": 690.42371141077422,
-    "y": 191.58965934241451,
-    "z": 18000,
-    "height": 52.570333356150321,
-    "width": 178.73913341091108,
-    "tabOrder": 18000
+    "x": 685.57213930348269,
+    "y": 192.0398009950249,
+    "z": 15000,
+    "height": 52.736318407960205,
+    "width": 188.05970149253733,
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -122,7 +122,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#D64550'"
+                              "Value": "'#F64848'"
                             }
                           }
                         },
@@ -173,7 +173,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#06DA3B'"
+                              "Value": "'#107C10'"
                             }
                           }
                         }
@@ -249,6 +249,38 @@
             "id": "default"
           }
         }
+      ],
+      "layout": [
+        {
+          "properties": {
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "smallMultiplesHeader": [
+        {
+          "properties": {
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -272,6 +304,19 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'% vs AOP $'"
                 }
               }
             }

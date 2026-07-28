@@ -14350,7 +14350,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "AOP Dollars": {
+			          "AOP Absorption": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -14360,7 +14360,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "AOP Absorption": {
+			          "AOP Dollars": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

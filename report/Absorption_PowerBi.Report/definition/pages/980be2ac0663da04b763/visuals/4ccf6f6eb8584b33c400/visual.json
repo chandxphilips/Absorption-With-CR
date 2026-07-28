@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "4ccf6f6eb8584b33c400",
   "position": {
-    "x": 217.29071120542133,
-    "y": 191.58965934241451,
-    "z": 17000,
-    "height": 52.570333356150321,
-    "width": 170.56152599995437,
-    "tabOrder": 17000
+    "x": 206.96517412935324,
+    "y": 192.0398009950249,
+    "z": 14000,
+    "height": 51.741293532338311,
+    "width": 190.04975124378112,
+    "tabOrder": 14000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -107,7 +107,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#D64550'"
+                              "Value": "'#F64848'"
                             }
                           }
                         },
@@ -158,7 +158,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#06DA3B'"
+                              "Value": "'#107C10'"
                             }
                           }
                         }
@@ -257,6 +257,19 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'% Vs AOP units'"
                 }
               }
             }

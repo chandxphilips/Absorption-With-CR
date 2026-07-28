@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "3d71b6f6845510447976",
   "position": {
     "x": 918.88888888888891,
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "_Measures.Actual Units",
-              "nativeQueryRef": "Actual Units"
+              "nativeQueryRef": "Actual Units",
+              "format": "0.K"
             }
           ]
         },
@@ -279,6 +280,26 @@
                       "Value": "'#B3B3B3'"
                     }
                   }
+                }
+              }
+            },
+            "measureUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
                 }
               }
             }

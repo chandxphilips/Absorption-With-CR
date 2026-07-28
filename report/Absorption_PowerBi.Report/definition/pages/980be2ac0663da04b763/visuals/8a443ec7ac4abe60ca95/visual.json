@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "ce525200d40bbb736007",
+  "name": "8a443ec7ac4abe60ca95",
   "position": {
-    "x": 1168.75,
-    "y": 15,
-    "z": 5000,
-    "height": 61.25,
-    "width": 95,
-    "tabOrder": 2000
+    "x": 1053.3333333333333,
+    "y": 6.6666666666666661,
+    "z": 26000,
+    "height": 66.666666666666671,
+    "width": 204.44444444444443,
+    "tabOrder": 26000
   },
   "visual": {
     "visualType": "image",
@@ -15,12 +15,19 @@
       "image": [
         {
           "properties": {
+            "sourceType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'image'"
+                }
+              }
+            },
             "sourceFile": {
               "image": {
                 "name": {
                   "expr": {
                     "Literal": {
-                      "Value": "'OIP.jpg'"
+                      "Value": "'Philips_logo_blue_2025_RGB.png'"
                     }
                   }
                 },
@@ -29,7 +36,7 @@
                     "ResourcePackageItem": {
                       "PackageName": "RegisteredResources",
                       "PackageType": 1,
-                      "ItemName": "OIP6774774982907247.jpg"
+                      "ItemName": "Philips_logo_blue_2025_RGB08093119154151485.png"
                     }
                   }
                 },
@@ -39,6 +46,21 @@
                       "Value": "'Normal'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "lockAspect": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }

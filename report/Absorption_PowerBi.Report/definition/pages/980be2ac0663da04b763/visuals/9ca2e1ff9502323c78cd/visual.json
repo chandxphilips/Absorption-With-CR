@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "9ca2e1ff9502323c78cd",
   "position": {
-    "x": 12.850525931503412,
-    "y": 554.90907431492008,
-    "z": 16000,
-    "height": 234.81415565747142,
-    "width": 813.087822575125,
-    "tabOrder": 14000
+    "x": 8.75,
+    "y": 560,
+    "z": 13000,
+    "height": 235,
+    "width": 871.25,
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "tableEx",
@@ -145,7 +145,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "AOP $ (Abs)"
+                "Property": "Actual Absorption"
               }
             },
             "direction": "Descending"
@@ -225,7 +225,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#D64550'"
+                              "Value": "'#F64848'"
                             }
                           }
                         },
@@ -276,7 +276,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#07C217'"
+                              "Value": "'#107C10'"
                             }
                           }
                         }
@@ -353,7 +353,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#D64550'"
+                              "Value": "'#F64848'"
                             }
                           }
                         },
@@ -404,7 +404,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#03BB2E'"
+                              "Value": "'#107C10'"
                             }
                           }
                         }
@@ -442,7 +442,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#003D7A'"
+                      "Value": "'#0066CC'"
                     }
                   }
                 }
@@ -490,6 +490,24 @@
           },
           "selector": {
             "metadata": "_Measures.Var Units %"
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       ]

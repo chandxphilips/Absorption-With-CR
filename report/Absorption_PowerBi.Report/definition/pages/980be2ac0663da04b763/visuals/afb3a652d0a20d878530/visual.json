@@ -1,87 +1,77 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "92380d7d903b385008dd",
+  "name": "afb3a652d0a20d878530",
   "position": {
-    "x": 1028.75,
-    "y": 641.25,
-    "z": 0,
-    "height": 63.084400027380383,
-    "width": 122.66411116435074,
-    "tabOrder": 12000
+    "x": 60,
+    "y": 476.25,
+    "z": 25000,
+    "height": 40,
+    "width": 100,
+    "tabOrder": 25000
   },
   "visual": {
-    "visualType": "cardVisual",
-    "query": {
-      "queryState": {
-        "Data": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "% Achievement"
-                }
-              },
-              "queryRef": "_Measures.% Achievement",
-              "nativeQueryRef": "% Achievement"
-            }
-          ]
-        }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "_Measures"
-                  }
-                },
-                "Property": "% Achievement"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
-      }
-    },
+    "visualType": "actionButton",
     "objects": {
-      "label": [
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'blank'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "text": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
-          },
-          "selector": {
-            "id": "default"
           }
-        }
-      ],
-      "value": [
+        },
         {
           "properties": {
-            "fontSize": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "'🔄 Reset'"
                 }
               }
             },
-            "horizontalAlignment": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "11D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -91,13 +81,51 @@
           }
         }
       ],
-      "cardCalloutArea": [
+      "shape": [
         {
           "properties": {
-            "paddingIndividual": {
+            "roundEdge": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "6L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "fill": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fillColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E8F2FB'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -117,63 +145,25 @@
                 }
               }
             }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "divider": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "fillCustom": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
           }
         }
       ]
     },
     "visualContainerObjects": {
-      "visualHeader": [
+      "visualLink": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
-            }
-          }
-        }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
+            },
+            "type": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'ClearAllSlicers'"
                 }
               }
             }
@@ -182,5 +172,6 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  }
+  },
+  "howCreated": "InsertVisualButton"
 }
