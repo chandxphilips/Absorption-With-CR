@@ -73,17 +73,21 @@ table _Measures
 			
 			SUMX (
 			    Fact_MB51_Units,
-			    VAR CurrentUOM   = RELATED ( Dim_Subassemblies_Counted[UOM] )
-			    VAR IsCountedMat = NOT ISBLANK ( CurrentUOM )
-			    VAR CurrentPlant = Fact_MB51_Units[plant]
-			    VAR CurrentOrder = Fact_MB51_Units[order_number]
+			    VAR CurrentUOM      = RELATED ( Dim_Subassemblies_Counted[UOM] )
+			    VAR IsCountedMat    = NOT ISBLANK ( CurrentUOM )
+			    VAR CurrentPlant    = Fact_MB51_Units[plant]
+			    VAR CurrentOrder    = Fact_MB51_Units[order_number]
 			    VAR CurrentProdLine = RELATED ( Dim_Subassemblies_Counted[Product_Line] )
-			    VAR PostDate = Fact_MB51_Units[posting_date]
-			    VAR PostYear = YEAR ( PostDate )
-			    VAR PostMonth = MONTH ( PostDate )
-			    -- Bridge is allowed at US9F only in Jan & Feb 2026
+			    VAR CurrentSite     = RELATED ( Dim_Subassemblies_Counted[Site] )   -- ⭐ NEW
+			    VAR PostDate        = Fact_MB51_Units[posting_date]
+			    VAR PostYear        = YEAR ( PostDate )
+			    VAR PostMonth       = MONTH ( PostDate )
+			    -- Bridge is allowed at US9F only in Jan & Feb 2026 AND only if the
+			    -- material's Subassemblies Site is COS (produced here, not just sterilized)
 			    VAR BridgeAllowedAtUS9F = 
-			        PostYear = 2026 && PostMonth IN { 1, 2 }
+			        PostYear = 2026 
+			        && PostMonth IN { 1, 2 }
+			        && CurrentSite = "COS"                                          -- ⭐ NEW
 			    VAR IncludeRow =
 			        SWITCH ( TRUE(),
 			            CurrentPlant = "US9M",
@@ -91,7 +95,7 @@ table _Measures
 			            CurrentPlant = "US9G",
 			                IsCountedMat && NOT ISBLANK ( CurrentOrder ) && CurrentOrder <> "",
 			            CurrentPlant = "US9F" && CurrentProdLine = "BRIDGE",
-			                IsCountedMat && BridgeAllowedAtUS9F,   -- ⭐ Include only Jan/Feb 2026
+			                IsCountedMat && BridgeAllowedAtUS9F,
 			            IsCountedMat
 			        )
 			    RETURN
@@ -363,8 +367,8 @@ table _Measures
 
 	measure 'Filter Context' =
 			
-			"Site: " & IF(HASONEVALUE(Dim_Plant[Plant Code]),
-			    SELECTEDVALUE(Dim_Plant[Plant Code]),
+			"Site: " & IF(HASONEVALUE(Dim_Site_Dim[plant_code]),
+			    SELECTEDVALUE(Dim_Site_Dim[site_code]),
 			    "All Sites") &
 			" | Period: " & IF(HASONEVALUE(Calendar[Year Month]),
 			    SELECTEDVALUE(Calendar[Year Month]),
