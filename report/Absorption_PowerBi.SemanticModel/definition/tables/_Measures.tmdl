@@ -16,12 +16,6 @@ table _Measures
 		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: 5674856a-8be9-4407-b7f5-487f22ef1c74
 
-<<<<<<< Updated upstream
-	measure 'Var $ %' =
-			
-			DIVIDE ( [Var $], [AOP $], BLANK () )
-		formatString: 0.0%;-0.0%;0.0%
-=======
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'Var $ %' = ```
@@ -32,7 +26,6 @@ table _Measures
 			    0 
 			)
 			```
->>>>>>> Stashed changes
 		lineageTag: 772553b9-8df8-41a9-a160-1e70957bb9ed
 
 	measure 'Std Cost per Unit' = ```
