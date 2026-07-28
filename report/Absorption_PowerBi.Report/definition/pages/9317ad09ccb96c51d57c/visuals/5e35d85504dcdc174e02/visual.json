@@ -291,23 +291,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ee182c4740c96d7cec29",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Variance $ % Display"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

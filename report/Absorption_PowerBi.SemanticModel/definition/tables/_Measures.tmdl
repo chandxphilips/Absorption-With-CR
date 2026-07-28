@@ -9,21 +9,18 @@ table _Measures
 	measure 'Var Units %' =
 			
 			DIVIDE ( [Var Units], [AOP Units], BLANK () )
+		formatString: 0.0%;-0.0%;0.0%
 		lineageTag: 6d17014f-2dd4-41ea-9fa5-67b9534d2aea
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Var $' = [Actual Absorption $] - [AOP $]
+	measure 'Var $' = [Actual Absorption] - [AOP $ (Abs)]
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: 5674856a-8be9-4407-b7f5-487f22ef1c74
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'Var $ %' =
 			
 			DIVIDE ( [Var $], [AOP $], BLANK () )
+		formatString: 0.0%;-0.0%;0.0%
 		lineageTag: 772553b9-8df8-41a9-a160-1e70957bb9ed
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'Std Cost per Unit' = ```
 			
@@ -264,7 +261,7 @@ table _Measures
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'AOP $ (Abs)' = ABS ( [AOP $] )
-		formatString: 0
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: 502e6021-6d14-4bce-9827-9a72fee9de29
 
 	measure 'Actual Absorption $ (Abs)' = ABS ( [Actual Absorption $] )
@@ -336,6 +333,105 @@ table _Measures
 			    IF ( Result = TRUE (), 1, 0 )
 		formatString: 0
 		lineageTag: 71672e4a-0d86-4423-bc29-44437d0c1333
+
+	measure 'Dashboard Title' =
+			
+			VAR MinDate = MIN(Calendar[Date])
+			VAR MaxDate = MAX(Calendar[Date])
+			VAR IsSingleMonth =
+			    YEAR(MinDate) = YEAR(MaxDate) && MONTH(MinDate) = MONTH(MaxDate)
+			RETURN
+			    IF(
+			        IsSingleMonth,
+			        "Manufacturing Absorption - " & FORMAT(MaxDate, "MMMM YYYY"),
+			        "Manufacturing Absorption - " &
+			            FORMAT(MinDate, "MMM") & " to " & FORMAT(MaxDate, "MMM YYYY")
+			    )
+		lineageTag: 143e4eff-7b5c-4cb2-b650-eb0fab2e1829
+
+	measure '% Achievement' =
+			
+			DIVIDE([Actual Absorption], [AOP $ (Abs)], BLANK())
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 86c251c8-8eef-4706-925e-75cc2d4ddeb5
+
+	measure 'Filter Context' =
+			
+			"Site: " & IF(HASONEVALUE(Dim_Plant[Plant Code]),
+			    SELECTEDVALUE(Dim_Plant[Plant Code]),
+			    "All Sites") &
+			" | Period: " & IF(HASONEVALUE(Calendar[Year Month]),
+			    SELECTEDVALUE(Calendar[Year Month]),
+			    "All Periods")
+		lineageTag: e4ecffbd-d725-4a9b-976d-76dc4e136f0f
+
+	measure 'Data As Of Text' =
+			
+			"Data as of: " & FORMAT(MAX(Fact_FS_Absorption[posting_date]), "MMMM DD, YYYY")
+		lineageTag: 507c626d-a8b9-47b4-84ee-e600a0be31e3
+
+	measure 'Manual Adjustments' =
+			
+			CALCULATE([Actual Absorption],
+			    Fact_FS_Absorption[account_number] IN {"0007700002", "0007700012"})
+		lineageTag: 4cd3ebdb-2704-41b6-9d2d-117e661f9b5e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Postings_1' = COUNTROWS(Fact_FS_Absorption)
+		formatString: 0
+		lineageTag: 09ae4c81-45c6-4431-9af6-41c3b17a8603
+
+	measure Measure
+		lineageTag: f00dd509-1151-473c-a908-2ade7c101843
+
+		annotation 43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c = True
+
+	measure 'YTD Absorption1' =
+			
+			CALCULATE([Actual Absorption], DATESYTD(Calendar[Date]))
+		lineageTag: 1528a721-3814-4f44-8a53-2631bfb163c7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Absorption per Unit1' =
+			
+			DIVIDE([Actual Absorption], [Actual Units], BLANK())
+		lineageTag: 227a2884-9595-4d58-a4b9-be985b02e7c4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Achievement Remaining' =
+			
+			VAR Remaining = [AOP $ (Abs)] - [Actual Absorption]
+			RETURN IF(Remaining > 0, Remaining, 0)
+		lineageTag: a0da42c9-8400-41b4-9fc1-9a3297da008c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Achievement Over' =
+			
+			VAR Over = [Actual Absorption] - [AOP $ (Abs)]
+			RETURN IF(Over > 0, Over, 0)
+		lineageTag: 58ebe23b-4c4c-422d-81e0-d84c1ff5334a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Units Variance Display' =
+			
+			VAR VarPct = [Var Units %]
+			VAR Arrow = IF(VarPct >= 0, "▲", "▼")
+			VAR Sign = IF(VarPct >= 0, "+", "")
+			RETURN Arrow & " " & Sign & FORMAT(VarPct, "0.0%") & " vs AOP"
+		lineageTag: 800da8e5-522f-4b5f-b50a-abb5f26200d9
+
+	measure 'Absorption Variance Display' =
+			
+			VAR VarPct = [Var $ %]
+			VAR Arrow = IF(VarPct >= 0, "▲", "▼")
+			VAR Sign = IF(VarPct >= 0, "+", "")
+			RETURN Arrow & " " & Sign & FORMAT(VarPct, "0.0%") & " vs AOP"
+		lineageTag: 5bc66df1-7d0e-420f-9666-369b05f67766
 
 	column Column1
 		dataType: string

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "7d93d6c70380607e25b5",
+  "name": "69edd3955c8ce02b6dbe",
   "position": {
-    "x": 272.093795687783,
-    "y": 154.65160182254331,
-    "z": 2000,
-    "height": 97.777777777777771,
-    "width": 477.77777777777777,
-    "tabOrder": 4000
+    "x": 507.5,
+    "y": 76.25,
+    "z": 4000,
+    "height": 26.25,
+    "width": 263.75,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "shape",
@@ -57,17 +57,6 @@
           "selector": {
             "id": "default"
           }
-        },
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
         }
       ],
       "outline": [
@@ -82,50 +71,64 @@
             }
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "border": [
+      ],
+      "text": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "true"
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#E5E5E5'"
-                    }
-                  }
                 }
               }
             }
           }
-        }
-      ],
-      "dropShadow": [
+        },
         {
           "properties": {
-            "show": {
+            "text": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "'IGT Devices - Actual vs AOP'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.4
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'top'"
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ]

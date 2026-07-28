@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "c6b05302db264966e123",
+  "name": "89842d6081bd7b0866e2",
   "position": {
-    "x": 20.375,
-    "y": 127.50003051757813,
-    "z": 18000,
-    "height": 97,
-    "width": 202,
-    "tabOrder": 15000
+    "x": 26.744261969312003,
+    "y": 460.46642347163277,
+    "z": 10000,
+    "height": 84.883961902598969,
+    "width": 166.27954180920071,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "slicer",
@@ -95,45 +95,13 @@
           }
         }
       ],
-      "selection": [
-        {
-          "properties": {
-            "selectAllCheckboxEnabled": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
       "header": [
         {
           "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "text": {
               "expr": {
                 "Literal": {
                   "Value": "'Period'"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 3,
-                      "Percent": 0
-                    }
-                  }
                 }
               }
             },
@@ -147,55 +115,49 @@
             "textSize": {
               "expr": {
                 "Literal": {
-                  "Value": "10D"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "14D"
                 }
               }
             },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "''"
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#003D7A'"
+                    }
+                  }
                 }
               }
             }
           }
         }
       ],
-      "background": [
+      "items": [
         {
           "properties": {
-            "show": {
+            "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }
           }
         }
       ],
-      "visualHeader": [
+      "selectionIcon": [
         {
           "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.6
+                    }
+                  }
                 }
               }
             }

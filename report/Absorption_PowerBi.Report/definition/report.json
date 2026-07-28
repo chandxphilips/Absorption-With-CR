@@ -59,6 +59,11 @@
       "type": "RegisteredResources",
       "items": [
         {
+          "name": "OIP6774774982907247.jpg",
+          "path": "OIP6774774982907247.jpg",
+          "type": "Image"
+        },
+        {
           "name": "Philips_logo_blue_2025_RGB08093119154151485.png",
           "path": "Philips_logo_blue_2025_RGB08093119154151485.png",
           "type": "Image"

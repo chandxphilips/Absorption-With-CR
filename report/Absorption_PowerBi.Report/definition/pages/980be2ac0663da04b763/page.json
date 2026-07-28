@@ -1,0 +1,47 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "980be2ac0663da04b763",
+  "displayName": "SUMMARY",
+  "displayOption": "FitToPage",
+  "height": 800,
+  "width": 1280,
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "d02d8f2b90065672d490",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Var Units"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "Drillthrough"
+      }
+    ]
+  },
+  "pageBinding": {
+    "name": "4c3fd5ffc655963ba0ee",
+    "type": "Drillthrough",
+    "parameters": [
+      {
+        "name": "9100ebf015c7a3d52d90",
+        "boundFilter": "d02d8f2b90065672d490",
+        "fieldExpr": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Var Units"
+          }
+        }
+      }
+    ]
+  }
+}
