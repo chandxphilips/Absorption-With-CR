@@ -4,7 +4,7 @@
   "position": {
     "x": 8.75,
     "y": 560,
-    "z": 13000,
+    "z": 19000,
     "height": 235,
     "width": 871.25,
     "tabOrder": 11000
@@ -145,10 +145,10 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "Actual Absorption"
+                "Property": "AOP $ (Abs)"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
