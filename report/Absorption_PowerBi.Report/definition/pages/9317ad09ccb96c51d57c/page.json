@@ -78,6 +78,13 @@
                     [
                       {
                         "Literal": {
+                          "Value": "datetime'2026-05-01T00:00:00'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
                           "Value": "datetime'2026-06-01T00:00:00'"
                         }
                       }
@@ -85,7 +92,42 @@
                     [
                       {
                         "Literal": {
-                          "Value": "datetime'2026-05-01T00:00:00'"
+                          "Value": "datetime'2026-08-01T00:00:00'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "datetime'2026-09-01T00:00:00'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "datetime'2026-10-01T00:00:00'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "datetime'2026-11-01T00:00:00'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "datetime'2026-12-01T00:00:00'"
+                        }
+                      }
+                    ],
+                    [
+                      {
+                        "Literal": {
+                          "Value": "datetime'2026-07-01T00:00:00'"
                         }
                       }
                     ]
