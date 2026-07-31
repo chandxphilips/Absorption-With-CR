@@ -50,6 +50,20 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
+                      "Entity": "Dim_Subassemblies_Counted"
+                    }
+                  },
+                  "Property": "Plant Code"
+                }
+              },
+              "queryRef": "Dim_Subassemblies_Counted.Plant Code",
+              "nativeQueryRef": "Plant Code"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
                       "Entity": "Product_Line_Map"
                     }
                   },
@@ -147,11 +161,12 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Total Units"
+                  "Property": "Actual Units"
                 }
               },
-              "queryRef": "_Measures.Total Units",
-              "nativeQueryRef": "Total Units"
+              "queryRef": "_Measures.Actual Units",
+              "nativeQueryRef": "Total Units",
+              "displayName": "Total Units"
             }
           ]
         }
@@ -163,10 +178,10 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Dim_Subassemblies_Counted"
+                    "Entity": "Product_Line_Map"
                   }
                 },
-                "Property": "UOM"
+                "Property": "product_line"
               }
             },
             "direction": "Ascending"
@@ -351,20 +366,6 @@
           },
           "selector": {
             "metadata": "Sum(Fact_MB51_Units.qty_in_order_unit)"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Right'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_Measures.Total Units"
           }
         },
         {
@@ -712,7 +713,21 @@
         }
       },
       {
-        "name": "eaa6c7f00006b9717019",
+        "name": "7ac37fdac432abce1622",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "Plant Code"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f27b264ae7e313578192",
         "field": {
           "Measure": {
             "Expression": {
@@ -720,7 +735,7 @@
                 "Entity": "_Measures"
               }
             },
-            "Property": "Total Units"
+            "Property": "Actual Units"
           }
         },
         "type": "Advanced"
