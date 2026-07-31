@@ -1,0 +1,397 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "69e644c0683dcba557a0",
+  "position": {
+    "x": 10,
+    "y": 269.23076923076923,
+    "z": 0,
+    "height": 450.76923076923077,
+    "width": 1270,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Subassemblies_Counted"
+                    }
+                  },
+                  "Property": "Material_Text"
+                }
+              },
+              "queryRef": "Dim_Subassemblies_Counted.Material_Text",
+              "nativeQueryRef": "Material_Text"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Subassemblies_Counted"
+                    }
+                  },
+                  "Property": "FPA"
+                }
+              },
+              "queryRef": "Dim_Subassemblies_Counted.FPA",
+              "nativeQueryRef": "FPA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Subassemblies_Counted"
+                    }
+                  },
+                  "Property": "Product_Line"
+                }
+              },
+              "queryRef": "Dim_Subassemblies_Counted.Product_Line",
+              "nativeQueryRef": "Product_Line"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Subassemblies_Counted"
+                    }
+                  },
+                  "Property": "Site"
+                }
+              },
+              "queryRef": "Dim_Subassemblies_Counted.Site",
+              "nativeQueryRef": "Site"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Subassemblies_Counted"
+                    }
+                  },
+                  "Property": "TLA"
+                }
+              },
+              "queryRef": "Dim_Subassemblies_Counted.TLA",
+              "nativeQueryRef": "TLA"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Subassemblies_Counted"
+                    }
+                  },
+                  "Property": "UOM"
+                }
+              },
+              "queryRef": "Sum(Dim_Subassemblies_Counted.UOM)",
+              "nativeQueryRef": "UOM"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dim_Subassemblies_Counted"
+                  }
+                },
+                "Property": "TLA"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0066CC'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "184.47810014471614D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_Subassemblies_Counted.Site"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "205.68885267361426D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_Subassemblies_Counted.FPA"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "277.63431653209983D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Dim_Subassemblies_Counted.UOM)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "243.16454910219502D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_Subassemblies_Counted.TLA"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "179.3076883238203D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_Subassemblies_Counted.Material_Text"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "155.07692816861407D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_Subassemblies_Counted.Product_Line"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Dim_Subassemblies_Counted.UOM)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_Subassemblies_Counted.Material_Text"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_Subassemblies_Counted.Site"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'AlternatingRowsNew'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0dfe2ddd15ca0b6b2d8a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "FPA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c8aa06eaacd130c72e4b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "Material_Text"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "868fbbf0774437137d87",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "Product_Line"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "492d91b7d4a2db7be220",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "Site"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "143b7de255bd22d2c54c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "TLA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8aeac7652c72c6994a03",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "UOM"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

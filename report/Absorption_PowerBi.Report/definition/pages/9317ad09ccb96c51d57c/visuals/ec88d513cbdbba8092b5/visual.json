@@ -163,13 +163,13 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Product_Line_Map"
+                    "Entity": "Dim_Subassemblies_Counted"
                   }
                 },
-                "Property": "product_line"
+                "Property": "UOM"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -519,76 +519,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "17dc88d20211a426578e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "posting_date"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "a3d33849c0bd8d9dba65",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "material"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "5239ad194e08094cd0c8",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Product_Line_Map"
-              }
-            },
-            "Property": "product_line"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "1db5bd3a8ca009784c28",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "material_description"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "0ebc78c01672c4105da5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "movement_type"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "4a4d4ff9bc548cb68b6b",
         "field": {
           "Column": {
@@ -641,7 +571,77 @@
         }
       },
       {
-        "name": "52b9ed53db0241d8c138",
+        "name": "57484cd75243a57a9208",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "posting_date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "35e0fd549a8627c1ad30",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "material"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6e063f1c325a9e88d85d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Product_Line_Map"
+              }
+            },
+            "Property": "product_line"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "dcdc1591c15eac2ae624",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "material_description"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "feae943d6830e32e82c0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Fact_MB51_Units"
+              }
+            },
+            "Property": "movement_type"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "4cce645112b6a0a1cd3c",
         "field": {
           "Aggregation": {
             "Expression": {
@@ -660,7 +660,7 @@
         "type": "Advanced"
       },
       {
-        "name": "359f6d95aeb34017206a",
+        "name": "6d4ff497e96535681b01",
         "field": {
           "Column": {
             "Expression": {
@@ -671,10 +671,48 @@
             "Property": "UOM"
           }
         },
-        "type": "Advanced"
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "d",
+              "Entity": "Dim_Subassemblies_Counted",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "Comparison": {
+                      "ComparisonKind": 0,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "d"
+                            }
+                          },
+                          "Property": "UOM"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "null"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       },
       {
-        "name": "2f51c3d635ba1746eb4a",
+        "name": "eaa6c7f00006b9717019",
         "field": {
           "Measure": {
             "Expression": {

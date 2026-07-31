@@ -20368,15 +20368,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "dim_plant_has_entity__measure_filter_context": {
+			    "dim_site_dim_has_entity__measure_filter_context": {
 			      "Binding": {
-			        "ConceptualEntity": "Dim_Plant"
+			        "ConceptualEntity": "Dim_Site_Dim"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "dim_plant": {
+			        "dim_site_dim": {
 			          "Target": {
-			            "Entity": "dim_plant"
+			            "Entity": "dim_site_dim"
 			          }
 			        },
 			        "entity__measure.filter_context": {
@@ -20389,7 +20389,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dim_plant"
+			              "Role": "dim_site_dim"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.filter_context"
@@ -20397,7 +20397,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dim_plants_have_filter_context"
+			          "ID": "dim_site_dims_have_filter_context"
 			        }
 			      ]
 			    },
