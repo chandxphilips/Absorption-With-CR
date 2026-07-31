@@ -347,7 +347,7 @@ table _Measures
 	measure 'Dashboard Title' =
 			
 			VAR MinDate = MIN(Calendar[Date])
-			VAR MaxDate = MAX(Calendar[Date])
+			VAR MaxDate = DATE(2026,12,31)
 			VAR IsSingleMonth =
 			    YEAR(MinDate) = YEAR(MaxDate) && MONTH(MinDate) = MONTH(MaxDate)
 			RETURN

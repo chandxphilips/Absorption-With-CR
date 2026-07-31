@@ -167,5 +167,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "25775cdda662e11d7219",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Dashboard Title"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
