@@ -23,11 +23,11 @@
                       "Entity": "Dim_Subassemblies_Counted"
                     }
                   },
-                  "Property": "Site"
+                  "Property": "Plant Code"
                 }
               },
-              "queryRef": "Dim_Subassemblies_Counted.Site",
-              "nativeQueryRef": "Site",
+              "queryRef": "Dim_Subassemblies_Counted.Plant Code",
+              "nativeQueryRef": "Plant Code",
               "active": true
             }
           ]
@@ -56,6 +56,47 @@
                 "Literal": {
                   "Value": "1D"
                 }
+              }
+            },
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "d",
+                    "Entity": "Dim_Subassemblies_Counted",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "d"
+                                }
+                              },
+                              "Property": "Plant Code"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'US9M'"
+                              }
+                            }
+                          ]
+                        ]
+                      }
+                    }
+                  }
+                ]
               }
             }
           }
@@ -167,6 +208,7 @@
             }
           ]
         },
+        "howCreated": "User",
         "objects": {
           "general": [
             {
@@ -182,6 +224,20 @@
             }
           ]
         }
+      },
+      {
+        "name": "fa1a967e0263a700ed59",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Subassemblies_Counted"
+              }
+            },
+            "Property": "Plant Code"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }

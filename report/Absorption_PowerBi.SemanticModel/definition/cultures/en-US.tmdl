@@ -12646,7 +12646,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Absorption Variance": {
+			          "Dollar Variance %": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -18409,42 +18409,45 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "dim_subassembly_counted.plant_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_Subassemblies_Counted",
+			          "ConceptualProperty": "Plant Code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "plant code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "plant id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "plant key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "calendar_date_date_hierarchy_has_calendar_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendar.date.date_hierarchy"
-			          }
-			        },
-			        "calendar.date.year": {
-			          "Target": {
-			            "Entity": "calendar.date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendar.date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
-			        }
-			      ]
-			    },
 			    "calendar_date_has_date_hierarchy": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendar"
@@ -19725,6 +19728,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_material_masters_have_fact_FS_absorptions"
+			        }
+			      ]
+			    },
+			    "dim_subassembly_counted_has_plant_code": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Subassemblies_Counted"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_subassembly_counted": {
+			          "Target": {
+			            "Entity": "dim_subassembly_counted"
+			          }
+			        },
+			        "dim_subassembly_counted.plant_code": {
+			          "Target": {
+			            "Entity": "dim_subassembly_counted.plant_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_subassembly_counted"
+			            },
+			            "Object": {
+			              "Role": "dim_subassembly_counted.plant_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_subassembly_counted_have_plant_codes"
 			        }
 			      ]
 			    },
@@ -26547,6 +26583,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "fact_FS_absorptions_are_documented_on_document_dates"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.year": {
+			          "Target": {
+			            "Entity": "calendar.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
 			        }
 			      ]
 			    },

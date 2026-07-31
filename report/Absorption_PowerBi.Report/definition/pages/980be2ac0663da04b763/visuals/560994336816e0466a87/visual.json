@@ -281,5 +281,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "046f6c4b11463b75587a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Actual Absorption"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "74e1d896226383641d9a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Achievement Remaining"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b57fe35a3a9e0a4300e4",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Achievement Over"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

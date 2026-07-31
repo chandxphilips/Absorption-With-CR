@@ -50,6 +50,21 @@ table Dim_Subassemblies_Counted
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Plant Code' =
+			
+			SWITCH(
+			    TRUE(),
+			    [Site] = "PLY", "US9G",
+			    [Site] = "FRE", "US9M",
+			    [Site] = "COS" && [Product_Line] = "PLS", "US9F - CO02",
+			    [Site] = "COS", "US9F - CO01",
+			    BLANK()
+			)
+		lineageTag: 46d58637-8930-4f41-87c3-63537382805a
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Dim_Subassemblies_Counted = m
 		mode: import
 		source =
