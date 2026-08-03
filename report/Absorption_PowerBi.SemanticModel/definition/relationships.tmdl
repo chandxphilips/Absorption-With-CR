@@ -87,3 +87,8 @@ relationship 1710dd13-2cbe-488a-aa31-8eb798287934
 	fromColumn: Dim_Holidays.holiday_date
 	toColumn: LocalDateTable_fecc3dff-65e0-45ef-8fd6-4bbd77d8d9e6.Date
 
+relationship 15ab1387-ef68-4c65-9463-c626fb8ce06c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: RefreshInfo.LastRefresh
+	toColumn: LocalDateTable_f97f2971-17e1-4125-85f7-33e07e37a7ce.Date
+

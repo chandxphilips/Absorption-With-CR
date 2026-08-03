@@ -4,7 +4,7 @@
   "position": {
     "x": 206.96517412935324,
     "y": 176.78980100992607,
-    "z": 20000,
+    "z": 21000,
     "height": 51.741293532338311,
     "width": 190.04975124378112,
     "tabOrder": 14000
@@ -223,6 +223,38 @@
         {
           "properties": {
             "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "smallMultiplesHeader": [
+        {
+          "properties": {
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "layout": [
+        {
+          "properties": {
+            "backgroundShow": {
               "expr": {
                 "Literal": {
                   "Value": "false"

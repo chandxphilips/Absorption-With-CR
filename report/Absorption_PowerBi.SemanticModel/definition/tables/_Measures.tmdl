@@ -443,6 +443,21 @@ table _Measures
 			RETURN Arrow & " " & Sign & FORMAT(VarPct, "0.0%") & " vs AOP"
 		lineageTag: 5bc66df1-7d0e-420f-9666-369b05f67766
 
+	measure 'Last Refresh' =
+			
+			MAX(RefreshInfo[LastRefresh])
+		formatString: General Date
+		lineageTag: 2c820962-f631-4d1c-987a-d8ef147ab438
+
+	measure 'Last Refresh Text' =
+			
+			"Last Refreshed: "
+			& FORMAT(
+			    MAX(RefreshInfo[LastRefresh]),
+			    "MM/dd/yyyy hh:mm AM/PM"
+			)
+		lineageTag: 728fcfdd-f49a-4c27-b687-bc2dfbfa8713
+
 	column Column1
 		dataType: string
 		lineageTag: edd6ec33-ab2a-4031-8b38-cc675c9e7876
