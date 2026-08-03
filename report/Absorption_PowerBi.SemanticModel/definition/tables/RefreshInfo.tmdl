@@ -1,17 +1,17 @@
 table RefreshInfo
-	lineageTag: 306e77ce-fee0-4155-884c-5bdf6797bb95
+	lineageTag: ea7dc8bf-52b8-4b55-8d6b-5abe3df0e686
 
 	column LastRefresh
 		dataType: dateTime
 		formatString: General Date
-		lineageTag: 6ce0ee6d-d4ce-4082-8d95-1e54211052e5
+		lineageTag: 87638c2b-026f-4459-9fe2-81e17bb1326b
 		summarizeBy: none
 		sourceColumn: LastRefresh
 
 		variation Variation
 			isDefault
-			relationship: 15ab1387-ef68-4c65-9463-c626fb8ce06c
-			defaultHierarchy: LocalDateTable_f97f2971-17e1-4125-85f7-33e07e37a7ce.'Date Hierarchy'
+			relationship: e4ea8852-9023-4a4f-910a-e838b5c5fcb6
+			defaultHierarchy: LocalDateTable_4e6ca08a-6106-4803-a861-840ee31c79a3.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -21,9 +21,13 @@ table RefreshInfo
 				let
 				    Source = #table(
 				        {"LastRefresh"},
-				        {{DateTime.LocalNow()}}
+				        {{DateTimeZone.FixedUtcNow()}}
 				    ),
-				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"LastRefresh", type datetime}})
+				    MountainTime = Table.TransformColumns(
+				        Source,
+				        {{"LastRefresh", each DateTimeZone.RemoveZone(DateTimeZone.SwitchZone(_, -6)), type datetime}}
+				    ),
+				    #"Changed Type" = Table.TransformColumnTypes(MountainTime,{{"LastRefresh", type datetime}})
 				in
 				    #"Changed Type"
 

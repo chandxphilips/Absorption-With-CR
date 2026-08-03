@@ -451,11 +451,12 @@ table _Measures
 
 	measure 'Last Refresh Text' =
 			
-			"Last Refreshed: "
-			& FORMAT(
+			"Last Refreshed: " &
+			FORMAT(
 			    MAX(RefreshInfo[LastRefresh]),
 			    "MM/dd/yyyy hh:mm AM/PM"
-			)
+			) &
+			" MT"
 		lineageTag: 728fcfdd-f49a-4c27-b687-bc2dfbfa8713
 
 	column Column1

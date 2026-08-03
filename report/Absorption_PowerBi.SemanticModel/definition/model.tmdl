@@ -31,7 +31,7 @@ ref table Dim_Site_Dim
 ref table Dim_Holidays
 ref table LocalDateTable_fecc3dff-65e0-45ef-8fd6-4bbd77d8d9e6
 ref table RefreshInfo
-ref table LocalDateTable_f97f2971-17e1-4125-85f7-33e07e37a7ce
+ref table LocalDateTable_4e6ca08a-6106-4803-a861-840ee31c79a3
 
 ref cultureInfo en-US
 
