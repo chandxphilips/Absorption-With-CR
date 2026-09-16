@@ -1,0 +1,190 @@
+table CR_MB51
+	lineageTag: 5236e2ec-b5be-4de8-af6e-85a18a4a9f40
+
+	column material
+		dataType: string
+		lineageTag: 5f7a5bca-6656-4343-b2d4-64515cce350f
+		summarizeBy: none
+		sourceColumn: material
+
+		annotation SummarizationSetBy = Automatic
+
+	column material_description
+		dataType: string
+		lineageTag: f2ea164f-31b5-4f1b-befb-e04e70a389af
+		summarizeBy: none
+		sourceColumn: material_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column qty_in_unit_of_entry
+		dataType: double
+		lineageTag: 6ef36f1a-5b5b-4191-9268-20c2168e3797
+		summarizeBy: sum
+		sourceColumn: qty_in_unit_of_entry
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column batch
+		dataType: string
+		lineageTag: 6d81cb36-52fd-4c02-9bd4-b919541ae5ac
+		summarizeBy: none
+		sourceColumn: batch
+
+		annotation SummarizationSetBy = Automatic
+
+	column plant
+		dataType: string
+		lineageTag: e279d695-4905-43f1-b6fb-74935189598f
+		summarizeBy: none
+		sourceColumn: plant
+
+		annotation SummarizationSetBy = Automatic
+
+	column material_document
+		dataType: string
+		lineageTag: f5725435-bc53-48e5-b284-dfcff5c3cbb8
+		summarizeBy: none
+		sourceColumn: material_document
+
+		annotation SummarizationSetBy = Automatic
+
+	column movement_type
+		dataType: string
+		lineageTag: d9186f6a-0768-4056-b5c9-a021446727df
+		summarizeBy: none
+		sourceColumn: movement_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column amt_in_loc_cur
+		dataType: double
+		lineageTag: 654569ee-802b-41d1-a0f1-0067484cd98c
+		summarizeBy: sum
+		sourceColumn: amt_in_loc_cur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column posting_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 596c136c-e378-4c48-8db7-ccf9adc4d4e4
+		summarizeBy: none
+		sourceColumn: posting_date
+
+		variation Variation
+			isDefault
+			relationship: 6524f5d1-26d9-4129-a2fe-8a55d70ef6d9
+			defaultHierarchy: LocalDateTable_9e359e8a-789c-44f5-b0f7-11e17c2e45b6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column order_number
+		dataType: string
+		lineageTag: 179285ae-cd78-4b5b-b5bf-861dcba4450a
+		summarizeBy: none
+		sourceColumn: order_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column company_code
+		dataType: string
+		lineageTag: 87a04d77-c6f8-4a6e-a8fa-6fdb69966a03
+		summarizeBy: none
+		sourceColumn: company_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_center
+		dataType: string
+		lineageTag: b0a14eb2-c6f5-4094-ada5-507955a3830b
+		summarizeBy: none
+		sourceColumn: cost_center
+
+		annotation SummarizationSetBy = Automatic
+
+	column entry_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1a81e3c1-6e53-4a19-b830-aca5b8127db1
+		summarizeBy: none
+		sourceColumn: entry_date
+
+		variation Variation
+			isDefault
+			relationship: 6f958c13-2628-4647-83e8-25fcf8a2b7ea
+			defaultHierarchy: LocalDateTable_72238acc-9a3f-4fb8-81df-6a075c474acf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column purchase_order
+		dataType: string
+		lineageTag: 64b7411c-3d08-48ec-9b5a-d7ba5d452d58
+		summarizeBy: none
+		sourceColumn: purchase_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_name
+		dataType: string
+		lineageTag: 817ed1da-6d6f-4419-92ea-cbc439fc15d7
+		summarizeBy: none
+		sourceColumn: user_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column qty_in_order_unit
+		dataType: double
+		lineageTag: d955b1d9-2121-4adb-bade-e7b515995626
+		summarizeBy: sum
+		sourceColumn: qty_in_order_unit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column order_unit
+		dataType: string
+		lineageTag: bfcec521-9a73-4948-8775-5b603ff43d2b
+		summarizeBy: none
+		sourceColumn: order_unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column base_unit_of_measure
+		dataType: string
+		lineageTag: 8b176f24-8afe-4565-b365-99e44206cf3f
+		summarizeBy: none
+		sourceColumn: base_unit_of_measure
+
+		annotation SummarizationSetBy = Automatic
+
+	column site
+		dataType: string
+		lineageTag: 2437d09b-63ba-4215-8aec-18363bc29568
+		summarizeBy: none
+		sourceColumn: site
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CR_MB51 = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog="qa_wb", Database="digitalfactory", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    vw_cs_absorption_mb51_cr_digitalfactory_qa_wb = Source{[Item="vw_cs_absorption_mb51_cr",Schema="digitalfactory",Catalog="qa_wb"]}[Data]
+				in
+				    vw_cs_absorption_mb51_cr_digitalfactory_qa_wb
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

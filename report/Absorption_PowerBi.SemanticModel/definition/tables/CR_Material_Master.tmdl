@@ -1,0 +1,116 @@
+table CR_Material_Master
+	lineageTag: a9f755f2-8b6a-4d95-b6fa-aeac6d5541fd
+
+	column material
+		dataType: string
+		lineageTag: 529beef4-2708-4486-a1ba-21b2cc569bd1
+		summarizeBy: none
+		sourceColumn: material
+
+		annotation SummarizationSetBy = Automatic
+
+	column old_material
+		dataType: string
+		lineageTag: 36d35f31-1198-46cf-a3ec-a48721b3ad7e
+		summarizeBy: none
+		sourceColumn: old_material
+
+		annotation SummarizationSetBy = Automatic
+
+	column material_description
+		dataType: string
+		lineageTag: a254785d-f9a4-4d40-a6f9-180a7eba4896
+		summarizeBy: none
+		sourceColumn: material_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column standard_price
+		dataType: double
+		lineageTag: 34647b7f-8d91-4518-b38a-e71025e623a0
+		summarizeBy: sum
+		sourceColumn: standard_price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column costing_lot_size
+		dataType: double
+		lineageTag: 0a03b825-60ef-420b-bd29-b0edfe2acf43
+		summarizeBy: sum
+		sourceColumn: costing_lot_size
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column proc_type
+		dataType: string
+		lineageTag: 76814463-5fe4-460c-b3f7-ac201ea55411
+		summarizeBy: none
+		sourceColumn: proc_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_hierarchy
+		dataType: string
+		lineageTag: a70260d7-bba8-48cc-bd3b-268342571287
+		summarizeBy: none
+		sourceColumn: product_hierarchy
+
+		annotation SummarizationSetBy = Automatic
+
+	column profit_ctr
+		dataType: string
+		lineageTag: 33c8f51c-8608-45d7-a462-4396ee476a56
+		summarizeBy: none
+		sourceColumn: profit_ctr
+
+		annotation SummarizationSetBy = Automatic
+
+	column ovrhd_grp
+		dataType: string
+		lineageTag: 855a9422-297b-405c-b955-ffe1e3f564ed
+		summarizeBy: none
+		sourceColumn: ovrhd_grp
+
+		annotation SummarizationSetBy = Automatic
+
+	column matl_group
+		dataType: string
+		lineageTag: 64262cc2-7ca1-4944-8c8e-7aa10058010b
+		summarizeBy: none
+		sourceColumn: matl_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column mtyp
+		dataType: string
+		lineageTag: 34deaa47-e5a1-4c3b-a465-c54ccc28d7a0
+		summarizeBy: none
+		sourceColumn: mtyp
+
+		annotation SummarizationSetBy = Automatic
+
+	column ms
+		dataType: string
+		lineageTag: 7b593abf-22e9-4619-944c-016fcb8e19ce
+		summarizeBy: none
+		sourceColumn: ms
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CR_Material_Master = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog="qa_wb", Database="digitalfactory", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    vw_cs_absorption_material_master_cr_digitalfactory_qa_wb = Source{[Item="vw_cs_absorption_material_master_cr",Schema="digitalfactory",Catalog="qa_wb"]}[Data]
+				in
+				    vw_cs_absorption_material_master_cr_digitalfactory_qa_wb
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

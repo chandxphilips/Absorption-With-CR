@@ -10,7 +10,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Fact_FS_Absorption","Dim_Material_Master","Fact_AOP","Dim_Subassemblies_Counted","Dim_Product_Tree_Leaf","Fact_MB51_Units","Product_Line_Map","_Measures","Dim_Site_Dim","Dim_Holidays","RefreshInfo"]
+annotation PBI_QueryOrder = ["Fact_FS_Absorption","Dim_Material_Master","Fact_AOP","Dim_Subassemblies_Counted","Dim_Product_Tree_Leaf","Fact_MB51_Units","Product_Line_Map","_Measures","Dim_Site_Dim","Dim_Holidays","RefreshInfo","CR_FS_Absorption","CR_Material_Master","CR_MB51"]
 
 ref table Fact_FS_Absorption
 ref table Dim_Material_Master
@@ -32,6 +32,14 @@ ref table Dim_Holidays
 ref table LocalDateTable_fecc3dff-65e0-45ef-8fd6-4bbd77d8d9e6
 ref table RefreshInfo
 ref table LocalDateTable_4e6ca08a-6106-4803-a861-840ee31c79a3
+ref table CR_FS_Absorption
+ref table LocalDateTable_af34b662-a105-44e0-acc9-427fddc624e1
+ref table LocalDateTable_f594845b-d27e-44fd-b128-1aca08fc372e
+ref table LocalDateTable_becc49c2-e1c8-401d-a876-ef4c8b2c8111
+ref table CR_Material_Master
+ref table CR_MB51
+ref table LocalDateTable_9e359e8a-789c-44f5-b0f7-11e17c2e45b6
+ref table LocalDateTable_72238acc-9a3f-4fb8-81df-6a075c474acf
 
 ref cultureInfo en-US
 
