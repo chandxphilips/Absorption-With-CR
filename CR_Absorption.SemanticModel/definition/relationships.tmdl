@@ -1,0 +1,25 @@
+relationship 9c4ec69d-bbdc-46db-b8db-3fb25691077a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CR_FS_Absorption.document_date
+	toColumn: LocalDateTable_4ffc0f97-3b4f-4388-b95b-2115ae954887.Date
+
+relationship b3545b06-61ff-4f73-905c-d6bc24ab0817
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CR_FS_Absorption.entry_date
+	toColumn: LocalDateTable_5e90ffbf-195b-4e88-8231-e92835d0a434.Date
+
+relationship 6b1e22cd-4b22-45f7-96d2-e7682ef74951
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CR_FS_Absorption.posting_date
+	toColumn: LocalDateTable_07906ae6-103c-47ef-abd9-03ea4f6bc0dd.Date
+
+relationship 63222d28-c6fb-4072-b10f-b877dbd4674f
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CR_MB51_Details.posting_date
+	toColumn: LocalDateTable_0a5e4db4-c2f5-4dce-b3fd-05da9c965b2d.Date
+
+relationship 9b699544-a6d1-402f-ac17-3489a26f8d6e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CR_MB51_Details.entry_date
+	toColumn: LocalDateTable_fabd4def-6353-4813-b08c-d6a22f3d3ed4.Date
+

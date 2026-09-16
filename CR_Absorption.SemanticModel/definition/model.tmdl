@@ -1,0 +1,27 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["CR_FS_Absorption","CR_Material_Master","CR_MB51_Details"]
+
+ref table CR_FS_Absorption
+ref table DateTableTemplate_16d234b4-ffc6-49a1-98a1-62b26bcd2cb6
+ref table LocalDateTable_4ffc0f97-3b4f-4388-b95b-2115ae954887
+ref table LocalDateTable_5e90ffbf-195b-4e88-8231-e92835d0a434
+ref table LocalDateTable_07906ae6-103c-47ef-abd9-03ea4f6bc0dd
+ref table CR_Material_Master
+ref table CR_MB51_Details
+ref table LocalDateTable_0a5e4db4-c2f5-4dce-b3fd-05da9c965b2d
+ref table LocalDateTable_fabd4def-6353-4813-b08c-d6a22f3d3ed4
+
+ref cultureInfo en-US
+

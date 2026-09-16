@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "CR_Absorption"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "21b80987-e2d9-46c6-884b-cd8c4d111cbd"
+  }
+}
