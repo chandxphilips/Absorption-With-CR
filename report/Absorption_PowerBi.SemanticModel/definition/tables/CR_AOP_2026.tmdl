@@ -1,0 +1,133 @@
+table CR_AOP_2026
+	lineageTag: 5a49e9ea-1b53-44a6-9bc0-f447be5a80e6
+
+	column cr_pn
+		dataType: string
+		lineageTag: 8e2587be-cd44-41e1-854d-a15feda1c493
+		summarizeBy: none
+		sourceColumn: cr_pn
+
+		annotation SummarizationSetBy = Automatic
+
+	column material
+		dataType: string
+		lineageTag: 59fe4108-392f-4780-a5b3-95068035b0ca
+		summarizeBy: none
+		sourceColumn: material
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: d11f853c-005d-454a-b965-a1a612d60a56
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column bu
+		dataType: string
+		lineageTag: b6e64625-2e78-450a-bb29-487c9d1a0f52
+		summarizeBy: none
+		sourceColumn: bu
+
+		annotation SummarizationSetBy = Automatic
+
+	column family
+		dataType: string
+		lineageTag: af9afdc1-6067-453e-a442-64a0671fd55d
+		summarizeBy: none
+		sourceColumn: family
+
+		annotation SummarizationSetBy = Automatic
+
+	column fg_st
+		dataType: string
+		lineageTag: 1e3b54fb-17e9-4fd7-b1cf-142253787917
+		summarizeBy: none
+		sourceColumn: fg_st
+
+		annotation SummarizationSetBy = Automatic
+
+	column discipline
+		dataType: string
+		lineageTag: e31f337b-53ce-4d9f-b28f-3cca286ccf88
+		summarizeBy: none
+		sourceColumn: discipline
+
+		annotation SummarizationSetBy = Automatic
+
+	column plant
+		dataType: string
+		lineageTag: 4ce60c48-8715-4b12-a9c4-d895c61a6458
+		summarizeBy: none
+		sourceColumn: plant
+
+		annotation SummarizationSetBy = Automatic
+
+	column site
+		dataType: string
+		lineageTag: 1dcdd1cc-c095-47b7-9ca7-55ed95f38217
+		summarizeBy: none
+		sourceColumn: site
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_no
+		dataType: int64
+		formatString: 0
+		lineageTag: 298dcd4e-58d5-4bf6-bf46-fbb1b19fb203
+		summarizeBy: sum
+		sourceColumn: month_no
+
+		annotation SummarizationSetBy = Automatic
+
+	column period
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f275aa17-325f-478f-b1a9-1a1d0c9a37b9
+		summarizeBy: none
+		sourceColumn: period
+
+		variation Variation
+			isDefault
+			relationship: 99dca509-544c-417b-aeb0-5a49e2b11c01
+			defaultHierarchy: LocalDateTable_af58d371-af3f-418b-9481-352a7b529c97.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column aop_units
+		dataType: double
+		lineageTag: f49cfe76-40a6-4081-ac99-9f8350a40aaf
+		summarizeBy: sum
+		sourceColumn: aop_units
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column aop_dollars
+		dataType: double
+		lineageTag: d4bbe997-444e-4930-8312-fd5911d06c0b
+		summarizeBy: sum
+		sourceColumn: aop_dollars
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition CR_AOP_2026 = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog="qa_wb", Database="digitalfactory", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    vw_cs_aop_cr_2026_digitalfactory_qa_wb = Source{[Item="vw_cs_aop_cr_2026",Schema="digitalfactory",Catalog="qa_wb"]}[Data]
+				in
+				    vw_cs_aop_cr_2026_digitalfactory_qa_wb
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

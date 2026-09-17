@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1980.5714634486608,
+        "x": 0,
         "y": 246.8571472167969
       },
       "nodes": [
@@ -208,6 +208,19 @@
           },
           "nodeIndex": "CR_MB51",
           "nodeLineageTag": "5236e2ec-b5be-4de8-af6e-85a18a4a9f40",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 4042.5,
+            "y": 350.03125
+          },
+          "nodeIndex": "CR_AOP_2026",
+          "nodeLineageTag": "5a49e9ea-1b53-44a6-9bc0-f447be5a80e6",
           "size": {
             "height": 300,
             "width": 234

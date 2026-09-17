@@ -117,3 +117,8 @@ relationship 6f958c13-2628-4647-83e8-25fcf8a2b7ea
 	fromColumn: CR_MB51.entry_date
 	toColumn: LocalDateTable_72238acc-9a3f-4fb8-81df-6a075c474acf.Date
 
+relationship 99dca509-544c-417b-aeb0-5a49e2b11c01
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CR_AOP_2026.period
+	toColumn: LocalDateTable_af58d371-af3f-418b-9481-352a7b529c97.Date
+
