@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1.4285714285714286,
-        "y": 0
+        "x": 89.14285932268416,
+        "y": 142.85714285714286
       },
       "nodes": [
         {
@@ -227,6 +227,19 @@
             "width": 234
           },
           "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 3801.1247461703115,
+            "y": 350.03125
+          },
+          "nodeIndex": "CR_Holidays",
+          "nodeLineageTag": "29a1a359-36b3-4344-b8c8-f5c0d7e67b93",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
