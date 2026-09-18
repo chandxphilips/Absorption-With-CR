@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 467.14285714285717,
+        "x": 620,
         "y": 0
       },
       "nodes": [
@@ -230,8 +230,8 @@
         },
         {
           "location": {
-            "x": 3519.6961747417404,
-            "y": 672.88839285714289
+            "x": 3801.1247461703115,
+            "y": 350.03125
           },
           "nodeIndex": "CR_Holidays",
           "nodeLineageTag": "29a1a359-36b3-4344-b8c8-f5c0d7e67b93",
@@ -239,11 +239,11 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 18
+          "zIndex": 0
         }
       ],
       "name": "All tables",
-      "zoomValue": 62.735415113652394,
+      "zoomValue": 60,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
