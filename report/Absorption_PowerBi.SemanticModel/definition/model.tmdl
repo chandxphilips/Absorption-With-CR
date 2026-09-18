@@ -10,7 +10,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Fact_FS_Absorption","Dim_Material_Master","Fact_AOP","Dim_Subassemblies_Counted","Dim_Product_Tree_Leaf","Fact_MB51_Units","Product_Line_Map","_Measures","Dim_Site_Dim","Dim_Holidays","RefreshInfo","CR_FS_Absorption","CR_Material_Master","CR_MB51","CR_AOP_2026"]
+annotation PBI_QueryOrder = ["Fact_FS_Absorption","Dim_Material_Master","Fact_AOP","Dim_Subassemblies_Counted","Dim_Product_Tree_Leaf","Fact_MB51_Units","Product_Line_Map","_Measures","Dim_Site_Dim","Dim_Holidays","RefreshInfo","CR_FS_Absorption","CR_Material_Master","CR_MB51","CR_AOP_2026","CR_Holidays"]
 
 ref table Fact_FS_Absorption
 ref table Dim_Material_Master
@@ -42,6 +42,8 @@ ref table LocalDateTable_9e359e8a-789c-44f5-b0f7-11e17c2e45b6
 ref table LocalDateTable_72238acc-9a3f-4fb8-81df-6a075c474acf
 ref table CR_AOP_2026
 ref table LocalDateTable_af58d371-af3f-418b-9481-352a7b529c97
+ref table CR_Holidays
+ref table LocalDateTable_e67e2a5b-2378-4559-a739-23ab4e5907ba
 
 ref cultureInfo en-US
 

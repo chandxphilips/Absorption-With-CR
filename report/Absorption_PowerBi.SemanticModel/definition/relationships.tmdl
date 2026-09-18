@@ -126,3 +126,8 @@ relationship 2754510b-26ee-2616-7796-6d4937a604f8
 	fromColumn: CR_FS_Absorption.material
 	toColumn: CR_Material_Master.material
 
+relationship 124a031f-3e47-456d-a5ea-c02a582c5abc
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CR_Holidays.holiday_date
+	toColumn: LocalDateTable_e67e2a5b-2378-4559-a739-23ab4e5907ba.Date
+
