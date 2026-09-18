@@ -28,7 +28,7 @@ table CR_Material_Master
 	column standard_price
 		dataType: double
 		lineageTag: 34647b7f-8d91-4518-b38a-e71025e623a0
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: standard_price
 
 		annotation SummarizationSetBy = Automatic
@@ -38,7 +38,7 @@ table CR_Material_Master
 	column costing_lot_size
 		dataType: double
 		lineageTag: 0a03b825-60ef-420b-bd29-b0edfe2acf43
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: costing_lot_size
 
 		annotation SummarizationSetBy = Automatic

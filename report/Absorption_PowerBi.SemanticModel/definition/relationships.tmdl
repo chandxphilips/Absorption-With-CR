@@ -122,3 +122,7 @@ relationship 99dca509-544c-417b-aeb0-5a49e2b11c01
 	fromColumn: CR_AOP_2026.period
 	toColumn: LocalDateTable_af58d371-af3f-418b-9481-352a7b529c97.Date
 
+relationship 2754510b-26ee-2616-7796-6d4937a604f8
+	fromColumn: CR_FS_Absorption.material
+	toColumn: CR_Material_Master.material
+
