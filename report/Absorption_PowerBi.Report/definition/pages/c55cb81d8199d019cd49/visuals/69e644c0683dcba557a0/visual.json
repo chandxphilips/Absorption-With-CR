@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "69e644c0683dcba557a0",
   "position": {
-    "x": 10,
-    "y": 269.23076923076923,
-    "z": 0,
-    "height": 450.76923076923077,
-    "width": 1270,
+    "x": 16.363636363636363,
+    "y": 280.90909090909088,
+    "z": 1000,
+    "height": 414.5454545454545,
+    "width": 1246.3636363636363,
     "tabOrder": 0
   },
   "visual": {
@@ -112,10 +112,10 @@
                     "Entity": "Dim_Subassemblies_Counted"
                   }
                 },
-                "Property": "Plant Code"
+                "Property": "TLA"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
@@ -172,7 +172,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "277.63431653209983D"
+                  "Value": "274.90336061550596D"
                 }
               }
             }
@@ -186,7 +186,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "243.16454910219502D"
+                  "Value": "224.99440941621577D"
                 }
               }
             }
@@ -258,7 +258,7 @@
             "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'Left'"
+                  "Value": "'Center'"
                 }
               }
             }
@@ -279,6 +279,34 @@
           },
           "selector": {
             "metadata": "Dim_Subassemblies_Counted.Plant Code"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_Subassemblies_Counted.TLA"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Dim_Subassemblies_Counted.FPA"
           }
         }
       ]
