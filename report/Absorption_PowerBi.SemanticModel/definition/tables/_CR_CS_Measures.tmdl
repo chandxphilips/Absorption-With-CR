@@ -1,0 +1,28 @@
+table _CR_CS_Measures
+	lineageTag: a63dae59-cfef-4948-b3cb-16b168013fea
+
+	measure 'CR Actual Absorption $ (Abs)' = ABS ( SUM ( CR_FS_Absorption[amount_cc_currency] ) )
+		lineageTag: 9f680f64-b29f-40d6-a781-fcc99d8f3dc8
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column1
+		dataType: string
+		lineageTag: 81876525-c2d3-43c7-a093-fcc8cd7e565e
+		summarizeBy: none
+		sourceColumn: Column1
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _CR_CS_Measures = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t])
+				in
+				  Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

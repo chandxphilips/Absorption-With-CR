@@ -89,11 +89,6 @@ table CR_AOP_2026
 		summarizeBy: none
 		sourceColumn: period
 
-		variation Variation
-			isDefault
-			relationship: 99dca509-544c-417b-aeb0-5a49e2b11c01
-			defaultHierarchy: LocalDateTable_af58d371-af3f-418b-9481-352a7b529c97.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date

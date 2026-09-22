@@ -76,11 +76,6 @@ table CR_MB51
 		summarizeBy: none
 		sourceColumn: posting_date
 
-		variation Variation
-			isDefault
-			relationship: 6524f5d1-26d9-4129-a2fe-8a55d70ef6d9
-			defaultHierarchy: LocalDateTable_9e359e8a-789c-44f5-b0f7-11e17c2e45b6.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date

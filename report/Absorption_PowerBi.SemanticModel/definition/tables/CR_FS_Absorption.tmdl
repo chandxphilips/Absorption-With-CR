@@ -228,11 +228,6 @@ table CR_FS_Absorption
 		summarizeBy: none
 		sourceColumn: posting_date
 
-		variation Variation
-			isDefault
-			relationship: f8b3203e-461d-4848-a4a9-812fd4b88b9b
-			defaultHierarchy: LocalDateTable_becc49c2-e1c8-401d-a876-ef4c8b2c8111.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
@@ -303,14 +298,6 @@ table CR_FS_Absorption
 
 		annotation SummarizationSetBy = Automatic
 
-	column discipline
-		dataType: string
-		lineageTag: 909020d3-ff2b-4e74-a6f5-a875c478ae6c
-		summarizeBy: none
-		sourceColumn: discipline
-
-		annotation SummarizationSetBy = Automatic
-
 	column category_long
 		dataType: string
 		lineageTag: fa7dbcfb-c64c-4028-a070-8e3f985f5b0e
@@ -340,6 +327,30 @@ table CR_FS_Absorption
 		lineageTag: 23a24baf-d483-4506-9149-7932a48291bb
 		summarizeBy: none
 		sourceColumn: oru_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column prod_order_lookup
+		dataType: string
+		lineageTag: 8c77a81d-1797-43c8-9671-3836ca35fc93
+		summarizeBy: none
+		sourceColumn: prod_order_lookup
+
+		annotation SummarizationSetBy = Automatic
+
+	column part_number_lookup
+		dataType: string
+		lineageTag: fff541b0-44ac-4751-b0b2-77ff356427b7
+		summarizeBy: none
+		sourceColumn: part_number_lookup
+
+		annotation SummarizationSetBy = Automatic
+
+	column discipline
+		dataType: string
+		lineageTag: 32111971-dccb-4471-abe7-322cb0b990b6
+		summarizeBy: none
+		sourceColumn: discipline
 
 		annotation SummarizationSetBy = Automatic
 
