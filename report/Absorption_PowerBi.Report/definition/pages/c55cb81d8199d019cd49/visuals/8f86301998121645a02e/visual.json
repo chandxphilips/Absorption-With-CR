@@ -7,7 +7,7 @@
     "z": 7000,
     "height": 78.461538461538453,
     "width": 311.53846153846155,
-    "tabOrder": 6
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "slicer",
@@ -224,20 +224,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "fa1a967e0263a700ed59",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Subassemblies_Counted"
-              }
-            },
-            "Property": "Plant Code"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "ec88d513cbdbba8092b5",
   "position": {
     "x": 17.5,
@@ -572,95 +572,6 @@
         }
       },
       {
-        "name": "57484cd75243a57a9208",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "posting_date"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "35e0fd549a8627c1ad30",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "material"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6e063f1c325a9e88d85d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Product_Line_Map"
-              }
-            },
-            "Property": "product_line"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "dcdc1591c15eac2ae624",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "material_description"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "feae943d6830e32e82c0",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Fact_MB51_Units"
-              }
-            },
-            "Property": "movement_type"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "4cce645112b6a0a1cd3c",
-        "field": {
-          "Aggregation": {
-            "Expression": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Fact_MB51_Units"
-                  }
-                },
-                "Property": "qty_in_order_unit"
-              }
-            },
-            "Function": 0
-          }
-        },
-        "type": "Advanced"
-      },
-      {
         "name": "6d4ff497e96535681b01",
         "field": {
           "Column": {
@@ -711,34 +622,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "7ac37fdac432abce1622",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Subassemblies_Counted"
-              }
-            },
-            "Property": "Plant Code"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f27b264ae7e313578192",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Actual Units"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

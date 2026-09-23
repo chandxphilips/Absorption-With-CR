@@ -1,0 +1,254 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "3cf412c0c79ea157bb98",
+  "position": {
+    "x": 0,
+    "y": 166.66666666666666,
+    "z": 1,
+    "height": 553.33333333333337,
+    "width": 1106.6666666666667,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_Material_Master"
+                    }
+                  },
+                  "Property": "discipline"
+                }
+              },
+              "queryRef": "CR_Material_Master.discipline",
+              "nativeQueryRef": "discipline"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Product_Tree_Leaf"
+                    }
+                  },
+                  "Property": "long_description"
+                }
+              },
+              "queryRef": "Dim_Product_Tree_Leaf.long_description",
+              "nativeQueryRef": "long_description"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_Material_Master"
+                    }
+                  },
+                  "Property": "material"
+                }
+              },
+              "queryRef": "CR_Material_Master.material",
+              "nativeQueryRef": "material"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_CR_CS_Measures"
+                    }
+                  },
+                  "Property": "CR Actual Units"
+                }
+              },
+              "queryRef": "_CR_CS_Measures.CR Actual Units",
+              "nativeQueryRef": "CR Actual Units"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CR_FS_Absorption"
+                        }
+                      },
+                      "Property": "amount_cc_currency"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(CR_FS_Absorption.amount_cc_currency)",
+              "nativeQueryRef": "Sum of amount_cc_currency"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "40be3df5b39da9eae85b",
+        "ordinal": 0,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Actual Units"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "61b0f965cd6745d59549",
+        "ordinal": 1,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_Material_Master"
+              }
+            },
+            "Property": "discipline"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "c",
+              "Entity": "CR_Material_Master",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "c"
+                          }
+                        },
+                        "Property": "discipline"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'IGTD'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "5552b1e3b53d5a1280ba",
+        "ordinal": 2,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Month Number"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "d23d42e0d657d24e504c",
+        "ordinal": 3,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_Material_Master"
+              }
+            },
+            "Property": "material_description"
+          }
+        },
+        "type": "Categorical",
+        "howCreated": "User"
+      },
+      {
+        "name": "060faa80771a840111ca",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Product_Tree_Leaf"
+              }
+            },
+            "Property": "long_description"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d875cb9308a60c033187",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "CR_FS_Absorption"
+                  }
+                },
+                "Property": "amount_cc_currency"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

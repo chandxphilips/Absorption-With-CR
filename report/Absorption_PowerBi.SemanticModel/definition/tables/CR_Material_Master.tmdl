@@ -101,6 +101,14 @@ table CR_Material_Master
 
 		annotation SummarizationSetBy = Automatic
 
+	column discipline
+		dataType: string
+		lineageTag: ac26aad9-f960-4a53-8d19-d35ac0536368
+		summarizeBy: none
+		sourceColumn: discipline
+
+		annotation SummarizationSetBy = Automatic
+
 	partition CR_Material_Master = m
 		mode: import
 		source =

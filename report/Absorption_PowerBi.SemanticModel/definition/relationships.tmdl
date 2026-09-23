@@ -140,3 +140,16 @@ relationship 156ce857-b26b-a5db-e39f-de70a583e663
 	fromColumn: CR_AOP_2026.material
 	toColumn: CR_Material_Master.material
 
+relationship 9939bc38-30f4-4772-8832-2ed55b1cb723
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CR_MB51_Units.entry_date
+	toColumn: LocalDateTable_6fedd471-d9c1-475a-bae0-8f7c72ec0d03.Date
+
+relationship 6aa1409f-d33f-936f-83ef-cb7c6c8a02d1
+	fromColumn: CR_MB51_Units.material
+	toColumn: CR_Material_Master.material
+
+relationship 6ce8ef6c-40e1-07ef-0236-ed22b4255d17
+	fromColumn: CR_MB51_Units.posting_date
+	toColumn: Calendar.Date
+

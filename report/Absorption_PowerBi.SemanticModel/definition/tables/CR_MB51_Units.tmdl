@@ -1,0 +1,233 @@
+table CR_MB51_Units
+	lineageTag: 8129b426-3a40-4167-9634-23a89344a58a
+
+	column material
+		dataType: string
+		lineageTag: a58523c5-c198-46be-a8db-86163837c52a
+		summarizeBy: none
+		sourceColumn: material
+
+		annotation SummarizationSetBy = Automatic
+
+	column material_description
+		dataType: string
+		lineageTag: b53a98ea-49ae-4566-9c99-ae5b280955ae
+		summarizeBy: none
+		sourceColumn: material_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column qty_in_unit_of_entry
+		dataType: double
+		lineageTag: 2f1e4adc-9bbb-4f4a-bb69-26cbc532a064
+		summarizeBy: sum
+		sourceColumn: qty_in_unit_of_entry
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column batch
+		dataType: string
+		lineageTag: 81069115-245d-4397-b5f5-54f6d00dba74
+		summarizeBy: none
+		sourceColumn: batch
+
+		annotation SummarizationSetBy = Automatic
+
+	column plant
+		dataType: string
+		lineageTag: 15f2349e-4bf0-426a-aab3-1a36d68ae0d9
+		summarizeBy: none
+		sourceColumn: plant
+
+		annotation SummarizationSetBy = Automatic
+
+	column material_document
+		dataType: string
+		lineageTag: 9215847d-b770-43c5-a8e6-2e0d4262bcc1
+		summarizeBy: none
+		sourceColumn: material_document
+
+		annotation SummarizationSetBy = Automatic
+
+	column movement_type
+		dataType: string
+		lineageTag: 16330597-e466-4bc4-8d6f-5c452f32280b
+		summarizeBy: none
+		sourceColumn: movement_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column amt_in_loc_cur
+		dataType: double
+		lineageTag: 72e0bf77-cf57-43de-a786-1adb26ea95a2
+		summarizeBy: sum
+		sourceColumn: amt_in_loc_cur
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column posting_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4bc23ad8-a9ce-4c83-8827-6b8637018d89
+		summarizeBy: none
+		sourceColumn: posting_date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column order_number
+		dataType: string
+		lineageTag: 8d493b24-b0e0-4c91-b116-f3798f68d71c
+		summarizeBy: none
+		sourceColumn: order_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column company_code
+		dataType: string
+		lineageTag: 491d630a-2153-4810-ab89-77c1dc06ebb6
+		summarizeBy: none
+		sourceColumn: company_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column cost_center
+		dataType: string
+		lineageTag: 9a786220-bb58-4cef-9379-73cb0450960f
+		summarizeBy: none
+		sourceColumn: cost_center
+
+		annotation SummarizationSetBy = Automatic
+
+	column entry_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 12dbda17-2345-4776-ae6e-23703288b6c9
+		summarizeBy: none
+		sourceColumn: entry_date
+
+		variation Variation
+			isDefault
+			relationship: 9939bc38-30f4-4772-8832-2ed55b1cb723
+			defaultHierarchy: LocalDateTable_6fedd471-d9c1-475a-bae0-8f7c72ec0d03.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column purchase_order
+		dataType: string
+		lineageTag: 904ec52f-9443-4187-99e3-1f832a2f3ae7
+		summarizeBy: none
+		sourceColumn: purchase_order
+
+		annotation SummarizationSetBy = Automatic
+
+	column user_name
+		dataType: string
+		lineageTag: 931d61fd-13ff-4399-9978-0b998339bc57
+		summarizeBy: none
+		sourceColumn: user_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column qty_in_order_unit
+		dataType: double
+		lineageTag: eadb75c9-4b45-4882-b26b-cf731feb8b42
+		summarizeBy: sum
+		sourceColumn: qty_in_order_unit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column order_unit
+		dataType: string
+		lineageTag: 6cffe81b-8bf5-4e58-9161-ac19e7461f0f
+		summarizeBy: none
+		sourceColumn: order_unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column base_unit_of_measure
+		dataType: string
+		lineageTag: 68e4da77-ba46-43c4-8e53-ed56ed90eaa9
+		summarizeBy: none
+		sourceColumn: base_unit_of_measure
+
+		annotation SummarizationSetBy = Automatic
+
+	column site
+		dataType: string
+		lineageTag: ad13fb5a-b093-4946-808f-b0da222bd8e7
+		summarizeBy: none
+		sourceColumn: site
+
+		annotation SummarizationSetBy = Automatic
+
+	column business
+		dataType: string
+		lineageTag: 8c509af1-48cc-4e40-a520-19c4d9163b7b
+		summarizeBy: none
+		sourceColumn: business
+
+		annotation SummarizationSetBy = Automatic
+
+	column discipline
+		dataType: string
+		lineageTag: a9865e7a-7c66-4466-9632-4c822e9be6d5
+		summarizeBy: none
+		sourceColumn: discipline
+
+		annotation SummarizationSetBy = Automatic
+
+	column sheet_product_hierarchy
+		dataType: string
+		lineageTag: 85202256-d076-49a0-a92e-6deb59b6404a
+		summarizeBy: none
+		sourceColumn: sheet_product_hierarchy
+
+		annotation SummarizationSetBy = Automatic
+
+	column sheet_profit_ctr
+		dataType: string
+		lineageTag: 98609642-62f8-4e3a-8152-af9ca6cdb044
+		summarizeBy: none
+		sourceColumn: sheet_profit_ctr
+
+		annotation SummarizationSetBy = Automatic
+
+	column part_number
+		dataType: string
+		lineageTag: e0597be7-2632-4fc8-856f-fb997989f004
+		summarizeBy: none
+		sourceColumn: part_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column final_pack_12nc
+		dataType: string
+		lineageTag: f1cf5f3a-bdba-43f2-bfe3-eca1fe5cd65b
+		summarizeBy: none
+		sourceColumn: final_pack_12nc
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CR_MB51_Units = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    qa_wb_Database = Source{[Name="qa_wb",Kind="Database"]}[Data],
+				    digitalfactory_Schema = qa_wb_Database{[Name="digitalfactory",Kind="Schema"]}[Data],
+				    vw_cs_absorption_mb51_cr_units_View = digitalfactory_Schema{[Name="vw_cs_absorption_mb51_cr_units",Kind="View"]}[Data]
+				in
+				    vw_cs_absorption_mb51_cr_units_View
+
+	changedProperty = Name
+

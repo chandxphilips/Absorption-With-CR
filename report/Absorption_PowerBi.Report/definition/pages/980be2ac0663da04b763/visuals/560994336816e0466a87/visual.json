@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "560994336816e0466a87",
   "position": {
     "x": 910,
@@ -281,51 +281,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "046f6c4b11463b75587a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Actual Absorption"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "74e1d896226383641d9a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Achievement Remaining"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b57fe35a3a9e0a4300e4",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Achievement Over"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

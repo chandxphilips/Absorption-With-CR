@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "9ca2e1ff9502323c78cd",
   "position": {
     "x": 10,
@@ -750,104 +750,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "9ed11d4e7603e9e7a6e1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Dim_Plant"
-              }
-            },
-            "Property": "Plant Code"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f959268572833e8cd495",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Actual Units"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "b28bd62f07b07b27ebab",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AOP Units"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "96fb9badcd06686a7339",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Var Units %"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "2843085dab312d1cde39",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Actual Absorption"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "d3b692d695573e1b43d4",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "AOP $ (Abs)"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "56af59b40d6608acd68d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_Measures"
-              }
-            },
-            "Property": "Var $ %"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

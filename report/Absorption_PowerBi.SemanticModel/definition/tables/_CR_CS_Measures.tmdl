@@ -6,6 +6,32 @@ table _CR_CS_Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'CR Actual Units x' =
+			
+			SUMX (
+			    CR_MB51,
+			    VAR Hier = RELATED ( CR_Material_Master[product_hierarchy] )
+			    VAR InTree =
+			        NOT ISEMPTY (
+			            FILTER (
+			                Dim_Product_Tree_Leaf,
+			                Dim_Product_Tree_Leaf[product_hierarchy_no_dashes] = Hier
+			            )
+			        )
+			    RETURN IF ( InTree, CR_MB51[qty_in_order_unit], 0 )
+			)
+		isHidden
+		lineageTag: 191c5323-788c-4ca0-bb27-502057069e65
+
+		changedProperty = IsHidden
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Actual Units' = SUM ( CR_MB51_Units[qty_in_order_unit] )
+		lineageTag: 0d2e01b8-b9fb-41e5-a995-a449c81b0369
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Column1
 		dataType: string
 		lineageTag: 81876525-c2d3-43c7-a093-fcc8cd7e565e
