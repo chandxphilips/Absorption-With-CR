@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "7842c15b1e03b76bb10d",
   "position": {
-    "x": 8.75,
-    "y": 539.75000001490116,
+    "x": 9,
+    "y": 533,
     "z": 13000,
-    "height": 245,
-    "width": 875,
+    "height": 261,
+    "width": 882,
     "tabOrder": 20000
   },
   "visual": {
@@ -25,7 +25,7 @@
             "roundEdge": {
               "expr": {
                 "Literal": {
-                  "Value": "0L"
+                  "Value": "12L"
                 }
               }
             }
@@ -70,7 +70,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -107,6 +107,19 @@
             }
           }
         }
+      ],
+      "shadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -116,7 +129,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -148,7 +161,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }

@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "0bab729049011b504d84",
   "position": {
-    "x": 12.790733985323131,
-    "y": 228.93673973470641,
+    "x": 9.09090909090909,
+    "y": 96.36363636363636,
     "z": 8000,
-    "height": 301.16364565442649,
-    "width": 195.3493917758442,
+    "height": 437.27272727272725,
+    "width": 204.54545454545453,
     "tabOrder": 3000
   },
   "visual": {
@@ -25,7 +25,7 @@
             "roundEdge": {
               "expr": {
                 "Literal": {
-                  "Value": "0L"
+                  "Value": "12L"
                 }
               }
             }
@@ -70,7 +70,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }
@@ -107,6 +107,19 @@
             }
           }
         }
+      ],
+      "shadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -116,7 +129,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -148,7 +161,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -156,6 +169,41 @@
               "expr": {
                 "Literal": {
                   "Value": "'Center'"
+                }
+              }
+            },
+            "angle": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            },
+            "shadowDistance": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            },
+            "shadowBlur": {
+              "expr": {
+                "Literal": {
+                  "Value": "15L"
+                }
+              }
+            },
+            "shadowSpread": {
+              "expr": {
+                "Literal": {
+                  "Value": "3L"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "70L"
                 }
               }
             }

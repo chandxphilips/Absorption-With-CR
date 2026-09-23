@@ -32,6 +32,21 @@ table _CR_CS_Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Dashboard Title CR' =
+			
+			VAR MinDate = MIN(Calendar[Date])
+			VAR MaxDate = DATE(2026,12,31)
+			VAR IsSingleMonth =
+			    YEAR(MinDate) = YEAR(MaxDate) && MONTH(MinDate) = MONTH(MaxDate)
+			RETURN
+			    IF(
+			        IsSingleMonth,
+			        "Cost Rica Manufacturing Absorption - " & FORMAT(MaxDate, "MMMM YYYY"),
+			        "Costa Rica Manufacturing Absorption - " &
+			            FORMAT(MinDate, "MMM") & " to " & FORMAT(MaxDate, "MMM YYYY")
+			    )
+		lineageTag: fbc69575-7e54-438f-b32f-97da7d7a1fa5
+
 	column Column1
 		dataType: string
 		lineageTag: 81876525-c2d3-43c7-a093-fcc8cd7e565e

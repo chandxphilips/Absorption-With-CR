@@ -31,7 +31,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "false"
+                "Value": "true"
               }
             }
           }
@@ -58,6 +58,11 @@
       "name": "RegisteredResources",
       "type": "RegisteredResources",
       "items": [
+        {
+          "name": "dashboard-canvas-background6446222990329917.png",
+          "path": "dashboard-canvas-background6446222990329917.png",
+          "type": "Image"
+        },
         {
           "name": "Philips_logo_blue_2025_RGB08093119154151485.png",
           "path": "Philips_logo_blue_2025_RGB08093119154151485.png",

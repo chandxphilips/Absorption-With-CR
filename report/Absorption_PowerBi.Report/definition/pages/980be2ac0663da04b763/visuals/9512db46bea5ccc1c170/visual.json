@@ -1,9 +1,9 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "9512db46bea5ccc1c170",
   "position": {
-    "x": 88.7758961088014,
-    "y": 249.75000001490116,
+    "x": 85.454545454545453,
+    "y": 193.63636363636363,
     "z": 14000,
     "height": 39.534995954635136,
     "width": 74.418815914607308,
@@ -29,6 +29,21 @@
                 ]
               }
             ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

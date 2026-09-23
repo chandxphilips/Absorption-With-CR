@@ -3,10 +3,10 @@
   "name": "3cf412c0c79ea157bb98",
   "position": {
     "x": 0,
-    "y": 166.66666666666666,
+    "y": 101.42857142857143,
     "z": 1,
-    "height": 553.33333333333337,
-    "width": 1106.6666666666667,
+    "height": 618.57142857142856,
+    "width": 1280,
     "tabOrder": 1
   },
   "visual": {
@@ -27,7 +27,8 @@
                 }
               },
               "queryRef": "CR_Material_Master.discipline",
-              "nativeQueryRef": "discipline"
+              "nativeQueryRef": "Descipline",
+              "displayName": "Descipline"
             },
             {
               "field": {
@@ -41,7 +42,38 @@
                 }
               },
               "queryRef": "Dim_Product_Tree_Leaf.long_description",
-              "nativeQueryRef": "long_description"
+              "nativeQueryRef": "Product Line",
+              "displayName": "Product Line"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_Material_Master"
+                    }
+                  },
+                  "Property": "material_description"
+                }
+              },
+              "queryRef": "CR_Material_Master.material_description",
+              "nativeQueryRef": "Material Description",
+              "displayName": "Material Description"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Product_Tree_Leaf"
+                    }
+                  },
+                  "Property": "product_hierarchy"
+                }
+              },
+              "queryRef": "Dim_Product_Tree_Leaf.product_hierarchy",
+              "nativeQueryRef": "Product Hierarchy",
+              "displayName": "Product Hierarchy"
             },
             {
               "field": {
@@ -55,7 +87,8 @@
                 }
               },
               "queryRef": "CR_Material_Master.material",
-              "nativeQueryRef": "material"
+              "nativeQueryRef": "Material",
+              "displayName": "Material"
             },
             {
               "field": {
@@ -78,6 +111,26 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
+                          "Entity": "CR_AOP_2026"
+                        }
+                      },
+                      "Property": "aop_units"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(CR_AOP_2026.aop_units)",
+              "nativeQueryRef": "AOP Units",
+              "displayName": "AOP Units"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
                           "Entity": "CR_FS_Absorption"
                         }
                       },
@@ -88,11 +141,114 @@
                 }
               },
               "queryRef": "Sum(CR_FS_Absorption.amount_cc_currency)",
-              "nativeQueryRef": "Sum of amount_cc_currency"
+              "nativeQueryRef": "Actual Amount",
+              "displayName": "Actual Amount"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CR_AOP_2026"
+                        }
+                      },
+                      "Property": "aop_dollars"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(CR_AOP_2026.aop_dollars)",
+              "nativeQueryRef": "AOP Amount",
+              "displayName": "AOP Amount"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Dim_Product_Tree_Leaf"
+                  }
+                },
+                "Property": "long_description"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "106.90896041842319D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_CR_CS_Measures.CR Actual Units"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "164.92266880218318D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(CR_AOP_2026.aop_dollars)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "139.75326160809735D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(CR_FS_Absorption.amount_cc_currency)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "279.74369619997447D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CR_Material_Master.material_description"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   },
@@ -165,8 +321,7 @@
               }
             }
           ]
-        },
-        "howCreated": "User"
+        }
       },
       {
         "name": "5552b1e3b53d5a1280ba",
@@ -212,8 +367,7 @@
             "Property": "material_description"
           }
         },
-        "type": "Categorical",
-        "howCreated": "User"
+        "type": "Categorical"
       },
       {
         "name": "060faa80771a840111ca",
@@ -241,6 +395,72 @@
                   }
                 },
                 "Property": "amount_cc_currency"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "4b9cf14bb0449ac8d84a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_Material_Master"
+              }
+            },
+            "Property": "material"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "b0fc7f20791a7261d44c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Dim_Product_Tree_Leaf"
+              }
+            },
+            "Property": "product_hierarchy"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6a7b9b0c3d7d06db5a2d",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "CR_AOP_2026"
+                  }
+                },
+                "Property": "aop_units"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c36b3953473628008d60",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "CR_AOP_2026"
+                  }
+                },
+                "Property": "aop_dollars"
               }
             },
             "Function": 0

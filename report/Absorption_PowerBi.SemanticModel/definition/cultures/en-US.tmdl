@@ -7746,6 +7746,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
+			        },
+			        {
+			          "Product Line": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -25995,6 +26005,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.452
 			          }
+			        },
+			        {
+			          "Descipline": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -29481,9 +29501,4168 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "CR_CS_measure.CR_actual_units_x": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Actual Units x"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "CR actual units x": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "x": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "units x": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "actual units x": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr actual unit x": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.686
+			          }
+			        },
+			        {
+			          "actual unit x": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        },
+			        {
+			          "unit x": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.667
+			          }
+			        },
+			        {
+			          "cr real unit x": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr existent unit x": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr tangible unit x": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "real unit x": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "existent unit x": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "tangible unit x": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_actual_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Actual Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR actual units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr actual unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "cr real unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "cr existent unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "cr tangible unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR MB51 unit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CR_MB51_Units": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "unit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "MB51 unit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr mb51 module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "cr mb51 element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "cr mb51 entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mb51 module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mb51 element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mb51 entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cr mb51 group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cr mb51 component": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cr mb51 constituent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cr mb51 item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.material": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "material"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "material": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "physical": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "substantial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "solid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "substantive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.material_description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "material_description"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "material description": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "material_description": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "material appearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "material descriptor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "material explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "material specification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "material account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "material overview": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "material report": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.qty_in_unit_of_entry": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "qty_in_unit_of_entry"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qty in unit of entry": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qty_in_unit_of_entry": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "qty in module of entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "qty in element of entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "qty in entity of entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "qty in group of entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "qty in component of entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "qty in constituent of entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "qty in item of entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "qty in part of entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "qty in section of entry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.batch": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "batch"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "batch": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "consignment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "collection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "set": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bunch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.plant": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "plant"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "plant": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vegetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "herbal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "shrub": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "houseplant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "seedling": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "bush": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "flower": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "herb": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "cutting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.material_document": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "material_document"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "material document": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "material_document": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "document": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "material manuscript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "manuscript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "material file": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "material article": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "material essay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "material paper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "material deed": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "material certificate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "material record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "file": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.movement_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "movement_type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "movement type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "movement_type": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "movement category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "movement genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "movement manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "movement variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "movement brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "movement class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "movement kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.amt_in_loc_cur": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "amt_in_loc_cur"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "amt in loc cur": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "amt_in_loc_cur": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.posting_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "posting_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "posting date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "posting_date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "posting moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "CR_MB51_unit.order_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "order_number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "order number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order_number": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.company_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "company_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "company code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "company_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "company id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "company key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "co code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "corp code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "corporation code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "corps code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "employer code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "enterprise code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "business code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "group code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.cost_center": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "cost_center"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cost center": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cost_center": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "center": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cost midpoint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cost epicenter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "midpoint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "epicenter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "cost middle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "cost focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "middle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "focus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "cost region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "region": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.entry_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "entry_date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entry date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "entry_date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "entry moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "entry period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "CR_MB51_unit.entry_date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "VariationSource": "entry_date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entry date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "CR_MB51_unit.entry_date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "VariationSource": "entry_date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entry year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "entry date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "entry date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "entry yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "entry moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "CR_MB51_unit.entry_date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "VariationSource": "entry_date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entry quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "entry date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "entry date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "entry qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "entry moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "CR_MB51_unit.entry_date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "VariationSource": "entry_date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entry month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "entry date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "entry date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "entry mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "entry moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "CR_MB51_unit.entry_date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "VariationSource": "entry_date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "entry day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "entry date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "entry moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "entry period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "CR_MB51_unit.purchase_order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "purchase_order"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "purchase order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "purchase_order": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "order": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "purchase instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "purchase direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "purchase edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "purchase command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "purchase directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "purchase demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "purchase mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "purchase imperative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.user_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "user_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "user name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "user_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "user": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "user nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "user title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "user label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "user tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "operator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "employer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "manipulator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "handler": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "manager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.qty_in_order_unit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "qty_in_order_unit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qty in order unit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qty_in_order_unit": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "qty in order module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "qty in order element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "qty in order entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "qty in order group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "qty in order component": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "qty in order constituent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "qty in order item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "qty in order part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "qty in order section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.order_unit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "order_unit"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "order unit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "order_unit": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "unit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "order module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "order element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "order entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "order group": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "order component": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "order constituent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "order item": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.base_unit_of_measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "base_unit_of_measure"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "base unit of measure": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "base_unit_of_measure": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "unit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base unit": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "base module of measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "base element of measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "base entity of measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "base module": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "base element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "base entity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "base group of measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "base component of measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "base constituent of measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "base item of measure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.site": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "site"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "site": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "campus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "homepage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "spot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.business": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "business"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "business": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "biz": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "industry": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "commerce": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "corporation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "employer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "enterprise": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "establishment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "commercial": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "corporate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "firm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.discipline": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "discipline"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "discipline": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "punishment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "correction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "chastisement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "castigation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "restraint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "regulation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "strictness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "mastery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "continence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "self-control": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.sheet_product_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "sheet_product_hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sheet product hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sheet_product_hierarchy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sheet artifact hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "sheet item hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "sheet merchandise hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "sheet produce hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "sheet product ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "sheet product grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "sheet product order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "sheet product pyramid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.sheet_profit_ctr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "sheet_profit_ctr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sheet profit ctr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sheet_profit_ctr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.part_number": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "part_number"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "part number": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "part_number": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "part no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "component number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "parcel number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "part num": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "piece number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "segment number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.final_pack_1_2nc": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "final_pack_12nc"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "final pack 1 2nc": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "final_pack_12nc": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.dashboard_title_CR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "Dashboard Title CR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dashboard title CR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "title CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dashboard designation cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "designation cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "dashboard name cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dashboard award cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dashboard call cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dashboard heading cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dashboard label cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "name cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "award cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "call cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_mb_51.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
+			          }
+			        },
+			        "cr_mb_51.entry_date.quarter": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_mb_51.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cr_mb_51.entry_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_quarters"
+			        }
+			      ]
+			    },
+			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_mb_51.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
+			          }
+			        },
+			        "cr_mb_51.entry_date.year": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_mb_51.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cr_mb_51.entry_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_years"
+			        }
+			      ]
+			    },
+			    "cr_mb_51_entry_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_mb_51.entry_date": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date"
+			          }
+			        },
+			        "cr_mb_51.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_mb_51.entry_date"
+			            },
+			            "Object": {
+			              "Role": "cr_mb_51.entry_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_dates_have_entry_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.day": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_days"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.month": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_months"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.quarter": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_quarters1"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.year": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_years1"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_dates_have_entry_date_hierarchies1"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.document_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.document_date.day": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.document_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_date_hierarchies_have_document_days"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.document_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.document_date.month": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.document_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_date_hierarchies_have_document_months"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.document_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.document_date.quarter": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.document_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_date_hierarchies_have_document_quarters"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.document_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.document_date.year": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.document_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_date_hierarchies_have_document_years"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_document_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.document_date": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date"
+			          }
+			        },
+			        "CR_FS_absorption.document_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.document_date"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_dates_have_document_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "refresh_info_last_refresh_date_hierarchy_has_refresh_info_last_refresh_day": {
+			      "Binding": {
+			        "ConceptualEntity": "RefreshInfo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "refresh_info.last_refresh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh.date_hierarchy"
+			          }
+			        },
+			        "refresh_info.last_refresh.day": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "refresh_info.last_refresh.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "refresh_info.last_refresh.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_refresh_date_hierarchies_have_last_refresh_days"
+			        }
+			      ]
+			    },
+			    "refresh_info_last_refresh_date_hierarchy_has_refresh_info_last_refresh_month": {
+			      "Binding": {
+			        "ConceptualEntity": "RefreshInfo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "refresh_info.last_refresh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh.date_hierarchy"
+			          }
+			        },
+			        "refresh_info.last_refresh.month": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "refresh_info.last_refresh.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "refresh_info.last_refresh.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_refresh_date_hierarchies_have_last_refresh_months"
+			        }
+			      ]
+			    },
+			    "refresh_info_last_refresh_date_hierarchy_has_refresh_info_last_refresh_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "RefreshInfo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "refresh_info.last_refresh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh.date_hierarchy"
+			          }
+			        },
+			        "refresh_info.last_refresh.quarter": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "refresh_info.last_refresh.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "refresh_info.last_refresh.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_refresh_date_hierarchies_have_last_refresh_quarters"
+			        }
+			      ]
+			    },
+			    "refresh_info_last_refresh_date_hierarchy_has_refresh_info_last_refresh_year": {
+			      "Binding": {
+			        "ConceptualEntity": "RefreshInfo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "refresh_info.last_refresh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh.date_hierarchy"
+			          }
+			        },
+			        "refresh_info.last_refresh.year": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "refresh_info.last_refresh.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "refresh_info.last_refresh.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_refresh_date_hierarchies_have_last_refresh_years"
+			        }
+			      ]
+			    },
+			    "refresh_info_last_refresh_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "RefreshInfo"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "refresh_info.last_refresh": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh"
+			          }
+			        },
+			        "refresh_info.last_refresh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "refresh_info.last_refresh.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "refresh_info.last_refresh"
+			            },
+			            "Object": {
+			              "Role": "refresh_info.last_refresh.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "last_refreshes_have_last_refresh_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "dim_holiday_holiday_date_date_hierarchy_has_dim_holiday_holiday_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Holidays"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_holiday.holiday_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
+			          }
+			        },
+			        "dim_holiday.holiday_date.day": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_holiday.holiday_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dim_holiday.holiday_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "holiday_date_hierarchies_have_holiday_days"
+			        }
+			      ]
+			    },
+			    "dim_holiday_holiday_date_date_hierarchy_has_dim_holiday_holiday_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Holidays"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_holiday.holiday_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
+			          }
+			        },
+			        "dim_holiday.holiday_date.month": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_holiday.holiday_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dim_holiday.holiday_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "holiday_date_hierarchies_have_holiday_months"
+			        }
+			      ]
+			    },
+			    "dim_holiday_holiday_date_date_hierarchy_has_dim_holiday_holiday_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Holidays"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_holiday.holiday_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
+			          }
+			        },
+			        "dim_holiday.holiday_date.quarter": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_holiday.holiday_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dim_holiday.holiday_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "holiday_date_hierarchies_have_holiday_quarters"
+			        }
+			      ]
+			    },
+			    "dim_holiday_holiday_date_date_hierarchy_has_dim_holiday_holiday_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Holidays"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_holiday.holiday_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
+			          }
+			        },
+			        "dim_holiday.holiday_date.year": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_holiday.holiday_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "dim_holiday.holiday_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "holiday_date_hierarchies_have_holiday_years"
+			        }
+			      ]
+			    },
+			    "dim_holiday_holiday_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Dim_Holidays"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_holiday.holiday_date": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date"
+			          }
+			        },
+			        "dim_holiday.holiday_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_holiday.holiday_date"
+			            },
+			            "Object": {
+			              "Role": "dim_holiday.holiday_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "holiday_dates_have_holiday_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.day": {
+			          "Target": {
+			            "Entity": "calendar.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.month": {
+			          "Target": {
+			            "Entity": "calendar.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.quarter": {
+			          "Target": {
+			            "Entity": "calendar.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendar_date_date_hierarchy_has_calendar_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        },
+			        "calendar.date.year": {
+			          "Target": {
+			            "Entity": "calendar.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendar_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar.date": {
+			          "Target": {
+			            "Entity": "calendar.date"
+			          }
+			        },
+			        "calendar.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendar.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar.date"
+			            },
+			            "Object": {
+			              "Role": "calendar.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "fact_MB51_unit_entry_date_date_hierarchy_has_fact_MB51_unit_entry_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        },
+			        "fact_MB51_unit.entry_date.day": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "fact_MB51_unit.entry_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_days1"
+			        }
+			      ]
+			    },
+			    "fact_MB51_unit_entry_date_date_hierarchy_has_fact_MB51_unit_entry_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        },
+			        "fact_MB51_unit.entry_date.month": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "fact_MB51_unit.entry_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_months1"
+			        }
+			      ]
+			    },
+			    "fact_MB51_unit_entry_date_date_hierarchy_has_fact_MB51_unit_entry_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        },
+			        "fact_MB51_unit.entry_date.quarter": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "fact_MB51_unit.entry_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_quarters2"
+			        }
+			      ]
+			    },
+			    "fact_MB51_unit_entry_date_date_hierarchy_has_fact_MB51_unit_entry_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        },
+			        "fact_MB51_unit.entry_date.year": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "fact_MB51_unit.entry_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_years2"
+			        }
+			      ]
+			    },
+			    "fact_MB51_unit_entry_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_MB51_unit.entry_date": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date"
+			          }
+			        },
+			        "fact_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_MB51_unit.entry_date"
+			            },
+			            "Object": {
+			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_dates_have_entry_date_hierarchies2"
+			        }
+			      ]
+			    },
 			    "fact_FS_absorption_entry_date_date_hierarchy_has_fact_FS_absorption_entry_date_day": {
 			      "Binding": {
 			        "ConceptualEntity": "Fact_FS_Absorption"
@@ -29513,7 +33692,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_days"
+			          "ID": "entry_date_hierarchies_have_entry_days2"
 			        }
 			      ]
 			    },
@@ -29546,7 +33725,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months"
+			          "ID": "entry_date_hierarchies_have_entry_months2"
 			        }
 			      ]
 			    },
@@ -29579,7 +33758,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_quarters"
+			          "ID": "entry_date_hierarchies_have_entry_quarters3"
 			        }
 			      ]
 			    },
@@ -29612,7 +33791,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_years"
+			          "ID": "entry_date_hierarchies_have_entry_years3"
 			        }
 			      ]
 			    },
@@ -29645,7 +33824,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_dates_have_entry_date_hierarchies"
+			          "ID": "entry_dates_have_entry_date_hierarchies3"
 			        }
 			      ]
 			    },
@@ -29678,7 +33857,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_days"
+			          "ID": "document_date_hierarchies_have_document_days1"
 			        }
 			      ]
 			    },
@@ -29711,7 +33890,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_months"
+			          "ID": "document_date_hierarchies_have_document_months1"
 			        }
 			      ]
 			    },
@@ -29744,7 +33923,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_quarters"
+			          "ID": "document_date_hierarchies_have_document_quarters1"
 			        }
 			      ]
 			    },
@@ -29777,7 +33956,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_years"
+			          "ID": "document_date_hierarchies_have_document_years1"
 			        }
 			      ]
 			    },
@@ -29810,7 +33989,99 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "document_dates_have_document_date_hierarchies"
+			          "ID": "document_dates_have_document_date_hierarchies1"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_calendar": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "calendar"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_calendars"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_CR_MB51_units"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_material_master": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_material_master": {
+			          "Target": {
+			            "Entity": "CR_material_master"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_material_master"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_material_masters"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_material_master"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_material_masters_have_CR_MB51_units"
 			        }
 			      ]
 			    },
@@ -30907,6 +35178,897 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_material_masters_have_fact_FS_absorptions"
+			        }
+			      ]
+			    },
+			    "calendar_has_CR_CS_measure_dashboard_title_CR": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "CR_CS_measure.dashboard_title_CR": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.dashboard_title_CR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.dashboard_title_CR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_dashboard_title_CR"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_final_pack_1_2nc": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.final_pack_1_2nc": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.final_pack_1_2nc"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.final_pack_1_2nc"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_final_pack_1_2ncs"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_part_number": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.part_number": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.part_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.part_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_part_numbers"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_sheet_profit_ctr": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.sheet_profit_ctr": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.sheet_profit_ctr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.sheet_profit_ctr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_sheet_profit_ctrs"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_sheet_product_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.sheet_product_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.sheet_product_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.sheet_product_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_sheet_product_hierarchies"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_discipline": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.discipline": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.discipline"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.discipline"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_disciplines"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_business": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.business": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.business"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.business"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_business"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_site": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.site": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.site"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.site"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_sites"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_base_unit_of_measure": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.base_unit_of_measure": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.base_unit_of_measure"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.base_unit_of_measure"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_base_unit_of_measure"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_order_unit": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.order_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.order_unit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.order_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_order_units"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_qty_in_order_unit": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.qty_in_order_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.qty_in_order_unit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.qty_in_order_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_qty_in_order_unit"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_user_name": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.user_name": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.user_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.user_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_user_names"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit.user_name"
+			            },
+			            "Verbs": [
+			              {
+			                "use": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "CR_MB51_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "user_names_use_CR_MB51_units"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit.user_name"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "user_names_have_CR_MB51_units"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_purchase_order": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.purchase_order": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.purchase_order"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.purchase_order"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_purchase_orders"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_entry_date": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.entry_date": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.entry_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_entry_dates"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_cost_center": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.cost_center": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.cost_center"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.cost_center"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_cost_centers"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_company_code": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.company_code": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.company_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.company_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_company_codes"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_order_number": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.order_number": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.order_number"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.order_number"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_order_numbers"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_posting_date": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.posting_date": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.posting_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.posting_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_posting_dates"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_amt_in_loc_cur": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.amt_in_loc_cur": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.amt_in_loc_cur"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.amt_in_loc_cur"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_amt_in_loc_cur"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_movement_type": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.movement_type": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.movement_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.movement_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_movement_types"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_material_document": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.material_document": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.material_document"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.material_document"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_material_documents"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_plant": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.plant": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.plant"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.plant"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_plants"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_batch": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.batch": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.batch"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.batch"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_batches"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_qty_in_unit_of_entry": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.qty_in_unit_of_entry": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.qty_in_unit_of_entry"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.qty_in_unit_of_entry"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_qty_in_unit_of_entry"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_material_description": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.material_description": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.material_description"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.material_description"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_material_descriptions"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_actual_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_actual_units": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_actual_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_actual_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_actual_units"
 			        }
 			      ]
 			    },
@@ -41091,6 +46253,48 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "CR_MB51_unit_is_posted_on_posting_date": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_MB51_unit.posting_date": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.posting_date"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "CR_MB51_unit.posting_date"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "post": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "CR_MB51_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "CR_MB51_units_are_posted_on_posting_dates"
+			        }
+			      ]
+			    },
 			    "CR_holiday_is_holidayed_in_holiday_year": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_Holidays"
@@ -41469,1095 +46673,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "fact_MB51_unit_entry_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Fact_MB51_Units"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_MB51_unit.entry_date": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date"
-			          }
-			        },
-			        "fact_MB51_unit.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_MB51_unit.entry_date"
-			            },
-			            "Object": {
-			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_dates_have_entry_date_hierarchies1"
-			        }
-			      ]
-			    },
-			    "fact_MB51_unit_entry_date_date_hierarchy_has_fact_MB51_unit_entry_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Fact_MB51_Units"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_MB51_unit.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
-			          }
-			        },
-			        "fact_MB51_unit.entry_date.year": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "fact_MB51_unit.entry_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_years1"
-			        }
-			      ]
-			    },
-			    "fact_MB51_unit_entry_date_date_hierarchy_has_fact_MB51_unit_entry_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Fact_MB51_Units"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_MB51_unit.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
-			          }
-			        },
-			        "fact_MB51_unit.entry_date.quarter": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "fact_MB51_unit.entry_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_quarters1"
-			        }
-			      ]
-			    },
-			    "fact_MB51_unit_entry_date_date_hierarchy_has_fact_MB51_unit_entry_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Fact_MB51_Units"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_MB51_unit.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
-			          }
-			        },
-			        "fact_MB51_unit.entry_date.month": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "fact_MB51_unit.entry_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months1"
-			        }
-			      ]
-			    },
-			    "fact_MB51_unit_entry_date_date_hierarchy_has_fact_MB51_unit_entry_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Fact_MB51_Units"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_MB51_unit.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date.date_hierarchy"
-			          }
-			        },
-			        "fact_MB51_unit.entry_date.day": {
-			          "Target": {
-			            "Entity": "fact_MB51_unit.entry_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_MB51_unit.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "fact_MB51_unit.entry_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_days1"
-			        }
-			      ]
-			    },
-			    "calendar_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendar.date": {
-			          "Target": {
-			            "Entity": "calendar.date"
-			          }
-			        },
-			        "calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendar.date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar.date"
-			            },
-			            "Object": {
-			              "Role": "calendar.date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "calendar_date_date_hierarchy_has_calendar_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendar.date.date_hierarchy"
-			          }
-			        },
-			        "calendar.date.year": {
-			          "Target": {
-			            "Entity": "calendar.date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendar.date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
-			        }
-			      ]
-			    },
-			    "calendar_date_date_hierarchy_has_calendar_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendar.date.date_hierarchy"
-			          }
-			        },
-			        "calendar.date.quarter": {
-			          "Target": {
-			            "Entity": "calendar.date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendar.date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters"
-			        }
-			      ]
-			    },
-			    "calendar_date_date_hierarchy_has_calendar_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendar.date.date_hierarchy"
-			          }
-			        },
-			        "calendar.date.month": {
-			          "Target": {
-			            "Entity": "calendar.date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendar.date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
-			        }
-			      ]
-			    },
-			    "calendar_date_date_hierarchy_has_calendar_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendar.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendar.date.date_hierarchy"
-			          }
-			        },
-			        "calendar.date.day": {
-			          "Target": {
-			            "Entity": "calendar.date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendar.date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days"
-			        }
-			      ]
-			    },
-			    "dim_holiday_holiday_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Holidays"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_holiday.holiday_date": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date"
-			          }
-			        },
-			        "dim_holiday.holiday_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_holiday.holiday_date"
-			            },
-			            "Object": {
-			              "Role": "dim_holiday.holiday_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "holiday_dates_have_holiday_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "dim_holiday_holiday_date_date_hierarchy_has_dim_holiday_holiday_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Holidays"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_holiday.holiday_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
-			          }
-			        },
-			        "dim_holiday.holiday_date.year": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_holiday.holiday_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "dim_holiday.holiday_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "holiday_date_hierarchies_have_holiday_years"
-			        }
-			      ]
-			    },
-			    "dim_holiday_holiday_date_date_hierarchy_has_dim_holiday_holiday_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Holidays"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_holiday.holiday_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
-			          }
-			        },
-			        "dim_holiday.holiday_date.quarter": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_holiday.holiday_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "dim_holiday.holiday_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "holiday_date_hierarchies_have_holiday_quarters"
-			        }
-			      ]
-			    },
-			    "dim_holiday_holiday_date_date_hierarchy_has_dim_holiday_holiday_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Holidays"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_holiday.holiday_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
-			          }
-			        },
-			        "dim_holiday.holiday_date.month": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_holiday.holiday_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "dim_holiday.holiday_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "holiday_date_hierarchies_have_holiday_months"
-			        }
-			      ]
-			    },
-			    "dim_holiday_holiday_date_date_hierarchy_has_dim_holiday_holiday_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Dim_Holidays"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_holiday.holiday_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date.date_hierarchy"
-			          }
-			        },
-			        "dim_holiday.holiday_date.day": {
-			          "Target": {
-			            "Entity": "dim_holiday.holiday_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_holiday.holiday_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "dim_holiday.holiday_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "holiday_date_hierarchies_have_holiday_days"
-			        }
-			      ]
-			    },
-			    "refresh_info_last_refresh_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "RefreshInfo"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "refresh_info.last_refresh": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh"
-			          }
-			        },
-			        "refresh_info.last_refresh.date_hierarchy": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "refresh_info.last_refresh"
-			            },
-			            "Object": {
-			              "Role": "refresh_info.last_refresh.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "last_refreshes_have_last_refresh_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "refresh_info_last_refresh_date_hierarchy_has_refresh_info_last_refresh_year": {
-			      "Binding": {
-			        "ConceptualEntity": "RefreshInfo"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "refresh_info.last_refresh.date_hierarchy": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh.date_hierarchy"
-			          }
-			        },
-			        "refresh_info.last_refresh.year": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "refresh_info.last_refresh.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "refresh_info.last_refresh.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "last_refresh_date_hierarchies_have_last_refresh_years"
-			        }
-			      ]
-			    },
-			    "refresh_info_last_refresh_date_hierarchy_has_refresh_info_last_refresh_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "RefreshInfo"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "refresh_info.last_refresh.date_hierarchy": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh.date_hierarchy"
-			          }
-			        },
-			        "refresh_info.last_refresh.quarter": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "refresh_info.last_refresh.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "refresh_info.last_refresh.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "last_refresh_date_hierarchies_have_last_refresh_quarters"
-			        }
-			      ]
-			    },
-			    "refresh_info_last_refresh_date_hierarchy_has_refresh_info_last_refresh_month": {
-			      "Binding": {
-			        "ConceptualEntity": "RefreshInfo"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "refresh_info.last_refresh.date_hierarchy": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh.date_hierarchy"
-			          }
-			        },
-			        "refresh_info.last_refresh.month": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "refresh_info.last_refresh.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "refresh_info.last_refresh.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "last_refresh_date_hierarchies_have_last_refresh_months"
-			        }
-			      ]
-			    },
-			    "refresh_info_last_refresh_date_hierarchy_has_refresh_info_last_refresh_day": {
-			      "Binding": {
-			        "ConceptualEntity": "RefreshInfo"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "refresh_info.last_refresh.date_hierarchy": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh.date_hierarchy"
-			          }
-			        },
-			        "refresh_info.last_refresh.day": {
-			          "Target": {
-			            "Entity": "refresh_info.last_refresh.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "refresh_info.last_refresh.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "refresh_info.last_refresh.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "last_refresh_date_hierarchies_have_last_refresh_days"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_document_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.document_date": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date"
-			          }
-			        },
-			        "CR_FS_absorption.document_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.document_date"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "document_dates_have_document_date_hierarchies1"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.document_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.document_date.year": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.document_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_years1"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.document_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.document_date.quarter": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.document_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_quarters1"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.document_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.document_date.month": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.document_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_months1"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.document_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.document_date.day": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.document_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_days1"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_dates_have_entry_date_hierarchies2"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.year": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_years2"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.quarter": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_quarters2"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.month": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months2"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.day": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_days2"
-			        }
-			      ]
-			    },
-			    "cr_mb_51_entry_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_MB51"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cr_mb_51.entry_date": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date"
-			          }
-			        },
-			        "cr_mb_51.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cr_mb_51.entry_date"
-			            },
-			            "Object": {
-			              "Role": "cr_mb_51.entry_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_dates_have_entry_date_hierarchies3"
-			        }
-			      ]
-			    },
-			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_MB51"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cr_mb_51.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
-			          }
-			        },
-			        "cr_mb_51.entry_date.year": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cr_mb_51.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cr_mb_51.entry_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_years3"
-			        }
-			      ]
-			    },
-			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_MB51"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cr_mb_51.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
-			          }
-			        },
-			        "cr_mb_51.entry_date.quarter": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cr_mb_51.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cr_mb_51.entry_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_quarters3"
-			        }
-			      ]
-			    },
 			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_month": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_MB51"
@@ -42786,6 +46901,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "holiday_date_hierarchies_have_holiday_days1"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_entry_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit.entry_date": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date"
+			          }
+			        },
+			        "CR_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit.entry_date"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.entry_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_dates_have_entry_date_hierarchies4"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_entry_date_date_hierarchy_has_CR_MB51_unit_entry_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_MB51_unit.entry_date.year": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.entry_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_years4"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_entry_date_date_hierarchy_has_CR_MB51_unit_entry_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_MB51_unit.entry_date.quarter": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.entry_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_quarters4"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_entry_date_date_hierarchy_has_CR_MB51_unit_entry_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_MB51_unit.entry_date.month": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.entry_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_months4"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_entry_date_date_hierarchy_has_CR_MB51_unit_entry_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_MB51_unit.entry_date.day": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit.entry_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit.entry_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_days4"
 			        }
 			      ]
 			    }

@@ -43,5 +43,64 @@
         }
       }
     ]
-  }
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'dashboard-canvas-background.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "dashboard-canvas-background6446222990329917.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "58D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "9ca2e1ff9502323c78cd",
+      "target": "798b331b74c00b4a4096",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9ca2e1ff9502323c78cd",
+      "target": "560994336816e0466a87",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9ca2e1ff9502323c78cd",
+      "target": "d96c4268b60dd01887eb",
+      "type": "DataFilter"
+    }
+  ]
 }
