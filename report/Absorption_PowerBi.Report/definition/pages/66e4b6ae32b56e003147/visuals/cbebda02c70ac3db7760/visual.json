@@ -1,0 +1,214 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "cbebda02c70ac3db7760",
+  "position": {
+    "x": 9.86784140969163,
+    "y": 80.352422907488986,
+    "z": 2,
+    "height": 625.90308370044056,
+    "width": 1270.1321585903083,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_FS_Absorption"
+                    }
+                  },
+                  "Property": "material"
+                }
+              },
+              "queryRef": "CR_FS_Absorption.material",
+              "nativeQueryRef": "Material",
+              "displayName": "Material"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_FS_Absorption"
+                    }
+                  },
+                  "Property": "part_number_lookup"
+                }
+              },
+              "queryRef": "CR_FS_Absorption.part_number_lookup",
+              "nativeQueryRef": "Part Number Lookup",
+              "displayName": "Part Number Lookup"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_FS_Absorption"
+                    }
+                  },
+                  "Property": "profit_center"
+                }
+              },
+              "queryRef": "CR_FS_Absorption.profit_center",
+              "nativeQueryRef": "Profit Center",
+              "displayName": "Profit Center"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CR_FS_Absorption"
+                        }
+                      },
+                      "Property": "amount_cc_currency"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(CR_FS_Absorption.amount_cc_currency)",
+              "nativeQueryRef": "Amount",
+              "displayName": "Amount"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_Dim_Product_Line"
+                    }
+                  },
+                  "Property": "product_line"
+                }
+              },
+              "queryRef": "CR_Dim_Product_Line.product_line",
+              "nativeQueryRef": "Product Line",
+              "displayName": "Product Line"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_Dim_Product_Line"
+                    }
+                  },
+                  "Property": "product_hierarchy_display"
+                }
+              },
+              "queryRef": "CR_Dim_Product_Line.product_hierarchy_display",
+              "nativeQueryRef": "Product Hierarchy",
+              "displayName": "Product Hierarchy"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "275.8424593778041D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(CR_FS_Absorption.amount_cc_currency)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "174.46186734680083D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CR_FS_Absorption.material"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "171.0616789334051D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CR_FS_Absorption.part_number_lookup"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "90.22907658230001D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CR_FS_Absorption.profit_center"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "222.10218456101904D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CR_Dim_Product_Line.product_line"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {}
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(CR_FS_Absorption.amount_cc_currency)"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

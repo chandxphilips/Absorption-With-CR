@@ -47,6 +47,68 @@ table _CR_CS_Measures
 			    )
 		lineageTag: fbc69575-7e54-438f-b32f-97da7d7a1fa5
 
+	measure 'CR AOP Units' = SUM ( CR_AOP_2026[aop_units] )
+		lineageTag: edf63f19-f19e-40ae-b5b1-b3e05302e889
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR AOP $ (Abs)' = ABS ( SUM ( CR_AOP_2026[aop_dollars] ) )
+		lineageTag: 002a7b47-4da3-43ca-a8cc-f8503228d43b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Has Actuals' =
+			
+			VAR U = [CR Actual Units]
+			VAR D = [CR Actual Absorption $ (Abs)]
+			RETURN IF ( COALESCE ( U, 0 ) <> 0 || COALESCE ( D, 0 ) <> 0, 1 )
+		formatString: 0
+		lineageTag: 08d3f04d-630d-4506-b444-260ea868f152
+
+	measure 'CR Has Actuals YTD for PL slicer' =
+			
+			VAR U = CALCULATE ( [CR Actual Units], ALL ( 'Calendar' ) )
+			VAR D = CALCULATE ( [CR Actual Absorption $ (Abs)], ALL ( 'Calendar' ) )
+			RETURN IF ( COALESCE ( U, 0 ) <> 0 || COALESCE ( D, 0 ) <> 0, 1 )
+		formatString: 0
+		lineageTag: 0a37b9a6-61a5-4213-a9a5-2bf17db4259e
+
+	measure 'CR Var Units' = [CR Actual Units] - [CR AOP Units]
+		lineageTag: 5799776a-ea21-45b1-aff3-0d42b2543c83
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Absorption Variance $' = [CR Actual Absorption $ (Abs)] - [CR AOP $ (Abs)]
+		lineageTag: 730c8d28-9273-43ee-9196-28b3bd2a3b6f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Var Units %' = DIVIDE ( [CR Actual Units] - [CR AOP Units], [CR AOP Units], 0 )
+		lineageTag: d02b93dd-85ad-4a80-bfe3-39e4345a09ac
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Var $ %' = DIVIDE ( [CR Actual Absorption $ (Abs)] - [CR AOP $ (Abs)], [CR AOP $ (Abs)], 0 )
+		lineageTag: de3c6ec1-a059-4a35-8cfd-80eb506a0144
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Variance Units % Display' =
+			
+			VAR VarPct = [CR Var Units %]
+			VAR Arrow = SWITCH ( TRUE(), VarPct > 0, UNICHAR ( 8593 ), VarPct < 0, UNICHAR ( 8595 ), "" )
+			VAR Sgn = IF ( VarPct >= 0, "+", "" )
+			RETURN Arrow & " " & Sgn & FORMAT ( VarPct, "0.0%" ) & " vs AOP"
+		lineageTag: 552178e4-2eac-495a-853e-4ae7cc6ac538
+
+	measure 'CR Variance $ % Display' =
+			
+			VAR VarPct = [CR Var $ %]
+			VAR Arrow = SWITCH ( TRUE(), VarPct > 0, UNICHAR ( 8593 ), VarPct < 0, UNICHAR ( 8595 ), "" )
+			VAR Sgn = IF ( VarPct >= 0, "+", "" )
+			RETURN Arrow & " " & Sgn & FORMAT ( VarPct, "0.0%" ) & " vs AOP"
+		lineageTag: 39340754-24af-48d0-966b-de017cd4a754
+
 	column Column1
 		dataType: string
 		lineageTag: 81876525-c2d3-43c7-a093-fcc8cd7e565e

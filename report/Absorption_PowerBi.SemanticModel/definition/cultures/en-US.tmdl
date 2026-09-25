@@ -7746,16 +7746,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.727
 			          }
-			        },
-			        {
-			          "Product Line": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -10663,6 +10653,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "Period": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -24789,9 +24789,6 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "product hierarchy": {
@@ -26004,16 +26001,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.452
-			          }
-			        },
-			        {
-			          "Descipline": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -29499,6 +29486,26 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.75
 			          }
+			        },
+			        {
+			          "Actual Absorption": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Actual Absorption $": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -29687,6 +29694,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Actual Units": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -32571,6 +32588,1658 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "CR_FS_absorption.product_line_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_FS_Absorption",
+			          "ConceptualProperty": "product_line_key"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "product line key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "product_line_key": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "line key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "artifact line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "item line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "merchandise line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "produce line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "product line solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption.is_undivided": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_FS_Absorption",
+			          "ConceptualProperty": "is_undivided"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is undivided": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "is_undivided": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "cr_aop_2026.product_line_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_AOP_2026",
+			          "ConceptualProperty": "product_line_key"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "product line key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "product_line_key": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "line key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "artifact line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "item line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "merchandise line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "produce line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "product line solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_AOP_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR AOP Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR AOP units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr aop unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "AOP Units": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_AOP__abs": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR AOP $ (Abs)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR AOP $ (abs)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CR AOP $": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "AOP $": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit.product_line_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_MB51_Units",
+			          "ConceptualProperty": "product_line_key"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "product line key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "product_line_key": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "line key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "artifact line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "item line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "merchandise line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "produce line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "product line solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_Dim_Product_Line"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR dim product line": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CR_Dim_Product_Line": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dim product line": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr dim artifact line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "dim artifact line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "cr dim item line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr dim merchandise line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr dim produce line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "dim item line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dim merchandise line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "dim produce line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "cr dim product streak": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr dim product stroke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line.product_line_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_Dim_Product_Line",
+			          "ConceptualProperty": "product_line_key"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product line key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "product_line_key": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "line key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "artifact line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "item line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "merchandise line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "produce line key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "product line solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line recipe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line interpretation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "product line resolution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line.product_line": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_Dim_Product_Line",
+			          "ConceptualProperty": "product_line"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product line": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "product_line": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "artifact line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "item line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "merchandise line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "produce line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "product streak": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product stroke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product stripe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product contour": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product connection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line.product_hierarchy_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_Dim_Product_Line",
+			          "ConceptualProperty": "product_hierarchy_display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product hierarchy display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "product_hierarchy_display": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "hierarchy display": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "artifact hierarchy display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "item hierarchy display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "merchandise hierarchy display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "produce hierarchy display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "product hierarchy exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "product hierarchy presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "product hierarchy demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "product hierarchy spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "product hierarchy ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "product hierarchy pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "Product Hierarchy": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line.profit_ctr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_Dim_Product_Line",
+			          "ConceptualProperty": "profit_ctr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "profit ctr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "profit_ctr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Profit Center": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line.is_undivided": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_Dim_Product_Line",
+			          "ConceptualProperty": "is_undivided"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is undivided": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "is_undivided": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line.discipline": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CR_Dim_Product_Line",
+			          "ConceptualProperty": "discipline"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "discipline": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "punishment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "correction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "chastisement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "castigation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "restraint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "regulation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "strictness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "mastery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "continence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "self-control": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "Descipline": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_has_actuals": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Has Actuals"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR has actuals": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_has_actuals_YTD_for_PL_slicer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Has Actuals YTD for PL slicer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR has actuals YTD for PL slicer": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_var_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Var Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR var units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr var unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "Var Units": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_absorption_variance_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Absorption Variance $"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR absorption variance $": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr absorption variance dollar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "Variance $": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_var_units_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Var Units %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR var units %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr var unit percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "cr var unit pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "cr var unit %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.686
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_var__": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Var $ %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR var $ %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr var $ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "cr var $ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "cr var dollar %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_variance_units__display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Variance Units % Display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR variance units % display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr variance unit % display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.693
+			          }
+			        },
+			        {
+			          "cr variance unit percentage display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "cr variance unit pct display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "cr variance unit % exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance unit % presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance unit % demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance unit % spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance unit % ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance unit % pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance unit % show": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_variance___display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Variance $ % Display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR variance $ % display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr variance dollar % display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "cr variance $ percentage display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "cr variance $ pct display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "cr variance $ % exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance $ % presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance $ % demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance $ % spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance $ % ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance $ % pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr variance $ % show": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -33993,6 +35662,52 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "CR_MB51_unit_has_CR_dim_product_line": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_dim_product_line"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_dim_product_lines"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "CR_MB51_unit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_CR_MB51_units"
+			        }
+			      ]
+			    },
 			    "CR_MB51_unit_has_calendar": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_MB51_Units"
@@ -34082,6 +35797,52 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "CR_material_masters_have_CR_MB51_units"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_dim_product_line": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_dim_product_line"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_dim_product_lines"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "cr_aop_2026"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_cr_aop_2026"
 			        }
 			      ]
 			    },
@@ -34269,61 +36030,49 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "CR_material_master_has_dim_product_tree_leaf": {
+			    "CR_FS_absorption_has_CR_dim_product_line": {
 			      "Binding": {
-			        "ConceptualEntity": "CR_Material_Master"
+			        "ConceptualEntity": "CR_FS_Absorption"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "CR_material_master": {
+			        "CR_FS_absorption": {
 			          "Target": {
-			            "Entity": "CR_material_master"
+			            "Entity": "CR_FS_absorption"
 			          }
 			        },
-			        "dim_product_tree_leaf": {
+			        "CR_dim_product_line": {
 			          "Target": {
-			            "Entity": "dim_product_tree_leaf"
-			          },
-			          "Nouns": [
-			            {
-			              "product hierarchy": {
-			                "State": "Generated"
-			              }
-			            },
-			            {
-			              "hierarchy": {
-			                "State": "Generated"
-			              }
-			            }
-			          ]
+			            "Entity": "CR_dim_product_line"
+			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "CR_material_master"
+			              "Role": "CR_FS_absorption"
 			            },
 			            "Object": {
-			              "Role": "dim_product_tree_leaf"
+			              "Role": "CR_dim_product_line"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "CR_material_masters_have_dim_product_tree_leaves"
+			          "ID": "CR_FS_absorptions_have_CR_dim_product_lines"
 			        },
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dim_product_tree_leaf"
+			              "Role": "CR_dim_product_line"
 			            },
 			            "Object": {
-			              "Role": "CR_material_master"
+			              "Role": "CR_FS_absorption"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dim_product_tree_leaves_have_CR_material_masters"
+			          "ID": "CR_dim_product_lines_have_CR_FS_absorptions"
 			        }
 			      ]
 			    },
@@ -35178,6 +36927,831 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_material_masters_have_fact_FS_absorptions"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_CR_variance___display": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.CR_variance___display": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_variance___display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_variance___display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR_variance___display"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_variance___display": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_variance___display": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_variance___display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_variance___display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_variance___display"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_variance_units__display": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_variance_units__display": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_variance_units__display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_variance_units__display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_variance_units__display"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_variance_units__display": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_variance_units__display": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_variance_units__display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_variance_units__display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_variance_units__display"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_CR_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.CR_var__": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR_var__"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_var__": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_var__"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_var_units_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_var_units_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var_units_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var_units_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_var_units_"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_var_units_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_var_units_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var_units_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var_units_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_var_units_"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_CR_absorption_variance_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.CR_absorption_variance_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_absorption_variance_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_absorption_variance_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR_absorption_variance_"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_absorption_variance_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_absorption_variance_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_absorption_variance_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_absorption_variance_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_absorption_variance_"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_var_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_var_units": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_var_units"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_var_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_var_units": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_var_units"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_has_actuals_YTD_for_PL_slicer": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_has_actuals_YTD_for_PL_slicer": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_has_actuals_YTD_for_PL_slicer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_has_actuals_YTD_for_PL_slicer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_has_actuals_YTD_for_PL_slicer"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_CR_has_actuals_YTD_for_PL_slicer": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.CR_has_actuals_YTD_for_PL_slicer": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_has_actuals_YTD_for_PL_slicer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_has_actuals_YTD_for_PL_slicer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR_has_actuals_YTD_for_PL_slicer"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_has_actuals": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_has_actuals": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_has_actuals"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_has_actuals"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_has_actuals"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_CR_has_actuals": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.CR_has_actuals": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_has_actuals"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_has_actuals"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR_has_actuals"
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line_has_discipline": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_dim_product_line.discipline": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line.discipline"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "CR_dim_product_line.discipline"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_disciplines"
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line_has_is_undivided": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_dim_product_line.is_undivided": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line.is_undivided"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "CR_dim_product_line.is_undivided"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_is_undivided"
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line_has_profit_ctr": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_dim_product_line.profit_ctr": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line.profit_ctr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "CR_dim_product_line.profit_ctr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_profit_ctrs"
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line_has_product_hierarchy_display": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_dim_product_line.product_hierarchy_display": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line.product_hierarchy_display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "CR_dim_product_line.product_hierarchy_display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_product_hierarchy_displays"
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line_has_product_line": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_dim_product_line.product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line.product_line"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "CR_dim_product_line.product_line"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_product_lines"
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line_has_product_line_key": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_dim_product_line.product_line_key": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line.product_line_key"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "CR_dim_product_line.product_line_key"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_product_line_keys"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_AOP__abs": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_AOP__abs": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_AOP__abs"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_AOP__abs"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_AOP__abs"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_AOP_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_AOP_units": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_AOP_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_AOP_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_AOP_units"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_is_undivided": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_FS_absorption.is_undivided": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.is_undivided"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.is_undivided"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_is_undivided"
 			        }
 			      ]
 			    },
@@ -37633,6 +40207,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "CR_material_masters_have_profit_ctrs"
+			        }
+			      ]
+			    },
+			    "CR_material_master_has_product_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Material_Master"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_material_master": {
+			          "Target": {
+			            "Entity": "CR_material_master"
+			          }
+			        },
+			        "CR_material_master.product_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_material_master.product_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_material_master"
+			            },
+			            "Object": {
+			              "Role": "CR_material_master.product_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_material_masters_have_product_hierarchies"
 			        }
 			      ]
 			    },
@@ -46670,6 +49277,106 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "fact_FS_absorptions_are_documented_on_document_dates"
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line_is_undivided": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_dim_product_line.is_undivided": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line.is_undivided"
+			          }
+			        }
+			      },
+			      "Conditions": [
+			        {
+			          "Target": {
+			            "Role": "CR_dim_product_line.is_undivided"
+			          },
+			          "Operator": "Equals",
+			          "Value": {
+			            "Boolean": [
+			              true
+			            ]
+			          }
+			        }
+			      ],
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Adjectives": [
+			              {
+			                "undivided": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "some_CR_dim_product_lines_are_undivided_CR_dim_product_lines"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_is_undivided": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_FS_absorption.is_undivided": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.is_undivided"
+			          }
+			        }
+			      },
+			      "Conditions": [
+			        {
+			          "Target": {
+			            "Role": "CR_FS_absorption.is_undivided"
+			          },
+			          "Operator": "Equals",
+			          "Value": {
+			            "Boolean": [
+			              true
+			            ]
+			          }
+			        }
+			      ],
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Adjectives": [
+			              {
+			                "undivided": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "some_CR_FS_absorptions_are_undivided_CR_FS_absorptions"
 			        }
 			      ]
 			    },

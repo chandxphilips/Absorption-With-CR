@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "979fd3013a4c9004ee21",
+  "name": "efc023aa0c7ecb070c04",
   "position": {
-    "x": 1024.7151392876542,
-    "y": 30.512609606580273,
-    "z": 2,
-    "height": 71.495653364364443,
-    "width": 255.49182011089056,
-    "tabOrder": 2
+    "x": 367.14285714285717,
+    "y": 14.285714285714286,
+    "z": 3,
+    "height": 65.714285714285722,
+    "width": 300,
+    "tabOrder": 3
   },
   "visual": {
     "visualType": "slicer",
@@ -20,15 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Calendar"
+                      "Entity": "CR_Dim_Product_Line"
                     }
                   },
-                  "Property": "Month Number"
+                  "Property": "discipline"
                 }
               },
-              "queryRef": "Calendar.Month Number",
-              "nativeQueryRef": "Month Number",
-              "active": true
+              "queryRef": "CR_Dim_Product_Line.discipline",
+              "nativeQueryRef": "Descipline",
+              "active": true,
+              "displayName": "Descipline"
             }
           ]
         }
@@ -57,7 +58,7 @@
                 "From": [
                   {
                     "Name": "c",
-                    "Entity": "Calendar",
+                    "Entity": "CR_Dim_Product_Line",
                     "Type": 0
                   }
                 ],
@@ -73,7 +74,7 @@
                                   "Source": "c"
                                 }
                               },
-                              "Property": "Month Number"
+                              "Property": "discipline"
                             }
                           }
                         ],
@@ -81,7 +82,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "1L"
+                                "Value": "'IGTD'"
                               }
                             }
                           ]
@@ -101,18 +102,18 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "f85670bb406703c1e661",
+        "name": "beecb8b04e011340d953",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Calendar"
+                "Entity": "CR_Dim_Product_Line"
               }
             },
-            "Property": "Month Number"
+            "Property": "discipline"
           }
         },
-        "type": "Advanced"
+        "type": "Categorical"
       }
     ]
   }

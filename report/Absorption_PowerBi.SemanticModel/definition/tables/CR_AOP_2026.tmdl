@@ -113,6 +113,14 @@ table CR_AOP_2026
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column product_line_key
+		dataType: string
+		lineageTag: daebdca3-8e58-4d38-9066-5cbdf3610895
+		summarizeBy: none
+		sourceColumn: product_line_key
+
+		annotation SummarizationSetBy = Automatic
+
 	partition CR_AOP_2026 = m
 		mode: import
 		source =

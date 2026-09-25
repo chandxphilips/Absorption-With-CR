@@ -132,10 +132,6 @@ relationship 6a53b50d-0c34-007c-974e-67ba540afce4
 	fromColumn: CR_MB51.material
 	toColumn: CR_Material_Master.material
 
-relationship f4b3e349-617c-ce24-9a24-752717b417a8
-	fromColumn: CR_Material_Master.product_hierarchy
-	toColumn: Dim_Product_Tree_Leaf.product_hierarchy_no_dashes
-
 relationship 156ce857-b26b-a5db-e39f-de70a583e663
 	fromColumn: CR_AOP_2026.material
 	toColumn: CR_Material_Master.material
@@ -152,4 +148,16 @@ relationship 6aa1409f-d33f-936f-83ef-cb7c6c8a02d1
 relationship 6ce8ef6c-40e1-07ef-0236-ed22b4255d17
 	fromColumn: CR_MB51_Units.posting_date
 	toColumn: Calendar.Date
+
+relationship 9984cc5c-7d85-d6bf-6165-c83c5576dfe0
+	fromColumn: CR_FS_Absorption.product_line_key
+	toColumn: CR_Dim_Product_Line.product_line_key
+
+relationship 83ceceea-257b-9114-d414-dc9f6c684be3
+	fromColumn: CR_MB51_Units.product_line_key
+	toColumn: CR_Dim_Product_Line.product_line_key
+
+relationship 8069c1dd-f2d8-9a41-8694-af60f5ddda32
+	fromColumn: CR_AOP_2026.product_line_key
+	toColumn: CR_Dim_Product_Line.product_line_key
 

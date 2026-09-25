@@ -354,6 +354,23 @@ table CR_FS_Absorption
 
 		annotation SummarizationSetBy = Automatic
 
+	column product_line_key
+		dataType: string
+		lineageTag: 8e16e6b3-8023-4a6e-9d4c-bc4c466a9fc7
+		summarizeBy: none
+		sourceColumn: product_line_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_undivided
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: e2da0caf-6519-4fbb-b82d-49514e8c5ccc
+		summarizeBy: none
+		sourceColumn: is_undivided
+
+		annotation SummarizationSetBy = Automatic
+
 	partition CR_FS_Absorption = m
 		mode: import
 		source =

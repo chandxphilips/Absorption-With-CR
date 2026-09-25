@@ -1,0 +1,203 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "270290d0cb0823a3cdd4",
+  "position": {
+    "x": 0,
+    "y": 98.75,
+    "z": 1,
+    "height": 621.25,
+    "width": 1120,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_MB51_Units"
+                    }
+                  },
+                  "Property": "material"
+                }
+              },
+              "queryRef": "CR_MB51_Units.material",
+              "nativeQueryRef": "Material",
+              "displayName": "Material"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_Dim_Product_Line"
+                    }
+                  },
+                  "Property": "product_line"
+                }
+              },
+              "queryRef": "CR_Dim_Product_Line.product_line",
+              "nativeQueryRef": "Product Line",
+              "displayName": "Product Line"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_Dim_Product_Line"
+                    }
+                  },
+                  "Property": "product_hierarchy_display"
+                }
+              },
+              "queryRef": "CR_Dim_Product_Line.product_hierarchy_display",
+              "nativeQueryRef": "Product Hierarchy",
+              "displayName": "Product Hierarchy"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_Dim_Product_Line"
+                    }
+                  },
+                  "Property": "profit_ctr"
+                }
+              },
+              "queryRef": "CR_Dim_Product_Line.profit_ctr",
+              "nativeQueryRef": "Profit Center",
+              "displayName": "Profit Center"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_MB51_Units"
+                    }
+                  },
+                  "Property": "movement_type"
+                }
+              },
+              "queryRef": "CR_MB51_Units.movement_type",
+              "nativeQueryRef": "Movement Type",
+              "displayName": "Movement Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "CR_MB51_Units"
+                    }
+                  },
+                  "Property": "posting_date"
+                }
+              },
+              "queryRef": "CR_MB51_Units.posting_date",
+              "nativeQueryRef": "Posting Date",
+              "displayName": "Posting Date"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "CR_MB51_Units"
+                        }
+                      },
+                      "Property": "qty_in_order_unit"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(CR_MB51_Units.qty_in_order_unit)",
+              "nativeQueryRef": "Qty",
+              "displayName": "Qty"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "CR_Dim_Product_Line"
+                  }
+                },
+                "Property": "profit_ctr"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "238.99998403266278D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "CR_Dim_Product_Line.product_hierarchy_display"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "158.0909041231094D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(CR_MB51_Units.qty_in_order_unit)"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

@@ -218,6 +218,14 @@ table CR_MB51_Units
 
 		annotation SummarizationSetBy = Automatic
 
+	column product_line_key
+		dataType: string
+		lineageTag: 6fcb4d76-3aac-4751-9dd1-b6c6fa806bd5
+		summarizeBy: none
+		sourceColumn: product_line_key
+
+		annotation SummarizationSetBy = Automatic
+
 	partition CR_MB51_Units = m
 		mode: import
 		source =
