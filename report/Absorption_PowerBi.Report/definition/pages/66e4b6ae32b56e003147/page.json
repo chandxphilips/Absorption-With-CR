@@ -49,7 +49,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Eagle Eye'"
+                          "Value": "'Alternative Access'"
                         }
                       }
                     ]
@@ -70,8 +70,6 @@
       {
         "name": "552dbe9900223c9ab5eb",
         "boundFilter": "cda711461973e4d60a80",
-        "asAggregation": false,
-        "qnaSingleSelectRequired": false,
         "fieldExpr": {
           "Column": {
             "Expression": {

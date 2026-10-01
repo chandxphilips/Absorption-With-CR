@@ -163,6 +163,16 @@ table Calendar
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Is Closed Period' =
+			
+			VAR MaxActual = CALCULATE( MAX( CR_MB51[posting_date] ), ALL( CR_MB51 ) )
+			RETURN IF( Calendar[Date] <= MaxActual, 1, 0 )
+		formatString: 0
+		lineageTag: af590982-c95a-48d4-a416-5a4ea7d894e5
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Calendar = calculated
 		mode: import
 		source =

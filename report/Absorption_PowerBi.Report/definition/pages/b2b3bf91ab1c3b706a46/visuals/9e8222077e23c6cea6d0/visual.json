@@ -4,10 +4,10 @@
   "position": {
     "x": 667.14285714285722,
     "y": 14.285714285714286,
-    "z": 2,
+    "z": 2000,
     "height": 65.714285714285722,
     "width": 300,
-    "tabOrder": 2
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "slicer",
@@ -59,20 +59,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "6fdbbcce39581541dee4",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "CR_Dim_Product_Line"
-              }
-            },
-            "Property": "product_line"
-          }
-        },
-        "type": "Categorical"
-      },
       {
         "name": "14fc76ab28b799cc55a4",
         "field": {

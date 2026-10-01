@@ -344,19 +344,20 @@ table _Measures
 		formatString: 0
 		lineageTag: 71672e4a-0d86-4423-bc29-44437d0c1333
 
-	measure 'Dashboard Title' =
+	measure 'US Header Title' =
 			
-			VAR MinDate = MIN(Calendar[Date])
-			VAR MaxDate = DATE(2026,12,31)
-			VAR IsSingleMonth =
-			    YEAR(MinDate) = YEAR(MaxDate) && MONTH(MinDate) = MONTH(MaxDate)
+			VAR SelCount = COUNTROWS( VALUES( Calendar[Year Month] ) )
+			VAR TotalCount = COUNTROWS( ALL( Calendar[Year Month] ) )
+			VAR MinDate = MIN( Calendar[Date] )
+			VAR MaxDate = MAX( Calendar[Date] )
+			VAR Base = "US Manufacturing Absorption"
 			RETURN
-			    IF(
-			        IsSingleMonth,
-			        "Manufacturing Absorption - " & FORMAT(MaxDate, "MMMM YYYY"),
-			        "Manufacturing Absorption - " &
-			            FORMAT(MinDate, "MMM") & " to " & FORMAT(MaxDate, "MMM YYYY")
-			    )
+			SWITCH(
+			    TRUE(),
+			    SelCount = TotalCount, Base,
+			    SelCount = 1, Base & " - " & FORMAT( MinDate, "MMMM YYYY" ),
+			    Base & " - " & FORMAT( MinDate, "MMM" ) & " to " & FORMAT( MaxDate, "MMM" )
+			)
 		lineageTag: 143e4eff-7b5c-4cb2-b650-eb0fab2e1829
 
 	measure '% Achievement' =

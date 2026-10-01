@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "cbebda02c70ac3db7760",
   "position": {
-    "x": 9.86784140969163,
-    "y": 80.352422907488986,
-    "z": 2,
+    "x": 9.3023519893259135,
+    "y": 69.767639919944358,
+    "z": 2000,
     "height": 625.90308370044056,
     "width": 1270.1321585903083,
-    "tabOrder": 2
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",
@@ -205,6 +205,19 @@
           },
           "selector": {
             "metadata": "Sum(CR_FS_Absorption.amount_cc_currency)"
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
           }
         }
       ]

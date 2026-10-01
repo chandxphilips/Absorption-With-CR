@@ -49,7 +49,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Eagle Eye'"
+                          "Value": "'DreamWear Cushion'"
                         }
                       }
                     ]
@@ -70,8 +70,6 @@
       {
         "name": "842a7636832aad80e034",
         "boundFilter": "bd8612055105e70cccb8",
-        "asAggregation": false,
-        "qnaSingleSelectRequired": false,
         "fieldExpr": {
           "Column": {
             "Expression": {

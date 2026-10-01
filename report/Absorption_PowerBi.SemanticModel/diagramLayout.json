@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
+        "x": 761.99996948242188,
         "y": 0
       },
       "nodes": [
@@ -278,6 +278,31 @@
             "width": 234
           },
           "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 3693.1460284440618,
+            "y": 782.24258704795886
+          },
+          "nodeIndex": "_US & CR IGT-D_Measures",
+          "nodeLineageTag": "5a04fed7-aa94-42c3-9113-76ec02ee6822",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 3977.1460284440618,
+            "y": 734.24258704795886
+          },
+          "nodeIndex": "IGTD Product Lines",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

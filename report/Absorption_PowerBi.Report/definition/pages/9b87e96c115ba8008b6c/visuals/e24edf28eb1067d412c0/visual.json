@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "e24edf28eb1067d412c0",
   "position": {
-    "x": 770,
-    "y": 114.28571428571429,
-    "z": 2004,
-    "height": 145.71428571428572,
-    "width": 501.42857142857144,
-    "tabOrder": 6
+    "x": 785.05031145184478,
+    "y": 117.99119264380406,
+    "z": 9000,
+    "height": 113.31827412325735,
+    "width": 502.33874095876973,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "multiRowCard",
@@ -43,8 +43,8 @@
                 }
               },
               "queryRef": "_CR_CS_Measures.CR AOP $ (Abs)",
-              "nativeQueryRef": "AOP $",
-              "displayName": "AOP $",
+              "nativeQueryRef": "AOP Absorption",
+              "displayName": "AOP Absorption",
               "format": "$#,0,,.0M;($#,0,,.0M)"
             },
             {

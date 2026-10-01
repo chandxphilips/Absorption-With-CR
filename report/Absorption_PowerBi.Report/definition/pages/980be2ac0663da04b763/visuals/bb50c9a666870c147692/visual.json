@@ -23,11 +23,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Dashboard Title"
+                  "Property": "US Header Title"
                 }
               },
               "queryRef": "_Measures.Dashboard Title",
-              "nativeQueryRef": "Dashboard Title"
+              "nativeQueryRef": "US Header Title"
             }
           ]
         }
@@ -54,7 +54,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "18D"
+                  "Value": "22D"
                 }
               }
             },

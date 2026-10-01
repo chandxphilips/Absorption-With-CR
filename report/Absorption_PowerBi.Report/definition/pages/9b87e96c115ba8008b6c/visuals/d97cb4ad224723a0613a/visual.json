@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "064b4640c301ca1c7213",
+  "name": "d97cb4ad224723a0613a",
   "position": {
-    "x": 208.87459807073955,
-    "y": 0,
+    "x": 898.71258037501241,
+    "y": 517.26164284396248,
     "z": 0,
-    "height": 82.315112540192928,
-    "width": 860.19292604501607,
-    "tabOrder": 2
+    "height": 276.34526124540463,
+    "width": 397.98441469957845,
+    "tabOrder": 25000
   },
   "visual": {
     "visualType": "shape",
@@ -64,9 +64,7 @@
           "selector": {
             "id": "default"
           }
-        }
-      ],
-      "shadow": [
+        },
         {
           "properties": {
             "show": {
@@ -82,6 +80,24 @@
       "outline": [
         {
           "properties": {
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E5E5E5'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
             "show": {
               "expr": {
                 "Literal": {
@@ -91,16 +107,82 @@
             }
           }
         }
-      ]
-    },
-    "visualContainerObjects": {
-      "dropShadow": [
+      ],
+      "shadow": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "shadowPositionPreset": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "preset": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
                 }
               }
             }

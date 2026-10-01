@@ -4,7 +4,7 @@
   "position": {
     "x": 25.454545454545453,
     "y": 319.09090909090907,
-    "z": 25000,
+    "z": 24000,
     "height": 69.090909090909079,
     "width": 168.18181818181816,
     "tabOrder": 23000
@@ -46,13 +46,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'Dropdown'"
-                }
-              }
-            },
-            "isInvertedSelectionMode": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }

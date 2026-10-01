@@ -10888,6 +10888,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.6
 			          }
+			        },
+			        {
+			          "Period": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -15785,17 +15795,17 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity__measure.dashboard_title": {
+			    "entity__measure.US_header_title": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "Dashboard Title"
+			          "ConceptualProperty": "US Header Title"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "dashboard title": {
+			          "US header title": {
 			            "State": "Generated"
 			          }
 			        },
@@ -15806,13 +15816,79 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "dashboard designation": {
+			          "header title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "us header designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "header designation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "us header name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "us header award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "us header call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "us header heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "us header label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
 			          }
 			        },
 			        {
@@ -15826,7 +15902,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "dashboard name": {
+			          "header name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -15836,73 +15912,13 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "dashboard award": {
+			          "header award": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "dashboard call": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "dashboard heading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "dashboard label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "award": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "call": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "heading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
 			          }
 			        }
 			      ]
@@ -32461,130 +32477,130 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "CR_CS_measure.dashboard_title_CR": {
+			    "CR_CS_measure.CR_header_title": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_CR_CS_Measures",
-			          "ConceptualProperty": "Dashboard Title CR"
+			          "ConceptualProperty": "CR Header Title"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "dashboard title CR": {
+			          "CR header title": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "CR": {
+			          "title": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "title CR": {
+			          "header title": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "dashboard designation cr": {
+			          "cr header designation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.762
 			          }
 			        },
 			        {
-			          "designation cr": {
+			          "header designation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.6
+			            "Weight": 0.75
 			          }
 			        },
 			        {
-			          "dashboard name cr": {
+			          "cr header name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "dashboard award cr": {
+			          "cr header award": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "dashboard call cr": {
+			          "cr header call": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "dashboard heading cr": {
+			          "cr header heading": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "dashboard label cr": {
+			          "cr header label": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.591
+			            "Weight": 0.739
 			          }
 			        },
 			        {
-			          "name cr": {
+			          "designation": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.736
 			          }
 			        },
 			        {
-			          "award cr": {
+			          "header name": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "call cr": {
+			          "header award": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.727
 			          }
 			        }
 			      ]
@@ -32951,7 +32967,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "AOP $": {
+			          "AOP Absorption": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -33796,7 +33812,37 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "Bus Area": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Business": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Descipline": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Business Area": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -33960,6 +34006,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.686
 			          }
+			        },
+			        {
+			          "Units Variance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -34005,6 +34061,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "Dollar Variance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -34240,9 +34306,686 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "CR_CS_measure.achievement_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "Achievement %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "achievement %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "achievement percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "achievement pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.achievement_remaining_CR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "Achievement Remaining CR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "achievement remaining CR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "remaining CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.achievement_over_CR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "Achievement Over CR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "achievement over CR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "over CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "achievement": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "attainment over cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "accomplishment over cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "success over cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "realization over cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "feat over cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "triumph over cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "reaching over cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "getting over cr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "attainment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "accomplishment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.is_closed_period": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Is Closed Period"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is closed period": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "is closed era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "is closed epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "is closed age": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "is closed stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "is closed phase": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "is closed episode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "is closed interlude": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "is closed interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "is closed extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_var___color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Var $ % Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR var $ % color": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr var dollar % color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "cr var $ percentage color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "cr var $ pct color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "cr var $ % hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr var $ % tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cr var $ % shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cr var $ % dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cr var $ % paint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cr var $ % pigment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_var_units__color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Var Units % Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR var units % color": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr var unit % color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.693
+			          }
+			        },
+			        {
+			          "cr var unit percentage color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "cr var unit pct color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "cr var unit % hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "cr var unit % tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cr var unit % shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cr var unit % dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cr var unit % paint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "cr var unit % pigment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_selection_summary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Selection Summary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR selection summary": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "selection summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr selection synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "cr selection explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "cr selection extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "cr selection summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "selection synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "selection explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "selection extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "selection summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cr selection review": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cr selection abstract": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_mb_51.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
+			          }
+			        },
+			        "cr_mb_51.entry_date.month": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_mb_51.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cr_mb_51.entry_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_months"
+			        }
+			      ]
+			    },
 			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_MB51"
@@ -34404,7 +35147,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months"
+			          "ID": "entry_date_hierarchies_have_entry_months1"
 			        }
 			      ]
 			    },
@@ -35229,7 +35972,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months1"
+			          "ID": "entry_date_hierarchies_have_entry_months2"
 			        }
 			      ]
 			    },
@@ -35394,7 +36137,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months2"
+			          "ID": "entry_date_hierarchies_have_entry_months3"
 			        }
 			      ]
 			    },
@@ -36930,6 +37673,435 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "calendar_has_CR_CS_measure_CR_selection_summary": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "CR_CS_measure.CR_selection_summary": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_selection_summary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_selection_summary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_CR_selection_summary"
+			        }
+			      ]
+			    },
+			    "CR_dim_product_line_has_CR_CS_measure_CR_selection_summary": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_CS_measure.CR_selection_summary": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_selection_summary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_selection_summary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_CR_selection_summary"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_var_units__color": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_var_units__color": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var_units__color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var_units__color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_var_units__color"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_var_units__color": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_var_units__color": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var_units__color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var_units__color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_var_units__color"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_CR_var___color": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.CR_var___color": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var___color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var___color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR_var___color"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_var___color": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_var___color": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_var___color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_var___color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_var___color"
+			        }
+			      ]
+			    },
+			    "calendar_has_is_closed_period": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.is_closed_period": {
+			          "Target": {
+			            "Entity": "calendar.is_closed_period"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.is_closed_period"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_is_closed_periods"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_achievement_over_CR": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.achievement_over_CR": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.achievement_over_CR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.achievement_over_CR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_achievement_over_CR"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_achievement_over_CR": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.achievement_over_CR": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.achievement_over_CR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.achievement_over_CR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_achievement_over_CR"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_achievement_remaining_CR": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.achievement_remaining_CR": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.achievement_remaining_CR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.achievement_remaining_CR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_achievement_remaining_CR"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_achievement_remaining_CR": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.achievement_remaining_CR": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.achievement_remaining_CR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.achievement_remaining_CR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_achievement_remaining_CR"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_achievement_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.achievement_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.achievement_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.achievement_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_achievement_"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_achievement_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.achievement_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.achievement_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.achievement_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_achievement_"
+			        }
+			      ]
+			    },
 			    "CR_FS_absorption_has_CR_CS_measure_CR_variance___display": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_FS_Absorption"
@@ -37755,7 +38927,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "calendar_has_CR_CS_measure_dashboard_title_CR": {
+			    "calendar_has_CR_CS_measure_CR_header_title": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendar"
 			      },
@@ -37766,9 +38938,9 @@ cultureInfo en-US
 			            "Entity": "calendar"
 			          }
 			        },
-			        "CR_CS_measure.dashboard_title_CR": {
+			        "CR_CS_measure.CR_header_title": {
 			          "Target": {
-			            "Entity": "CR_CS_measure.dashboard_title_CR"
+			            "Entity": "CR_CS_measure.CR_header_title"
 			          }
 			        }
 			      },
@@ -37779,12 +38951,12 @@ cultureInfo en-US
 			              "Role": "calendar"
 			            },
 			            "Object": {
-			              "Role": "CR_CS_measure.dashboard_title_CR"
+			              "Role": "CR_CS_measure.CR_header_title"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "calendars_have_dashboard_title_CR"
+			          "ID": "calendars_have_CR_header_title"
 			        }
 			      ]
 			    },
@@ -42824,7 +43996,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "calendar_has_entity__measure_dashboard_title": {
+			    "calendar_has_entity__measure_US_header_title": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendar"
 			      },
@@ -42835,9 +44007,9 @@ cultureInfo en-US
 			            "Entity": "calendar"
 			          }
 			        },
-			        "entity__measure.dashboard_title": {
+			        "entity__measure.US_header_title": {
 			          "Target": {
-			            "Entity": "entity__measure.dashboard_title"
+			            "Entity": "entity__measure.US_header_title"
 			          }
 			        }
 			      },
@@ -42848,12 +44020,12 @@ cultureInfo en-US
 			              "Role": "calendar"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.dashboard_title"
+			              "Role": "entity__measure.US_header_title"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "calendars_have_dashboard_title"
+			          "ID": "calendars_have_US_header_title"
 			        }
 			      ]
 			    },
@@ -48455,6 +49627,51 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "CR_dim_product_line_in_discipline": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_dim_product_line.discipline": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line.discipline"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "CR_dim_product_line.discipline"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "CR_dim_product_line.discipline"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_are_in_disciplines"
+			        }
+			      ]
+			    },
 			    "CR_holiday_in_country": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_Holidays"
@@ -49377,39 +50594,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_CR_FS_absorptions_are_undivided_CR_FS_absorptions"
-			        }
-			      ]
-			    },
-			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_MB51"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cr_mb_51.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
-			          }
-			        },
-			        "cr_mb_51.entry_date.month": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cr_mb_51.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cr_mb_51.entry_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months3"
 			        }
 			      ]
 			    },

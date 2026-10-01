@@ -1,0 +1,193 @@
+table '_US & CR IGT-D_Measures'
+	lineageTag: 5a04fed7-aa94-42c3-9113-76ec02ee6822
+
+	measure 'CR IGTD Actual Units' =
+			
+			CALCULATE(
+			    [CR Actual Units],
+			    CR_Dim_Product_Line[discipline] IN { "IGTD", "IGT-D" }
+			)
+		lineageTag: e87fc15f-71c9-41e3-9c96-e4946b5c40fc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR IGTD AOP Units' = ```
+			
+			CALCULATE(
+			    [CR AOP Units],
+			    CR_Dim_Product_Line[discipline] IN { "IGTD", "IGT-D" }
+			)
+			
+			```
+		lineageTag: 4ea570fc-e731-4247-90af-2e800f3716b6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR IGTD Actual Absorption' =
+			
+			CALCULATE(
+			    [CR Actual Absorption $ (Abs)],
+			    CR_Dim_Product_Line[discipline] IN { "IGTD", "IGT-D" }
+			)
+		lineageTag: 15cc4aef-0a20-49bb-8b22-5ed327ce64f5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR IGTD AOP Absorption' =
+			
+			CALCULATE(
+			    [CR AOP $ (Abs)],
+			    CR_Dim_Product_Line[discipline] IN { "IGTD", "IGT-D" }
+			)
+		lineageTag: 0f410af1-3078-4200-9fe4-4149c6fa8dd1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Actual Units' =
+			
+			[Actual Units] + [CR IGTD Actual Units]
+		lineageTag: 17950bf3-726f-450e-b854-92a9199bf29a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD AOP Units' =
+			
+			[AOP Units] + [CR IGTD AOP Units]
+		lineageTag: 6a8797cf-5ac7-415b-b910-d40f02579268
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Actual Absorption' =
+			
+			[Actual Absorption $ (Abs)] + [CR IGTD Actual Absorption]
+		lineageTag: 01cf7216-dc30-4565-af08-d8cd1640501f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD AOP Absorption' =
+			
+			[AOP $ (Abs)] + [CR IGTD AOP Absorption]
+		lineageTag: 4ebf9576-9b52-4b5a-949a-6922e48d1c9f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Var Units' =
+			
+			[IGTD Actual Units] - [IGTD AOP Units]
+		lineageTag: f0bad59f-6c90-46bd-b08e-33c547743e6e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Var $' =
+			
+			[IGTD Actual Absorption] - [IGTD AOP Absorption]
+		lineageTag: 982c5d32-6f63-4b30-bb82-7c8ea32da110
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Var Units %' =
+			
+			DIVIDE( [IGTD Var Units], [IGTD AOP Units] )
+		lineageTag: e4ef43f2-07b4-45da-a2a9-5a2e21f66d06
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Var $ %' =
+			
+			DIVIDE( [IGTD Var $], [IGTD AOP Absorption] )
+		lineageTag: 4319e7a5-207a-4494-888a-a9eab0eb2c3b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL Actual Units' =
+			
+			VAR US =
+			    CALCULATE(
+			        [Actual Units],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] )
+			    )
+			VAR CR =
+			    CALCULATE(
+			        [CR IGTD Actual Units],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			    )
+			RETURN US + CR
+		lineageTag: 55516d8c-5fc9-45d9-ae38-ca652ff37634
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL AOP Units' =
+			
+			VAR US =
+			    CALCULATE(
+			        [AOP Units],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] )
+			    )
+			VAR CR =
+			    CALCULATE(
+			        [CR IGTD AOP Units],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			    )
+			RETURN US + CR
+		lineageTag: 5af7a808-ab93-4117-a622-d6c3c244e540
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL Actual Absorption' =
+			
+			VAR US =
+			    CALCULATE(
+			        [Actual Absorption $ (Abs)],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] )
+			    )
+			VAR CR =
+			    CALCULATE(
+			        [CR IGTD Actual Absorption],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			    )
+			RETURN US + CR
+		lineageTag: 3dd12f56-4120-436b-83bc-42a0957bd59f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL AOP Absorption' =
+			
+			VAR US =
+			    CALCULATE(
+			        [AOP $ (Abs)],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] )
+			    )
+			VAR CR =
+			    CALCULATE(
+			        [CR IGTD AOP Absorption],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			    )
+			RETURN US + CR
+		lineageTag: 62c2c491-d2ff-447b-a741-9a72629516bd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL Var $ %' =
+			
+			IF(
+			    ISBLANK( [IGTD PL AOP Absorption] ) || [IGTD PL AOP Absorption] = 0,
+			    BLANK(),
+			    DIVIDE( [IGTD PL Actual Absorption] - [IGTD PL AOP Absorption], [IGTD PL AOP Absorption] )
+			)
+		lineageTag: 663aeff8-f589-40a6-8c3e-7d770de9c5a6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition '_US & CR IGT-D_Measures' = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Removed Columns" = Table.RemoveColumns(Source,{"Column1"})
+				in
+				  #"Removed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

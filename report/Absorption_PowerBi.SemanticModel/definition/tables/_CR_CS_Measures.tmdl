@@ -28,29 +28,28 @@ table _CR_CS_Measures
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'CR Actual Units' = SUM ( CR_MB51_Units[qty_in_order_unit] )
+		formatString: 0
 		lineageTag: 0d2e01b8-b9fb-41e5-a995-a449c81b0369
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'Dashboard Title CR' =
+	measure 'CR Header Title' =
 			
-			VAR MinDate = MIN(Calendar[Date])
-			VAR MaxDate = DATE(2026,12,31)
-			VAR IsSingleMonth =
-			    YEAR(MinDate) = YEAR(MaxDate) && MONTH(MinDate) = MONTH(MaxDate)
+			VAR SelCount = COUNTROWS( VALUES( 'Calendar'[Year Month] ) )
+			VAR TotalCount = COUNTROWS( ALL( Calendar[Year Month] ) )
+			VAR MinDate = MIN( Calendar[Date] )
+			VAR MaxDate = MAX( Calendar[Date] )
+			VAR Base = "Costa Rica Manufacturing Absorption"
 			RETURN
-			    IF(
-			        IsSingleMonth,
-			        "Cost Rica Manufacturing Absorption - " & FORMAT(MaxDate, "MMMM YYYY"),
-			        "Costa Rica Manufacturing Absorption - " &
-			            FORMAT(MinDate, "MMM") & " to " & FORMAT(MaxDate, "MMM YYYY")
-			    )
+			SWITCH(
+			    TRUE(),
+			    SelCount = TotalCount, Base,
+			    SelCount = 1, Base & " - " & FORMAT( MinDate, "MMMM YYYY" ),
+			    Base & " - " & FORMAT( MinDate, "MMM" ) & " to " & FORMAT( MaxDate, "MMM" )
+			)
 		lineageTag: fbc69575-7e54-438f-b32f-97da7d7a1fa5
 
 	measure 'CR AOP Units' = SUM ( CR_AOP_2026[aop_units] )
+		formatString: 0
 		lineageTag: edf63f19-f19e-40ae-b5b1-b3e05302e889
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'CR AOP $ (Abs)' = ABS ( SUM ( CR_AOP_2026[aop_dollars] ) )
 		lineageTag: 002a7b47-4da3-43ca-a8cc-f8503228d43b
@@ -83,15 +82,25 @@ table _CR_CS_Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'CR Var Units %' = DIVIDE ( [CR Actual Units] - [CR AOP Units], [CR AOP Units], 0 )
+	measure 'CR Var Units %' =
+			
+			IF(
+			    ISBLANK( [CR AOP Units] ) || [CR AOP Units] = 0,
+			    BLANK(),
+			    DIVIDE( [CR Actual Units] - [CR AOP Units], [CR AOP Units] )
+			)
+		formatString: 0%;-0%;0%
 		lineageTag: d02b93dd-85ad-4a80-bfe3-39e4345a09ac
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
-
-	measure 'CR Var $ %' = DIVIDE ( [CR Actual Absorption $ (Abs)] - [CR AOP $ (Abs)], [CR AOP $ (Abs)], 0 )
+	measure 'CR Var $ %' =
+			
+			IF(
+			    ISBLANK( [CR AOP $ (Abs)] ) || [CR AOP $ (Abs)] = 0,
+			    BLANK(),
+			    DIVIDE( [CR Actual Absorption $ (Abs)] - [CR AOP $ (Abs)], [CR AOP $ (Abs)] )
+			)
+		formatString: 0%;-0%;0%
 		lineageTag: de3c6ec1-a059-4a35-8cfd-80eb506a0144
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'CR Variance Units % Display' =
 			
@@ -108,6 +117,51 @@ table _CR_CS_Measures
 			VAR Sgn = IF ( VarPct >= 0, "+", "" )
 			RETURN Arrow & " " & Sgn & FORMAT ( VarPct, "0.0%" ) & " vs AOP"
 		lineageTag: 39340754-24af-48d0-966b-de017cd4a754
+
+	measure 'Achievement %' = ```
+			DIVIDE([CR Actual Absorption $ (Abs)], [CR AOP $ (Abs)]) 
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: bccaebbd-640f-4b04-9b20-fcc41f8e482e
+
+	measure 'Achievement Remaining CR' =
+			
+			VAR Remaining = ([CR AOP $ (Abs)] - [CR Actual Absorption $ (Abs)])
+			RETURN IF(Remaining > 0, Remaining, 0)
+		lineageTag: 2d1b9edc-8da1-46e8-a96e-7d445a8fe16f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Achievement Over CR' =
+			
+			VAR Over = [CR Actual Absorption $ (Abs)] - [CR AOP $ (Abs)]
+			RETURN IF(Over > 0, Over, 0)
+		lineageTag: afe3bf61-9b2e-472e-aa98-b7ba7559d974
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Var $ % Color' =
+			
+			IF( [CR Var $ %] < 0, "#C00000", "#107C10" )
+		lineageTag: c401ea94-ccc1-4956-a838-cdad7bd1e62c
+
+	measure 'CR Var Units % Color' =
+			
+			IF( [CR Var Units %] < 0, "#C00000", "#107C10" )
+		lineageTag: 368ed548-ddb3-4218-ba48-5b709c3192eb
+
+	measure 'CR Selection Summary' =
+			
+			VAR Bus = IF( ISFILTERED( CR_Dim_Product_Line[discipline] ),
+			              CONCATENATEX( VALUES( CR_Dim_Product_Line[discipline] ), CR_Dim_Product_Line[discipline], ", " ),
+			              "All Businesses" )
+			VAR SelCount = COUNTROWS( VALUES( Calendar[Year Month] ) )
+			VAR Per = SWITCH( TRUE(),
+			              NOT ISFILTERED( Calendar[Year Month] ), "All Periods",
+			              SelCount = 1, FORMAT( MIN( Calendar[Date] ), "MMM YYYY" ),
+			              FORMAT( MIN( Calendar[Date] ), "MMM" ) & " to " & FORMAT( MAX( Calendar[Date] ), "MMM" ) )
+			RETURN "Site: CR9A | Business: " & Bus & " | Period: " & Per
+		lineageTag: 214a891d-d828-4582-9ad5-86296ddd07fb
 
 	column Column1
 		dataType: string
