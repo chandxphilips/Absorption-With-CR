@@ -23,11 +23,12 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD Actual Units"
+                  "Property": "IGTD PL Actual Units"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD Actual Units",
-              "nativeQueryRef": "IGTD Actual Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Units",
+              "nativeQueryRef": "Actual Units",
+              "displayName": "Actual Units"
             },
             {
               "field": {
@@ -37,11 +38,12 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD AOP Units"
+                  "Property": "IGTD PL AOP Units"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD AOP Units",
-              "nativeQueryRef": "IGTD AOP Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Units",
+              "nativeQueryRef": "AOP Units",
+              "displayName": "AOP Units"
             },
             {
               "field": {
@@ -51,11 +53,12 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD Var Units"
+                  "Property": "IGTD PL Units Variance"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD Var Units",
-              "nativeQueryRef": "IGTD Var Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Units Variance",
+              "nativeQueryRef": "AOP Units Var",
+              "displayName": "AOP Units Var"
             }
           ]
         }
@@ -70,7 +73,7 @@
                     "Entity": "_US & CR IGT-D_Measures"
                   }
                 },
-                "Property": "IGTD Actual Units"
+                "Property": "IGTD PL Actual Units"
               }
             },
             "direction": "Descending"
@@ -93,7 +96,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "22D"
                 }
               }
             },
@@ -136,7 +139,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "13D"
                 }
               }
             }

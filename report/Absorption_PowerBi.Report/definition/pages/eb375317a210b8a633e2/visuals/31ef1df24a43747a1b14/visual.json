@@ -46,7 +46,8 @@
                 }
               },
               "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption",
-              "nativeQueryRef": "IGTD PL Actual Absorption"
+              "nativeQueryRef": "Actual Absorption",
+              "displayName": "Actual Absorption"
             },
             {
               "field": {
@@ -60,7 +61,8 @@
                 }
               },
               "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption",
-              "nativeQueryRef": "IGTD PL AOP Absorption"
+              "nativeQueryRef": "AOP Absorption",
+              "displayName": "AOP Absorption"
             }
           ]
         }
@@ -110,6 +112,19 @@
             }
           }
         }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -119,7 +134,21 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Absorption by Business (Actual vs AOP)'"
+                  "Value": "'Absorption by Site (Actual vs AOP)'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
                 }
               }
             }

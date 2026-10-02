@@ -46,7 +46,8 @@
                 }
               },
               "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Units",
-              "nativeQueryRef": "IGTD PL Actual Units"
+              "nativeQueryRef": "Actual Units",
+              "displayName": "Actual Units"
             },
             {
               "field": {
@@ -105,6 +106,20 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
                 }
               }
             }
@@ -166,7 +181,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "13D"
                 }
               }
             }

@@ -138,7 +138,7 @@ table '_US & CR IGT-D_Measures'
 			        )
 			    )
 			RETURN US + CR
-		formatString: 0
+		formatString: #,0
 		lineageTag: 55516d8c-5fc9-45d9-ae38-ca652ff37634
 
 	measure 'IGTD PL AOP Units' =
@@ -158,7 +158,7 @@ table '_US & CR IGT-D_Measures'
 			        )
 			    )
 			RETURN US + CR
-		formatString: 0
+		formatString: #,0
 		lineageTag: 5af7a808-ab93-4117-a622-d6c3c244e540
 
 	measure 'IGTD PL Actual Absorption' =
@@ -252,9 +252,10 @@ table '_US & CR IGT-D_Measures'
 	measure 'IGTD PL Var $' =
 			
 			[IGTD PL Actual Absorption] - [IGTD PL AOP Absorption]
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: 863e8d9f-e822-4354-a8a9-82129401749d
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
 	measure 'IGTD PL Var Units %' =
 			
@@ -265,6 +266,48 @@ table '_US & CR IGT-D_Measures'
 			)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 47c39bd8-7db4-417a-8b45-eedb54bb2fde
+
+	measure 'IGTD PL Units Variance' =
+			
+			IF(
+			    ISBLANK( [IGTD PL AOP Units] ) || [IGTD PL AOP Units] = 0,
+			    BLANK(),
+			    [IGTD PL Actual Units] - [IGTD PL AOP Units]
+			)
+		formatString: #,0
+		lineageTag: d6be46d0-e623-4c97-b600-33c426ef6a38
+
+	measure 'IGTD Units Variance Display' =
+			
+			VAR Pct = [IGTD Var Units %]
+			RETURN
+			IF(
+			    ISBLANK( Pct ),
+			    BLANK(),
+			    IF( Pct < 0, "↓ ", "↑ " ) & FORMAT( ABS( Pct ), "0.0%" ) & " vs AOP"
+			)
+		lineageTag: 58aa255c-8477-45d3-845c-381f9e0e5c44
+
+	measure 'IGTD Absorption Variance Display' =
+			
+			VAR Pct = [IGTD Var $ %]
+			RETURN
+			IF(
+			    ISBLANK( Pct ),
+			    BLANK(),
+			    IF( Pct < 0, "↓ ", "↑ " ) & FORMAT( ABS( Pct ), "0.0%" ) & " vs AOP"
+			)
+		lineageTag: e4eeedbe-7126-4e3a-a6ee-21faf07e9355
+
+	measure 'IGTD Units Variance Color' =
+			
+			IF( [IGTD Var Units %] < 0, "#C00000", "#107C10" )
+		lineageTag: 6b9acf4b-3c0c-4d35-8dcb-67c054f7bf4b
+
+	measure 'IGTD Absorption Variance Color' =
+			
+			IF( [IGTD Var $ %] < 0, "#C00000", "#107C10" )
+		lineageTag: b50404d8-98b0-4840-9b52-28345b95e972
 
 	partition '_US & CR IGT-D_Measures' = m
 		mode: import
