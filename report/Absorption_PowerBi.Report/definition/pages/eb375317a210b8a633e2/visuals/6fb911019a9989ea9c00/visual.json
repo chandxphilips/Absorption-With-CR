@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "6fb911019a9989ea9c00",
   "position": {
-    "x": 17.303721310257743,
-    "y": 526.52751986927137,
-    "z": 19001,
-    "height": 258.31983956027631,
-    "width": 899.79350813340261,
-    "tabOrder": 2022
+    "x": 17.142857142857142,
+    "y": 526.42857142857144,
+    "z": 20000,
+    "height": 258.57142857142861,
+    "width": 1275.7142857142858,
+    "tabOrder": 20000
   },
   "visual": {
     "visualType": "tableEx",
@@ -246,6 +246,62 @@
           },
           "selector": {
             "metadata": "IGTD Product Lines.Product Line"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "174.85718022562503D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Var $ %"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "178.99995520358374D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "204.5714767489789D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "144.85714541510333D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Var Units %"
           }
         }
       ],
