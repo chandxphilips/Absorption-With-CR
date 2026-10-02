@@ -1,28 +1,16 @@
 {
-<<<<<<< Updated upstream:report/Absorption_PowerBi.Report/definition/pages/eb375317a210b8a633e2/visuals/31ef1df24a43747a1b14/visual.json
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "31ef1df24a43747a1b14",
-  "position": {
-    "x": 777.07342692083864,
-    "y": 240.91638159855788,
-    "z": 19000,
-    "height": 260.99274673177104,
-    "width": 507.81394160480335,
-    "tabOrder": 2019
-=======
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "8d1a106172163d0a7720",
   "position": {
     "x": 14,
     "y": 369,
-    "z": 1000,
+    "z": 1,
     "height": 349,
     "width": 752,
-    "tabOrder": 1000
->>>>>>> Stashed changes:report/Absorption_PowerBi.Report/definition/pages/eb375317a210b8a633e2/visuals/8d1a106172163d0a7720/visual.json
+    "tabOrder": 1
   },
   "visual": {
-    "visualType": "clusteredColumnChart",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
         "Category": {
@@ -32,15 +20,33 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "IGTD Sites"
+                      "Entity": "IGTD Product Lines"
                     }
                   },
-                  "Property": "Site"
+                  "Property": "Product Line"
                 }
               },
-              "queryRef": "IGTD Sites.Site",
-              "nativeQueryRef": "Site",
+              "queryRef": "IGTD Product Lines.Product Line",
+              "nativeQueryRef": "Product Line",
               "active": true
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL Var $ %"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Var $ %",
+              "nativeQueryRef": "IGTD PL Var $ %"
             }
           ]
         },
@@ -97,41 +103,13 @@
       }
     },
     "objects": {
-      "categoryAxis": [
+      "labels": [
         {
           "properties": {
-            "showAxisTitle": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Absorption by Business (Actual vs AOP)'"
+                  "Value": "true"
                 }
               }
             }

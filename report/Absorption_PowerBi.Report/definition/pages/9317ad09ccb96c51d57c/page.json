@@ -1,11 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
   "name": "9317ad09ccb96c51d57c",
-<<<<<<< Updated upstream
-  "displayName": "US Product Detail",
-=======
   "displayName": "Product Detail - US9H",
->>>>>>> Stashed changes
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,

@@ -151,13 +151,6 @@
                   "Value": "true"
                 }
               }
-            },
-            "preset": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
             }
           }
         }
