@@ -2,15 +2,15 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "8d1a106172163d0a7720",
   "position": {
-    "x": 14,
-    "y": 369,
-    "z": 1,
-    "height": 349,
-    "width": 752,
-    "tabOrder": 1
+    "x": 777.07342692083864,
+    "y": 240.91638159855788,
+    "z": 19000,
+    "height": 260.99274673177104,
+    "width": 507.81394160480335,
+    "tabOrder": 2019
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,33 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "IGTD Product Lines"
+                      "Entity": "IGTD Sites"
                     }
                   },
-                  "Property": "Product Line"
+                  "Property": "Site"
                 }
               },
-              "queryRef": "IGTD Product Lines.Product Line",
-              "nativeQueryRef": "Product Line",
+              "queryRef": "IGTD Sites.Site",
+              "nativeQueryRef": "Site",
               "active": true
-            }
-          ]
-        },
-        "Tooltips": {
-          "projections": [
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_US & CR IGT-D_Measures"
-                    }
-                  },
-                  "Property": "IGTD PL Var $ %"
-                }
-              },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Var $ %",
-              "nativeQueryRef": "IGTD PL Var $ %"
             }
           ]
         },
@@ -103,13 +85,41 @@
       }
     },
     "objects": {
-      "labels": [
+      "categoryAxis": [
         {
           "properties": {
-            "show": {
+            "showAxisTitle": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Absorption by Business (Actual vs AOP)'"
                 }
               }
             }

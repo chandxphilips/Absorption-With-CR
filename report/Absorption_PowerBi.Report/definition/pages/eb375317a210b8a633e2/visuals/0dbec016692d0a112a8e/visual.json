@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "0f5ee6817a4d0bdae7d9",
+  "name": "5f6c3f851807108d9cd3",
   "position": {
     "x": 240.91638159855788,
     "y": 240.91638159855788,
-    "z": 22000,
+    "z": 17000,
     "height": 260.99274673177104,
     "width": 507.81394160480335,
-    "tabOrder": 18000
+    "tabOrder": 2017
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "CR_Dim_Product_Line"
+                      "Entity": "IGTD Product Lines"
                     }
                   },
-                  "Property": "product_line"
+                  "Property": "Product Line"
                 }
               },
-              "queryRef": "CR_Dim_Product_Line.product_line",
-              "nativeQueryRef": "product_line",
+              "queryRef": "IGTD Product Lines.Product Line",
+              "nativeQueryRef": "Product Line",
               "active": true
             }
           ]
@@ -39,30 +39,28 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "_CR_CS_Measures"
+                      "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "CR Actual Units"
+                  "Property": "IGTD PL Actual Units"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR Actual Units",
-              "nativeQueryRef": "Actual Units",
-              "displayName": "Actual Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Units",
+              "nativeQueryRef": "IGTD PL Actual Units"
             },
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "_CR_CS_Measures"
+                      "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "CR AOP Units"
+                  "Property": "IGTD PL AOP Units"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR AOP Units",
-              "nativeQueryRef": "AOP Units",
-              "displayName": "AOP Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Units",
+              "nativeQueryRef": "IGTD PL AOP Units"
             }
           ]
         }
@@ -74,10 +72,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "_CR_CS_Measures"
+                    "Entity": "_US & CR IGT-D_Measures"
                   }
                 },
-                "Property": "CR Actual Units"
+                "Property": "IGTD PL Actual Units"
               }
             },
             "direction": "Descending"

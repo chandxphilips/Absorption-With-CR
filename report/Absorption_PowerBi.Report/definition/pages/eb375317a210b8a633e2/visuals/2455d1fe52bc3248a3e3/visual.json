@@ -1,132 +1,135 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "0f5ee6817a4d0bdae7d9",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "2455d1fe52bc3248a3e3",
   "position": {
-    "x": 240.91638159855788,
-    "y": 240.91638159855788,
-    "z": 22000,
-    "height": 260.99274673177104,
-    "width": 507.81394160480335,
-    "tabOrder": 18000
+    "x": 8.92334564174851,
+    "y": 80.31011077573659,
+    "z": 15000,
+    "height": 144.07744389717675,
+    "width": 199.58268867723666,
+    "tabOrder": 2015
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "cardVisual",
     "query": {
       "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "CR_Dim_Product_Line"
-                    }
-                  },
-                  "Property": "product_line"
-                }
-              },
-              "queryRef": "CR_Dim_Product_Line.product_line",
-              "nativeQueryRef": "product_line",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
+        "Data": {
           "projections": [
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "_CR_CS_Measures"
+                      "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "CR Actual Units"
+                  "Property": "IGTD Selection Summary"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR Actual Units",
-              "nativeQueryRef": "Actual Units",
-              "displayName": "Actual Units"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_CR_CS_Measures"
-                    }
-                  },
-                  "Property": "CR AOP Units"
-                }
-              },
-              "queryRef": "_CR_CS_Measures.CR AOP Units",
-              "nativeQueryRef": "AOP Units",
-              "displayName": "AOP Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD Selection Summary",
+              "nativeQueryRef": "IGTD Selection Summary"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "_CR_CS_Measures"
-                  }
-                },
-                "Property": "CR Actual Units"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "objects": {
-      "categoryAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "legend": [
+      "value": [
         {
           "properties": {
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "9D"
+                  "Value": "11D"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0066CC'"
+                    }
+                  }
+                }
+              }
+            },
+            "textWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "label": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "cardCalloutArea": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "fillCustom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
           }
         }
       ],
-      "labels": [
+      "layout": [
+        {
+          "properties": {
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "divider": [
         {
           "properties": {
             "show": {
@@ -135,40 +138,56 @@
                   "Value": "true"
                 }
               }
-            },
-            "labelPosition": {
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
+        {
+          "properties": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'OutsideEnd'"
+                  "Value": "false"
                 }
               }
             }
+          },
+          "selector": {
+            "id": "default"
           }
         }
       ]
     },
     "visualContainerObjects": {
-      "title": [
+      "border": [
         {
           "properties": {
-            "text": {
+            "show": {
               "expr": {
                 "Literal": {
-                  "Value": "'Actual vs AOP Units by Product Line'"
+                  "Value": "false"
                 }
               }
             },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#003D7A'"
+                    }
+                  }
                 }
               }
             },
-            "fontSize": {
+            "radius": {
               "expr": {
                 "Literal": {
-                  "Value": "12D"
+                  "Value": "5D"
                 }
               }
             }
@@ -230,20 +249,13 @@
           }
         }
       ],
-      "border": [
+      "background": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
                 }
               }
             }
