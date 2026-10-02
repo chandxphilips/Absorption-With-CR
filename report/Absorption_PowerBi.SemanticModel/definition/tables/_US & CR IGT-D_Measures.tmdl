@@ -45,45 +45,67 @@ table '_US & CR IGT-D_Measures'
 
 	measure 'IGTD Actual Units' =
 			
-			[Actual Units] + [CR IGTD Actual Units]
+			VAR US =
+			    CALCULATE(
+			        [Actual Units],
+			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
+			    )
+			VAR CR =
+			    IF( "CR9A" IN VALUES( 'IGTD Sites'[Site] ), [CR IGTD Actual Units] )
+			RETURN US + CR
+		formatString: #,0
 		lineageTag: 17950bf3-726f-450e-b854-92a9199bf29a
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'IGTD AOP Units' =
 			
-			[AOP Units] + [CR IGTD AOP Units]
+			VAR US =
+			    CALCULATE(
+			        [AOP Units],
+			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
+			    )
+			VAR CR =
+			    IF( "CR9A" IN VALUES( 'IGTD Sites'[Site] ), [CR IGTD AOP Units] )
+			RETURN US + CR
+		formatString: #,0
 		lineageTag: 6a8797cf-5ac7-415b-b910-d40f02579268
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'IGTD Actual Absorption' =
 			
-			[Actual Absorption $ (Abs)] + [CR IGTD Actual Absorption]
+			VAR US =
+			    CALCULATE(
+			        [Actual Absorption $ (Abs)],
+			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
+			    )
+			VAR CR =
+			    IF( "CR9A" IN VALUES( 'IGTD Sites'[Site] ), [CR IGTD Actual Absorption] )
+			RETURN US + CR
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: 01cf7216-dc30-4565-af08-d8cd1640501f
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'IGTD AOP Absorption' =
 			
-			[AOP $ (Abs)] + [CR IGTD AOP Absorption]
+			VAR US =
+			    CALCULATE(
+			        [AOP $ (Abs)],
+			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
+			    )
+			VAR CR =
+			    IF( "CR9A" IN VALUES( 'IGTD Sites'[Site] ), [CR IGTD AOP Absorption] )
+			RETURN US + CR
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: 4ebf9576-9b52-4b5a-949a-6922e48d1c9f
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'IGTD Var Units' =
 			
 			[IGTD Actual Units] - [IGTD AOP Units]
+		formatString: #,0
 		lineageTag: f0bad59f-6c90-46bd-b08e-33c547743e6e
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'IGTD Var $' =
 			
 			[IGTD Actual Absorption] - [IGTD AOP Absorption]
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
 		lineageTag: 982c5d32-6f63-4b30-bb82-7c8ea32da110
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'IGTD Var Units %' =
 			
@@ -104,68 +126,84 @@ table '_US & CR IGT-D_Measures'
 			VAR US =
 			    CALCULATE(
 			        [Actual Units],
-			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] )
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] ),
+			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
 			    )
 			VAR CR =
-			    CALCULATE(
-			        [CR IGTD Actual Units],
-			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			    IF(
+			        "CR9A" IN VALUES( 'IGTD Sites'[Site] ),
+			        CALCULATE(
+			            [CR IGTD Actual Units],
+			            TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			        )
 			    )
 			RETURN US + CR
+		formatString: 0
 		lineageTag: 55516d8c-5fc9-45d9-ae38-ca652ff37634
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'IGTD PL AOP Units' =
 			
 			VAR US =
 			    CALCULATE(
 			        [AOP Units],
-			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] )
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] ),
+			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
 			    )
 			VAR CR =
-			    CALCULATE(
-			        [CR IGTD AOP Units],
-			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			    IF(
+			        "CR9A" IN VALUES( 'IGTD Sites'[Site] ),
+			        CALCULATE(
+			            [CR IGTD AOP Units],
+			            TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			        )
 			    )
 			RETURN US + CR
+		formatString: 0
 		lineageTag: 5af7a808-ab93-4117-a622-d6c3c244e540
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'IGTD PL Actual Absorption' =
 			
 			VAR US =
 			    CALCULATE(
 			        [Actual Absorption $ (Abs)],
-			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] )
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] ),
+			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
 			    )
 			VAR CR =
-			    CALCULATE(
-			        [CR IGTD Actual Absorption],
-			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			    IF(
+			        "CR9A" IN VALUES( 'IGTD Sites'[Site] ),
+			        CALCULATE(
+			            [CR IGTD Actual Absorption],
+			            TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			        )
 			    )
 			RETURN US + CR
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: 3dd12f56-4120-436b-83bc-42a0957bd59f
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
 	measure 'IGTD PL AOP Absorption' =
 			
 			VAR US =
 			    CALCULATE(
 			        [AOP $ (Abs)],
-			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] )
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), Product_Line_Map[product_line] ),
+			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
 			    )
 			VAR CR =
-			    CALCULATE(
-			        [CR IGTD AOP Absorption],
-			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			    IF(
+			        "CR9A" IN VALUES( 'IGTD Sites'[Site] ),
+			        CALCULATE(
+			            [CR IGTD AOP Absorption],
+			            TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
+			        )
 			    )
 			RETURN US + CR
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: 62c2c491-d2ff-447b-a741-9a72629516bd
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
 	measure 'IGTD PL Var $ %' =
 			
@@ -174,9 +212,59 @@ table '_US & CR IGT-D_Measures'
 			    BLANK(),
 			    DIVIDE( [IGTD PL Actual Absorption] - [IGTD PL AOP Absorption], [IGTD PL AOP Absorption] )
 			)
+		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 663aeff8-f589-40a6-8c3e-7d770de9c5a6
 
+	measure 'IGTD Header Title' =
+			
+			VAR SelCount = COUNTROWS( VALUES( Calendar[Year Month] ) )
+			VAR TotalCount = COUNTROWS( ALL( Calendar[Year Month] ) )
+			VAR Base = "IGT-D Manufacturing Absorption - US & Costa Rica"
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    SelCount = TotalCount, Base,
+			    SelCount = 1, Base & " - " & FORMAT( MIN( Calendar[Date] ), "MMMM YYYY" ),
+			    Base & " - " & FORMAT( MIN( Calendar[Date] ), "MMM" ) & " to " & FORMAT( MAX( Calendar[Date] ), "MMM" )
+			)
+		lineageTag: cbb8bc3c-6e2b-4a96-8781-5caa913dafea
+
+	measure 'IGTD Selection Summary' =
+			
+			VAR SiteTxt =
+			    IF(
+			        ISFILTERED( 'IGTD Sites'[Site] ),
+			        CONCATENATEX( VALUES( 'IGTD Sites'[Site] ), 'IGTD Sites'[Site], ", " ),
+			        "All Sites"
+			    )
+			VAR SelCount = COUNTROWS( VALUES( Calendar[Year Month] ) )
+			VAR PerTxt =
+			    SWITCH(
+			        TRUE(),
+			        NOT ISFILTERED( Calendar[Year Month] ), "All Periods",
+			        SelCount = 1, FORMAT( MIN( Calendar[Date] ), "MMM YYYY" ),
+			        FORMAT( MIN( Calendar[Date] ), "MMM" ) & " to " & FORMAT( MAX( Calendar[Date] ), "MMM" )
+			    )
+			RETURN
+			    "Business: IGT-D" & UNICHAR(10) & "Site: " & SiteTxt & UNICHAR(10) & "Period: " & PerTxt
+		lineageTag: 75fbbc65-ccb7-4c22-be32-b684133d6875
+
+	measure 'IGTD PL Var $' =
+			
+			[IGTD PL Actual Absorption] - [IGTD PL AOP Absorption]
+		lineageTag: 863e8d9f-e822-4354-a8a9-82129401749d
+
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL Var Units %' =
+			
+			IF(
+			    ISBLANK( [IGTD PL AOP Units] ) || [IGTD PL AOP Units] = 0,
+			    BLANK(),
+			    DIVIDE( [IGTD PL Actual Units] - [IGTD PL AOP Units], [IGTD PL AOP Units] )
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 47c39bd8-7db4-417a-8b45-eedb54bb2fde
 
 	partition '_US & CR IGT-D_Measures' = m
 		mode: import

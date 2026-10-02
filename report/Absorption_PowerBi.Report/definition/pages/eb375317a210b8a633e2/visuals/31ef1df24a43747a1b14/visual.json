@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "5f6c3f851807108d9cd3",
+  "name": "31ef1df24a43747a1b14",
   "position": {
-    "x": 13.874697830538747,
-    "y": 10.090689331300908,
-    "z": 0,
-    "height": 349.39011809629392,
-    "width": 751.75635518191757,
-    "tabOrder": 0
+    "x": 777.07342692083864,
+    "y": 240.91638159855788,
+    "z": 19000,
+    "height": 260.99274673177104,
+    "width": 507.81394160480335,
+    "tabOrder": 2019
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "IGTD Product Lines"
+                      "Entity": "IGTD Sites"
                     }
                   },
-                  "Property": "Product Line"
+                  "Property": "Site"
                 }
               },
-              "queryRef": "IGTD Product Lines.Product Line",
-              "nativeQueryRef": "Product Line",
+              "queryRef": "IGTD Sites.Site",
+              "nativeQueryRef": "Site",
               "active": true
             }
           ]
@@ -42,11 +42,11 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD PL Actual Units"
+                  "Property": "IGTD PL Actual Absorption"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Units",
-              "nativeQueryRef": "IGTD PL Actual Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption",
+              "nativeQueryRef": "IGTD PL Actual Absorption"
             },
             {
               "field": {
@@ -56,11 +56,11 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD PL AOP Units"
+                  "Property": "IGTD PL AOP Absorption"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Units",
-              "nativeQueryRef": "IGTD PL AOP Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption",
+              "nativeQueryRef": "IGTD PL AOP Absorption"
             }
           ]
         }
@@ -75,7 +75,7 @@
                     "Entity": "_US & CR IGT-D_Measures"
                   }
                 },
-                "Property": "IGTD PL Actual Units"
+                "Property": "IGTD PL Actual Absorption"
               }
             },
             "direction": "Descending"
@@ -85,19 +85,6 @@
       }
     },
     "objects": {
-      "labels": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
       "categoryAxis": [
         {
           "properties": {
@@ -125,52 +112,21 @@
         }
       ]
     },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Absorption by Business (Actual vs AOP)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "fef1a340cea86ed61700",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "IGTD Product Lines"
-              }
-            },
-            "Property": "Product Line"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6739bf60241601d10cb5",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_US & CR IGT-D_Measures"
-              }
-            },
-            "Property": "IGTD PL Actual Units"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "aecc3e06ac633ee5b55d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_US & CR IGT-D_Measures"
-              }
-            },
-            "Property": "IGTD PL AOP Units"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

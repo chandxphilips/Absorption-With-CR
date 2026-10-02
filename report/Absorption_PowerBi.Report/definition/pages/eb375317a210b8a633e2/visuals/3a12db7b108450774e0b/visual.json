@@ -1,68 +1,64 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
-  "name": "0f5ee6817a4d0bdae7d9",
+  "name": "3a12db7b108450774e0b",
   "position": {
-    "x": 240.91638159855788,
-    "y": 240.91638159855788,
-    "z": 22000,
-    "height": 260.99274673177104,
-    "width": 507.81394160480335,
-    "tabOrder": 18000
+    "x": 782.375399242368,
+    "y": 119.89006907821437,
+    "z": 8000,
+    "height": 113.71016861026517,
+    "width": 517.8756592141425,
+    "tabOrder": 2008
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "multiRowCard",
     "query": {
       "queryState": {
-        "Category": {
-          "projections": [
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "CR_Dim_Product_Line"
-                    }
-                  },
-                  "Property": "product_line"
-                }
-              },
-              "queryRef": "CR_Dim_Product_Line.product_line",
-              "nativeQueryRef": "product_line",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
+        "Values": {
           "projections": [
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "_CR_CS_Measures"
+                      "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "CR Actual Units"
+                  "Property": "IGTD Actual Absorption"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR Actual Units",
-              "nativeQueryRef": "Actual Units",
-              "displayName": "Actual Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD Actual Absorption",
+              "nativeQueryRef": "IGTD Actual Absorption",
+              "format": "$#,0,,.00M;($#,0,,.0M)"
             },
             {
               "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "_CR_CS_Measures"
+                      "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "CR AOP Units"
+                  "Property": "IGTD AOP Absorption"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR AOP Units",
-              "nativeQueryRef": "AOP Units",
-              "displayName": "AOP Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD AOP Absorption",
+              "nativeQueryRef": "IGTD AOP Absorption",
+              "format": "$#,0,,.00M;($#,0,,.0M)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD Var $"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD Var $",
+              "nativeQueryRef": "IGTD Var $",
+              "format": "$#,0,,.00M;($#,0,,.0M)"
             }
           ]
         }
@@ -74,10 +70,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "_CR_CS_Measures"
+                    "Entity": "_US & CR IGT-D_Measures"
                   }
                 },
-                "Property": "CR Actual Units"
+                "Property": "IGTD Actual Absorption"
               }
             },
             "direction": "Descending"
@@ -87,59 +83,90 @@
       }
     },
     "objects": {
-      "categoryAxis": [
+      "dataLabels": [
         {
           "properties": {
-            "showAxisTitle": {
+            "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "valueAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "legend": [
-        {
-          "properties": {
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "9D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "labels": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
                 }
               }
             },
-            "labelPosition": {
+            "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "'OutsideEnd'"
+                  "Value": "20D"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0066CC'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryLabels": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0.4
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "card": [
+        {
+          "properties": {
+            "cardPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "20D"
+                }
+              }
+            },
+            "barShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -148,33 +175,6 @@
       ]
     },
     "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Actual vs AOP Units by Product Line'"
-                }
-              }
-            },
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            }
-          }
-        }
-      ],
       "dropShadow": [
         {
           "properties": {
@@ -230,20 +230,13 @@
           }
         }
       ],
-      "border": [
+      "background": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "10D"
                 }
               }
             }

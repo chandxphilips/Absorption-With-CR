@@ -47,6 +47,7 @@ ref table LocalDateTable_6fedd471-d9c1-475a-bae0-8f7c72ec0d03
 ref table CR_Dim_Product_Line
 ref table '_US & CR IGT-D_Measures'
 ref table 'IGTD Product Lines'
+ref table 'IGTD Sites'
 
 ref cultureInfo en-US
 

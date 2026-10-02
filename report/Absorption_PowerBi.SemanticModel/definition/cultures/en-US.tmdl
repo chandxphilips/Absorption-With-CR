@@ -34950,42 +34950,2134 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
-			    }
-			  },
-			  "Relationships": {
-			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_MB51"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cr_mb_51.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
-			          }
-			        },
-			        "cr_mb_51.entry_date.month": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.month"
-			          }
+			    },
+			    "entity__US__CR_IGTD_Measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures"
 			        }
 			      },
-			      "Phrasings": [
+			      "State": "Generated",
+			      "Terms": [
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cr_mb_51.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cr_mb_51.entry_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months"
+			          "_US & CR IGT-D_Measure": {
+			            "State": "Generated"
+			          }
 			        }
 			      ]
 			    },
+			    "entity__US__CR_IGTD_Measure.CR_IGTD_actual_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "CR IGTD Actual Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR IGTD actual units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr igtd actual unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.857
+			          }
+			        },
+			        {
+			          "cr igtd real unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr igtd existent unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr igtd tangible unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.CR_IGTD_AOP_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "CR IGTD AOP Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR IGTD AOP units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr igtd aop unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.857
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.CR_IGTD_actual_absorption": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "CR IGTD Actual Absorption"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR IGTD actual absorption": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "absorption": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr igtd real absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr igtd existent absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr igtd tangible absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr igtd actual preoccupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd actual fascination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd actual captivation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd actual engagement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd actual immersion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd actual raptness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd actual concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.CR_IGTD_AOP_absorption": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "CR IGTD AOP Absorption"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR IGTD AOP absorption": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "absorption": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr igtd aop preoccupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd aop fascination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd aop captivation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd aop engagement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd aop immersion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd aop raptness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd aop concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd aop enthrallment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd aop engrossment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr igtd aop interest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_actual_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Actual Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD actual units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd actual unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "igtd real unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "igtd existent unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "igtd tangible unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_AOP_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD AOP Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD AOP units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd aop unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_actual_absorption": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Actual Absorption"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD actual absorption": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "absorption": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd real absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "igtd existent absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "igtd tangible absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "igtd actual preoccupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd actual fascination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd actual captivation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd actual engagement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd actual immersion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd actual raptness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd actual concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD AOP Absorption"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD AOP absorption": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "absorption": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd aop preoccupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd aop fascination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd aop captivation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd aop engagement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd aop immersion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd aop raptness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd aop concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd aop enthrallment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd aop engrossment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "igtd aop interest": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_var_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Var Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD var units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd var unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_var_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Var $"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD var $": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "igtd var dollar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_var_units_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Var Units %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD var units %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "igtd var unit percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "igtd var unit pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "igtd var unit %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.686
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_var__": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Var $ %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD var $ %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "igtd var $ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "igtd var $ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "igtd var dollar %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_PL_actual_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD PL Actual Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD PL actual units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PL actual units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd pl actual unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.857
+			          }
+			        },
+			        {
+			          "pl actual unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "igtd pl real unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "igtd pl existent unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "igtd pl tangible unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "pl real unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pl existent unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pl tangible unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Actual Units": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD PL AOP Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD PL AOP units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PL AOP units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd pl aop unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.857
+			          }
+			        },
+			        {
+			          "pl aop unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "AOP Units": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD PL Actual Absorption"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD PL actual absorption": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "absorption": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PL actual absorption": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd pl real absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "igtd pl existent absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "igtd pl tangible absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "pl real absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pl existent absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "pl tangible absorption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "igtd pl actual preoccupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl actual fascination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl actual captivation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl actual engagement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "Actual Absorption": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD PL AOP Absorption"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD PL AOP absorption": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "absorption": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "PL AOP absorption": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd pl aop preoccupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl aop fascination": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl aop captivation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl aop engagement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl aop immersion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl aop raptness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl aop concentration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl aop enthrallment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd pl aop engrossment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "pl aop preoccupation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "AOP Absorption": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_PL_var__": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD PL Var $ %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD PL var $ %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "igtd pl var $ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "igtd pl var $ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "igtd pl var dollar %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "Dollar Variance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_header_title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Header Title"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD header title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "header title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd header designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "header designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "igtd header name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "igtd header award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "igtd header call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "igtd header heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "igtd header label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "header name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "header award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_selection_summary": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Selection Summary"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD selection summary": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "selection summary": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd selection synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "igtd selection explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "igtd selection extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "igtd selection summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "selection synopsis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "selection explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "selection extraction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "selection summarisation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "igtd selection review": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "igtd selection abstract": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_PL_var_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD PL Var $"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD PL var $": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "igtd pl var dollar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_PL_var_units_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD PL Var Units %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD PL var units %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "igtd pl var unit percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "igtd pl var unit pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "igtd pl var unit %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.693
+			          }
+			        },
+			        {
+			          "Variance in Units": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "IGTD_product_line": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IGTD Product Lines"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD product line": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "igtd artifact line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "igtd item line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "igtd merchandise line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "igtd produce line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "igtd product streak": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "igtd product stroke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "igtd product stripe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "igtd product contour": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "igtd product mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "igtd product connection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "IGTD_product_line.product_line": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IGTD Product Lines",
+			          "ConceptualProperty": "Product Line"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "product line": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "artifact line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "item line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "merchandise line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "produce line": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "product streak": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product stroke": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product stripe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product contour": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "product connection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "IGTD_site": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IGTD Sites"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD site": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "igtd website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "igtd campus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "igtd homepage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "igtd locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "igtd place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "igtd position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "igtd spot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "IGTD_site.site": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IGTD Sites",
+			          "ConceptualProperty": "Site"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "site": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "campus": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "homepage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "place": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "spot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Plant": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "IGTD_site.country": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "IGTD Sites",
+			          "ConceptualProperty": "Country"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
 			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_MB51"
@@ -35147,7 +37239,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months1"
+			          "ID": "entry_date_hierarchies_have_entry_months"
 			        }
 			      ]
 			    },
@@ -35972,7 +38064,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months2"
+			          "ID": "entry_date_hierarchies_have_entry_months1"
 			        }
 			      ]
 			    },
@@ -36137,7 +38229,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months3"
+			          "ID": "entry_date_hierarchies_have_entry_months2"
 			        }
 			      ]
 			    },
@@ -37670,6 +39762,831 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_material_masters_have_fact_FS_absorptions"
+			        }
+			      ]
+			    },
+			    "IGTD_site_has_country": {
+			      "Binding": {
+			        "ConceptualEntity": "IGTD Sites"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "IGTD_site": {
+			          "Target": {
+			            "Entity": "IGTD_site"
+			          }
+			        },
+			        "IGTD_site.country": {
+			          "Target": {
+			            "Entity": "IGTD_site.country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "IGTD_site"
+			            },
+			            "Object": {
+			              "Role": "IGTD_site.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "IGTD_sites_have_countries"
+			        }
+			      ]
+			    },
+			    "IGTD_site_has_site": {
+			      "Binding": {
+			        "ConceptualEntity": "IGTD Sites"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "IGTD_site": {
+			          "Target": {
+			            "Entity": "IGTD_site"
+			          }
+			        },
+			        "IGTD_site.site": {
+			          "Target": {
+			            "Entity": "IGTD_site.site"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "IGTD_site"
+			            },
+			            "Object": {
+			              "Role": "IGTD_site.site"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "IGTD_sites_have_sites"
+			        }
+			      ]
+			    },
+			    "IGTD_product_line_has_product_line": {
+			      "Binding": {
+			        "ConceptualEntity": "IGTD Product Lines"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "IGTD_product_line": {
+			          "Target": {
+			            "Entity": "IGTD_product_line"
+			          }
+			        },
+			        "IGTD_product_line.product_line": {
+			          "Target": {
+			            "Entity": "IGTD_product_line.product_line"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "IGTD_product_line"
+			            },
+			            "Object": {
+			              "Role": "IGTD_product_line.product_line"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "IGTD_product_lines_have_product_lines"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_var_units_": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_var_units_": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_var_units_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var_units_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_var_units_"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_var_": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_var_": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_var_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_var_"
+			        }
+			      ]
+			    },
+			    "IGTD_site_has_entity__US__CR_IGTD_Measure_IGTD_selection_summary": {
+			      "Binding": {
+			        "ConceptualEntity": "IGTD Sites"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "IGTD_site": {
+			          "Target": {
+			            "Entity": "IGTD_site"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_selection_summary": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_selection_summary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "IGTD_site"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_selection_summary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "IGTD_sites_have_IGTD_selection_summary"
+			        }
+			      ]
+			    },
+			    "calendar_has_entity__US__CR_IGTD_Measure_IGTD_selection_summary": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_selection_summary": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_selection_summary"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_selection_summary"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_IGTD_selection_summary"
+			        }
+			      ]
+			    },
+			    "calendar_has_entity__US__CR_IGTD_Measure_IGTD_header_title": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_header_title": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_header_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_header_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_IGTD_header_title"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_var__": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_var__"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_AOP_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_AOP_absorption"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_actual_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_actual_absorption"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_AOP_units": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_AOP_units"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_actual_units": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_actual_units": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_actual_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_actual_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_actual_units"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var__": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_var__"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_var_units_": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var_units_": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var_units_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var_units_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_var_units_"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_var_": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var_": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_var_"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_var_units": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var_units": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_var_units"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_AOP_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_AOP_absorption"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_actual_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_actual_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_actual_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_actual_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_actual_absorption"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_AOP_units": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_AOP_units": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_AOP_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_AOP_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_AOP_units"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_actual_units": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_actual_units": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_actual_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_actual_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_actual_units"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_entity__US__CR_IGTD_Measure_CR_IGTD_AOP_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.CR_IGTD_AOP_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.CR_IGTD_AOP_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.CR_IGTD_AOP_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_IGTD_AOP_absorption"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_entity__US__CR_IGTD_Measure_CR_IGTD_actual_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.CR_IGTD_actual_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.CR_IGTD_actual_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.CR_IGTD_actual_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR_IGTD_actual_absorption"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_entity__US__CR_IGTD_Measure_CR_IGTD_AOP_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.CR_IGTD_AOP_units": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.CR_IGTD_AOP_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.CR_IGTD_AOP_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_IGTD_AOP_units"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_entity__US__CR_IGTD_Measure_CR_IGTD_actual_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.CR_IGTD_actual_units": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.CR_IGTD_actual_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.CR_IGTD_actual_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_IGTD_actual_units"
 			        }
 			      ]
 			    },
@@ -49627,6 +52544,51 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "IGTD_site_in_country": {
+			      "Binding": {
+			        "ConceptualEntity": "IGTD Sites"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "IGTD_site": {
+			          "Target": {
+			            "Entity": "IGTD_site"
+			          }
+			        },
+			        "IGTD_site.country": {
+			          "Target": {
+			            "Entity": "IGTD_site.country"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "IGTD_site.country"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "IGTD_site"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "IGTD_site.country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "IGTD_sites_are_in_countries"
+			        }
+			      ]
+			    },
 			    "CR_dim_product_line_in_discipline": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_Dim_Product_Line"
@@ -50594,6 +53556,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_CR_FS_absorptions_are_undivided_CR_FS_absorptions"
+			        }
+			      ]
+			    },
+			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_mb_51.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
+			          }
+			        },
+			        "cr_mb_51.entry_date.month": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_mb_51.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cr_mb_51.entry_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_months3"
 			        }
 			      ]
 			    },
