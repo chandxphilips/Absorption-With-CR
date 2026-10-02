@@ -163,6 +163,126 @@ table _CR_CS_Measures
 			RETURN "Site: CR9A | Business: " & Bus & " | Period: " & Per
 		lineageTag: 214a891d-d828-4582-9ad5-86296ddd07fb
 
+	measure 'CR Units Pill Detail' =
+			
+			IF (
+			ISBLANK ( [CR AOP Units] ) || [CR AOP Units] = 0,
+			"No AOP",
+			[CR Variance Units % Display]
+			)
+		lineageTag: 31ab44f3-03d0-429f-bbf9-f73aa96d07e4
+
+	measure 'CR $ Pill Detail' =
+			
+			IF (
+			ISBLANK ( [CR AOP $ (Abs)] ) || [CR AOP $ (Abs)] = 0,
+			"No AOP",
+			[CR Variance $ % Display]
+			)
+		lineageTag: 532aec34-e2c6-4646-972e-3a692ba4aa23
+
+	measure 'CR AOP Units Card' = COALESCE ( [CR AOP Units], 0 )
+		lineageTag: 97d070db-12a9-43c7-bb16-47f113edcc86
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR AOP $ Card' = COALESCE ( [CR AOP $ (Abs)], 0 )
+		lineageTag: 6e8e8c99-5219-491f-9900-da844aa79256
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Actual Units Card' = COALESCE ( [CR Actual Units], 0 )
+		lineageTag: dd672764-44aa-443e-8993-bb5483bf15a3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Detail Title' =
+			
+			"Product Details – " &
+			SELECTEDVALUE ( CR_Dim_Product_Line[product_line], "All Product Lines" )
+		lineageTag: 74d904ee-016c-49d2-b9ef-f2bb184df9a3
+
+	measure 'CR AOP Daily' = ```
+			
+			VAR CurrentDate = MAX ( 'Calendar'[Date] )
+			VAR MonthStart  = EOMONTH ( CurrentDate, -1 ) + 1
+			VAR MonthEnd    = EOMONTH ( CurrentDate, 0 )
+			VAR MonthlyAOP =
+			    CALCULATE (
+			        [CR AOP Units],
+			        ALL ( 'Calendar' ),
+			        'Calendar'[Date] >= MonthStart,
+			        'Calendar'[Date] <= MonthEnd
+			    )
+			RETURN DIVIDE ( MonthlyAOP, DAY ( MonthEnd ) )
+			
+			```
+		lineageTag: a2ba1bd4-6ea9-436d-b84b-1c5c3fe7f045
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Actual Units Daily' =
+			
+			VAR d = MAX ( 'Calendar'[Date] )
+			RETURN IF ( d <= TODAY (), COALESCE ( [CR Actual Units], 0 ) )
+		lineageTag: 0188ca09-1697-4bfe-b02c-2ea82e4b65a4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet Min' = 0
+		formatString: 0
+		lineageTag: 604154b9-0e46-463e-8555-264b9d404e60
+
+	measure 'CR Bullet NI Units' = [CR AOP Units] * 0.7
+		lineageTag: 9c2447f5-3744-4af5-83c8-2d41f9c16e31
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet Sat Units' = [CR AOP Units] * 0.9
+		lineageTag: da80ca30-21b5-4f90-9506-ed678464b070
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet Good Units' = [CR AOP Units] * 1.1
+		lineageTag: 4d8f94c8-b321-460d-957c-d4623e8d0de3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet VG Units' = [CR AOP Units] * 1.3
+		lineageTag: 765056f6-b6f3-41c4-a1db-820892212f0a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet Max Units' = [CR AOP Units] * 1.5
+		lineageTag: 16ae394a-0f80-4a8c-8504-301354e85c58
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet NI $' = [CR AOP $ (Abs)] * 0.7
+		lineageTag: abe2994b-352e-4f39-a501-53c18163c350
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet Sat $' = [CR AOP $ (Abs)] * 0.9
+		lineageTag: a7a28a69-8077-4bc2-905d-7f89d5470f06
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet Good $' = [CR AOP $ (Abs)] * 1.1
+		lineageTag: f270d876-90d5-4ce0-8209-fdd90c2fb65f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet VG $' = [CR AOP $ (Abs)] * 1.3
+		lineageTag: 2788e397-7d73-41af-b645-30a9a4581ceb
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Bullet Max $' = [CR AOP $ (Abs)] * 1.5
+		lineageTag: 24011453-4d1e-4202-b8c1-ce6a3d5dec67
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Column1
 		dataType: string
 		lineageTag: 81876525-c2d3-43c7-a093-fcc8cd7e565e

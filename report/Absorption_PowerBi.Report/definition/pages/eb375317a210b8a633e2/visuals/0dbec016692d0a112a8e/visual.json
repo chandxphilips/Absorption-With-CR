@@ -1,6 +1,11 @@
 {
+<<<<<<< Updated upstream:report/Absorption_PowerBi.Report/definition/pages/eb375317a210b8a633e2/visuals/0dbec016692d0a112a8e/visual.json
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "0dbec016692d0a112a8e",
+=======
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "5f6c3f851807108d9cd3",
+>>>>>>> Stashed changes:report/Absorption_PowerBi.Report/definition/pages/eb375317a210b8a633e2/visuals/5f6c3f851807108d9cd3/visual.json
   "position": {
     "x": 240.91638159855788,
     "y": 240.91638159855788,

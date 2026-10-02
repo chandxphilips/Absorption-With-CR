@@ -31634,6 +31634,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.599
 			          }
+			        },
+			        {
+			          "Quantity": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -32473,6 +32483,16 @@ cultureInfo en-US
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Final Pack 12NC": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -34951,6 +34971,751 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
+			    "entity__US__CR_IGTD_Measure": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures"
+=======
+			    "CR_CS_measure.CR_units_pill_detail": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Units Pill Detail"
+>>>>>>> Stashed changes
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+<<<<<<< Updated upstream
+			          "_US & CR IGT-D_Measure": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+=======
+			          "CR units pill detail": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "detail": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "pill detail": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "units pill detail": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr unit pill detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.686
+			          }
+			        },
+			        {
+			          "unit pill detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        },
+			        {
+			          "cr unit pill aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr unit pill element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr unit pill fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "unit pill aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "unit pill element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "unit pill fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "pill aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "pill element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR__pill_detail": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR $ Pill Detail"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR $ pill detail": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr dollar pill detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "cr $ pill aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr $ pill element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr $ pill fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr $ pill part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr $ pill feature": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr $ pill point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr $ pill factor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr $ pill facet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr $ pill unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_AOP_units_card": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR AOP Units Card"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR AOP units card": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units card": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "AOP units card": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr aop unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.686
+			          }
+			        },
+			        {
+			          "aop unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        },
+			        {
+			          "unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.667
+			          }
+			        },
+			        {
+			          "cr aop unit postcard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr aop unit valentine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "aop unit postcard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "aop unit valentine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "unit postcard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "unit valentine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "cr aop unit pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_AOP__card": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR AOP $ Card"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR AOP $ card": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr aop dollar card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "cr aop $ postcard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr aop $ valentine": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr aop $ pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "cr aop $ certificate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.45
+			          }
+			        },
+			        {
+			          "cr aop $ license": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.45
+			          }
+			        },
+			        {
+			          "cr aop $ tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.45
+			          }
+			        },
+			        {
+			          "AOP $": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_actual_units_card": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Actual Units Card"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR actual units card": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units card": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "actual units card": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr actual unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.686
+			          }
+			        },
+			        {
+			          "actual unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        },
+			        {
+			          "unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.667
+			          }
+			        },
+			        {
+			          "cr real unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr existent unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr tangible unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "real unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "existent unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "tangible unit card": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "cr actual unit postcard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_detail_title": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Detail Title"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR detail title": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "detail title": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr detail designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "detail designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "cr detail name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cr detail award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cr detail call": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cr detail heading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "cr detail label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "designation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "detail name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "detail award": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
 			    "entity__US__CR_IGTD_Measure": {
 			      "Definition": {
 			        "Binding": {
@@ -34966,6 +35731,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+>>>>>>> Stashed changes
 			    "entity__US__CR_IGTD_Measure.CR_IGTD_actual_units": {
 			      "Definition": {
 			        "Binding": {
@@ -35897,6 +36663,7 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.591
 			          }
+<<<<<<< Updated upstream
 			        },
 			        {
 			          "Actual Units": {
@@ -35907,6 +36674,8 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+=======
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -35955,6 +36724,7 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.846
 			          }
+<<<<<<< Updated upstream
 			        },
 			        {
 			          "AOP Units": {
@@ -35965,6 +36735,8 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+=======
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -36093,6 +36865,7 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.514
 			          }
+<<<<<<< Updated upstream
 			        },
 			        {
 			          "Actual Absorption": {
@@ -36103,6 +36876,8 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+=======
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -36231,6 +37006,7 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.508
 			          }
+<<<<<<< Updated upstream
 			        },
 			        {
 			          "AOP Absorption": {
@@ -36241,6 +37017,8 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+=======
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -36287,6 +37065,7 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.624
 			          }
+<<<<<<< Updated upstream
 			        },
 			        {
 			          "Dollar Variance": {
@@ -36635,6 +37414,8 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+=======
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -36869,81 +37650,349 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
 			    "IGTD_site": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "IGTD Sites"
+=======
+			    "calendar.is_holiday_CR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Is Holiday CR"
+>>>>>>> Stashed changes
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
+<<<<<<< Updated upstream
 			          "IGTD site": {
+=======
+			          "is holiday CR": {
+>>>>>>> Stashed changes
 			            "State": "Generated"
 			          }
 			        },
 			        {
+<<<<<<< Updated upstream
 			          "igtd website": {
+=======
+			          "CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "holiday CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "calendar.is_WorkDay_CR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendar",
+			          "ConceptualProperty": "Is WorkDay CR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is WorkDay CR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "WorkDay CR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_AOP_daily": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR AOP Daily"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR AOP daily": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "AOP daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "day-to-day": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.75
 			          }
 			        },
 			        {
 			          "igtd campus": {
+=======
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "regular": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.75
 			          }
 			        },
 			        {
 			          "igtd homepage": {
+=======
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "diurnal": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.75
 			          }
 			        },
 			        {
 			          "igtd locale": {
+=======
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_actual_units_daily": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Actual Units Daily"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR actual units daily": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "units daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "actual units daily": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr actual unit daily": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.75
 			          }
 			        },
 			        {
 			          "igtd place": {
+=======
+			            "Weight": 0.686
+			          }
+			        },
+			        {
+			          "actual unit daily": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.727
 			          }
 			        },
 			        {
 			          "igtd position": {
+=======
+			            "Weight": 0.677
+			          }
+			        },
+			        {
+			          "unit daily": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.727
 			          }
 			        },
 			        {
 			          "igtd spot": {
+=======
+			            "Weight": 0.667
+			          }
+			        },
+			        {
+			          "cr real unit daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr existent unit daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "cr tangible unit daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "real unit daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "existent unit daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "tangible unit daily": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "day-to-day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_bullet_min": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet Min"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR bullet min": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "bullet min": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr bullet minimum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "bullet minimum": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -36954,47 +38003,98 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
 			    "IGTD_site.site": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "IGTD Sites",
 			          "ConceptualProperty": "Site"
+=======
+			    "CR_CS_measure.CR_bullet_NI_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet NI Units"
+>>>>>>> Stashed changes
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
+<<<<<<< Updated upstream
 			          "site": {
+=======
+			          "CR bullet NI units": {
+>>>>>>> Stashed changes
 			            "State": "Generated"
 			          }
 			        },
 			        {
+<<<<<<< Updated upstream
 			          "website": {
+=======
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "NI units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "bullet NI units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr bullet ni unit": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.736
 			          }
 			        },
 			        {
 			          "campus": {
+=======
+			            "Weight": 0.857
+			          }
+			        },
+			        {
+			          "bullet ni unit": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.736
 			          }
 			        },
 			        {
 			          "homepage": {
+=======
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "ni unit": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.736
 			          }
 			        },
@@ -37046,32 +38146,555 @@ cultureInfo en-US
 			              "Agent": "PowerBI.VisualColumnRename"
 			            },
 			            "Weight": 0.9
+=======
+			            "Weight": 0.833
+>>>>>>> Stashed changes
 			          }
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
 			    "IGTD_site.country": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "IGTD Sites",
 			          "ConceptualProperty": "Country"
+=======
+			    "CR_CS_measure.CR_bullet_sat_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet Sat Units"
+>>>>>>> Stashed changes
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
+<<<<<<< Updated upstream
 			          "country": {
+=======
+			          "CR bullet sat units": {
+>>>>>>> Stashed changes
 			            "State": "Generated"
 			          }
 			        },
 			        {
+<<<<<<< Updated upstream
 			          "nation": {
+=======
+			          "cr bullet sat unit": {
+>>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
+<<<<<<< Updated upstream
 			            "Weight": 0.736
+=======
+			            "Weight": 0.686
+			          }
+			        },
+			        {
+			          "cr gunshot sat unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr buckshot sat unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr shot sat unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr cannonball sat unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr slug sat unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr ammunition sat unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr cartridge sat unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "cr projectile sat unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "cr pellet sat unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_bullet_good_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet Good Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR bullet good units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "good units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr bullet good unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.857
+			          }
+			        },
+			        {
+			          "good unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_bullet_VG_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet VG Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR bullet VG units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "VG units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "bullet VG units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr bullet vg unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.857
+			          }
+			        },
+			        {
+			          "bullet vg unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "vg unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_bullet_max_units": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet Max Units"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR bullet max units": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "max units": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "cr bullet max unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.857
+			          }
+			        },
+			        {
+			          "max unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "cr bullet maximum unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "maximum unit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_bullet_NI_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet NI $"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR bullet NI $": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr bullet ni dollar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_bullet_sat_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet Sat $"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR bullet sat $": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr bullet sat dollar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.617
+			          }
+			        },
+			        {
+			          "cr gunshot sat $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr buckshot sat $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "cr shot sat $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr cannonball sat $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr slug sat $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr ammunition sat $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "cr cartridge sat $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "cr projectile sat $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "cr pellet sat $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_bullet_good_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet Good $"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR bullet good $": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr bullet good dollar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_bullet_VG_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet VG $"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR bullet VG $": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr bullet vg dollar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_bullet_max_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Bullet Max $"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR bullet max $": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cr bullet max dollar": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "cr bullet maximum $": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+>>>>>>> Stashed changes
 			          }
 			        }
 			      ]
@@ -39765,6 +41388,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
 			    "IGTD_site_has_country": {
 			      "Binding": {
 			        "ConceptualEntity": "IGTD Sites"
@@ -39779,6 +41403,22 @@ cultureInfo en-US
 			        "IGTD_site.country": {
 			          "Target": {
 			            "Entity": "IGTD_site.country"
+=======
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_max_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_max_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_max_"
+>>>>>>> Stashed changes
 			          }
 			        }
 			      },
@@ -39786,14 +41426,22 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "IGTD_site"
 			            },
 			            "Object": {
 			              "Role": "IGTD_site.country"
+=======
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_max_"
+>>>>>>> Stashed changes
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "IGTD_sites_have_countries"
 			        }
 			      ]
@@ -39812,6 +41460,26 @@ cultureInfo en-US
 			        "IGTD_site.site": {
 			          "Target": {
 			            "Entity": "IGTD_site.site"
+=======
+			          "ID": "cr_aop_2026_have_CR_bullet_max_"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_VG_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_VG_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_VG_"
+>>>>>>> Stashed changes
 			          }
 			        }
 			      },
@@ -39819,15 +41487,521 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "IGTD_site"
 			            },
 			            "Object": {
 			              "Role": "IGTD_site.site"
+=======
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_VG_"
+>>>>>>> Stashed changes
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "IGTD_sites_have_sites"
+=======
+			          "ID": "cr_aop_2026_have_CR_bullet_VG_"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_good_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_good_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_good_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_good_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_bullet_good_"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_sat_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_sat_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_sat_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_sat_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_bullet_sat_"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_NI_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_NI_": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_NI_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_NI_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_bullet_NI_"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_max_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_max_units": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_max_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_max_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_bullet_max_units"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_VG_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_VG_units": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_VG_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_VG_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_bullet_VG_units"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_good_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_good_units": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_good_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_good_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_bullet_good_units"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_sat_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_sat_units": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_sat_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_sat_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_bullet_sat_units"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_NI_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_NI_units": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_NI_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_NI_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_bullet_NI_units"
+			        }
+			      ]
+			    },
+			    "CR_CS_measure_has_CR_bullet_min": {
+			      "Binding": {
+			        "ConceptualEntity": "_CR_CS_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_CS_measure": {
+			          "Target": {
+			            "Entity": "CR_CS_measure"
+			          }
+			        },
+			        "CR_CS_measure.CR_bullet_min": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_bullet_min"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_CS_measure"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_bullet_min"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_CS_measures_have_CR_bullet_min"
+			        }
+			      ]
+			    },
+			    "calendar_has_CR_CS_measure_CR_actual_units_daily": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "CR_CS_measure.CR_actual_units_daily": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_actual_units_daily"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_actual_units_daily"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_CR_actual_units_daily"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_actual_units_daily": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_actual_units_daily": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_actual_units_daily"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_actual_units_daily"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_actual_units_daily"
+			        }
+			      ]
+			    },
+			    "calendar_has_CR_CS_measure_CR_AOP_daily": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "CR_CS_measure.CR_AOP_daily": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_AOP_daily"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_AOP_daily"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_CR_AOP_daily"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_AOP_daily": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_AOP_daily": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_AOP_daily"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_AOP_daily"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_AOP_daily"
+			        }
+			      ]
+			    },
+			    "calendar_has_is_WorkDay_CR": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.is_WorkDay_CR": {
+			          "Target": {
+			            "Entity": "calendar.is_WorkDay_CR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.is_WorkDay_CR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_is_WorkDay_CR"
+			        }
+			      ]
+			    },
+			    "calendar_has_is_holiday_CR": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendar"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendar": {
+			          "Target": {
+			            "Entity": "calendar"
+			          }
+			        },
+			        "calendar.is_holiday_CR": {
+			          "Target": {
+			            "Entity": "calendar.is_holiday_CR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendar"
+			            },
+			            "Object": {
+			              "Role": "calendar.is_holiday_CR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendars_have_is_holiday_CR"
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -39864,6 +42038,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
 			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_var_units_": {
 			      "Binding": {
 			        "ConceptualEntity": "_US & CR IGT-D_Measures"
@@ -40038,6 +42213,17 @@ cultureInfo en-US
 			        "entity__US__CR_IGTD_Measure": {
 			          "Target": {
 			            "Entity": "entity__US__CR_IGTD_Measure"
+=======
+			    "fact_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_PL_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_FS_absorption": {
+			          "Target": {
+			            "Entity": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_PL_var__": {
@@ -40050,7 +42236,11 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "entity__US__CR_IGTD_Measure"
+=======
+			              "Role": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
@@ -40058,6 +42248,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_var__"
 			        }
 			      ]
@@ -40071,6 +42262,120 @@ cultureInfo en-US
 			        "entity__US__CR_IGTD_Measure": {
 			          "Target": {
 			            "Entity": "entity__US__CR_IGTD_Measure"
+=======
+			          "ID": "fact_FS_absorptions_have_IGTD_PL_var__"
+			        }
+			      ]
+			    },
+			    "fact_AOP_has_entity__US__CR_IGTD_Measure_IGTD_PL_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_AOP"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_AOP": {
+			          "Target": {
+			            "Entity": "fact_AOP"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_var__": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_AOP"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_AOPs_have_IGTD_PL_var__"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_PL_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_var__": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_IGTD_PL_var__"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_entity__US__CR_IGTD_Measure_IGTD_PL_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_var__": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_IGTD_PL_var__"
+			        }
+			      ]
+			    },
+			    "fact_AOP_has_entity__US__CR_IGTD_Measure_IGTD_PL_AOP_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_AOP"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_AOP": {
+			          "Target": {
+			            "Entity": "fact_AOP"
+>>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption": {
@@ -40083,7 +42388,11 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "entity__US__CR_IGTD_Measure"
+=======
+			              "Role": "fact_AOP"
+>>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption"
@@ -40091,6 +42400,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_AOP_absorption"
 			        }
 			      ]
@@ -40104,6 +42414,54 @@ cultureInfo en-US
 			        "entity__US__CR_IGTD_Measure": {
 			          "Target": {
 			            "Entity": "entity__US__CR_IGTD_Measure"
+=======
+			          "ID": "fact_AOPs_have_IGTD_PL_AOP_absorption"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_entity__US__CR_IGTD_Measure_IGTD_PL_AOP_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_IGTD_PL_AOP_absorption"
+			        }
+			      ]
+			    },
+			    "fact_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_PL_actual_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_FS_absorption": {
+			          "Target": {
+			            "Entity": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption": {
@@ -40116,7 +42474,11 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "entity__US__CR_IGTD_Measure"
+=======
+			              "Role": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption"
@@ -40124,6 +42486,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_actual_absorption"
 			        }
 			      ]
@@ -40137,6 +42500,54 @@ cultureInfo en-US
 			        "entity__US__CR_IGTD_Measure": {
 			          "Target": {
 			            "Entity": "entity__US__CR_IGTD_Measure"
+=======
+			          "ID": "fact_FS_absorptions_have_IGTD_PL_actual_absorption"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_PL_actual_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_IGTD_PL_actual_absorption"
+			        }
+			      ]
+			    },
+			    "fact_AOP_has_entity__US__CR_IGTD_Measure_IGTD_PL_AOP_units": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_AOP"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_AOP": {
+			          "Target": {
+			            "Entity": "fact_AOP"
+>>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units": {
@@ -40149,7 +42560,11 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "entity__US__CR_IGTD_Measure"
+=======
+			              "Role": "fact_AOP"
+>>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units"
@@ -40157,7 +42572,44 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_AOP_units"
+=======
+			          "ID": "fact_AOPs_have_IGTD_PL_AOP_units"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_entity__US__CR_IGTD_Measure_IGTD_PL_AOP_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_IGTD_PL_AOP_units"
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -40194,6 +42646,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
 			    "entity__US__CR_IGTD_Measure_has_IGTD_var__": {
 			      "Binding": {
 			        "ConceptualEntity": "_US & CR IGT-D_Measures"
@@ -40203,6 +42656,17 @@ cultureInfo en-US
 			        "entity__US__CR_IGTD_Measure": {
 			          "Target": {
 			            "Entity": "entity__US__CR_IGTD_Measure"
+=======
+			    "fact_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_FS_absorption": {
+			          "Target": {
+			            "Entity": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_var__": {
@@ -40215,7 +42679,11 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "entity__US__CR_IGTD_Measure"
+=======
+			              "Role": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var__"
@@ -40223,7 +42691,110 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_var__"
+=======
+			          "ID": "fact_FS_absorptions_have_IGTD_var__"
+			        }
+			      ]
+			    },
+			    "fact_AOP_has_entity__US__CR_IGTD_Measure_IGTD_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_AOP"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_AOP": {
+			          "Target": {
+			            "Entity": "fact_AOP"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var__": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_AOP"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_AOPs_have_IGTD_var__"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var__": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_IGTD_var__"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_entity__US__CR_IGTD_Measure_IGTD_var__": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var__": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var__"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var__"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_IGTD_var__"
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -40260,6 +42831,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
 			    "entity__US__CR_IGTD_Measure_has_IGTD_var_": {
 			      "Binding": {
 			        "ConceptualEntity": "_US & CR IGT-D_Measures"
@@ -40269,6 +42841,17 @@ cultureInfo en-US
 			        "entity__US__CR_IGTD_Measure": {
 			          "Target": {
 			            "Entity": "entity__US__CR_IGTD_Measure"
+=======
+			    "fact_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_var_": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_FS_absorption": {
+			          "Target": {
+			            "Entity": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_var_": {
@@ -40281,7 +42864,11 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "entity__US__CR_IGTD_Measure"
+=======
+			              "Role": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var_"
@@ -40289,7 +42876,110 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_var_"
+=======
+			          "ID": "fact_FS_absorptions_have_IGTD_var_"
+			        }
+			      ]
+			    },
+			    "fact_AOP_has_entity__US__CR_IGTD_Measure_IGTD_var_": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_AOP"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_AOP": {
+			          "Target": {
+			            "Entity": "fact_AOP"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var_": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_AOP"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_AOPs_have_IGTD_var_"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_var_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var_": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_IGTD_var_"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_entity__US__CR_IGTD_Measure_IGTD_var_": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_var_": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_var_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_IGTD_var_"
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -40326,6 +43016,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
 			    "entity__US__CR_IGTD_Measure_has_IGTD_AOP_absorption": {
 			      "Binding": {
 			        "ConceptualEntity": "_US & CR IGT-D_Measures"
@@ -40335,6 +43026,17 @@ cultureInfo en-US
 			        "entity__US__CR_IGTD_Measure": {
 			          "Target": {
 			            "Entity": "entity__US__CR_IGTD_Measure"
+=======
+			    "fact_AOP_has_entity__US__CR_IGTD_Measure_IGTD_AOP_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_AOP"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_AOP": {
+			          "Target": {
+			            "Entity": "fact_AOP"
+>>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption": {
@@ -40347,7 +43049,11 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "entity__US__CR_IGTD_Measure"
+=======
+			              "Role": "fact_AOP"
+>>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption"
@@ -40355,6 +43061,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_AOP_absorption"
 			        }
 			      ]
@@ -40368,6 +43075,54 @@ cultureInfo en-US
 			        "entity__US__CR_IGTD_Measure": {
 			          "Target": {
 			            "Entity": "entity__US__CR_IGTD_Measure"
+=======
+			          "ID": "fact_AOPs_have_IGTD_AOP_absorption"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_entity__US__CR_IGTD_Measure_IGTD_AOP_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_IGTD_AOP_absorption"
+			        }
+			      ]
+			    },
+			    "fact_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_actual_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_FS_absorption": {
+			          "Target": {
+			            "Entity": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_actual_absorption": {
@@ -40380,7 +43135,11 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "entity__US__CR_IGTD_Measure"
+=======
+			              "Role": "fact_FS_absorption"
+>>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_actual_absorption"
@@ -40388,6 +43147,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_actual_absorption"
 			        }
 			      ]
@@ -40401,6 +43161,54 @@ cultureInfo en-US
 			        "entity__US__CR_IGTD_Measure": {
 			          "Target": {
 			            "Entity": "entity__US__CR_IGTD_Measure"
+=======
+			          "ID": "fact_FS_absorptions_have_IGTD_actual_absorption"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_actual_absorption": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_actual_absorption": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_actual_absorption"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_actual_absorption"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_IGTD_actual_absorption"
+			        }
+			      ]
+			    },
+			    "fact_AOP_has_entity__US__CR_IGTD_Measure_IGTD_AOP_units": {
+			      "Binding": {
+			        "ConceptualEntity": "Fact_AOP"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_AOP": {
+			          "Target": {
+			            "Entity": "fact_AOP"
+>>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_AOP_units": {
@@ -40413,7 +43221,11 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
+<<<<<<< Updated upstream
 			              "Role": "entity__US__CR_IGTD_Measure"
+=======
+			              "Role": "fact_AOP"
+>>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_AOP_units"
@@ -40421,7 +43233,44 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
+<<<<<<< Updated upstream
 			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_AOP_units"
+=======
+			          "ID": "fact_AOPs_have_IGTD_AOP_units"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_entity__US__CR_IGTD_Measure_IGTD_AOP_units": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_AOP_units": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_AOP_units"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_AOP_units"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_IGTD_AOP_units"
+>>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -40590,6 +43439,273 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+<<<<<<< Updated upstream
+=======
+			    "CR_dim_product_line_has_CR_CS_measure_CR_detail_title": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_Dim_Product_Line"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_dim_product_line": {
+			          "Target": {
+			            "Entity": "CR_dim_product_line"
+			          }
+			        },
+			        "CR_CS_measure.CR_detail_title": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_detail_title"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_dim_product_line"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_detail_title"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_dim_product_lines_have_CR_detail_title"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_actual_units_card": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_actual_units_card": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_actual_units_card"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_actual_units_card"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_actual_units_card"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_AOP__card": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_AOP__card": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_AOP__card"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_AOP__card"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_AOP__card"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_AOP_units_card": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_AOP_units_card": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_AOP_units_card"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_AOP_units_card"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_AOP_units_card"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_CR__pill_detail": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.CR__pill_detail": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR__pill_detail"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR__pill_detail"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR__pill_detail"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR__pill_detail": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR__pill_detail": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR__pill_detail"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR__pill_detail"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR__pill_detail"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_units_pill_detail": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_units_pill_detail": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_units_pill_detail"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_units_pill_detail"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_units_pill_detail"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_units_pill_detail": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_units_pill_detail": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_units_pill_detail"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_units_pill_detail"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_units_pill_detail"
+			        }
+			      ]
+			    },
+>>>>>>> Stashed changes
 			    "calendar_has_CR_CS_measure_CR_selection_summary": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendar"

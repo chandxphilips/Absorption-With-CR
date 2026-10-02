@@ -1,4 +1,5 @@
 {
+<<<<<<< Updated upstream:report/Absorption_PowerBi.Report/definition/pages/eb375317a210b8a633e2/visuals/31ef1df24a43747a1b14/visual.json
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
   "name": "31ef1df24a43747a1b14",
   "position": {
@@ -8,6 +9,17 @@
     "height": 260.99274673177104,
     "width": 507.81394160480335,
     "tabOrder": 2019
+=======
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "8d1a106172163d0a7720",
+  "position": {
+    "x": 14,
+    "y": 369,
+    "z": 1000,
+    "height": 349,
+    "width": 752,
+    "tabOrder": 1000
+>>>>>>> Stashed changes:report/Absorption_PowerBi.Report/definition/pages/eb375317a210b8a633e2/visuals/8d1a106172163d0a7720/visual.json
   },
   "visual": {
     "visualType": "clusteredColumnChart",

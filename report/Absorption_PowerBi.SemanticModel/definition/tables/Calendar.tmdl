@@ -173,6 +173,27 @@ table Calendar
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'Is Holiday CR' =
+			
+			NOT ISEMPTY (
+			FILTER ( CR_Holidays, CR_Holidays[holiday_date] = 'Calendar'[Date] )
+			)
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 5f2df2a7-bef3-4781-8a5e-2f78845d9b39
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Is WorkDay CR' =
+			
+			VAR DOW = WEEKDAY ( 'Calendar'[Date], 2 )
+			RETURN DOW <= 5 && NOT 'Calendar'[Is Holiday CR]
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: adebfdd8-f1c8-48d3-81ea-47bf026dbf93
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Calendar = calculated
 		mode: import
 		source =
