@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "0f5ee6817a4d0bdae7d9",
   "position": {
-    "x": 240.91638159855788,
-    "y": 240.91638159855788,
+    "x": 239.16666666666669,
+    "y": 241.66666666666669,
     "z": 22000,
-    "height": 260.99274673177104,
-    "width": 507.81394160480335,
+    "height": 260.83333333333337,
+    "width": 507.5,
     "tabOrder": 18000
   },
   "visual": {
@@ -249,54 +249,21 @@
             }
           }
         }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "3686479140ae835c8685",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "CR_Dim_Product_Line"
-              }
-            },
-            "Property": "product_line"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "dcadca7aa05b6d749d5e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_CR_CS_Measures"
-              }
-            },
-            "Property": "CR Actual Units"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "c62b37701d0c85010c93",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_CR_CS_Measures"
-              }
-            },
-            "Property": "CR AOP Units"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

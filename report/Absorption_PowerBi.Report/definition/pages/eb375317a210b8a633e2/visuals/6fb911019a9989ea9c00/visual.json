@@ -1,0 +1,671 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "6fb911019a9989ea9c00",
+  "position": {
+    "x": 17.142857142857142,
+    "y": 526.42857142857144,
+    "z": 20000,
+    "height": 258.57142857142861,
+    "width": 1275.7142857142858,
+    "tabOrder": 20000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Sites"
+                    }
+                  },
+                  "Property": "Site"
+                }
+              },
+              "queryRef": "IGTD Sites.Site",
+              "nativeQueryRef": "Plant",
+              "displayName": "Plant"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Product Lines"
+                    }
+                  },
+                  "Property": "Product Line"
+                }
+              },
+              "queryRef": "IGTD Product Lines.Product Line",
+              "nativeQueryRef": "Product Line"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL Actual Units"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Units",
+              "nativeQueryRef": "Actual Units",
+              "displayName": "Actual Units"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL AOP Units"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Units",
+              "nativeQueryRef": "AOP Units",
+              "displayName": "AOP Units"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL Var Units %"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Var Units %",
+              "nativeQueryRef": "Variance in Units ",
+              "displayName": "Variance in Units "
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL Actual Absorption"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption",
+              "nativeQueryRef": "Actual Absorption",
+              "displayName": "Actual Absorption"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL AOP Absorption"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption",
+              "nativeQueryRef": "AOP Absorption",
+              "displayName": "AOP Absorption"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL Var $ %"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Var $ %",
+              "nativeQueryRef": "Dollar Variance ",
+              "displayName": "Dollar Variance "
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "backColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0066CC'"
+                    }
+                  }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000000D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption"
+          }
+        },
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000000D"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "89.70793959898224D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Sites.Site"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "185.92059965276425D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Product Lines.Product Line"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "174.85718022562503D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Var $ %"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "178.99995520358374D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "204.5714767489789D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "144.85714541510333D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Var Units %"
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "And": {
+                              "Left": {
+                                "Comparison": {
+                                  "ComparisonKind": 2,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var Units %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "-10000D"
+                                    }
+                                  }
+                                }
+                              },
+                              "Right": {
+                                "Comparison": {
+                                  "ComparisonKind": 3,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var Units %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "-0.1D"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#C00000'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "And": {
+                              "Left": {
+                                "Comparison": {
+                                  "ComparisonKind": 2,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var Units %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "-0.1D"
+                                    }
+                                  }
+                                }
+                              },
+                              "Right": {
+                                "Comparison": {
+                                  "ComparisonKind": 3,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var Units %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "0D"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#C19C00'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "And": {
+                              "Left": {
+                                "Comparison": {
+                                  "ComparisonKind": 2,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var Units %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "0D"
+                                    }
+                                  }
+                                }
+                              },
+                              "Right": {
+                                "Comparison": {
+                                  "ComparisonKind": 3,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var Units %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "10000D"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#107C10'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Var Units %"
+          }
+        },
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Conditional": {
+                      "Cases": [
+                        {
+                          "Condition": {
+                            "And": {
+                              "Left": {
+                                "Comparison": {
+                                  "ComparisonKind": 2,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var $ %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "-10000D"
+                                    }
+                                  }
+                                }
+                              },
+                              "Right": {
+                                "Comparison": {
+                                  "ComparisonKind": 3,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var $ %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "-0.1D"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#C00000'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "And": {
+                              "Left": {
+                                "Comparison": {
+                                  "ComparisonKind": 2,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var $ %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "-0.1D"
+                                    }
+                                  }
+                                }
+                              },
+                              "Right": {
+                                "Comparison": {
+                                  "ComparisonKind": 3,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var $ %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "0D"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#C19C00'"
+                            }
+                          }
+                        },
+                        {
+                          "Condition": {
+                            "And": {
+                              "Left": {
+                                "Comparison": {
+                                  "ComparisonKind": 2,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var $ %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "0D"
+                                    }
+                                  }
+                                }
+                              },
+                              "Right": {
+                                "Comparison": {
+                                  "ComparisonKind": 3,
+                                  "Left": {
+                                    "Measure": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Entity": "_US & CR IGT-D_Measures"
+                                        }
+                                      },
+                                      "Property": "IGTD PL Var $ %"
+                                    }
+                                  },
+                                  "Right": {
+                                    "Literal": {
+                                      "Value": "10000D"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "Value": {
+                            "Literal": {
+                              "Value": "'#107C10'"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Var $ %"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
