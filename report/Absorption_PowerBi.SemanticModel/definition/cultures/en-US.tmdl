@@ -34971,31 +34971,16 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-			    "entity__US__CR_IGTD_Measure": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_US & CR IGT-D_Measures"
-=======
 			    "CR_CS_measure.CR_units_pill_detail": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_CR_CS_Measures",
 			          "ConceptualProperty": "CR Units Pill Detail"
->>>>>>> Stashed changes
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-<<<<<<< Updated upstream
-			          "_US & CR IGT-D_Measure": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-=======
 			          "CR units pill detail": {
 			            "State": "Generated"
 			          }
@@ -35731,7 +35716,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
->>>>>>> Stashed changes
 			    "entity__US__CR_IGTD_Measure.CR_IGTD_actual_units": {
 			      "Definition": {
 			        "Binding": {
@@ -36663,19 +36647,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.591
 			          }
-<<<<<<< Updated upstream
-			        },
-			        {
-			          "Actual Units": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-=======
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -36724,19 +36695,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.846
 			          }
-<<<<<<< Updated upstream
-			        },
-			        {
-			          "AOP Units": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-=======
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -36865,19 +36823,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.514
 			          }
-<<<<<<< Updated upstream
-			        },
-			        {
-			          "Actual Absorption": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-=======
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -37006,19 +36951,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.508
 			          }
-<<<<<<< Updated upstream
-			        },
-			        {
-			          "AOP Absorption": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-=======
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -37065,357 +36997,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.624
 			          }
-<<<<<<< Updated upstream
-			        },
-			        {
-			          "Dollar Variance": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure.IGTD_header_title": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_US & CR IGT-D_Measures",
-			          "ConceptualProperty": "IGTD Header Title"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "IGTD header title": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "title": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "header title": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "igtd header designation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "header designation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "igtd header name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "igtd header award": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "igtd header call": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "igtd header heading": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "igtd header label": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "designation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "header name": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "header award": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.727
-			          }
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure.IGTD_selection_summary": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_US & CR IGT-D_Measures",
-			          "ConceptualProperty": "IGTD Selection Summary"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "IGTD selection summary": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "summary": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "selection summary": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        },
-			        {
-			          "igtd selection synopsis": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "igtd selection explanation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "igtd selection extraction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "igtd selection summarisation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.762
-			          }
-			        },
-			        {
-			          "selection synopsis": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "selection explanation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "selection extraction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "selection summarisation": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "igtd selection review": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        },
-			        {
-			          "igtd selection abstract": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.739
-			          }
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure.IGTD_PL_var_": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_US & CR IGT-D_Measures",
-			          "ConceptualProperty": "IGTD PL Var $"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "IGTD PL var $": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "igtd pl var dollar": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.771
-			          }
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure.IGTD_PL_var_units_": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_US & CR IGT-D_Measures",
-			          "ConceptualProperty": "IGTD PL Var Units %"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "IGTD PL var units %": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "igtd pl var unit percentage": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.78
-			          }
-			        },
-			        {
-			          "igtd pl var unit pct": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.757
-			          }
-			        },
-			        {
-			          "igtd pl var unit %": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.693
-			          }
-			        },
-			        {
-			          "Variance in Units": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-=======
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -37650,35 +37231,21 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-			    "IGTD_site": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "IGTD Sites"
-=======
 			    "calendar.is_holiday_CR": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendar",
 			          "ConceptualProperty": "Is Holiday CR"
->>>>>>> Stashed changes
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-<<<<<<< Updated upstream
-			          "IGTD site": {
-=======
 			          "is holiday CR": {
->>>>>>> Stashed changes
 			            "State": "Generated"
 			          }
 			        },
 			        {
-<<<<<<< Updated upstream
-			          "igtd website": {
-=======
 			          "CR": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -37748,55 +37315,31 @@ cultureInfo en-US
 			        },
 			        {
 			          "day-to-day": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "igtd campus": {
-=======
 			            "Weight": 0.476
 			          }
 			        },
 			        {
 			          "regular": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "igtd homepage": {
-=======
 			            "Weight": 0.476
 			          }
 			        },
 			        {
 			          "diurnal": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "igtd locale": {
-=======
 			            "Weight": 0.476
 			          }
 			        }
@@ -37836,55 +37379,31 @@ cultureInfo en-US
 			        },
 			        {
 			          "cr actual unit daily": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "igtd place": {
-=======
 			            "Weight": 0.686
 			          }
 			        },
 			        {
 			          "actual unit daily": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "igtd position": {
-=======
 			            "Weight": 0.677
 			          }
 			        },
 			        {
 			          "unit daily": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.727
-			          }
-			        },
-			        {
-			          "igtd spot": {
-=======
 			            "Weight": 0.667
 			          }
 			        },
@@ -37992,7 +37511,6 @@ cultureInfo en-US
 			        },
 			        {
 			          "bullet minimum": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -38003,36 +37521,21 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-			    "IGTD_site.site": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "IGTD Sites",
-			          "ConceptualProperty": "Site"
-=======
 			    "CR_CS_measure.CR_bullet_NI_units": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_CR_CS_Measures",
 			          "ConceptualProperty": "CR Bullet NI Units"
->>>>>>> Stashed changes
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-<<<<<<< Updated upstream
-			          "site": {
-=======
 			          "CR bullet NI units": {
->>>>>>> Stashed changes
 			            "State": "Generated"
 			          }
 			        },
 			        {
-<<<<<<< Updated upstream
-			          "website": {
-=======
 			          "units": {
 			            "State": "Generated",
 			            "Weight": 0.97
@@ -38052,147 +37555,57 @@ cultureInfo en-US
 			        },
 			        {
 			          "cr bullet ni unit": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "campus": {
-=======
 			            "Weight": 0.857
 			          }
 			        },
 			        {
 			          "bullet ni unit": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "homepage": {
-=======
 			            "Weight": 0.846
 			          }
 			        },
 			        {
 			          "ni unit": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "locale": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        },
-			        {
-			          "place": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "position": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "spot": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.714
-			          }
-			        },
-			        {
-			          "Plant": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-=======
 			            "Weight": 0.833
->>>>>>> Stashed changes
 			          }
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-			    "IGTD_site.country": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "IGTD Sites",
-			          "ConceptualProperty": "Country"
-=======
 			    "CR_CS_measure.CR_bullet_sat_units": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_CR_CS_Measures",
 			          "ConceptualProperty": "CR Bullet Sat Units"
->>>>>>> Stashed changes
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-<<<<<<< Updated upstream
-			          "country": {
-=======
 			          "CR bullet sat units": {
->>>>>>> Stashed changes
 			            "State": "Generated"
 			          }
 			        },
 			        {
-<<<<<<< Updated upstream
-			          "nation": {
-=======
 			          "cr bullet sat unit": {
->>>>>>> Stashed changes
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-<<<<<<< Updated upstream
-			            "Weight": 0.736
-=======
 			            "Weight": 0.686
 			          }
 			        },
@@ -38694,7 +38107,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.599
->>>>>>> Stashed changes
 			          }
 			        }
 			      ]
@@ -41388,22 +40800,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-			    "IGTD_site_has_country": {
-			      "Binding": {
-			        "ConceptualEntity": "IGTD Sites"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "IGTD_site": {
-			          "Target": {
-			            "Entity": "IGTD_site"
-			          }
-			        },
-			        "IGTD_site.country": {
-			          "Target": {
-			            "Entity": "IGTD_site.country"
-=======
 			    "cr_aop_2026_has_CR_CS_measure_CR_bullet_max_": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_AOP_2026"
@@ -41418,7 +40814,6 @@ cultureInfo en-US
 			        "CR_CS_measure.CR_bullet_max_": {
 			          "Target": {
 			            "Entity": "CR_CS_measure.CR_bullet_max_"
->>>>>>> Stashed changes
 			          }
 			        }
 			      },
@@ -41426,41 +40821,14 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "IGTD_site"
-			            },
-			            "Object": {
-			              "Role": "IGTD_site.country"
-=======
 			              "Role": "cr_aop_2026"
 			            },
 			            "Object": {
 			              "Role": "CR_CS_measure.CR_bullet_max_"
->>>>>>> Stashed changes
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "IGTD_sites_have_countries"
-			        }
-			      ]
-			    },
-			    "IGTD_site_has_site": {
-			      "Binding": {
-			        "ConceptualEntity": "IGTD Sites"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "IGTD_site": {
-			          "Target": {
-			            "Entity": "IGTD_site"
-			          }
-			        },
-			        "IGTD_site.site": {
-			          "Target": {
-			            "Entity": "IGTD_site.site"
-=======
 			          "ID": "cr_aop_2026_have_CR_bullet_max_"
 			        }
 			      ]
@@ -41479,7 +40847,6 @@ cultureInfo en-US
 			        "CR_CS_measure.CR_bullet_VG_": {
 			          "Target": {
 			            "Entity": "CR_CS_measure.CR_bullet_VG_"
->>>>>>> Stashed changes
 			          }
 			        }
 			      },
@@ -41487,24 +40854,14 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "IGTD_site"
-			            },
-			            "Object": {
-			              "Role": "IGTD_site.site"
-=======
 			              "Role": "cr_aop_2026"
 			            },
 			            "Object": {
 			              "Role": "CR_CS_measure.CR_bullet_VG_"
->>>>>>> Stashed changes
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "IGTD_sites_have_sites"
-=======
 			          "ID": "cr_aop_2026_have_CR_bullet_VG_"
 			        }
 			      ]
@@ -42001,7 +41358,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendars_have_is_holiday_CR"
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -42038,182 +41394,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_var_units_": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-			          }
-			        },
-			        "entity__US__CR_IGTD_Measure.IGTD_PL_var_units_": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_var_units_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__US__CR_IGTD_Measure"
-			            },
-			            "Object": {
-			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var_units_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_var_units_"
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_var_": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-			          }
-			        },
-			        "entity__US__CR_IGTD_Measure.IGTD_PL_var_": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_PL_var_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "entity__US__CR_IGTD_Measure"
-			            },
-			            "Object": {
-			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_var_"
-			        }
-			      ]
-			    },
-			    "IGTD_site_has_entity__US__CR_IGTD_Measure_IGTD_selection_summary": {
-			      "Binding": {
-			        "ConceptualEntity": "IGTD Sites"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "IGTD_site": {
-			          "Target": {
-			            "Entity": "IGTD_site"
-			          }
-			        },
-			        "entity__US__CR_IGTD_Measure.IGTD_selection_summary": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_selection_summary"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "IGTD_site"
-			            },
-			            "Object": {
-			              "Role": "entity__US__CR_IGTD_Measure.IGTD_selection_summary"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "IGTD_sites_have_IGTD_selection_summary"
-			        }
-			      ]
-			    },
-			    "calendar_has_entity__US__CR_IGTD_Measure_IGTD_selection_summary": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendar": {
-			          "Target": {
-			            "Entity": "calendar"
-			          }
-			        },
-			        "entity__US__CR_IGTD_Measure.IGTD_selection_summary": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_selection_summary"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar"
-			            },
-			            "Object": {
-			              "Role": "entity__US__CR_IGTD_Measure.IGTD_selection_summary"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "calendars_have_IGTD_selection_summary"
-			        }
-			      ]
-			    },
-			    "calendar_has_entity__US__CR_IGTD_Measure_IGTD_header_title": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendar"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendar": {
-			          "Target": {
-			            "Entity": "calendar"
-			          }
-			        },
-			        "entity__US__CR_IGTD_Measure.IGTD_header_title": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_header_title"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendar"
-			            },
-			            "Object": {
-			              "Role": "entity__US__CR_IGTD_Measure.IGTD_header_title"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "calendars_have_IGTD_header_title"
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_var__": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-=======
 			    "fact_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_PL_var__": {
 			      "Binding": {
 			        "ConceptualEntity": "Fact_FS_Absorption"
@@ -42223,7 +41403,6 @@ cultureInfo en-US
 			        "fact_FS_absorption": {
 			          "Target": {
 			            "Entity": "fact_FS_absorption"
->>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_PL_var__": {
@@ -42236,11 +41415,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "entity__US__CR_IGTD_Measure"
-=======
 			              "Role": "fact_FS_absorption"
->>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_var__"
@@ -42248,21 +41423,6 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_var__"
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_AOP_absorption": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-=======
 			          "ID": "fact_FS_absorptions_have_IGTD_PL_var__"
 			        }
 			      ]
@@ -42375,7 +41535,6 @@ cultureInfo en-US
 			        "fact_AOP": {
 			          "Target": {
 			            "Entity": "fact_AOP"
->>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption": {
@@ -42388,11 +41547,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "entity__US__CR_IGTD_Measure"
-=======
 			              "Role": "fact_AOP"
->>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_absorption"
@@ -42400,21 +41555,6 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_AOP_absorption"
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_actual_absorption": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-=======
 			          "ID": "fact_AOPs_have_IGTD_PL_AOP_absorption"
 			        }
 			      ]
@@ -42461,7 +41601,6 @@ cultureInfo en-US
 			        "fact_FS_absorption": {
 			          "Target": {
 			            "Entity": "fact_FS_absorption"
->>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption": {
@@ -42474,11 +41613,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "entity__US__CR_IGTD_Measure"
-=======
 			              "Role": "fact_FS_absorption"
->>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_actual_absorption"
@@ -42486,21 +41621,6 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_actual_absorption"
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure_has_IGTD_PL_AOP_units": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-=======
 			          "ID": "fact_FS_absorptions_have_IGTD_PL_actual_absorption"
 			        }
 			      ]
@@ -42547,7 +41667,6 @@ cultureInfo en-US
 			        "fact_AOP": {
 			          "Target": {
 			            "Entity": "fact_AOP"
->>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units": {
@@ -42560,11 +41679,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "entity__US__CR_IGTD_Measure"
-=======
 			              "Role": "fact_AOP"
->>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_PL_AOP_units"
@@ -42572,9 +41687,6 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_PL_AOP_units"
-=======
 			          "ID": "fact_AOPs_have_IGTD_PL_AOP_units"
 			        }
 			      ]
@@ -42609,7 +41721,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "cr_aop_2026_have_IGTD_PL_AOP_units"
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -42646,17 +41757,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-			    "entity__US__CR_IGTD_Measure_has_IGTD_var__": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-=======
 			    "fact_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_var__": {
 			      "Binding": {
 			        "ConceptualEntity": "Fact_FS_Absorption"
@@ -42666,7 +41766,6 @@ cultureInfo en-US
 			        "fact_FS_absorption": {
 			          "Target": {
 			            "Entity": "fact_FS_absorption"
->>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_var__": {
@@ -42679,11 +41778,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "entity__US__CR_IGTD_Measure"
-=======
 			              "Role": "fact_FS_absorption"
->>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var__"
@@ -42691,9 +41786,6 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_var__"
-=======
 			          "ID": "fact_FS_absorptions_have_IGTD_var__"
 			        }
 			      ]
@@ -42794,7 +41886,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "cr_aop_2026_have_IGTD_var__"
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -42831,17 +41922,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-			    "entity__US__CR_IGTD_Measure_has_IGTD_var_": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-=======
 			    "fact_FS_absorption_has_entity__US__CR_IGTD_Measure_IGTD_var_": {
 			      "Binding": {
 			        "ConceptualEntity": "Fact_FS_Absorption"
@@ -42851,7 +41931,6 @@ cultureInfo en-US
 			        "fact_FS_absorption": {
 			          "Target": {
 			            "Entity": "fact_FS_absorption"
->>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_var_": {
@@ -42864,11 +41943,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "entity__US__CR_IGTD_Measure"
-=======
 			              "Role": "fact_FS_absorption"
->>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_var_"
@@ -42876,9 +41951,6 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_var_"
-=======
 			          "ID": "fact_FS_absorptions_have_IGTD_var_"
 			        }
 			      ]
@@ -42979,7 +42051,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "cr_aop_2026_have_IGTD_var_"
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -43016,17 +42087,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-			    "entity__US__CR_IGTD_Measure_has_IGTD_AOP_absorption": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-=======
 			    "fact_AOP_has_entity__US__CR_IGTD_Measure_IGTD_AOP_absorption": {
 			      "Binding": {
 			        "ConceptualEntity": "Fact_AOP"
@@ -43036,7 +42096,6 @@ cultureInfo en-US
 			        "fact_AOP": {
 			          "Target": {
 			            "Entity": "fact_AOP"
->>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption": {
@@ -43049,11 +42108,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "entity__US__CR_IGTD_Measure"
-=======
 			              "Role": "fact_AOP"
->>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_AOP_absorption"
@@ -43061,21 +42116,6 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_AOP_absorption"
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure_has_IGTD_actual_absorption": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-=======
 			          "ID": "fact_AOPs_have_IGTD_AOP_absorption"
 			        }
 			      ]
@@ -43122,7 +42162,6 @@ cultureInfo en-US
 			        "fact_FS_absorption": {
 			          "Target": {
 			            "Entity": "fact_FS_absorption"
->>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_actual_absorption": {
@@ -43135,11 +42174,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "entity__US__CR_IGTD_Measure"
-=======
 			              "Role": "fact_FS_absorption"
->>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_actual_absorption"
@@ -43147,21 +42182,6 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_actual_absorption"
-			        }
-			      ]
-			    },
-			    "entity__US__CR_IGTD_Measure_has_IGTD_AOP_units": {
-			      "Binding": {
-			        "ConceptualEntity": "_US & CR IGT-D_Measures"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "entity__US__CR_IGTD_Measure": {
-			          "Target": {
-			            "Entity": "entity__US__CR_IGTD_Measure"
-=======
 			          "ID": "fact_FS_absorptions_have_IGTD_actual_absorption"
 			        }
 			      ]
@@ -43208,7 +42228,6 @@ cultureInfo en-US
 			        "fact_AOP": {
 			          "Target": {
 			            "Entity": "fact_AOP"
->>>>>>> Stashed changes
 			          }
 			        },
 			        "entity__US__CR_IGTD_Measure.IGTD_AOP_units": {
@@ -43221,11 +42240,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-<<<<<<< Updated upstream
-			              "Role": "entity__US__CR_IGTD_Measure"
-=======
 			              "Role": "fact_AOP"
->>>>>>> Stashed changes
 			            },
 			            "Object": {
 			              "Role": "entity__US__CR_IGTD_Measure.IGTD_AOP_units"
@@ -43233,9 +42248,6 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-<<<<<<< Updated upstream
-			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_AOP_units"
-=======
 			          "ID": "fact_AOPs_have_IGTD_AOP_units"
 			        }
 			      ]
@@ -43270,7 +42282,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "cr_aop_2026_have_IGTD_AOP_units"
->>>>>>> Stashed changes
 			        }
 			      ]
 			    },
@@ -43439,8 +42450,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-<<<<<<< Updated upstream
-=======
 			    "CR_dim_product_line_has_CR_CS_measure_CR_detail_title": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_Dim_Product_Line"
@@ -43705,7 +42714,6 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
->>>>>>> Stashed changes
 			    "calendar_has_CR_CS_measure_CR_selection_summary": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendar"
@@ -55657,51 +54665,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fact_FS_absorptions_have_document_lines"
-			        }
-			      ]
-			    },
-			    "IGTD_site_in_country": {
-			      "Binding": {
-			        "ConceptualEntity": "IGTD Sites"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "IGTD_site": {
-			          "Target": {
-			            "Entity": "IGTD_site"
-			          }
-			        },
-			        "IGTD_site.country": {
-			          "Target": {
-			            "Entity": "IGTD_site.country"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "IGTD_site.country"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "IGTD_site"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "IGTD_site.country"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "IGTD_sites_are_in_countries"
 			        }
 			      ]
 			    },
