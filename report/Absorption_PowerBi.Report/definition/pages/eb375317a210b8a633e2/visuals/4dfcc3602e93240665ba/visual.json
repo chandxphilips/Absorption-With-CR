@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "2455d1fe52bc3248a3e3",
+  "name": "4dfcc3602e93240665ba",
   "position": {
-    "x": 8.92334564174851,
-    "y": 80.31011077573659,
-    "z": 15000,
-    "height": 144.07744389717675,
-    "width": 199.58268867723666,
-    "tabOrder": 14000
+    "x": 220.84001646534472,
+    "y": 177.14439823423373,
+    "z": 20004,
+    "height": 51.962356815375223,
+    "width": 190.13498743807753,
+    "tabOrder": 20004
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,14 +23,17 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD Selection Summary"
+                  "Property": "IGTD Units Variance Display"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD Selection Summary",
-              "nativeQueryRef": "IGTD Selection Summary"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD Units Variance Display",
+              "nativeQueryRef": "IGTD Units Variance Display"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -44,21 +47,26 @@
                 }
               }
             },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
             "fontColor": {
               "solid": {
                 "color": {
                   "expr": {
-                    "Literal": {
-                      "Value": "'#0066CC'"
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "_US & CR IGT-D_Measures"
+                        }
+                      },
+                      "Property": "IGTD Units Variance Color"
                     }
                   }
-                }
-              }
-            },
-            "textWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
                 }
               }
             }
@@ -69,22 +77,6 @@
         }
       ],
       "label": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "cardCalloutArea": [
         {
           "properties": {
             "show": {
@@ -113,10 +105,10 @@
           }
         }
       ],
-      "layout": [
+      "outline": [
         {
           "properties": {
-            "backgroundShow": {
+            "show": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -135,7 +127,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -145,10 +137,26 @@
           }
         }
       ],
-      "outline": [
+      "smallMultiplesHeader": [
         {
           "properties": {
-            "show": {
+            "backgroundShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "layout": [
+        {
+          "properties": {
+            "backgroundShow": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -163,92 +171,6 @@
       ]
     },
     "visualContainerObjects": {
-      "border": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "color": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
-                      "Value": "'#003D7A'"
-                    }
-                  }
-                }
-              }
-            },
-            "radius": {
-              "expr": {
-                "Literal": {
-                  "Value": "5D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "dropShadow": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "preset": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            },
-            "angle": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            },
-            "shadowDistance": {
-              "expr": {
-                "Literal": {
-                  "Value": "0L"
-                }
-              }
-            },
-            "shadowBlur": {
-              "expr": {
-                "Literal": {
-                  "Value": "15L"
-                }
-              }
-            },
-            "shadowSpread": {
-              "expr": {
-                "Literal": {
-                  "Value": "3L"
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "70L"
-                }
-              }
-            }
-          }
-        }
-      ],
       "background": [
         {
           "properties": {
@@ -256,6 +178,32 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'% Vs AOP units'"
                 }
               }
             }

@@ -23,11 +23,12 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD Actual Absorption"
+                  "Property": "IGTD PL Actual Absorption"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD Actual Absorption",
-              "nativeQueryRef": "IGTD Actual Absorption",
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption",
+              "nativeQueryRef": "Actual Absorption",
+              "displayName": "Actual Absorption",
               "format": "$#,0,,.00M;($#,0,,.0M)"
             },
             {
@@ -38,11 +39,12 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD AOP Absorption"
+                  "Property": "IGTD PL AOP Absorption"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD AOP Absorption",
-              "nativeQueryRef": "IGTD AOP Absorption",
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption",
+              "nativeQueryRef": "AOP Absorption",
+              "displayName": "AOP Absorption",
               "format": "$#,0,,.00M;($#,0,,.0M)"
             },
             {
@@ -53,11 +55,12 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD Var $"
+                  "Property": "IGTD PL Var $"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD Var $",
-              "nativeQueryRef": "IGTD Var $",
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Var $",
+              "nativeQueryRef": "AOP $ Var",
+              "displayName": "AOP $ Var",
               "format": "$#,0,,.00M;($#,0,,.0M)"
             }
           ]
@@ -73,7 +76,7 @@
                     "Entity": "_US & CR IGT-D_Measures"
                   }
                 },
-                "Property": "IGTD Actual Absorption"
+                "Property": "IGTD PL Actual Absorption"
               }
             },
             "direction": "Descending"
@@ -96,7 +99,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "20D"
+                  "Value": "22D"
                 }
               }
             },
@@ -139,7 +142,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "11D"
+                  "Value": "13D"
                 }
               }
             },

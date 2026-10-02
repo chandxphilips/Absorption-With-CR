@@ -82,12 +82,27 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
+                  "Property": "IGTD PL Units Variance"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Units Variance",
+              "nativeQueryRef": "Units Variance",
+              "displayName": "Units Variance"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
                   "Property": "IGTD PL Var Units %"
                 }
               },
               "queryRef": "_US & CR IGT-D_Measures.IGTD PL Var Units %",
-              "nativeQueryRef": "Variance in Units ",
-              "displayName": "Variance in Units "
+              "nativeQueryRef": "Variance Units %",
+              "displayName": "Variance Units %"
             },
             {
               "field": {
@@ -127,15 +142,47 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
+                  "Property": "IGTD PL Var $"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Var $",
+              "nativeQueryRef": "AOP $ Variance",
+              "displayName": "AOP $ Variance"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
                   "Property": "IGTD PL Var $ %"
                 }
               },
               "queryRef": "_US & CR IGT-D_Measures.IGTD PL Var $ %",
-              "nativeQueryRef": "Dollar Variance ",
-              "displayName": "Dollar Variance "
+              "nativeQueryRef": "Variance %",
+              "displayName": "Variance %"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "IGTD Sites"
+                  }
+                },
+                "Property": "Site"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
       }
     },
     "objects": {
@@ -181,7 +228,7 @@
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1000000D"
+                  "Value": "1D"
                 }
               }
             },
@@ -202,7 +249,7 @@
             "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "1000000D"
+                  "Value": "1D"
                 }
               }
             },
@@ -225,7 +272,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "89.70793959898224D"
+                  "Value": "111.43009788335121D"
                 }
               }
             }
@@ -239,7 +286,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "185.92059965276425D"
+                  "Value": "250.90042821688212D"
                 }
               }
             }
@@ -253,7 +300,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "174.85718022562503D"
+                  "Value": "104.75376617611329D"
                 }
               }
             }
@@ -267,7 +314,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "178.99995520358374D"
+                  "Value": "140.7918503739316D"
                 }
               }
             }
@@ -281,7 +328,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "204.5714767489789D"
+                  "Value": "135.65459638446634D"
                 }
               }
             }
@@ -295,7 +342,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "144.85714541510333D"
+                  "Value": "112.98630517196958D"
                 }
               }
             }
@@ -352,57 +399,6 @@
                                   },
                                   "Right": {
                                     "Literal": {
-                                      "Value": "-0.1D"
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#C00000'"
-                            }
-                          }
-                        },
-                        {
-                          "Condition": {
-                            "And": {
-                              "Left": {
-                                "Comparison": {
-                                  "ComparisonKind": 2,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "_US & CR IGT-D_Measures"
-                                        }
-                                      },
-                                      "Property": "IGTD PL Var Units %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "-0.1D"
-                                    }
-                                  }
-                                }
-                              },
-                              "Right": {
-                                "Comparison": {
-                                  "ComparisonKind": 3,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "_US & CR IGT-D_Measures"
-                                        }
-                                      },
-                                      "Property": "IGTD PL Var Units %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
                                       "Value": "0D"
                                     }
                                   }
@@ -412,7 +408,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#C19C00'"
+                              "Value": "'#C00000'"
                             }
                           }
                         },
@@ -531,57 +527,6 @@
                                   },
                                   "Right": {
                                     "Literal": {
-                                      "Value": "-0.1D"
-                                    }
-                                  }
-                                }
-                              }
-                            }
-                          },
-                          "Value": {
-                            "Literal": {
-                              "Value": "'#C00000'"
-                            }
-                          }
-                        },
-                        {
-                          "Condition": {
-                            "And": {
-                              "Left": {
-                                "Comparison": {
-                                  "ComparisonKind": 2,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "_US & CR IGT-D_Measures"
-                                        }
-                                      },
-                                      "Property": "IGTD PL Var $ %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
-                                      "Value": "-0.1D"
-                                    }
-                                  }
-                                }
-                              },
-                              "Right": {
-                                "Comparison": {
-                                  "ComparisonKind": 3,
-                                  "Left": {
-                                    "Measure": {
-                                      "Expression": {
-                                        "SourceRef": {
-                                          "Entity": "_US & CR IGT-D_Measures"
-                                        }
-                                      },
-                                      "Property": "IGTD PL Var $ %"
-                                    }
-                                  },
-                                  "Right": {
-                                    "Literal": {
                                       "Value": "0D"
                                     }
                                   }
@@ -591,7 +536,7 @@
                           },
                           "Value": {
                             "Literal": {
-                              "Value": "'#C19C00'"
+                              "Value": "'#C00000'"
                             }
                           }
                         },
@@ -662,6 +607,17 @@
               }
             ],
             "metadata": "_US & CR IGT-D_Measures.IGTD PL Var $ %"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
           }
         }
       ]

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "da448d4a7d005d61706a",
+  "name": "ab6865de7248c122d66e",
   "position": {
-    "x": 20.666666666666668,
-    "y": 240.66666666666666,
-    "z": 18000,
-    "height": 77.333333333333329,
-    "width": 190.66666666666666,
-    "tabOrder": 14000
+    "x": 27.162141062582503,
+    "y": 341.29820726462361,
+    "z": 20001,
+    "height": 77.943535223062838,
+    "width": 175.96343557933884,
+    "tabOrder": 20001
   },
   "visual": {
     "visualType": "slicer",
@@ -20,16 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "CR_Dim_Product_Line"
+                      "Entity": "IGTD Product Lines"
                     }
                   },
-                  "Property": "discipline"
+                  "Property": "Product Line"
                 }
               },
-              "queryRef": "CR_Dim_Product_Line.discipline",
-              "nativeQueryRef": "Business",
-              "active": true,
-              "displayName": "Business"
+              "queryRef": "IGTD Product Lines.Product Line",
+              "nativeQueryRef": "Product Line",
+              "active": true
             }
           ]
         }
@@ -51,7 +50,53 @@
       ],
       "general": [
         {
-          "properties": {}
+          "properties": {
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "selfFilter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "i1",
+                    "Entity": "IGTD Product Lines",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Contains": {
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "i1"
+                              }
+                            },
+                            "Property": "Product Line"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "'eag'"
+                          }
+                        }
+                      }
+                    },
+                    "Annotations": {
+                      "PowerBI.MParameterBehavior": 1
+                    }
+                  }
+                ]
+              }
+            }
+          }
         }
       ],
       "items": [
@@ -67,19 +112,7 @@
             "fontFamily": {
               "expr": {
                 "Literal": {
-                  "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
-                }
-              }
-            },
-            "fontColor": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0.2
-                    }
-                  }
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }
