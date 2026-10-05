@@ -283,6 +283,39 @@ table _CR_CS_Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Has Actuals (Site)' =
+			
+			VAR PL = VALUES ( 'IGTD Product Lines'[Product Line] )
+			VAR S  = VALUES ( 'IGTD Sites'[Site] )
+			VAR CRSelected = "CR9A" IN S
+			
+			VAR US_Units =
+			    CALCULATE ( [Actual Units],
+			        TREATAS ( PL, Product_Line_Map[product_line] ),
+			        TREATAS ( S,  Dim_Site_Dim[site_code] ) )
+			VAR US_Dollars =
+			    CALCULATE ( [Actual Absorption $ (Abs)],
+			        TREATAS ( PL, Product_Line_Map[product_line] ),
+			        TREATAS ( S,  Dim_Site_Dim[site_code] ) )
+			
+			VAR CR_Units =
+			    IF ( CRSelected,
+			        CALCULATE ( [CR Actual Units],
+			            TREATAS ( PL, CR_Dim_Product_Line[product_line] ) ) )
+			VAR CR_Dollars =
+			    IF ( CRSelected,
+			        CALCULATE ( [CR Actual Absorption $ (Abs)],
+			            TREATAS ( PL, CR_Dim_Product_Line[product_line] ) ) )
+			
+			RETURN
+			IF (
+			    COALESCE ( US_Units, 0 ) <> 0 || COALESCE ( US_Dollars, 0 ) <> 0
+			 || COALESCE ( CR_Units, 0 ) <> 0 || COALESCE ( CR_Dollars, 0 ) <> 0,
+			    1
+			)
+		formatString: 0
+		lineageTag: 255b3722-e36d-40a4-ab09-e54234c3bcf1
+
 	column Column1
 		dataType: string
 		lineageTag: 81876525-c2d3-43c7-a093-fcc8cd7e565e

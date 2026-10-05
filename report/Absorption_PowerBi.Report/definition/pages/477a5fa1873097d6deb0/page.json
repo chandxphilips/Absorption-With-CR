@@ -49,7 +49,7 @@
                     [
                       {
                         "Literal": {
-                          "Value": "'Visions 018'"
+                          "Value": "'Eagle Eye'"
                         }
                       }
                     ]
@@ -78,6 +78,48 @@
               }
             },
             "Property": "product_line"
+          }
+        }
+      }
+    ]
+  },
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'dashboard-canvas-background.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "dashboard-canvas-background6357414552652126.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
           }
         }
       }

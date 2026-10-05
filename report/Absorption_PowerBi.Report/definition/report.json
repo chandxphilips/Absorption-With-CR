@@ -31,7 +31,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "false"
+                "Value": "true"
               }
             }
           }
@@ -61,6 +61,26 @@
         {
           "name": "dashboard-canvas-background19261714440470967.png",
           "path": "dashboard-canvas-background19261714440470967.png",
+          "type": "Image"
+        },
+        {
+          "name": "dashboard-canvas-background25643494985311144.png",
+          "path": "dashboard-canvas-background25643494985311144.png",
+          "type": "Image"
+        },
+        {
+          "name": "dashboard-canvas-background3232115032811095.png",
+          "path": "dashboard-canvas-background3232115032811095.png",
+          "type": "Image"
+        },
+        {
+          "name": "dashboard-canvas-background3283427457536502.png",
+          "path": "dashboard-canvas-background3283427457536502.png",
+          "type": "Image"
+        },
+        {
+          "name": "dashboard-canvas-background6357414552652126.png",
+          "path": "dashboard-canvas-background6357414552652126.png",
           "type": "Image"
         },
         {
