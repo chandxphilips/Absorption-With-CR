@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
-  "name": "afef21c0b336e3db7005",
+  "name": "f0050357d790caa0ec8c",
   "position": {
-    "x": 149.5535913243705,
-    "y": 0,
-    "z": 2000,
-    "height": 82.8106662705192,
-    "width": 1043.1671989898239,
-    "tabOrder": 0
+    "x": 1011.8226600985223,
+    "y": 38.423645320197046,
+    "z": 25000,
+    "height": 70.935960591133011,
+    "width": 287.68472906403946,
+    "tabOrder": 25000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -20,14 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "_US & CR IGT-D_Measures"
+                      "Entity": "_Measures"
                     }
                   },
-                  "Property": "IGTD Header Title"
+                  "Property": "Last Refresh Text"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD Header Title",
-              "nativeQueryRef": "IGTD Header Title"
+              "queryRef": "_Measures.Last Refresh Text",
+              "nativeQueryRef": "Last Refresh Text"
             }
           ]
         }
@@ -37,31 +37,17 @@
       "value": [
         {
           "properties": {
-            "fontFamily": {
-              "expr": {
-                "Literal": {
-                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "22D"
+                  "Value": "9D"
                 }
               }
             },
             "horizontalAlignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "'left'"
                 }
               }
             },
@@ -70,16 +56,9 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#0066CC'"
+                      "Value": "'#3C3A3A'"
                     }
                   }
-                }
-              }
-            },
-            "transparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
                 }
               }
             }
@@ -90,6 +69,38 @@
         }
       ],
       "label": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "smallMultiplesBorder": [
+        {
+          "properties": {
+            "gridlineShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ],
+      "outline": [
         {
           "properties": {
             "show": {
@@ -149,38 +160,6 @@
             "id": "default"
           }
         }
-      ],
-      "smallMultiplesBorder": [
-        {
-          "properties": {
-            "gridlineShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
-      ],
-      "outline": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "id": "default"
-          }
-        }
       ]
     },
     "visualContainerObjects": {
@@ -196,39 +175,8 @@
             }
           }
         }
-      ],
-      "visualHeader": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9d4afcf8f4f6d32c40c4",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_US & CR IGT-D_Measures"
-              }
-            },
-            "Property": "IGTD Header Title"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

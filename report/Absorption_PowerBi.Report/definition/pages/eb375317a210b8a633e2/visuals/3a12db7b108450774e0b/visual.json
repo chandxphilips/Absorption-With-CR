@@ -61,7 +61,7 @@
               "queryRef": "_US & CR IGT-D_Measures.IGTD PL Var $",
               "nativeQueryRef": "AOP $ Var",
               "displayName": "AOP $ Var",
-              "format": "$#,0,,.00M;($#,0,,.0M)"
+              "format": "$#,0,,.00M;($#,0,,.00M)"
             }
           ]
         }
@@ -248,5 +248,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ead1917bb8e800f2fbb1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_US & CR IGT-D_Measures"
+              }
+            },
+            "Property": "IGTD PL Actual Absorption"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7b6d7fbaf8f1f1237e77",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_US & CR IGT-D_Measures"
+              }
+            },
+            "Property": "IGTD PL AOP Absorption"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "45193c6f80d2cbefe908",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_US & CR IGT-D_Measures"
+              }
+            },
+            "Property": "IGTD PL Var $"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

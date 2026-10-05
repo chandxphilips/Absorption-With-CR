@@ -1,12 +1,12 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "0d4db5beabd06ee18bd9",
   "position": {
-    "x": 918.607258945934,
-    "y": 336.04746561439862,
+    "x": 906.20689655172418,
+    "y": 336.05911330049264,
     "z": 24000,
-    "height": 112.79101787057671,
-    "width": 361.62893358504493,
+    "height": 112.61083743842364,
+    "width": 374.18719211822662,
     "tabOrder": 21000
   },
   "visual": {
@@ -281,6 +281,19 @@
                       "Value": "'#B3B3B3'"
                     }
                   }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "orientation": [
+        {
+          "properties": {
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "'HorizontalLeft'"
                 }
               }
             }

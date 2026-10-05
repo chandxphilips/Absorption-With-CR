@@ -4,10 +4,10 @@
   "position": {
     "x": 240.91638159855788,
     "y": 240.91638159855788,
-    "z": 17000,
+    "z": 16000,
     "height": 260.99274673177104,
     "width": 507.81394160480335,
-    "tabOrder": 16000
+    "tabOrder": 15000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -265,5 +265,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "cf00dbab5175cc41f238",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IGTD Product Lines"
+              }
+            },
+            "Property": "Product Line"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f9c0805f7c4a5f22ead7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_US & CR IGT-D_Measures"
+              }
+            },
+            "Property": "IGTD PL Actual Units"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "38af7ad810e110ce312e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_US & CR IGT-D_Measures"
+              }
+            },
+            "Property": "IGTD PL AOP Units"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
