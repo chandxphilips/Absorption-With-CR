@@ -38877,372 +38877,679 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.US_has_data_PL_slicer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "US Has Data (PL Slicer)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "US has data (PL slicer)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "US has data": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.has_actuals_site": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "Has Actuals (Site)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "has actuals (site)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "has actuals": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "has actual ( website )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "has actual ( campus )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "has actual ( homepage )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "has actual ( locale )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "has actual ( place )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "has actual ( position )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "has actual ( spot )": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_has_data_PL_slicer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Has Data (PL Slicer)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR has data (PL slicer)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CR has data": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "CR_CS_measure.CR_has_data_period_slicer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_CR_CS_Measures",
+			          "ConceptualProperty": "CR Has Data (Period Slicer)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CR has data (period slicer)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CR has data": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_units_variance_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Units Variance Display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD units variance display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "variance display": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd unit variance display": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.686
+			          }
+			        },
+			        {
+			          "igtd unit variance exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd unit variance presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd unit variance demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd unit variance spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd unit variance ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd unit variance pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "variance exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "variance presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "variance demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_absorption_variance_display": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Absorption Variance Display"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD absorption variance display": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "variance display": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd absorption variance exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd absorption variance presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd absorption variance demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd absorption variance spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd absorption variance ceremony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "igtd absorption variance pageant": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "variance exhibition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "variance presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "variance demonstration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "variance spectacle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_units_variance_color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Units Variance Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD units variance color": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "color": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "variance color": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "units variance color": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd unit variance color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.686
+			          }
+			        },
+			        {
+			          "unit variance color": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        },
+			        {
+			          "igtd unit variance hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "unit variance hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "variance hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "igtd unit variance tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "igtd unit variance shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "igtd unit variance dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "igtd unit variance paint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "igtd unit variance pigment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure.IGTD_absorption_variance_color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_US & CR IGT-D_Measures",
+			          "ConceptualProperty": "IGTD Absorption Variance Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "IGTD absorption variance color": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "color": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "variance color": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "absorption variance color": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "igtd absorption variance hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "absorption variance hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "variance hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "igtd absorption variance tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "igtd absorption variance shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "igtd absorption variance dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "igtd absorption variance paint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "igtd absorption variance pigment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "absorption variance tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "absorption variance shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_MB51"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cr_mb_51.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
-			          }
-			        },
-			        "cr_mb_51.entry_date.quarter": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cr_mb_51.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cr_mb_51.entry_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_quarters"
-			        }
-			      ]
-			    },
-			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_MB51"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cr_mb_51.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
-			          }
-			        },
-			        "cr_mb_51.entry_date.year": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cr_mb_51.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "cr_mb_51.entry_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_years"
-			        }
-			      ]
-			    },
-			    "cr_mb_51_entry_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_MB51"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "cr_mb_51.entry_date": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date"
-			          }
-			        },
-			        "cr_mb_51.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "cr_mb_51.entry_date"
-			            },
-			            "Object": {
-			              "Role": "cr_mb_51.entry_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_dates_have_entry_date_hierarchies"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.day": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_days"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.month": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.quarter": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_quarters1"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.year": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_years1"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_entry_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.entry_date": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date"
-			          }
-			        },
-			        "CR_FS_absorption.entry_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.entry_date"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "entry_dates_have_entry_date_hierarchies1"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.document_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.document_date.day": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.document_date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_days"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.document_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.document_date.month": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.document_date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_months"
-			        }
-			      ]
-			    },
-			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "CR_FS_Absorption"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CR_FS_absorption.document_date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
-			          }
-			        },
-			        "CR_FS_absorption.document_date.quarter": {
-			          "Target": {
-			            "Entity": "CR_FS_absorption.document_date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CR_FS_absorption.document_date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_quarters"
-			        }
-			      ]
-			    },
 			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_year": {
 			      "Binding": {
 			        "ConceptualEntity": "CR_FS_Absorption"
@@ -39833,7 +40140,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_days1"
+			          "ID": "entry_date_hierarchies_have_entry_days"
 			        }
 			      ]
 			    },
@@ -39866,7 +40173,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months1"
+			          "ID": "entry_date_hierarchies_have_entry_months"
 			        }
 			      ]
 			    },
@@ -39899,7 +40206,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_quarters2"
+			          "ID": "entry_date_hierarchies_have_entry_quarters"
 			        }
 			      ]
 			    },
@@ -39932,7 +40239,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_years2"
+			          "ID": "entry_date_hierarchies_have_entry_years"
 			        }
 			      ]
 			    },
@@ -39965,7 +40272,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_dates_have_entry_date_hierarchies2"
+			          "ID": "entry_dates_have_entry_date_hierarchies"
 			        }
 			      ]
 			    },
@@ -39998,7 +40305,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_days2"
+			          "ID": "entry_date_hierarchies_have_entry_days1"
 			        }
 			      ]
 			    },
@@ -40031,7 +40338,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_months2"
+			          "ID": "entry_date_hierarchies_have_entry_months1"
 			        }
 			      ]
 			    },
@@ -40064,7 +40371,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_quarters3"
+			          "ID": "entry_date_hierarchies_have_entry_quarters1"
 			        }
 			      ]
 			    },
@@ -40097,7 +40404,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_date_hierarchies_have_entry_years3"
+			          "ID": "entry_date_hierarchies_have_entry_years1"
 			        }
 			      ]
 			    },
@@ -40130,7 +40437,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "entry_dates_have_entry_date_hierarchies3"
+			          "ID": "entry_dates_have_entry_date_hierarchies1"
 			        }
 			      ]
 			    },
@@ -40163,7 +40470,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_days1"
+			          "ID": "document_date_hierarchies_have_document_days"
 			        }
 			      ]
 			    },
@@ -40196,7 +40503,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_months1"
+			          "ID": "document_date_hierarchies_have_document_months"
 			        }
 			      ]
 			    },
@@ -40229,7 +40536,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "document_date_hierarchies_have_document_quarters1"
+			          "ID": "document_date_hierarchies_have_document_quarters"
 			        }
 			      ]
 			    },
@@ -41564,6 +41871,369 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_material_masters_have_fact_FS_absorptions"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_absorption_variance_color": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_absorption_variance_color": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_absorption_variance_color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_absorption_variance_color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_absorption_variance_color"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_units_variance_color": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_units_variance_color": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_units_variance_color"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_units_variance_color"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_units_variance_color"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_absorption_variance_display": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_absorption_variance_display": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_absorption_variance_display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_absorption_variance_display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_absorption_variance_display"
+			        }
+			      ]
+			    },
+			    "entity__US__CR_IGTD_Measure_has_IGTD_units_variance_display": {
+			      "Binding": {
+			        "ConceptualEntity": "_US & CR IGT-D_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__US__CR_IGTD_Measure": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure"
+			          }
+			        },
+			        "entity__US__CR_IGTD_Measure.IGTD_units_variance_display": {
+			          "Target": {
+			            "Entity": "entity__US__CR_IGTD_Measure.IGTD_units_variance_display"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__US__CR_IGTD_Measure"
+			            },
+			            "Object": {
+			              "Role": "entity__US__CR_IGTD_Measure.IGTD_units_variance_display"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_US__CR_IGTD_Measures_have_IGTD_units_variance_display"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_has_data_period_slicer": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_has_data_period_slicer": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_has_data_period_slicer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_has_data_period_slicer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_has_data_period_slicer"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_CR_has_data_period_slicer": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.CR_has_data_period_slicer": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_has_data_period_slicer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_has_data_period_slicer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR_has_data_period_slicer"
+			        }
+			      ]
+			    },
+			    "CR_MB51_unit_has_CR_CS_measure_CR_has_data_PL_slicer": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51_Units"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_MB51_unit": {
+			          "Target": {
+			            "Entity": "CR_MB51_unit"
+			          }
+			        },
+			        "CR_CS_measure.CR_has_data_PL_slicer": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_has_data_PL_slicer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_MB51_unit"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_has_data_PL_slicer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_MB51_units_have_CR_has_data_PL_slicer"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_has_CR_CS_measure_CR_has_data_PL_slicer": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption"
+			          }
+			        },
+			        "CR_CS_measure.CR_has_data_PL_slicer": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_has_data_PL_slicer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_has_data_PL_slicer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_FS_absorptions_have_CR_has_data_PL_slicer"
+			        }
+			      ]
+			    },
+			    "cr_aop_2026_has_CR_CS_measure_CR_has_data_PL_slicer": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_AOP_2026"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_aop_2026": {
+			          "Target": {
+			            "Entity": "cr_aop_2026"
+			          }
+			        },
+			        "CR_CS_measure.CR_has_data_PL_slicer": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.CR_has_data_PL_slicer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_aop_2026"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.CR_has_data_PL_slicer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "cr_aop_2026_have_CR_has_data_PL_slicer"
+			        }
+			      ]
+			    },
+			    "CR_CS_measure_has_has_actuals_site": {
+			      "Binding": {
+			        "ConceptualEntity": "_CR_CS_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_CS_measure": {
+			          "Target": {
+			            "Entity": "CR_CS_measure"
+			          }
+			        },
+			        "CR_CS_measure.has_actuals_site": {
+			          "Target": {
+			            "Entity": "CR_CS_measure.has_actuals_site"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_CS_measure"
+			            },
+			            "Object": {
+			              "Role": "CR_CS_measure.has_actuals_site"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CR_CS_measures_have_has_actuals_site"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_US_has_data_PL_slicer": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.US_has_data_PL_slicer": {
+			          "Target": {
+			            "Entity": "entity__measure.US_has_data_PL_slicer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.US_has_data_PL_slicer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_US_has_data_PL_slicer"
 			        }
 			      ]
 			    },
@@ -56216,6 +56886,369 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "some_CR_FS_absorptions_are_undivided_CR_FS_absorptions"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.document_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.document_date.quarter": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.document_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_date_hierarchies_have_document_quarters1"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.document_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.document_date.month": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.document_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_date_hierarchies_have_document_months1"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_document_date_date_hierarchy_has_CR_FS_absorption_document_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.document_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.document_date.day": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.document_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.document_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.document_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "document_date_hierarchies_have_document_days1"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_dates_have_entry_date_hierarchies2"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.year": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_years2"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.quarter": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_quarters2"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.month": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_months2"
+			        }
+			      ]
+			    },
+			    "CR_FS_absorption_entry_date_date_hierarchy_has_CR_FS_absorption_entry_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_FS_Absorption"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CR_FS_absorption.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.date_hierarchy"
+			          }
+			        },
+			        "CR_FS_absorption.entry_date.day": {
+			          "Target": {
+			            "Entity": "CR_FS_absorption.entry_date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CR_FS_absorption.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CR_FS_absorption.entry_date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_days2"
+			        }
+			      ]
+			    },
+			    "cr_mb_51_entry_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_mb_51.entry_date": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date"
+			          }
+			        },
+			        "cr_mb_51.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_mb_51.entry_date"
+			            },
+			            "Object": {
+			              "Role": "cr_mb_51.entry_date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_dates_have_entry_date_hierarchies3"
+			        }
+			      ]
+			    },
+			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_mb_51.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
+			          }
+			        },
+			        "cr_mb_51.entry_date.year": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_mb_51.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cr_mb_51.entry_date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_years3"
+			        }
+			      ]
+			    },
+			    "cr_mb_51_entry_date_date_hierarchy_has_cr_mb_51_entry_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "CR_MB51"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "cr_mb_51.entry_date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.date_hierarchy"
+			          }
+			        },
+			        "cr_mb_51.entry_date.quarter": {
+			          "Target": {
+			            "Entity": "cr_mb_51.entry_date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "cr_mb_51.entry_date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "cr_mb_51.entry_date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "entry_date_hierarchies_have_entry_quarters3"
 			        }
 			      ]
 			    },

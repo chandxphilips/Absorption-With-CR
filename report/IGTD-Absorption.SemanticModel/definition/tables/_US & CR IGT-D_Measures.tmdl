@@ -130,12 +130,9 @@ table '_US & CR IGT-D_Measures'
 			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
 			    )
 			VAR CR =
-			    IF(
-			        "CR9A" IN VALUES( 'IGTD Sites'[Site] ),
-			        CALCULATE(
-			            [CR IGTD Actual Units],
-			            TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
-			        )
+			    CALCULATE(
+			        [CR IGTD Site Actual Units],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
 			    )
 			RETURN US + CR
 		formatString: #,0
@@ -150,12 +147,9 @@ table '_US & CR IGT-D_Measures'
 			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
 			    )
 			VAR CR =
-			    IF(
-			        "CR9A" IN VALUES( 'IGTD Sites'[Site] ),
-			        CALCULATE(
-			            [CR IGTD AOP Units],
-			            TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
-			        )
+			    CALCULATE(
+			        [CR IGTD Site AOP Units],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
 			    )
 			RETURN US + CR
 		formatString: #,0
@@ -170,12 +164,9 @@ table '_US & CR IGT-D_Measures'
 			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
 			    )
 			VAR CR =
-			    IF(
-			        "CR9A" IN VALUES( 'IGTD Sites'[Site] ),
-			        CALCULATE(
-			            [CR IGTD Actual Absorption],
-			            TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
-			        )
+			    CALCULATE(
+			        [CR IGTD Site Actual Absorption],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
 			    )
 			RETURN US + CR
 		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
@@ -192,12 +183,9 @@ table '_US & CR IGT-D_Measures'
 			        TREATAS( VALUES( 'IGTD Sites'[Site] ), Dim_Site_Dim[site_code] )
 			    )
 			VAR CR =
-			    IF(
-			        "CR9A" IN VALUES( 'IGTD Sites'[Site] ),
-			        CALCULATE(
-			            [CR IGTD AOP Absorption],
-			            TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
-			        )
+			    CALCULATE(
+			        [CR IGTD Site AOP Absorption],
+			        TREATAS( VALUES( 'IGTD Product Lines'[Product Line] ), CR_Dim_Product_Line[product_line] )
 			    )
 			RETURN US + CR
 		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
@@ -308,6 +296,70 @@ table '_US & CR IGT-D_Measures'
 			
 			IF( [IGTD Var $ %] < 0, "#C00000", "#107C10" )
 		lineageTag: b50404d8-98b0-4840-9b52-28345b95e972
+
+	measure 'CR IGTD Site Actual Units' =
+			
+			VAR Sel = VALUES( 'IGTD Sites'[Site] )
+			VAR CR02 =
+			    IF( "CR9A - CR02" IN Sel,
+			        CALCULATE( [CR IGTD Actual Units],
+			            KEEPFILTERS( CR_Dim_Product_Line[product_line] IN { "Omniwire", "OmniMicro" } ) ) )
+			VAR CR01 =
+			    IF( "CR9A - CR01" IN Sel,
+			        CALCULATE( [CR IGTD Actual Units],
+			            KEEPFILTERS( NOT CR_Dim_Product_Line[product_line] IN { "Omniwire", "OmniMicro" } ) ) )
+			RETURN CR01 + CR02
+		lineageTag: 15aec78c-29a6-4afc-9ed0-868df2215498
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR IGTD Site AOP Units' =
+			
+			VAR Sel = VALUES( 'IGTD Sites'[Site] )
+			VAR CR02 =
+			    IF( "CR9A - CR02" IN Sel,
+			        CALCULATE( [CR IGTD AOP Units],
+			            KEEPFILTERS( CR_Dim_Product_Line[product_line] IN { "Omniwire", "OmniMicro" } ) ) )
+			VAR CR01 =
+			    IF( "CR9A - CR01" IN Sel,
+			        CALCULATE( [CR IGTD AOP Units],
+			            KEEPFILTERS( NOT CR_Dim_Product_Line[product_line] IN { "Omniwire", "OmniMicro" } ) ) )
+			RETURN CR01 + CR02
+		lineageTag: 913ea978-6226-4cb4-82a3-d02471702a49
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR IGTD Site Actual Absorption' =
+			
+			VAR Sel = VALUES( 'IGTD Sites'[Site] )
+			VAR CR02 =
+			    IF( "CR9A - CR02" IN Sel,
+			        CALCULATE( [CR IGTD Actual Absorption],
+			            KEEPFILTERS( CR_Dim_Product_Line[product_line] IN { "Omniwire", "OmniMicro" } ) ) )
+			VAR CR01 =
+			    IF( "CR9A - CR01" IN Sel,
+			        CALCULATE( [CR IGTD Actual Absorption],
+			            KEEPFILTERS( NOT CR_Dim_Product_Line[product_line] IN { "Omniwire", "OmniMicro" } ) ) )
+			RETURN CR01 + CR02
+		lineageTag: 8347c6de-a95e-4106-8022-c7cd59a9697d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR IGTD Site AOP Absorption' =
+			
+			VAR Sel = VALUES( 'IGTD Sites'[Site] )
+			VAR CR02 =
+			    IF( "CR9A - CR02" IN Sel,
+			        CALCULATE( [CR IGTD AOP Absorption],
+			            KEEPFILTERS( CR_Dim_Product_Line[product_line] IN { "Omniwire", "OmniMicro" } ) ) )
+			VAR CR01 =
+			    IF( "CR9A - CR01" IN Sel,
+			        CALCULATE( [CR IGTD AOP Absorption],
+			            KEEPFILTERS( NOT CR_Dim_Product_Line[product_line] IN { "Omniwire", "OmniMicro" } ) ) )
+			RETURN CR01 + CR02
+		lineageTag: 5ba1ebf3-7534-481f-8d00-4d2f91fd15bc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition '_US & CR IGT-D_Measures' = m
 		mode: import

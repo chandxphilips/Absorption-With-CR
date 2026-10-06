@@ -30,10 +30,17 @@ table 'IGTD Sites'
 				        "Site", Dim_Site_Dim[site_code],
 				        "Country", "US"
 				    )
-				VAR CRSite =
-				    ROW( "Site", "CR9A", "Country", "Costa Rica" )
+				VAR CRSites =
+				    DATATABLE(
+				        "Site", STRING,
+				        "Country", STRING,
+				        {
+				            { "CR9A - CR01", "Costa Rica" },
+				            { "CR9A - CR02", "Costa Rica" }
+				        }
+				    )
 				RETURN
-				    UNION( USSites, CRSite )
+				    UNION( USSites, CRSites )
 
 	annotation PBI_Id = 616a39271ccc4847a81a26704afba4d4
 
