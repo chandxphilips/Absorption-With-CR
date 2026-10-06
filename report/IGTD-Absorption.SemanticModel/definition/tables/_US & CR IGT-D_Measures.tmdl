@@ -289,12 +289,16 @@ table '_US & CR IGT-D_Measures'
 
 	measure 'IGTD Units Variance Color' =
 			
-			IF( [IGTD Var Units %] < 0, "#C00000", "#107C10" )
+			VAR Pct = [IGTD PL Var Units %]
+			RETURN
+			IF( ISBLANK( Pct ), BLANK(), IF( Pct < 0, "#C00000", "#107C10" ) )
 		lineageTag: 6b9acf4b-3c0c-4d35-8dcb-67c054f7bf4b
 
 	measure 'IGTD Absorption Variance Color' =
 			
-			IF( [IGTD Var $ %] < 0, "#C00000", "#107C10" )
+			VAR Pct = [IGTD PL Var $ %]
+			RETURN
+			IF( ISBLANK( Pct ), BLANK(), IF( Pct < 0, "#C00000", "#107C10" ) )
 		lineageTag: b50404d8-98b0-4840-9b52-28345b95e972
 
 	measure 'CR IGTD Site Actual Units' =
