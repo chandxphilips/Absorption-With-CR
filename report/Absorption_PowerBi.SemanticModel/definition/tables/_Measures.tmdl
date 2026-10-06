@@ -460,6 +460,22 @@ table _Measures
 			" MT"
 		lineageTag: 728fcfdd-f49a-4c27-b687-bc2dfbfa8713
 
+	measure 'US Has Data (PL Slicer)' =
+			
+			VAR U = CALCULATE ( [Actual Units], ALL ( 'Calendar' ) )
+			VAR D = CALCULATE ( [Actual Absorption $ (Abs)], ALL ( 'Calendar' ) )
+			VAR A = CALCULATE ( [AOP Units], ALL ( 'Calendar' ) )
+			RETURN
+			    IF ( COALESCE ( U, 0 ) <> 0 || COALESCE ( D, 0 ) <> 0 || COALESCE ( A, 0 ) <> 0, 1 )
+		formatString: 0
+		lineageTag: d8a10163-3519-4563-bb46-f244637e385e
+
+	measure 'US Has Data (Period Slicer)' =
+			
+			IF ( COALESCE ( [Actual Units], 0 ) <> 0 || COALESCE ( [Actual Absorption $ (Abs)], 0 ) <> 0, 1 )
+		formatString: 0
+		lineageTag: 74f05a56-cbd7-41ca-bbb2-d26d2cd94d21
+
 	column Column1
 		dataType: string
 		lineageTag: edd6ec33-ab2a-4031-8b38-cc675c9e7876

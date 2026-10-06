@@ -316,6 +316,25 @@ table _CR_CS_Measures
 		formatString: 0
 		lineageTag: 255b3722-e36d-40a4-ab09-e54234c3bcf1
 
+	measure 'CR Has Data (PL Slicer)' =
+			
+			VAR U = CALCULATE ( [CR Actual Units], ALL ( 'Calendar' ) )
+			VAR D = CALCULATE ( [CR Actual Absorption $ (Abs)], ALL ( 'Calendar' ) )
+			VAR A = CALCULATE ( [CR AOP Units], ALL ( 'Calendar' ) )
+			RETURN
+			    IF ( COALESCE ( U, 0 ) <> 0 || COALESCE ( D, 0 ) <> 0 || COALESCE ( A, 0 ) <> 0, 1 )
+		formatString: 0
+		lineageTag: 2ffcfcff-99a8-463e-9d83-fc2eac9881e1
+
+	measure 'CR Has Data (Period Slicer)' =
+			
+			VAR U = [CR Actual Units]
+			VAR D = [CR Actual Absorption $ (Abs)]
+			RETURN
+			    IF ( COALESCE ( U, 0 ) <> 0 || COALESCE ( D, 0 ) <> 0, 1 )
+		formatString: 0
+		lineageTag: 5511e568-9a23-443c-bc6b-daefc390d652
+
 	column Column1
 		dataType: string
 		lineageTag: 81876525-c2d3-43c7-a093-fcc8cd7e565e

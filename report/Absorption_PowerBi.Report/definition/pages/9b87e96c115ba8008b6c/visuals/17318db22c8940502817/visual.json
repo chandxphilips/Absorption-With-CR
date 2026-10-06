@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "17318db22c8940502817",
   "position": {
-    "x": 901.53846153846155,
-    "y": 526.15384615384619,
+    "x": 900.43782837127844,
+    "y": 525.91943957968476,
     "z": 25000,
-    "height": 257.69230769230768,
-    "width": 395.38461538461536,
+    "height": 258.40630472854639,
+    "width": 395.00875656742556,
     "tabOrder": 24000
   },
   "visual": {
@@ -255,6 +255,48 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "c05fc9fea7dbdbfc5bd6",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Actual Absorption $ (Abs)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "9cbead4006b7222e10f0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR AOP $ (Abs)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2ff9a7a3b2bb3b345d55",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "Achievement %"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

@@ -212,5 +212,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "1d4e2d9547ce6f52a4b3",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Header Title"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
