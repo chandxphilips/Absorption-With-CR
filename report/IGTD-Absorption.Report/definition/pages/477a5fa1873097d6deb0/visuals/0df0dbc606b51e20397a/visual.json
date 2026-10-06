@@ -1,0 +1,423 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "0df0dbc606b51e20397a",
+  "position": {
+    "x": 888.57142857142867,
+    "y": 222.14285714285717,
+    "z": 26000,
+    "height": 100,
+    "width": 391.42857142857144,
+    "tabOrder": 26000
+  },
+  "visual": {
+    "visualType": "BulletChart1443347686880",
+    "query": {
+      "queryState": {
+        "Value": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_CR_CS_Measures"
+                    }
+                  },
+                  "Property": "CR Actual Units"
+                }
+              },
+              "queryRef": "_CR_CS_Measures.CR Actual Units",
+              "nativeQueryRef": "CR Actual Units"
+            }
+          ]
+        },
+        "TargetValue": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_CR_CS_Measures"
+                    }
+                  },
+                  "Property": "CR AOP Units"
+                }
+              },
+              "queryRef": "_CR_CS_Measures.CR AOP Units",
+              "nativeQueryRef": "CR AOP Units"
+            }
+          ]
+        },
+        "Minimum": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_CR_CS_Measures"
+                    }
+                  },
+                  "Property": "CR Bullet Min"
+                }
+              },
+              "queryRef": "_CR_CS_Measures.CR Bullet Min",
+              "nativeQueryRef": "CR Bullet Min"
+            }
+          ]
+        },
+        "NeedsImprovement": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_CR_CS_Measures"
+                    }
+                  },
+                  "Property": "CR Bullet NI Units"
+                }
+              },
+              "queryRef": "_CR_CS_Measures.CR Bullet NI Units",
+              "nativeQueryRef": "CR Bullet NI Units"
+            }
+          ]
+        },
+        "Satisfactory": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_CR_CS_Measures"
+                    }
+                  },
+                  "Property": "CR Bullet Sat Units"
+                }
+              },
+              "queryRef": "_CR_CS_Measures.CR Bullet Sat Units",
+              "nativeQueryRef": "CR Bullet Sat Units"
+            }
+          ]
+        },
+        "Good": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_CR_CS_Measures"
+                    }
+                  },
+                  "Property": "CR Bullet Good Units"
+                }
+              },
+              "queryRef": "_CR_CS_Measures.CR Bullet Good Units",
+              "nativeQueryRef": "CR Bullet Good Units"
+            }
+          ]
+        },
+        "VeryGood": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_CR_CS_Measures"
+                    }
+                  },
+                  "Property": "CR Bullet VG Units"
+                }
+              },
+              "queryRef": "_CR_CS_Measures.CR Bullet VG Units",
+              "nativeQueryRef": "CR Bullet VG Units"
+            }
+          ]
+        },
+        "Maximum": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_CR_CS_Measures"
+                    }
+                  },
+                  "Property": "CR Bullet Max Units"
+                }
+              },
+              "queryRef": "_CR_CS_Measures.CR Bullet Max Units",
+              "nativeQueryRef": "CR Bullet Max Units"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_CR_CS_Measures"
+                  }
+                },
+                "Property": "CR Actual Units"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "colors": [
+        {
+          "properties": {
+            "bulletColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0066CC'"
+                    }
+                  }
+                }
+              }
+            },
+            "satisfactoryColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FDE68A'"
+                    }
+                  }
+                }
+              }
+            },
+            "minColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FCA5A5'"
+                    }
+                  }
+                }
+              }
+            },
+            "needsImprovementColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FDBA74'"
+                    }
+                  }
+                }
+              }
+            },
+            "goodColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#86EFAC'"
+                    }
+                  }
+                }
+              }
+            },
+            "veryGoodColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4ADE80'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "axis": [
+        {
+          "properties": {
+            "axis": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "axisColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#8C8C8C'"
+                    }
+                  }
+                }
+              }
+            },
+            "unitsColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#B3B3B3'"
+                    }
+                  }
+                }
+              }
+            },
+            "measureUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Units Performance'"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0066CC'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

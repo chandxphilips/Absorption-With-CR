@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "IGTD-Absorption"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "faf647da-414e-4bab-8ba8-b1f97158b7db"
+  }
+}

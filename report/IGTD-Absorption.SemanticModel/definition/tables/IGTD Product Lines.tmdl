@@ -1,0 +1,35 @@
+table 'IGTD Product Lines'
+	lineageTag: 654532f2-0866-483c-b228-06272213693e
+
+	column 'Product Line'
+		lineageTag: b6985eef-5116-4bef-81f8-19157cadcd71
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Product Line]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'IGTD Product Lines' = calculated
+		mode: import
+		source = ```
+				
+				FILTER(
+				    DISTINCT(
+				        UNION(
+				            SELECTCOLUMNS(
+				                Product_Line_Map,
+				                "Product Line", Product_Line_Map[product_line]
+				            ),
+				            SELECTCOLUMNS(
+				                FILTER( CR_Dim_Product_Line, CR_Dim_Product_Line[discipline] IN { "IGTD", "IGT-D" } ),
+				                "Product Line", CR_Dim_Product_Line[product_line]
+				            )
+				        )
+				    ),
+				    NOT ISBLANK( [Product Line] ) && [Product Line] <> ""
+				)
+				
+				```
+
+	annotation PBI_Id = fd62724d4e0643389157391fe2cf2067
+

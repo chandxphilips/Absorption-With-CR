@@ -1,0 +1,46 @@
+table Dim_Site_Dim
+	lineageTag: 305c1a06-feb7-4d37-bc8e-8144dee6687c
+
+	column site_code
+		dataType: string
+		lineageTag: f8660bdd-c34c-4aec-af0e-49dfb73bc564
+		summarizeBy: none
+		sourceColumn: site_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column site_name
+		dataType: string
+		lineageTag: a3a3962a-eb34-41a2-8cdd-9dd2fa5cd9f9
+		summarizeBy: none
+		sourceColumn: site_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column plant_code
+		dataType: string
+		lineageTag: df9123de-e2c5-4b0f-a58b-76486ba04786
+		summarizeBy: none
+		sourceColumn: plant_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column business_area
+		dataType: string
+		lineageTag: c18b9601-ae0d-4f6b-a265-5691a854939b
+		summarizeBy: none
+		sourceColumn: business_area
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Site_Dim = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    qa_wb_Database = Source{[Name="qa_wb",Kind="Database"]}[Data],
+				    digitalfactory_Schema = qa_wb_Database{[Name="digitalfactory",Kind="Schema"]}[Data],
+				    ref_cs_site_dim_Table = digitalfactory_Schema{[Name="ref_cs_site_dim",Kind="Table"]}[Data]
+				in
+				    ref_cs_site_dim_Table
+

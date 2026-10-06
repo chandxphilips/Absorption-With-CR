@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "IGTD-Absorption"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "9f18987d-b596-4e37-af9b-255a1bd713e9"
+  }
+}

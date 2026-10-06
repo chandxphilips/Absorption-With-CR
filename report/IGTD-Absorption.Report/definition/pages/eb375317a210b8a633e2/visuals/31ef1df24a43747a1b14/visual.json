@@ -1,0 +1,161 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "name": "8d1a106172163d0a7720",
+  "position": {
+    "x": 777.07342692083864,
+    "y": 240.91638159855788,
+    "z": 18000,
+    "height": 260.99274673177104,
+    "width": 507.81394160480335,
+    "tabOrder": 17000
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Sites"
+                    }
+                  },
+                  "Property": "Site"
+                }
+              },
+              "queryRef": "IGTD Sites.Site",
+              "nativeQueryRef": "Site",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL Actual Absorption"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption",
+              "nativeQueryRef": "Actual Absorption",
+              "displayName": "Actual Absorption"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL AOP Absorption"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption",
+              "nativeQueryRef": "AOP Absorption",
+              "displayName": "AOP Absorption"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_US & CR IGT-D_Measures"
+                  }
+                },
+                "Property": "IGTD PL Actual Absorption"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Absorption by Site (Actual vs AOP)'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "13D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

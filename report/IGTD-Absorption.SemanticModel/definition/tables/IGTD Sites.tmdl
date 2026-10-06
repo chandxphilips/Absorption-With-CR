@@ -1,0 +1,39 @@
+table 'IGTD Sites'
+	lineageTag: d902b253-0be1-41a1-a7bd-9f148029ea60
+
+	column Site
+		lineageTag: 68e509c9-1bfc-4955-abf2-4ebcf50ef2fd
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Site]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		lineageTag: edacba9f-286e-4b7d-889b-cdb155e9191b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Country]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'IGTD Sites' = calculated
+		mode: import
+		source =
+				
+				VAR USSites =
+				    SELECTCOLUMNS(
+				        FILTER(
+				            DISTINCT( Dim_Site_Dim[site_code] ),
+				            NOT ISBLANK( Dim_Site_Dim[site_code] ) && Dim_Site_Dim[site_code] <> "CR9A"
+				        ),
+				        "Site", Dim_Site_Dim[site_code],
+				        "Country", "US"
+				    )
+				VAR CRSite =
+				    ROW( "Site", "CR9A", "Country", "Costa Rica" )
+				RETURN
+				    UNION( USSites, CRSite )
+
+	annotation PBI_Id = 616a39271ccc4847a81a26704afba4d4
+

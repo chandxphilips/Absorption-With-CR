@@ -1,0 +1,38 @@
+table Dim_Holidays
+	lineageTag: b76e6e86-9f2d-4aae-85cc-b90690a9b1f1
+
+	column holiday_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ddf70ce4-55f1-47bb-94d3-1fda84b88a58
+		summarizeBy: none
+		sourceColumn: holiday_date
+
+		variation Variation
+			isDefault
+			relationship: 1710dd13-2cbe-488a-aa31-8eb798287934
+			defaultHierarchy: LocalDateTable_fecc3dff-65e0-45ef-8fd6-4bbd77d8d9e6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column holiday_name
+		dataType: string
+		lineageTag: 9d0d9e34-772f-4e75-82ec-353cc73429f8
+		summarizeBy: none
+		sourceColumn: holiday_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Holidays = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    qa_wb_Database = Source{[Name="qa_wb",Kind="Database"]}[Data],
+				    digitalfactory_Schema = qa_wb_Database{[Name="digitalfactory",Kind="Schema"]}[Data],
+				    ref_cs_holidays_Table = digitalfactory_Schema{[Name="ref_cs_holidays",Kind="Table"]}[Data]
+				in
+				    ref_cs_holidays_Table
+

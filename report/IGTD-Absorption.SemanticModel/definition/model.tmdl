@@ -1,0 +1,53 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_ProTooling = ["DevMode"]
+
+annotation PBI_QueryOrder = ["Fact_FS_Absorption","Dim_Material_Master","Fact_AOP","Dim_Subassemblies_Counted","Dim_Product_Tree_Leaf","Fact_MB51_Units","Product_Line_Map","_Measures","Dim_Site_Dim","Dim_Holidays","RefreshInfo","CR_FS_Absorption","CR_Material_Master","CR_MB51","CR_AOP_2026","CR_Holidays","_CR_CS_Measures","CR_MB51_Units","CR_Dim_Product_Line","_US & CR IGT-D_Measures"]
+
+ref table Fact_FS_Absorption
+ref table Dim_Material_Master
+ref table Fact_AOP
+ref table DateTableTemplate_f3ac8e61-6ee6-4e27-bfc6-c10387797331
+ref table Dim_Subassemblies_Counted
+ref table Dim_Product_Tree_Leaf
+ref table LocalDateTable_2ee12b28-1578-4fa6-b8eb-fdae569558b2
+ref table LocalDateTable_39369c3d-80a7-47a0-b11e-69fcda9b2dfe
+ref table Fact_MB51_Units
+ref table LocalDateTable_0e40a3fe-6fcc-44b8-aad6-8c8d1e14d02e
+ref table Calendar
+ref table LocalDateTable_eec5fda3-a7b8-4181-90d8-f1dfdf8fbbba
+ref table Dim_Plant
+ref table Product_Line_Map
+ref table _Measures
+ref table Dim_Site_Dim
+ref table Dim_Holidays
+ref table LocalDateTable_fecc3dff-65e0-45ef-8fd6-4bbd77d8d9e6
+ref table RefreshInfo
+ref table LocalDateTable_4e6ca08a-6106-4803-a861-840ee31c79a3
+ref table CR_FS_Absorption
+ref table LocalDateTable_af34b662-a105-44e0-acc9-427fddc624e1
+ref table LocalDateTable_f594845b-d27e-44fd-b128-1aca08fc372e
+ref table CR_Material_Master
+ref table CR_MB51
+ref table LocalDateTable_72238acc-9a3f-4fb8-81df-6a075c474acf
+ref table CR_AOP_2026
+ref table CR_Holidays
+ref table LocalDateTable_e67e2a5b-2378-4559-a739-23ab4e5907ba
+ref table _CR_CS_Measures
+ref table CR_MB51_Units
+ref table LocalDateTable_6fedd471-d9c1-475a-bae0-8f7c72ec0d03
+ref table CR_Dim_Product_Line
+ref table '_US & CR IGT-D_Measures'
+ref table 'IGTD Product Lines'
+ref table 'IGTD Sites'
+
+ref cultureInfo en-US
+

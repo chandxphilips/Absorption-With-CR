@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.3.0/schema.json",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY26SU05",
+      "reportVersionAtImport": {
+        "visual": "2.9.0",
+        "report": "3.3.0",
+        "page": "2.3.1"
+      },
+      "type": "SharedResources"
+    }
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "publicCustomVisuals": [
+    "BulletChart1443347686880"
+  ],
+  "resourcePackages": [
+    {
+      "name": "SharedResources",
+      "type": "SharedResources",
+      "items": [
+        {
+          "name": "CY26SU05",
+          "path": "BaseThemes/CY26SU05.json",
+          "type": "BaseTheme"
+        }
+      ]
+    },
+    {
+      "name": "RegisteredResources",
+      "type": "RegisteredResources",
+      "items": [
+        {
+          "name": "dashboard-canvas-background19261714440470967.png",
+          "path": "dashboard-canvas-background19261714440470967.png",
+          "type": "Image"
+        },
+        {
+          "name": "dashboard-canvas-background25643494985311144.png",
+          "path": "dashboard-canvas-background25643494985311144.png",
+          "type": "Image"
+        },
+        {
+          "name": "dashboard-canvas-background3232115032811095.png",
+          "path": "dashboard-canvas-background3232115032811095.png",
+          "type": "Image"
+        },
+        {
+          "name": "dashboard-canvas-background3283427457536502.png",
+          "path": "dashboard-canvas-background3283427457536502.png",
+          "type": "Image"
+        },
+        {
+          "name": "dashboard-canvas-background6357414552652126.png",
+          "path": "dashboard-canvas-background6357414552652126.png",
+          "type": "Image"
+        },
+        {
+          "name": "dashboard-canvas-background6446222990329917.png",
+          "path": "dashboard-canvas-background6446222990329917.png",
+          "type": "Image"
+        },
+        {
+          "name": "Philips_logo_blue_2025_RGB08093119154151485.png",
+          "path": "Philips_logo_blue_2025_RGB08093119154151485.png",
+          "type": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": "AllowSummarized",
+    "defaultDrillFilterOtherVisuals": true,
+    "allowChangeFilterTypes": true,
+    "useEnhancedTooltips": true,
+    "useDefaultAggregateDisplayName": true
+  }
+}

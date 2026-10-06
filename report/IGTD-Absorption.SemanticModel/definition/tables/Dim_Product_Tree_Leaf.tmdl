@@ -1,0 +1,102 @@
+table Dim_Product_Tree_Leaf
+	lineageTag: 78e88612-07af-4069-bc9c-23431554182c
+
+	column sc
+		dataType: string
+		lineageTag: 86359912-9a83-4e0e-995d-7d27a9161a4c
+		summarizeBy: none
+		sourceColumn: sc
+
+		annotation SummarizationSetBy = Automatic
+
+	column pd
+		dataType: string
+		lineageTag: 398e75f2-6063-4e7d-9ee9-2568cff180d8
+		summarizeBy: none
+		sourceColumn: pd
+
+		annotation SummarizationSetBy = Automatic
+
+	column bs
+		dataType: string
+		lineageTag: 12a8fc8e-632c-4d15-a6ab-3bc605828034
+		summarizeBy: none
+		sourceColumn: bs
+
+		annotation SummarizationSetBy = Automatic
+
+	column bu
+		dataType: string
+		lineageTag: 5f34ce1d-a914-43c8-8747-bcc7ad988f96
+		summarizeBy: none
+		sourceColumn: bu
+
+		annotation SummarizationSetBy = Automatic
+
+	column mag
+		dataType: string
+		lineageTag: a8958c10-cd4d-4689-aec2-13c099b067b8
+		summarizeBy: none
+		sourceColumn: mag
+
+		annotation SummarizationSetBy = Automatic
+
+	column ag
+		dataType: string
+		lineageTag: 64f8575f-9cb9-4519-8f2f-dc222f431452
+		summarizeBy: none
+		sourceColumn: ag
+
+		annotation SummarizationSetBy = Automatic
+
+	column long_description
+		dataType: string
+		lineageTag: ce2043e9-ef70-42ea-876e-5248f1fbc447
+		summarizeBy: none
+		sourceColumn: long_description
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_hierarchy
+		dataType: string
+		lineageTag: 3b86675d-bef8-4452-9b4f-d088dcd0387b
+		summarizeBy: none
+		sourceColumn: product_hierarchy
+
+		annotation SummarizationSetBy = Automatic
+
+	column valid_from
+		dataType: string
+		lineageTag: 9a905acd-4b2f-4816-96ba-6cf2029ce713
+		summarizeBy: none
+		sourceColumn: valid_from
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_hierarchy_no_dashes
+		dataType: string
+		lineageTag: 604dec39-8194-4cfa-9de9-02751ea7ea40
+		summarizeBy: none
+		sourceColumn: product_hierarchy_no_dashes
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dim_Product_Tree_Leaf = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Query(
+				        "adb-8587249103137143.3.azuredatabricks.net",
+				        "/sql/1.0/warehouses/25534f8556d30920",
+				        [Catalog="qa_wb"]
+				    )("
+				        SELECT *
+				        FROM qa_wb.digitalfactory.vw_cs_product_tree_leaf
+				    ")
+				in
+				    Source
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

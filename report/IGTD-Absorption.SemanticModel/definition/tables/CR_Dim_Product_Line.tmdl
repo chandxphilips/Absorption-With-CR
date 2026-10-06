@@ -1,0 +1,74 @@
+table CR_Dim_Product_Line
+	lineageTag: 8496ad59-9556-4a03-9b58-be7cbdfe17f2
+
+	column product_line_key
+		dataType: string
+		lineageTag: 1f4a0031-8afe-4e06-8226-3117084890d2
+		summarizeBy: none
+		sourceColumn: product_line_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_line
+		dataType: string
+		lineageTag: 0c076406-7500-4299-96ff-8430581a345f
+		summarizeBy: none
+		sourceColumn: product_line
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_hierarchy_display
+		dataType: string
+		lineageTag: 82881710-3b19-4336-a9a3-c68ad0d1dd38
+		summarizeBy: none
+		sourceColumn: product_hierarchy_display
+
+		annotation SummarizationSetBy = Automatic
+
+	column profit_ctr
+		dataType: string
+		lineageTag: 161b253f-babd-43c2-a6bb-9a46b47965d8
+		summarizeBy: none
+		sourceColumn: profit_ctr
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_undivided
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 89f5de86-1535-4e74-a745-7280c3403d59
+		summarizeBy: none
+		sourceColumn: is_undivided
+
+		annotation SummarizationSetBy = Automatic
+
+	column discipline =
+			
+			VAR Prefix = LEFT ( CR_Dim_Product_Line[product_hierarchy_display], 4 )
+			VAR PC = CR_Dim_Product_Line[profit_ctr]
+			RETURN
+			SWITCH ( TRUE(),
+			    Prefix = "9144", "IGTD",
+			    Prefix = "9095", "HPM",
+			    Prefix = "9133", "S&RC",
+			    PC IN { "P88","BQ9","BR4","BR5","BR6","BS1","BS3","AO0","P84","BH4" }, "IGTD",
+			    PC IN { "BO7","W18" }, "HPM",
+			    PC IN { "DI2","DI3","DI4","DI5","DI6","DI7","DQ3","AD1","AD2","AD5" }, "S&RC",
+			    "UNKNOWN"
+			)
+		lineageTag: 4e231727-f645-4db4-a764-554251b4230c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CR_Dim_Product_Line = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
+				    qa_wb_Database = Source{[Name="qa_wb",Kind="Database"]}[Data],
+				    digitalfactory_Schema = qa_wb_Database{[Name="digitalfactory",Kind="Schema"]}[Data],
+				    vw_cs_cr_dim_product_line_View = digitalfactory_Schema{[Name="vw_cs_cr_dim_product_line",Kind="View"]}[Data]
+				in
+				    vw_cs_cr_dim_product_line_View
+

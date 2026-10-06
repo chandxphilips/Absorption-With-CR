@@ -1,0 +1,107 @@
+table CR_Holidays
+	lineageTag: 29a1a359-36b3-4344-b8c8-f5c0d7e67b93
+
+	column holiday_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: bcf927ef-ce92-4981-b079-fbea729b0bca
+		summarizeBy: none
+		sourceColumn: holiday_date
+
+		variation Variation
+			isDefault
+			relationship: 124a031f-3e47-456d-a5ea-c02a582c5abc
+			defaultHierarchy: LocalDateTable_e67e2a5b-2378-4559-a739-23ab4e5907ba.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column holiday_name
+		dataType: string
+		lineageTag: 336ce1cd-d934-430b-8efe-1fc0a44b648a
+		summarizeBy: none
+		sourceColumn: holiday_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column site
+		dataType: string
+		lineageTag: 87004832-cce1-492e-a197-2b2060a43b9b
+		summarizeBy: none
+		sourceColumn: site
+
+		annotation SummarizationSetBy = Automatic
+
+	column country
+		dataType: string
+		lineageTag: d4b10f5b-d3c8-4dd5-9e03-471ee79a76b2
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_of_week_number
+		dataType: int64
+		formatString: 0
+		lineageTag: 87971102-91e6-460e-bde3-350ed6f1a5e2
+		summarizeBy: sum
+		sourceColumn: day_of_week_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_name
+		dataType: string
+		lineageTag: 08f0573a-7561-44f8-9f63-7b68022b92bb
+		summarizeBy: none
+		sourceColumn: day_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column holiday_year
+		dataType: int64
+		formatString: 0
+		lineageTag: 02025e35-6aba-4813-8ec8-f7a7e48b0774
+		summarizeBy: sum
+		sourceColumn: holiday_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column holiday_month
+		dataType: int64
+		formatString: 0
+		lineageTag: d92f8096-041a-422f-97bd-9bad80e63d37
+		summarizeBy: sum
+		sourceColumn: holiday_month
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_short
+		dataType: string
+		lineageTag: 734154fd-a620-4e19-aa24-d1e69e94a820
+		summarizeBy: none
+		sourceColumn: month_short
+
+		annotation SummarizationSetBy = Automatic
+
+	column weekday_weekend
+		dataType: string
+		lineageTag: 081df7ea-372a-427c-8d65-7d781b7b984b
+		summarizeBy: none
+		sourceColumn: weekday_weekend
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CR_Holidays = m
+		mode: import
+		source =
+				let
+				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog="qa_wb", Database="digitalfactory", QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation=null, Protocol=null]),
+				    vw_st_holidays_cr_digitalfactory_qa_wb = Source{[Item="vw_st_holidays_cr",Schema="digitalfactory",Catalog="qa_wb"]}[Data]
+				in
+				    vw_st_holidays_cr_digitalfactory_qa_wb
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
