@@ -519,6 +519,104 @@
           ]
         },
         "howCreated": "User"
+      },
+      {
+        "name": "14b37a1d7ff8616ccd63",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_MB51_Units"
+              }
+            },
+            "Property": "posting_date"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f3e2f2393e858dbfec51",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_MB51_Units"
+              }
+            },
+            "Property": "final_pack_12nc"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "31aae5c6039db2aa88e5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_Dim_Product_Line"
+              }
+            },
+            "Property": "product_line"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "cf5a75f6c3fcc25e73ec",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_MB51_Units"
+              }
+            },
+            "Property": "material_description"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "be297238669a72d7a869",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_MB51_Units"
+              }
+            },
+            "Property": "movement_type"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d1a483c178c12a773f12",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_MB51_Units"
+              }
+            },
+            "Property": "order_number"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "be0fa9b2b36e1271256d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_MB51_Units"
+              }
+            },
+            "Property": "qty_in_order_unit"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

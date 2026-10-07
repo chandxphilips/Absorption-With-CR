@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "e24edf28eb1067d412c0",
   "position": {
     "x": 785.05031145184478,
@@ -248,5 +248,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "5bd472ada20ebf384da5",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Actual Absorption $ (Abs)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "02522524d04a94ef2877",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR AOP $ (Abs)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "32534f03c96cc76deca7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Absorption Variance $"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
