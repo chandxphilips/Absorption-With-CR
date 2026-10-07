@@ -29,7 +29,7 @@
               "queryRef": "_CR_CS_Measures.CR Actual Absorption $ (Abs)",
               "nativeQueryRef": "Actual Absorption",
               "displayName": "Actual Absorption",
-              "format": "$#,0,,.0M;($#,0,,.0M)"
+              "format": "$#,0,,.00M;($#,0,,.0M)"
             },
             {
               "field": {
@@ -45,7 +45,7 @@
               "queryRef": "_CR_CS_Measures.CR AOP $ (Abs)",
               "nativeQueryRef": "AOP Absorption",
               "displayName": "AOP Absorption",
-              "format": "$#,0,,.0M;($#,0,,.0M)"
+              "format": "$#,0,,.00M;($#,0,,.0M)"
             },
             {
               "field": {
@@ -61,7 +61,7 @@
               "queryRef": "_CR_CS_Measures.CR Absorption Variance $",
               "nativeQueryRef": "Variance $",
               "displayName": "Variance $",
-              "format": "$#,0,,.0M;($#,0,,.0M)"
+              "format": "$#,0,,.00M;($#,0,,.0M)"
             }
           ]
         }
