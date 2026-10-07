@@ -19,11 +19,11 @@
               {
                 "textRuns": [
                   {
-                    "value": "Product Details - Drill Through Analysis",
+                    "value": "Product Details - CR9A",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontFamily": "Segoe UI Semibold",
-                      "fontSize": "18pt",
+                      "fontFamily": "Segoe (Bold)",
+                      "fontSize": "20pt",
                       "color": "#0066cc"
                     }
                   }

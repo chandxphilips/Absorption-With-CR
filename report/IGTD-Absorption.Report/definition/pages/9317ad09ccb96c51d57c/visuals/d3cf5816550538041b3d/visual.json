@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.10.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
   "name": "d3cf5816550538041b3d",
   "position": {
     "x": 320,
@@ -19,10 +19,10 @@
               {
                 "textRuns": [
                   {
-                    "value": "Product Details - Drill Through Analysis",
+                    "value": "Product Details - US9H",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontFamily": "Segoe UI Semibold",
+                      "fontFamily": "Segoe (Bold)",
                       "fontSize": "20pt",
                       "color": "#0066cc"
                     }
