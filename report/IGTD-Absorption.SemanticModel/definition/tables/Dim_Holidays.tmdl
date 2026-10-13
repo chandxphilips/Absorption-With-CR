@@ -36,3 +36,5 @@ table Dim_Holidays
 				in
 				    ref_cs_holidays_Table
 
+	annotation PBI_ResultType = Table
+

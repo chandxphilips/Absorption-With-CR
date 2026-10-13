@@ -47,13 +47,6 @@
                   "Value": "'Dropdown'"
                 }
               }
-            },
-            "isInvertedSelectionMode": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
             }
           }
         }
@@ -161,12 +154,42 @@
           }
         },
         "type": "Categorical",
+        "howCreated": "User",
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "148c558ce8c872b9cc01",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_Dim_Product_Line"
+              }
+            },
+            "Property": "discipline"
+          }
+        },
+        "type": "Categorical",
         "filter": {
           "Version": 2,
           "From": [
             {
-              "Name": "p",
-              "Entity": "Product_Line_Map",
+              "Name": "c",
+              "Entity": "CR_Dim_Product_Line",
               "Type": 0
             }
           ],
@@ -181,10 +204,10 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "p"
+                                "Source": "c"
                               }
                             },
-                            "Property": "product_line"
+                            "Property": "discipline"
                           }
                         }
                       ],
@@ -204,7 +227,6 @@
             }
           ]
         },
-        "howCreated": "User",
         "objects": {
           "general": [
             {

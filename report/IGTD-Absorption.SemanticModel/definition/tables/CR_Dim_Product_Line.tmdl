@@ -52,7 +52,7 @@ table CR_Dim_Product_Line
 			    Prefix = "9095", "HPM",
 			    Prefix = "9133", "S&RC",
 			    PC IN { "P88","BQ9","BR4","BR5","BR6","BS1","BS3","AO0","P84","BH4" }, "IGTD",
-			    PC IN { "BO7","W18" }, "HPM",
+			    PC IN { "BO7","W18","CT1" }, "HPM",
 			    PC IN { "DI2","DI3","DI4","DI5","DI6","DI7","DQ3","AD1","AD2","AD5" }, "S&RC",
 			    "UNKNOWN"
 			)
@@ -68,7 +68,16 @@ table CR_Dim_Product_Line
 				    Source = Databricks.Catalogs("adb-8587249103137143.3.azuredatabricks.net", "/sql/1.0/warehouses/25534f8556d30920", [Catalog=null, Database=null, QueryTags=null, EnableAutomaticProxyDiscovery=null, Implementation="2.0", Protocol=null]),
 				    qa_wb_Database = Source{[Name="qa_wb",Kind="Database"]}[Data],
 				    digitalfactory_Schema = qa_wb_Database{[Name="digitalfactory",Kind="Schema"]}[Data],
-				    vw_cs_cr_dim_product_line_View = digitalfactory_Schema{[Name="vw_cs_cr_dim_product_line",Kind="View"]}[Data]
+				    vw_cs_cr_dim_product_line_View = digitalfactory_Schema{[Name="vw_cs_cr_dim_product_line",Kind="View"]}[Data],
+				    #"CT1 Product Line" = Table.ReplaceValue(
+				        vw_cs_cr_dim_product_line_View,
+				        each [product_line],
+				        each if [profit_ctr] = "CT1" then "Global Quality Operations" else [product_line],
+				        Replacer.ReplaceValue,
+				        {"product_line"}
+				    )
 				in
-				    vw_cs_cr_dim_product_line_View
+				    #"CT1 Product Line"
+
+	annotation PBI_ResultType = Table
 

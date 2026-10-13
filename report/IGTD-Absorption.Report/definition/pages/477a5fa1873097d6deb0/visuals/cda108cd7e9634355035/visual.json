@@ -282,5 +282,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c134c2271a6fec89ce21",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR AOP Units"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

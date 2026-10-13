@@ -399,5 +399,121 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "a6f4284270ca176c0412",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Actual Absorption $ (Abs)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ce52eca8fcea973048df",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR AOP $ (Abs)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "a57866ea3cf4ecb3ca08",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Bullet Min"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "90ab53baccb30c34daeb",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Bullet NI $"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "74a316b0bd37292f7683",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Bullet Sat $"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "09f5e13e1f09e885e914",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Bullet Good $"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2110d5bac5f49721c9c1",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Bullet VG $"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "c205fb634b942254bd79",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Bullet Max $"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

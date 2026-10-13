@@ -545,5 +545,121 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e49639a306112302a890",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_Dim_Product_Line"
+              }
+            },
+            "Property": "product_line"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "65d0ffa940ba67935065",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "CR_Dim_Product_Line"
+              }
+            },
+            "Property": "discipline"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "19f2d9580850d58f2452",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Actual Units"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0decb087a0dcd20a33d0",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR AOP Units"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "51904cc765f61930107c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Var Units %"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ecedfff1ebca01964fec",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Actual Absorption $ (Abs)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "29db51ca90d91c7d64d7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR AOP $ (Abs)"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "3fccaaf7ebdeb7ee4f81",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_CR_CS_Measures"
+              }
+            },
+            "Property": "CR Var $ %"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
