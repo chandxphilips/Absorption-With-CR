@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "cda108cd7e9634355035",
   "position": {
     "x": 580,
@@ -282,23 +282,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "c134c2271a6fec89ce21",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_CR_CS_Measures"
-              }
-            },
-            "Property": "CR AOP Units"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

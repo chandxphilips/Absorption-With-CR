@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "da448d4a7d005d61706a",
   "position": {
     "x": 20.666666666666668,
@@ -119,23 +119,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "5856462fff2a55df22f7",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "CR_Dim_Product_Line"
-              }
-            },
-            "Property": "discipline"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

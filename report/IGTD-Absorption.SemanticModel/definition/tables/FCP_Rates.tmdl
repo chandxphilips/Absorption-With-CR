@@ -1,0 +1,205 @@
+table FCP_Rates
+	lineageTag: 4c8efdd2-0c9e-43d0-a5fb-6b666fe3c768
+
+	column Material
+		dataType: string
+		lineageTag: 2245ed50-7d9f-40d2-9f36-1feffcc85735
+		summarizeBy: none
+		sourceColumn: Material
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Old PN'
+		dataType: string
+		lineageTag: ef65b4d8-f653-462e-92b9-e0325c07a5a8
+		summarizeBy: none
+		sourceColumn: Old PN
+
+		annotation SummarizationSetBy = Automatic
+
+	column Site
+		dataType: string
+		lineageTag: 8a2f934d-4b70-4438-98ba-ffb2e29f015f
+		summarizeBy: none
+		sourceColumn: Site
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site Name'
+		dataType: string
+		lineageTag: 63cdf805-44fe-4e08-b109-ed863cb77b55
+		summarizeBy: none
+		sourceColumn: Site Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		dataType: string
+		lineageTag: 3c47b48b-083c-452b-b0e8-c1062fe50347
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Family DP'
+		dataType: string
+		lineageTag: 569b8c46-d913-4f2c-a60e-b69eda39fa86
+		summarizeBy: none
+		sourceColumn: Family DP
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: fba8a349-752d-4094-b446-1f7854c7359e
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column FAM-FG
+		dataType: string
+		lineageTag: cbaf2c78-0126-47b7-bb4c-f6a7b56a6ac1
+		summarizeBy: none
+		sourceColumn: FAM-FG
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Material Dashed'
+		dataType: string
+		lineageTag: 2924497f-cb8f-474e-bff5-6ace072ae9e6
+		summarizeBy: none
+		sourceColumn: Material Dashed
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: ca4ccee0-f400-4a46-b919-2939233a0c1e
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Material Cost'
+		dataType: double
+		lineageTag: 460359fb-24fa-4826-abaf-f2b435404ea7
+		summarizeBy: sum
+		sourceColumn: Material Cost
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Sub Con'
+		dataType: string
+		lineageTag: c79c1ac0-cb44-4eda-bf12-b66b5737bcf6
+		summarizeBy: none
+		sourceColumn: Sub Con
+
+		annotation SummarizationSetBy = Automatic
+
+	column Freight
+		dataType: string
+		lineageTag: 393e0a42-e6f9-4722-bbe6-4f83c476fd23
+		summarizeBy: none
+		sourceColumn: Freight
+
+		annotation SummarizationSetBy = Automatic
+
+	column Labor
+		dataType: double
+		lineageTag: 0bfd1141-7632-40f2-9cbc-f165ab39bdda
+		summarizeBy: sum
+		sourceColumn: Labor
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Overhead
+		dataType: double
+		lineageTag: 8c0d43ee-4184-49ed-b2e5-b21a656fbac3
+		summarizeBy: sum
+		sourceColumn: Overhead
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Abs per Unit'
+		dataType: double
+		lineageTag: 965e4c5f-0320-4c54-8da0-df82e27fa0e8
+		summarizeBy: sum
+		sourceColumn: Abs per Unit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FCP
+		dataType: double
+		lineageTag: 3db1b209-ae4a-47d1-95ef-2bdd46669ebd
+		summarizeBy: sum
+		sourceColumn: FCP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Uplift 5%'
+		dataType: string
+		lineageTag: 2017d438-2678-4326-9124-9ecb8c55aff6
+		summarizeBy: none
+		sourceColumn: Uplift 5%
+
+		annotation SummarizationSetBy = Automatic
+
+	column TP
+		dataType: string
+		lineageTag: 04343f76-0f05-473e-803b-654e69f37da9
+		summarizeBy: none
+		sourceColumn: TP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Match Key'
+		dataType: string
+		lineageTag: 94a55a65-d738-4d6a-a66b-2aae9f20065f
+		summarizeBy: none
+		sourceColumn: Match Key
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FCP_Rates = m
+		mode: import
+		source =
+				let
+				    Source   = SharePoint.Files(SiteUrl, [ApiVersion = 15]),
+				    File     = Table.SelectRows(Source, each Text.Contains([Folder Path], "/MPS_Absorption/MPS/")
+				                 and [Name] = "IGT-D FCPs 2026.xlsx"),
+				    Book     = Excel.Workbook(File{0}[Content], null, true),
+				    Sheet    = Book{[Item = "US+CR", Kind = "Sheet"]}[Data],
+				    Promoted = Table.PromoteHeaders(Sheet, [PromoteAllScalars = true]),
+				    First19  = Table.SelectColumns(Promoted, List.FirstN(Table.ColumnNames(Promoted), 19)),
+				    NewNames = {"Material","Old PN","Site","Site Name","Category","Family DP","Status","FAM-FG",
+				                "Material Dashed","Description","Material Cost","Sub Con","Freight",
+				                "Labor","Overhead","Abs per Unit","FCP","Uplift 5%","TP"},
+				    Renamed  = Table.RenameColumns(First19, List.Zip({Table.ColumnNames(First19), NewNames})),
+				    NoErrors = Table.ReplaceErrorValues(Renamed, List.Transform(NewNames, each {_, null})),
+				    Keyed    = Table.AddColumn(NoErrors, "Match Key", each
+				                 if [Material] = null then null
+				                 else Text.TrimStart(Text.Remove(Text.From([Material]), {"-", " "}), "0"), type text),
+				    RealRows = Table.SelectRows(Keyed, each [Site] <> null and [Match Key] <> null
+				                 and Text.Length([Match Key]) >= 10 and (try Number.From([Match Key]) otherwise null) <> null),
+				    ToNum    = (v) => try Number.From(v) otherwise 0,
+				    Nums     = Table.TransformColumns(RealRows, {
+				                 {"Material Cost", ToNum, type number}, {"Labor", ToNum, type number},
+				                 {"Overhead", ToNum, type number}, {"Abs per Unit", ToNum, type number},
+				                 {"FCP", ToNum, type number}, {"Site", Text.Trim, type text}}),
+				    Deduped  = Table.Distinct(Nums, {"Site", "Match Key"})
+				in
+				    Deduped
+
+	annotation PBI_ResultType = Table
+

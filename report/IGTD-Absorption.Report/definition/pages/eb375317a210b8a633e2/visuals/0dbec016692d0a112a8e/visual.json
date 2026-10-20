@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "5f6c3f851807108d9cd3",
   "position": {
     "x": 240.91638159855788,
@@ -265,51 +265,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "cf00dbab5175cc41f238",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "IGTD Product Lines"
-              }
-            },
-            "Property": "Product Line"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "f9c0805f7c4a5f22ead7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_US & CR IGT-D_Measures"
-              }
-            },
-            "Property": "IGTD PL Actual Units"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "38af7ad810e110ce312e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_US & CR IGT-D_Measures"
-              }
-            },
-            "Property": "IGTD PL AOP Units"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

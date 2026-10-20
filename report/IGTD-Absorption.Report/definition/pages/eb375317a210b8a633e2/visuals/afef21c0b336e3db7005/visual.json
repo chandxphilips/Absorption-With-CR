@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "afef21c0b336e3db7005",
   "position": {
     "x": 149.5535913243705,
@@ -212,23 +212,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9d4afcf8f4f6d32c40c4",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_US & CR IGT-D_Measures"
-              }
-            },
-            "Property": "IGTD Header Title"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

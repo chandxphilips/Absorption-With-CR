@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "3a12db7b108450774e0b",
   "position": {
     "x": 782.375399242368,
@@ -248,51 +248,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ead1917bb8e800f2fbb1",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_US & CR IGT-D_Measures"
-              }
-            },
-            "Property": "IGTD PL Actual Absorption"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "7b6d7fbaf8f1f1237e77",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_US & CR IGT-D_Measures"
-              }
-            },
-            "Property": "IGTD PL AOP Absorption"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "45193c6f80d2cbefe908",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_US & CR IGT-D_Measures"
-              }
-            },
-            "Property": "IGTD PL Var $"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

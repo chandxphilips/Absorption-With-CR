@@ -10,7 +10,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Fact_FS_Absorption","Dim_Material_Master","Fact_AOP","Dim_Subassemblies_Counted","Dim_Product_Tree_Leaf","Fact_MB51_Units","Product_Line_Map","_Measures","Dim_Site_Dim","Dim_Holidays","RefreshInfo","CR_FS_Absorption","CR_Material_Master","CR_MB51","CR_AOP_2026","CR_Holidays","_CR_CS_Measures","CR_MB51_Units","CR_Dim_Product_Line","_US & CR IGT-D_Measures"]
+annotation PBI_QueryOrder = ["Fact_FS_Absorption","Dim_Material_Master","Fact_AOP","Dim_Subassemblies_Counted","Dim_Product_Tree_Leaf","Fact_MB51_Units","Product_Line_Map","_Measures","Dim_Site_Dim","Dim_Holidays","RefreshInfo","CR_FS_Absorption","CR_Material_Master","CR_MB51","CR_AOP_2026","CR_Holidays","_CR_CS_Measures","CR_MB51_Units","CR_Dim_Product_Line","_US & CR IGT-D_Measures","SiteUrl","fnPromote","FCP_Rates","MPS_Item_Master","MPS_Volumes","fnMPSLong","MPS_All","Check_FCP_Coverage","Check_Missing_FCP","FCP_Overrides"]
 
 ref table Fact_FS_Absorption
 ref table Dim_Material_Master
@@ -48,6 +48,11 @@ ref table CR_Dim_Product_Line
 ref table '_US & CR IGT-D_Measures'
 ref table 'IGTD Product Lines'
 ref table 'IGTD Sites'
+ref table FCP_Rates
+ref table MPS_Item_Master
+ref table MPS_Volumes
+ref table LocalDateTable_869a7722-b14a-451a-86f1-52985bfe01be
+ref table LocalDateTable_b16f6d5d-c3b7-4efa-bd9b-aa5ee9a3efda
 
 ref cultureInfo en-US
 

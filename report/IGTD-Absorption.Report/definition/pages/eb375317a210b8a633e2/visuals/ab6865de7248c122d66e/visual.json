@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "ab6865de7248c122d66e",
   "position": {
     "x": 27.162141062582503,
@@ -144,20 +144,6 @@
   },
   "filterConfig": {
     "filters": [
-      {
-        "name": "354a2b53d1d8a1b4770e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "IGTD Product Lines"
-              }
-            },
-            "Property": "Product Line"
-          }
-        },
-        "type": "Categorical"
-      },
       {
         "name": "91d423fa1c394498a6b5",
         "field": {

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "b51c37615192a7147a40",
   "position": {
     "x": 233.07692307692309,
@@ -212,23 +212,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "1d4e2d9547ce6f52a4b3",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "_CR_CS_Measures"
-              }
-            },
-            "Property": "CR Header Title"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

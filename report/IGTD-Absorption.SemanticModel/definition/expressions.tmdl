@@ -1,0 +1,127 @@
+expression SiteUrl =
+		let
+		    Source = "https://share.philips.com/sites/Finance457" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type text]
+		in
+		    Source
+	lineageTag: 5196c7b0-ee17-4f65-bd2f-7a62a46b312c
+
+	annotation PBI_ResultType = Text
+
+expression fnPromote =
+		let
+		    Source = (t as table, keyHeader as text) as table =>
+		let
+		    Rows     = Table.ToRows(Table.FirstN(t, 15)),
+		    Flags    = List.Transform(Rows, (r) =>
+		                 List.Contains(List.Transform(r, each try Text.Trim(Text.From(_)) otherwise ""), keyHeader)),
+		    Idx      = List.PositionOf(Flags, true),
+		    Skipped  = Table.Skip(t, if Idx < 0 then 0 else Idx),
+		    Promoted = Table.PromoteHeaders(Skipped, [PromoteAllScalars = true]),
+		    Trimmed  = Table.TransformColumnNames(Promoted, Text.Trim)
+		in
+		    Trimmed
+		in
+		    Source
+	lineageTag: 471263ee-1230-4728-991b-87c18cb77aa4
+
+	annotation PBI_ResultType = Function
+
+expression fnMPSLong =
+		let
+		    Source = (content as binary, planMonth as date) as table =>
+		let
+		    Book      = Excel.Workbook(content, null, true),
+		    EnTab     = Date.ToText(planMonth, "MMM", "en-US") & " MPS",
+		    EsTab     = {"Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"}{Date.Month(planMonth) - 1} & " MPS",
+		    Sheets    = Table.SelectRows(Book, each [Kind] = "Sheet"
+		                  and (Text.Trim([Name]) = EnTab or Text.Trim([Name]) = EsTab)),
+		    Tab       = Sheets{0}[Data],
+		    Promoted  = fnPromote(Tab, "12NC"),
+		    NoErrors  = Table.ReplaceErrorValues(Promoted,
+		                  List.Transform(Table.ColumnNames(Promoted), each {_, null})),
+		    ItemCols  = {"Site", "Business", "12NC", "Final Pack 12 NC", "Product Description", "Product Line"},
+		    IsMonth   = (c) => (try Date.From(DateTime.From(c, "en-US")) otherwise null) <> null,
+		    DateCols  = List.Select(Table.ColumnNames(NoErrors), each not List.Contains(ItemCols, _) and IsMonth(_)),
+		    KeepItems = List.Intersect({ItemCols, Table.ColumnNames(NoErrors)}),
+		    Slim      = Table.SelectColumns(NoErrors, KeepItems & DateCols),
+		    Unpiv     = Table.UnpivotOtherColumns(Slim, KeepItems, "MonthText", "UnitsRaw"),
+		    AddMonth  = Table.AddColumn(Unpiv, "Month", each
+		                  Date.StartOfMonth(Date.From(DateTime.From([MonthText], "en-US"))), type date),
+		    AddUnits  = Table.AddColumn(AddMonth, "Units", each try Number.From([UnitsRaw]) otherwise 0, type number),
+		    Clean     = Table.RemoveColumns(AddUnits, {"MonthText", "UnitsRaw"}),
+		    AddPlan   = Table.AddColumn(Clean, "Plan Month", each planMonth, type date)
+		in
+		    AddPlan
+		in
+		    Source
+	lineageTag: 0b0d9449-8e83-4952-87b0-65f2727b4727
+
+	annotation PBI_ResultType = Function
+
+expression MPS_All =
+		let
+		    Source      = SharePoint.Files(SiteUrl, [ApiVersion = 15]),
+		    Files       = Table.SelectRows(Source, each Text.Contains([Folder Path], "/MPS_Absorption/MPS/")
+		                    and Text.Contains([Name], "MPS and MRP") and [Extension] = ".xlsx"
+		                    and not Text.StartsWith([Name], "~$")),
+		    WithMonth   = Table.AddColumn(Files, "Plan Month", each
+		                    try Date.FromText("01 " & Text.BeforeDelimiter([Name], " - "), [Culture = "en-US"])
+		                    otherwise null, type date),
+		    Valid       = Table.SelectRows(WithMonth, each [Plan Month] <> null),
+		    Sorted      = Table.Buffer(Table.Sort(Valid, {{"Plan Month", Order.Ascending}, {"Date modified", Order.Descending}})),
+		    OnePerMonth = Table.Distinct(Sorted, {"Plan Month"}),
+		    WithRows    = Table.AddColumn(OnePerMonth, "Rows", each fnMPSLong([Content], [Plan Month])),
+		    Slim        = Table.SelectColumns(WithRows, {"Name", "Rows"}),
+		    Expanded    = Table.ExpandTableColumn(Slim, "Rows",
+		                    {"Site", "Business", "12NC", "Final Pack 12 NC", "Product Description", "Product Line",
+		                     "Month", "Units", "Plan Month"}),
+		    Renamed     = Table.RenameColumns(Expanded, {{"Name", "MPS File"}})
+		in
+		    Renamed
+	lineageTag: 1d26d33a-e3fc-4393-8b2d-84cd684fab84
+
+	annotation PBI_ResultType = Table
+
+expression Check_FCP_Coverage =
+		let
+		    Src      = MPS_Volumes,
+		    Oct      = Table.SelectRows(Src, each [Is Plan First Month] = true),
+		    Grouped  = Table.Group(Oct, {"Business", "Report Site"}, {
+		                 {"Total Units", each List.Sum([Units]), type number},
+		                 {"Units No FCP", each List.Sum(Table.SelectRows(_, (r) => r[Abs per Unit] = null)[Units]), type number},
+		                 {"Items No FCP", each Table.RowCount(Table.Distinct(
+		                     Table.SelectRows(_, (r) => r[Abs per Unit] = null), {"Match Key"})), Int64.Type}}),
+		    AddPct   = Table.AddColumn(Grouped, "Coverage %", each
+		                 if [Total Units] = 0 then null
+		                 else 1 - (if [Units No FCP] = null then 0 else [Units No FCP]) / [Total Units], Percentage.Type),
+		    Sorted   = Table.Sort(AddPct, {{"Business", Order.Ascending}, {"Report Site", Order.Ascending}})
+		in
+		    Sorted
+	lineageTag: 646fdc56-62f3-42c3-8f69-dbb9a0100756
+
+	annotation PBI_ResultType = Table
+
+expression Check_Missing_FCP =
+		let
+		    Src     = MPS_Volumes,
+		    Oct     = Table.SelectRows(Src, each [Is Plan First Month] = true
+		                and [Business] = "IGTD" and [Abs per Unit] = null),
+		    Grouped = Table.Group(Oct, {"Report Site", "12NC", "Final Pack 12 NC", "Product Description", "Product Line", "Match Key"},
+		                {{"Oct Units", each List.Sum([Units]), type number}}),
+		    Sorted  = Table.Sort(Grouped, {{"Oct Units", Order.Descending}})
+		in
+		    Sorted
+	lineageTag: e019e27f-9fa3-45e4-94bc-9fc4c0da06a5
+
+	annotation PBI_ResultType = Table
+
+expression FCP_Overrides =
+		let
+		  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("Tc0xC8IwEAXgv3JkriHJNcnF0SjoIkHRpXQoWLRQjLQV9N+b6hDfcsu771UVQ5Fi0VgsJSuYdFyX6YYhvt5LCGcuUMM+3hfbOD66qenBkTPCpS9nJauLHyGlImFpJkhxwkzs/AZ8M93aqR0A1+AP8N0UCp0x6k/QSlgzC5Y46Syshu5ybSH0zxFOR8hlnfbrDw==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Match Key" = _t, #"Override Abs" = _t, Note = _t]),
+		  #"Changed column type" = Table.TransformColumnTypes(Source, {{"Match Key", Int64.Type}, {"Override Abs", type number}, {"Note", type text}})
+		in
+		  #"Changed column type"
+	lineageTag: 3e37e60e-4098-4c97-b46d-a6d163a448b6
+
+	annotation PBI_ResultType = Table
+

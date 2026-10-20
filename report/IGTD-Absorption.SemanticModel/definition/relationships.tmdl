@@ -161,3 +161,17 @@ relationship 8069c1dd-f2d8-9a41-8694-af60f5ddda32
 	fromColumn: CR_AOP_2026.product_line_key
 	toColumn: CR_Dim_Product_Line.product_line_key
 
+relationship 5f183aea-c70a-400d-9f0a-05b771d7bac3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MPS_Volumes.'Plan Month'
+	toColumn: LocalDateTable_869a7722-b14a-451a-86f1-52985bfe01be.Date
+
+relationship 301faf94-c3d0-f2ef-7a51-f63f695351d9
+	fromColumn: MPS_Volumes.Month
+	toColumn: Calendar.Date
+
+relationship ddb591b1-27ce-4b62-b8ef-6faba2bb947d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: MPS_Item_Master.'MPS Plan Month'
+	toColumn: LocalDateTable_b16f6d5d-c3b7-4efa-bd9b-aa5ee9a3efda.Date
+

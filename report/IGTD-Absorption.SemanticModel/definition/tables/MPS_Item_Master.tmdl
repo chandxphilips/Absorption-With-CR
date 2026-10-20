@@ -1,0 +1,100 @@
+table MPS_Item_Master
+	lineageTag: 896501eb-1c9d-4681-8be1-880abe2c8589
+
+	column Site
+		dataType: string
+		lineageTag: cc162b10-bcc7-43cf-80e3-3d552b1c5a81
+		summarizeBy: none
+		sourceColumn: Site
+
+		annotation SummarizationSetBy = Automatic
+
+	column Business
+		dataType: string
+		lineageTag: 329188b7-2c1c-484d-b471-308522db8c69
+		summarizeBy: none
+		sourceColumn: Business
+
+		annotation SummarizationSetBy = Automatic
+
+	column 12NC
+		dataType: string
+		lineageTag: dd15a346-74aa-4041-8e6b-1513f87f23b7
+		summarizeBy: none
+		sourceColumn: 12NC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Final Pack 12 NC'
+		dataType: string
+		lineageTag: 48efd2ef-1ac5-4ff3-94a4-985f61e678a1
+		summarizeBy: none
+		sourceColumn: Final Pack 12 NC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Description'
+		dataType: string
+		lineageTag: 8bc32420-73f8-4f66-bc7a-2399c70b1eaa
+		summarizeBy: none
+		sourceColumn: Product Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Line'
+		dataType: string
+		lineageTag: 0cd799d1-c2b6-40c4-b97f-01dc18a91c95
+		summarizeBy: none
+		sourceColumn: Product Line
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Match Key'
+		dataType: string
+		lineageTag: 4d3e9c0b-3dc2-4991-af5c-7e2b55d38b1e
+		summarizeBy: none
+		sourceColumn: Match Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'MPS Plan Month'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: bb3e40c0-1cf4-4260-84ac-9fa39d2d420b
+		summarizeBy: none
+		sourceColumn: MPS Plan Month
+
+		variation Variation
+			isDefault
+			relationship: ddb591b1-27ce-4b62-b8ef-6faba2bb947d
+			defaultHierarchy: LocalDateTable_b16f6d5d-c3b7-4efa-bd9b-aa5ee9a3efda.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition MPS_Item_Master = m
+		mode: import
+		source =
+				let
+				    Src        = MPS_All,
+				    Latest     = List.Max(Src[Plan Month]),
+				    LatestRows = Table.SelectRows(Src, each [Plan Month] = Latest),
+				    ItemCols   = {"Site", "Business", "12NC", "Final Pack 12 NC", "Product Description", "Product Line"},
+				    Items      = Table.Distinct(Table.SelectColumns(LatestRows, ItemCols)),
+				    Filtered   = Table.SelectRows(Items, each [Site] <> null and [12NC] <> null
+				                   and [Product Line] <> null and [Product Line] <> ""),
+				    BizFix     = Table.TransformColumns(Filtered, {{"Business",
+				                   each if _ = "IGT-D" then "IGTD" else if _ = "SRC" then "S&RC" else _, type text}}),
+				    CleanKey   = (k) => if k = null then null
+				                   else Text.TrimStart(Text.Remove(Text.From(k), {"-", " ", "\"}), "0"),
+				    By12NC     = Table.AddColumn(BizFix, "Match Key", each CleanKey([12NC]), type text),
+				    ByFP       = Table.AddColumn(BizFix, "Match Key", each CleanKey([Final Pack 12 NC]), type text),
+				    Combined   = Table.SelectRows(Table.Combine({By12NC, ByFP}), each [Match Key] <> null and [Match Key] <> ""),
+				    Deduped    = Table.Distinct(Combined, {"Match Key"}),
+				    AddPlan    = Table.AddColumn(Deduped, "MPS Plan Month", each Latest, type date)
+				in
+				    AddPlan
+
+	annotation PBI_ResultType = Table
+

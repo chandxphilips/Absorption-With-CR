@@ -1,0 +1,214 @@
+table MPS_Volumes
+	lineageTag: be2f5080-9f3d-4eaa-a396-3caf888d998f
+
+	column Site
+		dataType: string
+		lineageTag: 26d6af0e-1644-40c1-ae67-a60f70264f6b
+		summarizeBy: none
+		sourceColumn: Site
+
+		annotation SummarizationSetBy = Automatic
+
+	column Business
+		dataType: string
+		lineageTag: 70220db8-7d61-4ac1-8350-a4c5b93fa8d5
+		summarizeBy: none
+		sourceColumn: Business
+
+		annotation SummarizationSetBy = Automatic
+
+	column 12NC
+		dataType: string
+		lineageTag: b7ab354e-37b3-414c-b687-e76d9dc9ee90
+		summarizeBy: none
+		sourceColumn: 12NC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Final Pack 12 NC'
+		dataType: string
+		lineageTag: 9eb548e4-399b-4075-8415-13c6b30c1597
+		summarizeBy: none
+		sourceColumn: Final Pack 12 NC
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Description'
+		dataType: string
+		lineageTag: bc591cbb-4f95-44e7-b4a5-645e4eab69da
+		summarizeBy: none
+		sourceColumn: Product Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Line'
+		dataType: string
+		lineageTag: 14680ff8-6750-4e5c-91da-9ae2f91eef4c
+		summarizeBy: none
+		sourceColumn: Product Line
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: a1ebec5e-2a82-4587-a6f7-26aef2b98726
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Units
+		dataType: double
+		lineageTag: 40d53957-5aee-4af9-a8ab-b754a5db8d61
+		summarizeBy: sum
+		sourceColumn: Units
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Plan Month'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 25595f55-b59a-4999-8203-29725143e532
+		summarizeBy: none
+		sourceColumn: Plan Month
+
+		variation Variation
+			isDefault
+			relationship: 5f183aea-c70a-400d-9f0a-05b771d7bac3
+			defaultHierarchy: LocalDateTable_869a7722-b14a-451a-86f1-52985bfe01be.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Is Plan First Month'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: ad87fab3-36ca-4ab7-b48a-9968471404bb
+		summarizeBy: none
+		sourceColumn: Is Plan First Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Report Site'
+		dataType: string
+		lineageTag: ebcdaeab-8397-4afb-9347-6b7543893703
+		summarizeBy: none
+		sourceColumn: Report Site
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Match Key'
+		dataType: string
+		lineageTag: 2fba0c9d-f030-4b8e-858b-6e416f6c066a
+		summarizeBy: none
+		sourceColumn: Match Key
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Match Key FP'
+		dataType: string
+		lineageTag: 752200aa-7115-4789-a301-7baf1ab1ff6b
+		summarizeBy: none
+		sourceColumn: Match Key FP
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Abs per Unit'
+		dataType: double
+		lineageTag: 1c671ab5-2ec6-44c9-ab68-df32035b31a9
+		summarizeBy: sum
+		sourceColumn: Abs per Unit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'MPS Absorption $'
+		dataType: double
+		lineageTag: d2124fcf-1bd1-4c1e-ae14-8f33f354ae41
+		summarizeBy: sum
+		sourceColumn: MPS Absorption $
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'MPS File'
+		dataType: string
+		lineageTag: 3e060de7-dea4-4277-8e2e-1b356bdbc7c8
+		summarizeBy: none
+		sourceColumn: MPS File
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Rate Source'
+		dataType: string
+		lineageTag: adc733e7-6b0d-4462-a67a-591fad65b950
+		summarizeBy: none
+		sourceColumn: Rate Source
+
+		annotation SummarizationSetBy = Automatic
+
+	partition MPS_Volumes = m
+		mode: import
+		source =
+				let
+				    Src       = MPS_All,
+				    Filtered  = Table.SelectRows(Src, each [Site] <> null and [12NC] <> null
+				                  and [Product Line] <> null and [Units] <> 0),
+				    BizFix    = Table.TransformColumns(Filtered, {{"Business",
+				                  each if _ = "IGT-D" then "IGTD" else if _ = "SRC" then "S&RC" else _, type text}}),
+				    AddFirst  = Table.AddColumn(BizFix, "Is Plan First Month", each [Month] = [Plan Month], type logical),
+				    SiteMap   = Table.AddColumn(AddFirst, "Report Site", each
+				                  let s = Text.Trim(Text.From([Site])) in
+				                  if s = "CR" then "CR9A" else if s = "COS" then "US9F"
+				                  else if s = "PLY" then "US9G" else if s = "FRE" then "US9M" else s, type text),
+				    CleanKey  = (k) => if k = null then null
+				                  else Text.TrimStart(Text.Remove(Text.From(k), {"-", " ", "\"}), "0"),
+				    Key1      = Table.AddColumn(SiteMap, "Match Key", each CleanKey([12NC]), type text),
+				    Key2      = Table.AddColumn(Key1, "Match Key FP", each CleanKey([Final Pack 12 NC]), type text),
+				
+				    Rates     = Table.Buffer(Table.SelectColumns(FCP_Rates, {"Site", "Match Key", "Abs per Unit"})),
+				    AnySite   = Table.Buffer(Table.Distinct(Table.SelectRows(
+				                  Table.SelectColumns(FCP_Rates, {"Match Key", "Abs per Unit"}),
+				                  each [Abs per Unit] > 0), {"Match Key"})),
+				    Overrides = Table.Buffer(Table.TransformColumnTypes(
+				                  Table.SelectColumns(FCP_Overrides, {"Match Key", "Override Abs"}),
+				                  {{"Match Key", type text}, {"Override Abs", type number}})),
+				
+				    J1        = Table.NestedJoin(Key2, {"Report Site", "Match Key"}, Rates, {"Site", "Match Key"}, "R1", JoinKind.LeftOuter),
+				    J2        = Table.NestedJoin(J1, {"Report Site", "Match Key FP"}, Rates, {"Site", "Match Key"}, "R2", JoinKind.LeftOuter),
+				    J3        = Table.NestedJoin(J2, {"Match Key"}, Overrides, {"Match Key"}, "R3", JoinKind.LeftOuter),
+				    J4        = Table.NestedJoin(J3, {"Match Key"}, AnySite, {"Match Key"}, "R4", JoinKind.LeftOuter),
+				
+				    AddSource = Table.AddColumn(J4, "Rate Source", each
+				                  if not Table.IsEmpty([R1]) then "Exact"
+				                  else if not Table.IsEmpty([R2]) then "Final Pack"
+				                  else if not Table.IsEmpty([R3]) then "Override"
+				                  else if not Table.IsEmpty([R4]) then "Other Site"
+				                  else null, type text),
+				    AddRate   = Table.AddColumn(AddSource, "Abs per Unit", each
+				                  if [Rate Source] = "Exact" then [R1]{0}[Abs per Unit]
+				                  else if [Rate Source] = "Final Pack" then [R2]{0}[Abs per Unit]
+				                  else if [Rate Source] = "Override" then [R3]{0}[Override Abs]
+				                  else if [Rate Source] = "Other Site" then [R4]{0}[Abs per Unit]
+				                  else null, type number),
+				    AddUSD    = Table.AddColumn(AddRate, "MPS Absorption $", each
+				                  if [Abs per Unit] = null then null else [Units] * [Abs per Unit], type number),
+				    Final     = Table.RemoveColumns(AddUSD, {"R1", "R2", "R3", "R4"}),
+				    Typed     = Table.TransformColumnTypes(Final, {
+				                  {"Month", type date}, {"Plan Month", type date}, {"Units", type number},
+				                  {"Site", type text}, {"Business", type text}, {"12NC", type text},
+				                  {"Final Pack 12 NC", type text}, {"Product Description", type text},
+				                  {"Product Line", type text}})
+				in
+				    Typed
+
+	annotation PBI_ResultType = Table
+

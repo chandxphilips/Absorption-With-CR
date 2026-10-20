@@ -470,6 +470,13 @@ table _Measures
 		formatString: 0
 		lineageTag: d8a10163-3519-4563-bb46-f244637e385e
 
+	measure 'MPS Units (As Planned)' =
+			
+			CALCULATE( SUM( MPS_Volumes[Units] ), MPS_Volumes[Is Plan First Month] = TRUE() )
+		lineageTag: 540c07d6-3b98-4ce5-9751-f6d7cf18cbc7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Column1
 		dataType: string
 		lineageTag: edd6ec33-ab2a-4031-8b38-cc675c9e7876
