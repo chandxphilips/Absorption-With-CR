@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "10524d17490296d8653e",
   "position": {
     "x": 19.285714285714288,
@@ -27,8 +27,9 @@
                 }
               },
               "queryRef": "CR_Dim_Product_Line.discipline",
-              "nativeQueryRef": "discipline",
-              "active": true
+              "nativeQueryRef": "Business",
+              "active": true,
+              "displayName": "Business"
             }
           ]
         }
@@ -62,7 +63,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Discipline '"
+                  "Value": "'Business'"
                 }
               }
             },

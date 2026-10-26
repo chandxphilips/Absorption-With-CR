@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "ec88d513cbdbba8092b5",
   "position": {
     "x": 17.5,
@@ -28,7 +28,8 @@
               },
               "queryRef": "Fact_MB51_Units.posting_date",
               "nativeQueryRef": "Posting Date",
-              "displayName": "Posting Date"
+              "displayName": "Posting Date",
+              "format": "M/d/yyyy"
             },
             {
               "field": {
@@ -178,10 +179,10 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Product_Line_Map"
+                    "Entity": "Fact_MB51_Units"
                   }
                 },
-                "Property": "product_line"
+                "Property": "posting_date"
               }
             },
             "direction": "Ascending"
