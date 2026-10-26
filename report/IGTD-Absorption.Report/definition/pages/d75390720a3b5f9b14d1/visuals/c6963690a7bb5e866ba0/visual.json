@@ -1,0 +1,128 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "c6963690a7bb5e866ba0",
+  "position": {
+    "x": 758.80627212948912,
+    "y": 236.31765300961052,
+    "z": 28000,
+    "height": 235.02276176024282,
+    "width": 505.00758725341427,
+    "tabOrder": 23005
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_US & CR IGT-D_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL Actual Absorption"
+                }
+              },
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption",
+              "nativeQueryRef": "Actual Absorption",
+              "displayName": "Actual Absorption"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_MPS_Measures"
+                    }
+                  },
+                  "Property": "IGTD PL MPS Absorption"
+                }
+              },
+              "queryRef": "_MPS_Measures.IGTD PL MPS Absorption",
+              "nativeQueryRef": "MPS Absorption",
+              "displayName": "MPS Absorption"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_US & CR IGT-D_Measures"
+                  }
+                },
+                "Property": "IGTD PL Actual Absorption"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "borderShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'outside'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

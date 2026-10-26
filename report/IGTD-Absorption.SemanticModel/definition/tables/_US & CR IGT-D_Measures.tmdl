@@ -196,9 +196,9 @@ table '_US & CR IGT-D_Measures'
 	measure 'IGTD PL Var $ %' =
 			
 			IF(
-			    ISBLANK( [IGTD PL AOP Absorption] ) || [IGTD PL AOP Absorption] = 0,
+			    ISBLANK( [IGTD PL AOP Absorption - Date Range] ) || [IGTD PL AOP Absorption - Date Range] = 0,
 			    BLANK(),
-			    DIVIDE( [IGTD PL Actual Absorption] - [IGTD PL AOP Absorption], [IGTD PL AOP Absorption] )
+			    DIVIDE( [IGTD PL Actual Absorption] - [IGTD PL AOP Absorption - Date Range], [IGTD PL AOP Absorption - Date Range] )
 			)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 663aeff8-f589-40a6-8c3e-7d770de9c5a6
@@ -239,7 +239,7 @@ table '_US & CR IGT-D_Measures'
 
 	measure 'IGTD PL Var $' =
 			
-			[IGTD PL Actual Absorption] - [IGTD PL AOP Absorption]
+			[IGTD PL Actual Absorption] - [IGTD PL AOP Absorption - Date Range]
 		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: 863e8d9f-e822-4354-a8a9-82129401749d
 
@@ -248,9 +248,9 @@ table '_US & CR IGT-D_Measures'
 	measure 'IGTD PL Var Units %' =
 			
 			IF(
-			    ISBLANK( [IGTD PL AOP Units] ) || [IGTD PL AOP Units] = 0,
+			    ISBLANK( [IGTD PL AOP Units - Date Range] ) || [IGTD PL AOP Units - Date Range] = 0,
 			    BLANK(),
-			    DIVIDE( [IGTD PL Actual Units] - [IGTD PL AOP Units], [IGTD PL AOP Units] )
+			    DIVIDE( [IGTD PL Actual Units] - [IGTD PL AOP Units - Date Range], [IGTD PL AOP Units - Date Range] )
 			)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 47c39bd8-7db4-417a-8b45-eedb54bb2fde
@@ -258,9 +258,9 @@ table '_US & CR IGT-D_Measures'
 	measure 'IGTD PL Units Variance' =
 			
 			IF(
-			    ISBLANK( [IGTD PL AOP Units] ) || [IGTD PL AOP Units] = 0,
+			    ISBLANK( [IGTD PL AOP Units - Date Range] ) || [IGTD PL AOP Units - Date Range] = 0,
 			    BLANK(),
-			    [IGTD PL Actual Units] - [IGTD PL AOP Units]
+			    [IGTD PL Actual Units] - [IGTD PL AOP Units - Date Range]
 			)
 		formatString: #,0
 		lineageTag: d6be46d0-e623-4c97-b600-33c426ef6a38
@@ -362,6 +362,56 @@ table '_US & CR IGT-D_Measures'
 			            KEEPFILTERS( NOT CR_Dim_Product_Line[product_line] IN { "Omniwire", "OmniMicro" } ) ) )
 			RETURN CR01 + CR02
 		lineageTag: 5ba1ebf3-7534-481f-8d00-4d2f91fd15bc
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL AOP Units - Date Range' =
+			
+			SUMX (
+			    VALUES ( 'Calendar'[Year Month] ),
+			    VAR FullMonthAOP =
+			        CALCULATE (
+			            [IGTD PL AOP Units],
+			            REMOVEFILTERS ( 'Calendar'[Date] )
+			        )
+			    VAR SelectedDays =
+			        CALCULATE (
+			            DISTINCTCOUNT ( 'Calendar'[Date] )
+			        )
+			    VAR DaysInMonth =
+			        CALCULATE (
+			            DISTINCTCOUNT ( 'Calendar'[Date] ),
+			            REMOVEFILTERS ( 'Calendar'[Date] )
+			        )
+			    RETURN
+			        FullMonthAOP * DIVIDE ( SelectedDays, DaysInMonth )
+			)
+		lineageTag: 572f3465-eb94-4ddd-9d0e-a6a665cf5bd9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL AOP Absorption - Date Range' =
+			
+			SUMX (
+			    VALUES ( 'Calendar'[Year Month] ),
+			    VAR FullMonthAOP =
+			        CALCULATE (
+			            [IGTD PL AOP Absorption],
+			            REMOVEFILTERS ( 'Calendar'[Date] )
+			        )
+			    VAR SelectedDays =
+			        CALCULATE (
+			            DISTINCTCOUNT ( 'Calendar'[Date] )
+			        )
+			    VAR DaysInMonth =
+			        CALCULATE (
+			            DISTINCTCOUNT ( 'Calendar'[Date] ),
+			            REMOVEFILTERS ( 'Calendar'[Date] )
+			        )
+			    RETURN
+			        FullMonthAOP * DIVIDE ( SelectedDays, DaysInMonth )
+			)
+		lineageTag: 1be6118e-1a1a-418a-98ef-f5e4ad937b80
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

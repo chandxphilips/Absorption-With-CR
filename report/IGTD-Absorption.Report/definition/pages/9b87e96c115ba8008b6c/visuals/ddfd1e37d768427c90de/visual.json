@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "ddfd1e37d768427c90de",
   "position": {
     "x": 777.07342692083864,
@@ -57,10 +57,10 @@
                       "Entity": "_CR_CS_Measures"
                     }
                   },
-                  "Property": "CR AOP $ (Abs)"
+                  "Property": "CR AOP $ (Abs) - Date Range"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR AOP $ (Abs)",
+              "queryRef": "_CR_CS_Measures.CR AOP $ (Abs) - Date Range",
               "nativeQueryRef": "AOP Absorption",
               "displayName": "AOP Absorption"
             }

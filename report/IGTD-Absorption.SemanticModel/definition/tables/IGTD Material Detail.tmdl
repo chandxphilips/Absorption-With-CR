@@ -1,0 +1,287 @@
+table 'IGTD Material Detail'
+	lineageTag: a2d60d8e-070c-49a0-b933-f5ac0fad51d1
+
+	measure 'IGTD Detail Actual Units' =
+			
+			VAR MaterialKeysUS =
+			    CALCULATETABLE (
+			        VALUES ( 'IGTD Material Detail'[Material] ),
+			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "US" )
+			    )
+			VAR MaterialKeysCR =
+			    CALCULATETABLE (
+			        VALUES ( 'IGTD Material Detail'[Material] ),
+			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "CR" )
+			    )
+			VAR ProductLines =
+			    VALUES ( 'IGTD Product Lines'[Product Line] )
+			VAR Sites =
+			    VALUES ( 'IGTD Sites'[Site] )
+			VAR RowRegion =
+			    SELECTEDVALUE ( 'IGTD Material Detail'[Region] )
+			VAR USSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "US" )
+			    ) > 0
+			VAR CRSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "CR" )
+			    ) > 0
+			VAR US =
+			    IF (
+			        USSelected && ( ISBLANK ( RowRegion ) || RowRegion = "US" ),
+			        CALCULATE (
+			            [Actual Units],
+			            TREATAS ( ProductLines, Product_Line_Map[product_line] ),
+			            TREATAS ( Sites, Dim_Site_Dim[site_code] ),
+			            TREATAS ( MaterialKeysUS, Dim_Material_Master[material] )
+			        )
+			    )
+			VAR CR =
+			    IF (
+			        CRSelected && ( ISBLANK ( RowRegion ) || RowRegion = "CR" ),
+			        CALCULATE (
+			            [CR IGTD Site Actual Units],
+			            TREATAS ( ProductLines, CR_Dim_Product_Line[product_line] ),
+			            TREATAS ( MaterialKeysCR, CR_Material_Master[material] )
+			        )
+			    )
+			RETURN
+			    US + CR
+		lineageTag: ee89ac58-c07b-40e7-85c3-ce60a971188c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Detail Actual Absorption' =
+			
+			VAR MaterialKeysUS =
+			    CALCULATETABLE (
+			        VALUES ( 'IGTD Material Detail'[Material] ),
+			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "US" )
+			    )
+			VAR MaterialKeysCR =
+			    CALCULATETABLE (
+			        VALUES ( 'IGTD Material Detail'[Material] ),
+			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "CR" )
+			    )
+			VAR ProductLines =
+			    VALUES ( 'IGTD Product Lines'[Product Line] )
+			VAR Sites =
+			    VALUES ( 'IGTD Sites'[Site] )
+			VAR RowRegion =
+			    SELECTEDVALUE ( 'IGTD Material Detail'[Region] )
+			VAR USSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "US" )
+			    ) > 0
+			VAR CRSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "CR" )
+			    ) > 0
+			VAR US =
+			    IF (
+			        USSelected && ( ISBLANK ( RowRegion ) || RowRegion = "US" ),
+			        CALCULATE (
+			            [Actual Absorption $ (Abs)],
+			            TREATAS ( ProductLines, Product_Line_Map[product_line] ),
+			            TREATAS ( Sites, Dim_Site_Dim[site_code] ),
+			            TREATAS ( MaterialKeysUS, Dim_Material_Master[material] )
+			        )
+			    )
+			VAR CR =
+			    IF (
+			        CRSelected && ( ISBLANK ( RowRegion ) || RowRegion = "CR" ),
+			        CALCULATE (
+			            [CR Actual Absorption $ (Abs)],
+			            TREATAS ( ProductLines, CR_Dim_Product_Line[product_line] ),
+			            TREATAS ( MaterialKeysCR, CR_FS_Absorption[part_number_lookup] )
+			        )
+			    )
+			RETURN
+			    US + CR
+		lineageTag: 12cd7537-255b-430f-a41a-af79f462b967
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Detail MPS Units' =
+			
+			VAR MaterialKeysUS =
+			    CALCULATETABLE (
+			        VALUES ( 'IGTD Material Detail'[Material] ),
+			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "US" )
+			    )
+			VAR MaterialKeysCR =
+			    CALCULATETABLE (
+			        VALUES ( 'IGTD Material Detail'[Material] ),
+			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "CR" )
+			    )
+			VAR USKeyRows =
+			    FILTER (
+			        ALL ( MPS_Volumes[Match Key FP], MPS_Volumes[Match Key] ),
+			        MPS_Volumes[Match Key FP] IN MaterialKeysUS
+			            || MPS_Volumes[Match Key] IN MaterialKeysUS
+			    )
+			VAR Sites =
+			    VALUES ( 'IGTD Sites'[Site] )
+			VAR RowRegion =
+			    SELECTEDVALUE ( 'IGTD Material Detail'[Region] )
+			VAR USSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "US" )
+			    ) > 0
+			VAR CRSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "CR" )
+			    ) > 0
+			VAR US =
+			    IF (
+			        USSelected && ( ISBLANK ( RowRegion ) || RowRegion = "US" ),
+			        CALCULATE (
+			            [IGTD PL MPS Units],
+			            KEEPFILTERS ( USKeyRows )
+			        )
+			    )
+			VAR CR =
+			    IF (
+			        CRSelected && ( ISBLANK ( RowRegion ) || RowRegion = "CR" ),
+			        CALCULATE (
+			            [IGTD PL MPS Units],
+			            TREATAS ( MaterialKeysCR, MPS_Volumes[Match Key] )
+			        )
+			    )
+			RETURN
+			    US + CR
+		lineageTag: afc926c0-721d-4b4f-870f-2e82af939b65
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Detail MPS Absorption' =
+			
+			VAR MaterialKeysUS =
+			    CALCULATETABLE (
+			        VALUES ( 'IGTD Material Detail'[Material] ),
+			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "US" )
+			    )
+			VAR MaterialKeysCR =
+			    CALCULATETABLE (
+			        VALUES ( 'IGTD Material Detail'[Material] ),
+			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "CR" )
+			    )
+			VAR USKeyRows =
+			    FILTER (
+			        ALL ( MPS_Volumes[Match Key FP], MPS_Volumes[Match Key] ),
+			        MPS_Volumes[Match Key FP] IN MaterialKeysUS
+			            || MPS_Volumes[Match Key] IN MaterialKeysUS
+			    )
+			VAR Sites =
+			    VALUES ( 'IGTD Sites'[Site] )
+			VAR RowRegion =
+			    SELECTEDVALUE ( 'IGTD Material Detail'[Region] )
+			VAR USSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "US" )
+			    ) > 0
+			VAR CRSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "CR" )
+			    ) > 0
+			VAR US =
+			    IF (
+			        USSelected && ( ISBLANK ( RowRegion ) || RowRegion = "US" ),
+			        CALCULATE (
+			            [IGTD PL MPS Absorption],
+			            KEEPFILTERS ( USKeyRows )
+			        )
+			    )
+			VAR CR =
+			    IF (
+			        CRSelected && ( ISBLANK ( RowRegion ) || RowRegion = "CR" ),
+			        CALCULATE (
+			            [IGTD PL MPS Absorption],
+			            TREATAS ( MaterialKeysCR, MPS_Volumes[Match Key] )
+			        )
+			    )
+			RETURN
+			    US + CR
+		lineageTag: 80d5e413-a6cf-48f8-a979-00c3fffcc479
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD Detail Row Visible' =
+			
+			VAR Sites =
+			    VALUES ( 'IGTD Sites'[Site] )
+			VAR RowRegion =
+			    SELECTEDVALUE ( 'IGTD Material Detail'[Region] )
+			VAR USSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "US" )
+			    ) > 0
+			VAR CRSelected =
+			    COUNTROWS (
+			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "CR" )
+			    ) > 0
+			RETURN
+			    IF (
+			        ( RowRegion = "US" && USSelected )
+			            || ( RowRegion = "CR" && CRSelected )
+			            || ( ISBLANK ( RowRegion ) && ( USSelected || CRSelected ) ),
+			        1,
+			        0
+			    )
+		formatString: 0
+		lineageTag: 761687a4-d41f-4267-bdc3-8e3968cf4b8a
+
+	column Region
+		lineageTag: 67b26ee8-9389-4683-a572-7a4dede718e7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Region]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Material
+		lineageTag: 9d03d63f-ed6f-4850-8bb6-4588166d5ab5
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Material]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		lineageTag: 2dfe7a85-4559-43f2-9ffb-61e1c08d9d33
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Description]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'IGTD Material Detail' = calculated
+		mode: import
+		source =
+				
+				DISTINCT (
+				    UNION (
+				        SELECTCOLUMNS (
+				            FILTER (
+				                Dim_Material_Master,
+				                NOT ISBLANK ( Dim_Material_Master[material] )
+				            ),
+				            "Region", "US",
+				            "Material", Dim_Material_Master[material],
+				            "Description", Dim_Material_Master[material_description]
+				        ),
+				        SELECTCOLUMNS (
+				            FILTER (
+				                CR_Material_Master,
+				                NOT ISBLANK ( CR_Material_Master[material] )
+				            ),
+				            "Region", "CR",
+				            "Material", CR_Material_Master[material],
+				            "Description", CR_Material_Master[material_description]
+				        )
+				    )
+				)
+
+	annotation PBI_Id = da7b938b01af475595a7988b50159771
+

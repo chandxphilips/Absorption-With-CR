@@ -17,6 +17,36 @@ table 'IGTD Sites'
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'MPS Report Site' =
+			
+			VAR SiteLabel = 'IGTD Sites'[Site]
+			VAR SeparatorPosition = SEARCH(" - ", SiteLabel, 1, 0)
+			RETURN
+			    IF(
+			        SeparatorPosition > 0,
+			        LEFT(SiteLabel, SeparatorPosition - 1),
+			        SiteLabel
+			    )
+		lineageTag: 6121b393-79a0-48bd-a48a-0d2252b8e3fa
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Site Display' =
+			
+			VAR SeparatorPosition =
+			    SEARCH ( " - ", 'IGTD Sites'[Site], 1, 0 )
+			RETURN
+			    IF (
+			        SeparatorPosition > 0,
+			        LEFT ( 'IGTD Sites'[Site], SeparatorPosition - 1 ),
+			        'IGTD Sites'[Site]
+			    )
+		lineageTag: 3daed6ee-76a3-4930-a79c-fa45a14f3107
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'IGTD Sites' = calculated
 		mode: import
 		source =

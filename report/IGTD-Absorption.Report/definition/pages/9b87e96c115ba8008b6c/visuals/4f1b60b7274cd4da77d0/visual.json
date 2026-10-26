@@ -58,7 +58,8 @@
               },
               "queryRef": "_CR_CS_Measures.CR Actual Units",
               "nativeQueryRef": "Actual Units",
-              "displayName": "Actual Units"
+              "displayName": "Actual Units",
+              "format": "#,0"
             },
             {
               "field": {
@@ -68,10 +69,10 @@
                       "Entity": "_CR_CS_Measures"
                     }
                   },
-                  "Property": "CR AOP Units"
+                  "Property": "CR AOP Units - Date Range"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR AOP Units",
+              "queryRef": "_CR_CS_Measures.CR AOP Units - Date Range",
               "nativeQueryRef": "AOP Units",
               "displayName": "AOP Units"
             },
@@ -113,10 +114,10 @@
                       "Entity": "_CR_CS_Measures"
                     }
                   },
-                  "Property": "CR AOP $ (Abs)"
+                  "Property": "CR AOP $ (Abs) - Date Range"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR AOP $ (Abs)",
+              "queryRef": "_CR_CS_Measures.CR AOP $ (Abs) - Date Range",
               "nativeQueryRef": "AOP Absorption",
               "displayName": "AOP Absorption"
             },
@@ -177,7 +178,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "82.46652172955456D"
+                  "Value": "90.682738276343D"
                 }
               }
             }
@@ -267,6 +268,34 @@
           },
           "selector": {
             "metadata": "CR_Dim_Product_Line.product_line"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_CR_CS_Measures.CR AOP Units - Date Range"
+          }
+        },
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_CR_CS_Measures.CR Actual Units"
           }
         }
       ],

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.13.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "8d1a106172163d0a7720",
   "position": {
     "x": 777.07342692083864,
@@ -57,10 +57,10 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD PL AOP Absorption"
+                  "Property": "IGTD PL AOP Absorption - Date Range"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption",
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption - Date Range",
               "nativeQueryRef": "AOP Absorption",
               "displayName": "AOP Absorption"
             }

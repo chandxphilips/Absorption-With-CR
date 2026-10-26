@@ -53,6 +53,8 @@ ref table MPS_Item_Master
 ref table MPS_Volumes
 ref table LocalDateTable_869a7722-b14a-451a-86f1-52985bfe01be
 ref table LocalDateTable_b16f6d5d-c3b7-4efa-bd9b-aa5ee9a3efda
+ref table _MPS_Measures
+ref table 'IGTD Material Detail'
 
 ref cultureInfo en-US
 

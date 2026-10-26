@@ -39,10 +39,10 @@
                       "Entity": "_CR_CS_Measures"
                     }
                   },
-                  "Property": "CR AOP $ (Abs)"
+                  "Property": "CR AOP $ (Abs) - Date Range"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR AOP $ (Abs)",
+              "queryRef": "_CR_CS_Measures.CR AOP $ (Abs) - Date Range",
               "nativeQueryRef": "AOP Absorption",
               "displayName": "AOP Absorption",
               "format": "$#,0,,.00M;($#,0,,.0M)"

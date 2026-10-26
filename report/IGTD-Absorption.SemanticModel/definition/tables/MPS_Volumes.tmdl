@@ -155,6 +155,43 @@ table MPS_Volumes
 
 		annotation SummarizationSetBy = Automatic
 
+	column 'MPS IGTD Product Line' =
+			
+			VAR MaterialKey = MPS_Volumes[Match Key]
+			VAR IsCR = MPS_Volumes[Report Site] = "CR9A"
+			VAR ProductHierarchy =
+			    IF(
+			        IsCR,
+			        LOOKUPVALUE(
+			            CR_Material_Master[product_hierarchy],
+			            CR_Material_Master[material], MaterialKey
+			        ),
+			        LOOKUPVALUE(
+			            Dim_Material_Master[product_hierarchy],
+			            Dim_Material_Master[material], MaterialKey
+			        )
+			    )
+			VAR HierarchyKey = SUBSTITUTE(ProductHierarchy, "-", "")
+			VAR TreeLabel =
+			    LOOKUPVALUE(
+			        Dim_Product_Tree_Leaf[long_description],
+			        Dim_Product_Tree_Leaf[product_hierarchy_no_dashes], HierarchyKey
+			    )
+			VAR CRLabel =
+			    IF(
+			        IsCR,
+			        LOOKUPVALUE(
+			            CR_Dim_Product_Line[product_line],
+			            CR_Dim_Product_Line[product_line_key], HierarchyKey
+			        )
+			    )
+			RETURN
+			    COALESCE(TreeLabel, CRLabel)
+		lineageTag: ec2a3b23-8ecf-43de-8f0a-8470f511e038
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition MPS_Volumes = m
 		mode: import
 		source =

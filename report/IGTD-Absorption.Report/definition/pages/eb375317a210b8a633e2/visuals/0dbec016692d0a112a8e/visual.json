@@ -57,11 +57,12 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD PL AOP Units"
+                  "Property": "IGTD PL AOP Units - Date Range"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Units",
-              "nativeQueryRef": "IGTD PL AOP Units"
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Units - Date Range",
+              "nativeQueryRef": "AOP Units",
+              "displayName": "AOP Units"
             }
           ]
         }

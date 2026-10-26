@@ -1,0 +1,353 @@
+table _MPS_Measures
+	lineageTag: aa745b2d-e26c-4201-bc6a-235b017fbee0
+
+	measure 'IGTD PL MPS Units' =
+			
+			CALCULATE(
+			    SUM(MPS_Volumes[Units]),
+			TREATAS(
+			    VALUES('IGTD Product Lines'[Product Line]),
+			    MPS_Volumes[MPS IGTD Product Line]
+			)
+			)
+		lineageTag: 415b8aa6-1ce5-4a5c-9389-0222c637ebbf
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL MPS Absorption' =
+			
+			CALCULATE(
+			    SUM( MPS_Volumes[MPS Absorption $] ),
+			    TREATAS(
+			        VALUES( 'IGTD Product Lines'[Product Line] ),
+			        MPS_Volumes[MPS IGTD Product Line]
+			    )
+			)
+		lineageTag: 9a9df52f-feb5-47d1-9ecf-9510b7ce6a47
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL MPS Absorption $' =
+			
+			CALCULATE(
+			    SUMX(
+			        MPS_Volumes,
+			        MPS_Volumes[Units] * MPS_Volumes[Abs per Unit]
+			    ),
+			    TREATAS(
+			        VALUES('IGTD Product Lines'[Product Line]),
+			        MPS_Volumes[Product Line]
+			    ),
+			    TREATAS(
+			        VALUES('IGTD Sites'[Site]),
+			        MPS_Volumes[Report Site]
+			    )
+			)
+		lineageTag: 2cdf1ab0-f133-4827-b493-f3fd7827686d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL Absorption Variance % vs MPS' =
+			
+			DIVIDE(
+			    [IGTD PL Absorption Variance vs MPS],
+			    [IGTD PL MPS Absorption])
+		lineageTag: 5d9a0235-e683-4c75-9865-0d98e8e17488
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL Absorption Variance vs MPS' =
+			
+			[IGTD PL Actual Absorption] - [IGTD PL MPS Absorption]
+		lineageTag: b87cde44-5784-432e-b2ac-c11650b0fbb1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD MPS Absorption Variance Display' =
+			
+			VAR Pct = [IGTD PL Absorption Variance % vs MPS]
+			RETURN
+			IF(
+			    ISBLANK(Pct),
+			    BLANK(),
+			    IF(Pct < 0, "↓ ", "↑ ")
+			        & FORMAT(ABS(Pct), "0.0%")
+			        & " vs MPS"
+			)
+		lineageTag: a4fbbbd5-98b5-448c-a1b0-fb5e5f925ed1
+
+	measure 'IGTD PL Units Variance vs MPS' =
+			
+			[IGTD PL Actual Units] - [IGTD PL MPS Units]
+		lineageTag: 53c57de4-e82a-43e1-af89-cf0f040cef9a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL Units Variance % vs MPS' =
+			
+			DIVIDE(
+			    [IGTD PL Units Variance vs MPS],
+			    [IGTD PL MPS Units])
+		lineageTag: e96b27c9-6e52-4aec-b431-f962def86da6
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD MPS Units Variance Display' =
+			
+			VAR Pct = [IGTD PL Units Variance % vs MPS]
+			RETURN
+			IF(
+			    ISBLANK(Pct),
+			    BLANK(),
+			    IF(Pct < 0, "↓ ", "↑ ")
+			        & FORMAT(ABS(Pct), "0.0%")
+			        & " vs MPS"
+			)
+		lineageTag: 9945da21-b6e2-4cef-ad36-b6ce12f99fc5
+
+	measure 'IGTD MPS Header Title' =
+			
+			VAR SelCount = COUNTROWS( VALUES( Calendar[Year Month] ) )
+			VAR TotalCount = COUNTROWS( ALL( Calendar[Year Month] ) )
+			VAR Base = "IGT-D Absorption VS MPS - US & Costa Rica"
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    SelCount = TotalCount, Base,
+			    SelCount = 1, Base & " - " & FORMAT( MIN( Calendar[Date] ), "MMMM YYYY" ),
+			    Base & " - " & FORMAT( MIN( Calendar[Date] ), "MMM" ) & " to " & FORMAT( MAX( Calendar[Date] ), "MMM" )
+			)
+		lineageTag: 07146301-36d1-4a90-95a9-a63d71e774e0
+
+	measure 'IGTD MPS Units Variance Color' =
+			
+			VAR Pct = [IGTD PL Units Variance % vs MPS]
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK(Pct), BLANK(),
+			    Pct < 0, "#D32F2F",
+			    Pct > 0, "#008000",
+			    "#808080"
+			)
+		lineageTag: fb18cc88-0df0-4f68-95e4-964ee6d60d7f
+
+	measure 'IGTD MPS Absorption Variance Color' =
+			
+			VAR Pct = [IGTD PL Absorption Variance % vs MPS]
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK(Pct), BLANK(),
+			    Pct < 0, "#D32F2F",
+			    Pct > 0, "#008000",
+			    "#808080"
+			)
+		lineageTag: 874eec29-fa9e-4219-bb41-8690a7a22592
+
+	measure 'IGTD MPS Detail Actual Units' =
+			
+			VAR ProductLines =
+			    VALUES ( 'IGTD Product Lines'[Product Line] )
+			VAR Sites =
+			    VALUES ( 'IGTD Sites'[Site] )
+			VAR USFinalPackKeys =
+			    VALUES ( MPS_Volumes[Match Key FP] )
+			VAR CRMaterialKeys =
+			    VALUES ( MPS_Volumes[Match Key] )
+			
+			VAR US =
+			    CALCULATE (
+			        [Actual Units],
+			        TREATAS ( ProductLines, Product_Line_Map[product_line] ),
+			        TREATAS ( Sites, Dim_Site_Dim[site_code] ),
+			        TREATAS ( USFinalPackKeys, Dim_Material_Master[material] )
+			    )
+			
+			VAR CR =
+			    CALCULATE (
+			        [CR IGTD Site Actual Units],
+			        TREATAS ( ProductLines, CR_Dim_Product_Line[product_line] ),
+			        TREATAS ( CRMaterialKeys, CR_Material_Master[material] )
+			    )
+			
+			RETURN
+			    IF (
+			        ISBLANK ( US ) && ISBLANK ( CR ),
+			        BLANK (),
+			        COALESCE ( US, 0 ) + COALESCE ( CR, 0 )
+			    )
+		lineageTag: 005428bb-99d0-436c-950f-499b9243bd6d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD MPS Detail Actual Absorption' =
+			
+			VAR MaterialKeys = VALUES( MPS_Volumes[Match Key] )
+			RETURN
+			CALCULATE(
+			    [IGTD PL Actual Absorption],
+			    TREATAS( MaterialKeys, Dim_Material_Master[material] ),
+			    TREATAS( MaterialKeys, CR_Material_Master[material] )
+			)
+		lineageTag: a703635f-d2a9-4919-a429-94477458ad30
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'US MPS Material Key Found' =
+			
+			CALCULATE(
+			    DISTINCTCOUNT( Dim_Material_Master[material] ),
+			    TREATAS(
+			        VALUES( MPS_Volumes[Match Key] ),
+			        Dim_Material_Master[material]
+			    )
+			)
+		formatString: 0
+		isHidden
+		lineageTag: 917d1cb7-fe3a-4d29-8e93-bb3ff3d23b1f
+
+	measure 'US Actual Units by Final Pack Key - Detail' =
+			
+			VAR ProductLines = VALUES( 'IGTD Product Lines'[Product Line] )
+			VAR Sites = VALUES( 'IGTD Sites'[Site] )
+			VAR FinalPackKeys =
+			    FILTER(
+			        VALUES( MPS_Volumes[Match Key FP] ),
+			        NOT ISBLANK( MPS_Volumes[Match Key FP] )
+			    )
+			RETURN
+			SUMX(
+			    FinalPackKeys,
+			    VAR FPKey = MPS_Volumes[Match Key FP]
+			    RETURN
+			        CALCULATE(
+			            [Actual Units],
+			            TREATAS( ProductLines, Product_Line_Map[product_line] ),
+			            TREATAS( Sites, Dim_Site_Dim[site_code] ),
+			            TREATAS( { FPKey }, Dim_Material_Master[material] )
+			        )
+			)
+		lineageTag: 8e77b5fa-4102-478e-a1f0-4524da264ed0
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'US Actual Units by MPS Match Key - Debug' =
+			
+			VAR ProductLines =
+			    VALUES ( 'IGTD Product Lines'[Product Line] )
+			VAR Sites =
+			    VALUES ( 'IGTD Sites'[Site] )
+			VAR MaterialKeys =
+			    VALUES ( MPS_Volumes[Match Key] )
+			RETURN
+			    CALCULATE (
+			        [Actual Units],
+			        TREATAS ( ProductLines, Product_Line_Map[product_line] ),
+			        TREATAS ( Sites, Dim_Site_Dim[site_code] ),
+			        TREATAS ( MaterialKeys, Dim_Material_Master[material] )
+			    )
+		lineageTag: d3b9967f-8a5a-437b-a3c4-6b023b774421
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'CR Actual Units by Material - Debug' =
+			
+			VAR MaterialKey =
+			    SELECTEDVALUE ( CR_Material_Master[material] )
+			RETURN
+			    IF (
+			        NOT HASONEVALUE ( CR_Material_Master[material] ),
+			        BLANK (),
+			        CALCULATE (
+			            [CR Actual Units],
+			            TREATAS (
+			                VALUES ( 'IGTD Product Lines'[Product Line] ),
+			                CR_Dim_Product_Line[product_line]
+			            ),
+			            TREATAS ( { MaterialKey }, CR_MB51_Units[material] )
+			        )
+			    )
+		lineageTag: 44b9dd1c-6a94-4d06-bcf3-c9ba2390bb1e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD CR MPS Units by Material' =
+			
+			CALCULATE (
+			    [IGTD PL MPS Units],
+			    TREATAS (
+			        VALUES ( CR_Material_Master[material] ),
+			        MPS_Volumes[Match Key]
+			    )
+			)
+		lineageTag: 82e5d6e0-d5d3-4cca-9ebf-92a36c067a39
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD CR MPS Absorption by Material' =
+			
+			CALCULATE (
+			    [IGTD PL MPS Absorption],
+			    TREATAS (
+			        VALUES ( CR_Material_Master[material] ),
+			        MPS_Volumes[Match Key]
+			    )
+			)
+		lineageTag: c59dfc3a-d542-4a93-9c27-5fbfc1068999
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD CR Actual Units by Material' =
+			
+			CALCULATE (
+			    [CR Actual Units],
+			    TREATAS (
+			        VALUES ( 'IGTD Product Lines'[Product Line] ),
+			        CR_Dim_Product_Line[product_line]
+			    ),
+			    TREATAS (
+			        VALUES ( CR_Material_Master[material] ),
+			        CR_MB51_Units[material]
+			    )
+			)
+		lineageTag: 65d15888-6985-4a48-84be-3555b96cb325
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD CR Actual Absorption by Material' =
+			
+			VAR ProductLines =
+			    VALUES ( 'IGTD Product Lines'[Product Line] )
+			RETURN
+			    SUMX (
+			        VALUES ( CR_Material_Master[material] ),
+			        VAR ThisMaterial = CR_Material_Master[material]
+			        RETURN
+			            CALCULATE (
+			                [CR Actual Absorption $ (Abs)],
+			                TREATAS ( ProductLines, CR_Dim_Product_Line[product_line] ),
+			                TREATAS ( { ThisMaterial }, CR_FS_Absorption[part_number_lookup] )
+			            )
+			    )
+		lineageTag: f5211f68-6602-4851-a96f-85ff449d443e
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column
+		formatString: 0
+		lineageTag: b719390e-10b4-44c7-a019-e6efa3306084
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Column]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _MPS_Measures = calculated
+		mode: import
+		source = Row("Column", BLANK())
+
+	annotation PBI_Id = b748050b97a54f8596c706804a6a7ec3
+
+	annotation 436ba87b-9c83-4389-a31b-ebd06a36be98 = {"Expression":""}
+

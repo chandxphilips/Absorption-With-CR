@@ -45,6 +45,26 @@
           }
         }
       }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "360L"
+              }
+            }
+          }
+        }
+      }
     ]
-  }
+  },
+  "visualInteractions": [
+    {
+      "source": "02bb9e3636008400db55",
+      "target": "c10005970df07734b764",
+      "type": "DataFilter"
+    }
+  ]
 }

@@ -23,11 +23,11 @@
                       "Entity": "Calendar"
                     }
                   },
-                  "Property": "Month Short"
+                  "Property": "Year Month"
                 }
               },
-              "queryRef": "Calendar.Month Short",
-              "nativeQueryRef": "Month Short",
+              "queryRef": "Calendar.Year Month",
+              "nativeQueryRef": "Year Month",
               "active": true
             }
           ]
@@ -57,10 +57,10 @@
                       "Entity": "_CR_CS_Measures"
                     }
                   },
-                  "Property": "CR AOP $ (Abs)"
+                  "Property": "CR AOP $ (Abs) - Date Range"
                 }
               },
-              "queryRef": "_CR_CS_Measures.CR AOP $ (Abs)",
+              "queryRef": "_CR_CS_Measures.CR AOP $ (Abs) - Date Range",
               "nativeQueryRef": "AOP Absorption",
               "displayName": "AOP Absorption"
             }
@@ -186,6 +186,7 @@
           }
         },
         "type": "Categorical",
+        "howCreated": "User",
         "objects": {
           "general": [
             {

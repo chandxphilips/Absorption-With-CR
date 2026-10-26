@@ -1,0 +1,456 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "0a66a42119b72ead6ecd",
+  "position": {
+    "x": 18.571428571428573,
+    "y": 495.71428571428572,
+    "z": 26000,
+    "height": 217.14285714285717,
+    "width": 1245.7142857142858,
+    "tabOrder": 23003
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Material Detail"
+                    }
+                  },
+                  "Property": "Material"
+                }
+              },
+              "queryRef": "IGTD Material Detail.Material",
+              "nativeQueryRef": "Material"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Material Detail"
+                    }
+                  },
+                  "Property": "Description"
+                }
+              },
+              "queryRef": "IGTD Material Detail.Description",
+              "nativeQueryRef": "Description"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Material Detail"
+                    }
+                  },
+                  "Property": "Region"
+                }
+              },
+              "queryRef": "IGTD Material Detail.Region",
+              "nativeQueryRef": "Region"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Material Detail"
+                    }
+                  },
+                  "Property": "IGTD Detail Actual Units"
+                }
+              },
+              "queryRef": "IGTD Material Detail.IGTD Detail Actual Units",
+              "nativeQueryRef": "Actual Units",
+              "displayName": "Actual Units",
+              "format": "#,0"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Material Detail"
+                    }
+                  },
+                  "Property": "IGTD Detail MPS Units"
+                }
+              },
+              "queryRef": "IGTD Material Detail.IGTD Detail MPS Units",
+              "nativeQueryRef": "MPS Units",
+              "displayName": "MPS Units",
+              "format": "#,0"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Material Detail"
+                    }
+                  },
+                  "Property": "IGTD Detail Actual Absorption"
+                }
+              },
+              "queryRef": "IGTD Material Detail.IGTD Detail Actual Absorption",
+              "nativeQueryRef": "Actual Absorption",
+              "displayName": "Actual Absorption",
+              "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "IGTD Material Detail"
+                    }
+                  },
+                  "Property": "IGTD Detail MPS Absorption"
+                }
+              },
+              "queryRef": "IGTD Material Detail.IGTD Detail MPS Absorption",
+              "nativeQueryRef": "MPS Absorption",
+              "displayName": "MPS Absorption",
+              "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "IGTD Material Detail"
+                  }
+                },
+                "Property": "IGTD Detail MPS Units"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "184.6923140590572D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Material Detail.Material"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "333.46153846153845D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Material Detail.Description"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "90.46155235211158D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Material Detail.Region"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "119.69231632478954D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Material Detail.IGTD Detail Actual Units"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "181.59421442726114D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Material Detail.IGTD Detail MPS Units"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "145.4615430299927D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Material Detail.IGTD Detail Actual Absorption"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "162.3846251054184D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Material Detail.IGTD Detail MPS Absorption"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#0066CC'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "IGTD Material Detail.IGTD Detail Actual Units"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "4b0dac1d730c0713469c",
+        "ordinal": 0,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IGTD Material Detail"
+              }
+            },
+            "Property": "Description"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "888967265d61fc4c86d5",
+        "ordinal": 1,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IGTD Material Detail"
+              }
+            },
+            "Property": "IGTD Detail Actual Absorption"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "ab7f5a26dc1526597f37",
+        "ordinal": 2,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IGTD Material Detail"
+              }
+            },
+            "Property": "IGTD Detail Row Visible"
+          }
+        },
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "i",
+              "Entity": "IGTD Material Detail",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "i"
+                        }
+                      },
+                      "Property": "IGTD Detail Row Visible"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "1L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User"
+      },
+      {
+        "name": "274c48d0ca55834aff04",
+        "ordinal": 3,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IGTD Material Detail"
+              }
+            },
+            "Property": "IGTD Detail Actual Units"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "13694dd921d19f9f339b",
+        "ordinal": 4,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IGTD Material Detail"
+              }
+            },
+            "Property": "IGTD Detail MPS Absorption"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "60b004bda7c5ce8468d5",
+        "ordinal": 5,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IGTD Material Detail"
+              }
+            },
+            "Property": "IGTD Detail MPS Units"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "7aa7b26455f16e2d6c15",
+        "ordinal": 6,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IGTD Material Detail"
+              }
+            },
+            "Property": "Material"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d1dbfeb22f89fbab1fe9",
+        "ordinal": 7,
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "IGTD Material Detail"
+              }
+            },
+            "Property": "Region"
+          }
+        },
+        "type": "Categorical"
+      }
+    ],
+    "filterSortOrder": "Custom"
+  }
+}

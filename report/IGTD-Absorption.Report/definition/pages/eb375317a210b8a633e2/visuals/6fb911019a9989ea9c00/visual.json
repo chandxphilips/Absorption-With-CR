@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "6fb911019a9989ea9c00",
   "position": {
-    "x": 17.714439823423373,
-    "y": 518.44260549885735,
+    "x": 10,
+    "y": 531,
     "z": 19000,
-    "height": 258.57142857142861,
-    "width": 1275.7142857142858,
+    "height": 259,
+    "width": 1275,
     "tabOrder": 19000
   },
   "visual": {
@@ -81,10 +81,10 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD PL AOP Units"
+                  "Property": "IGTD PL AOP Units - Date Range"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Units",
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Units - Date Range",
               "nativeQueryRef": "AOP Units",
               "displayName": "AOP Units"
             },
@@ -141,12 +141,13 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD PL AOP Absorption"
+                  "Property": "IGTD PL AOP Absorption - Date Range"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption",
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption - Date Range",
               "nativeQueryRef": "AOP Absorption",
-              "displayName": "AOP Absorption"
+              "displayName": "AOP Absorption",
+              "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
             },
             {
               "field": {
@@ -257,27 +258,6 @@
           "selector": {
             "metadata": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption"
           }
-        },
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption"
-          }
         }
       ],
       "columnWidth": [
@@ -300,7 +280,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "208.8573358177241D"
+                  "Value": "187.84121382272394D"
                 }
               }
             }
@@ -321,20 +301,6 @@
           },
           "selector": {
             "metadata": "_US & CR IGT-D_Measures.IGTD PL Var $ %"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "125.62037059491406D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_US & CR IGT-D_Measures.IGTD PL AOP Absorption"
           }
         },
         {
@@ -370,13 +336,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "120.60040713203936D"
+                  "Value": "137.65767585450632D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "_US & CR IGT-D_Measures.IGTD PL Var $"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "87D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_US & CR IGT-D_Measures.IGTD PL Actual Units"
           }
         }
       ],
@@ -643,6 +623,19 @@
               "expr": {
                 "Literal": {
                   "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
                 }
               }
             }
