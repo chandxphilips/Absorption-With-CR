@@ -198,7 +198,7 @@ table '_US & CR IGT-D_Measures'
 			IF(
 			    ISBLANK( [IGTD PL AOP Absorption - Date Range] ) || [IGTD PL AOP Absorption - Date Range] = 0,
 			    BLANK(),
-			    DIVIDE( [IGTD PL Actual Absorption] - [IGTD PL AOP Absorption - Date Range], [IGTD PL AOP Absorption - Date Range] )
+			    DIVIDE( [IGTD PL Actual Absorption Updated] - [IGTD PL AOP Absorption - Date Range], [IGTD PL AOP Absorption - Date Range] )
 			)
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 663aeff8-f589-40a6-8c3e-7d770de9c5a6
@@ -237,9 +237,11 @@ table '_US & CR IGT-D_Measures'
 			    "Business: IGT-D" & UNICHAR(10) & "Site: " & SiteTxt & UNICHAR(10) & "Period: " & PerTxt
 		lineageTag: 75fbbc65-ccb7-4c22-be32-b684133d6875
 
-	measure 'IGTD PL Var $' =
+	measure 'IGTD PL Var $' = ```
 			
-			[IGTD PL Actual Absorption] - [IGTD PL AOP Absorption - Date Range]
+			[IGTD PL Actual Absorption Updated] - [IGTD PL AOP Absorption - Date Range]
+			
+			```
 		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
 		lineageTag: 863e8d9f-e822-4354-a8a9-82129401749d
 
@@ -412,6 +414,50 @@ table '_US & CR IGT-D_Measures'
 			        FullMonthAOP * DIVIDE ( SelectedDays, DaysInMonth )
 			)
 		lineageTag: 1be6118e-1a1a-418a-98ef-f5e4ad937b80
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'IGTD PL Actual Absorption Updated' =
+			
+			VAR SelPL      = VALUES ( 'IGTD Product Lines'[Product Line] )
+			VAR SelSites   = VALUES ( 'IGTD Sites'[Site] )
+			VAR MappedList = ALL ( Product_Line_Map[fs_bu_desc] )
+			VAR UndivSel   = "IGT Devices Undivided" IN SelPL
+			
+			-- US: rows whose product line is in the map
+			VAR US_Mapped =
+			    CALCULATE (
+			        - SUM ( Fact_FS_Absorption[amount_cc_currency] ),
+			        TREATAS ( SelPL,    Product_Line_Map[product_line] ),
+			        TREATAS ( SelSites, Dim_Site_Dim[site_code] )
+			    )
+			
+			-- US: rows NOT in the map (e.g. Sceptre, blank) -> IGT Devices Undivided
+			VAR US_Unmapped =
+			    IF (
+			        UndivSel,
+			        CALCULATE (
+			            - SUM ( Fact_FS_Absorption[amount_cc_currency] ),
+			            TREATAS ( SelSites, Dim_Site_Dim[site_code] ),
+			            NOT Fact_FS_Absorption[BU Desc Final] IN MappedList
+			        )
+			    )
+			
+			-- CR: existing site split, true sign restored per product line
+			VAR CR =
+			    CALCULATE (
+			        SUMX (
+			            VALUES ( CR_Dim_Product_Line[product_line] ),
+			            VAR AbsAmt    = [CR IGTD Site Actual Absorption]
+			            VAR SignedAmt = CALCULATE ( - SUM ( CR_FS_Absorption[amount_cc_currency] ) )
+			            RETURN IF ( SignedAmt < 0, - AbsAmt, AbsAmt )
+			        ),
+			        TREATAS ( SelPL, CR_Dim_Product_Line[product_line] )
+			    )
+			
+			RETURN
+			    US_Mapped + US_Unmapped + CR
+		lineageTag: 5e15beb8-59e3-49a7-b717-76ae2b4aa649
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

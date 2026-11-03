@@ -126,12 +126,13 @@
                       "Entity": "_US & CR IGT-D_Measures"
                     }
                   },
-                  "Property": "IGTD PL Actual Absorption"
+                  "Property": "IGTD PL Actual Absorption Updated"
                 }
               },
-              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption",
+              "queryRef": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption Updated",
               "nativeQueryRef": "Actual Absorption",
-              "displayName": "Actual Absorption"
+              "displayName": "Actual Absorption",
+              "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
             },
             {
               "field": {
@@ -237,29 +238,6 @@
           }
         }
       ],
-      "columnFormatting": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            },
-            "labelPrecision": {
-              "expr": {
-                "Literal": {
-                  "Value": "2L"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption"
-          }
-        }
-      ],
       "columnWidth": [
         {
           "properties": {
@@ -301,20 +279,6 @@
           },
           "selector": {
             "metadata": "_US & CR IGT-D_Measures.IGTD PL Var $ %"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "124.26382144787163D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "_US & CR IGT-D_Measures.IGTD PL Actual Absorption"
           }
         },
         {
