@@ -45,3 +45,5 @@ table Product_Line_Map
 				in
 				    ref_cs_product_line_map_Table
 
+	annotation PBI_ResultType = Table
+

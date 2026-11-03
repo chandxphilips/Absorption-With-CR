@@ -237,3 +237,5 @@ table CR_MB51_Units
 				in
 				    vw_cs_absorption_mb51_cr_units_View
 
+	annotation PBI_ResultType = Table
+

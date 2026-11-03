@@ -44,3 +44,5 @@ table Dim_Site_Dim
 				in
 				    ref_cs_site_dim_Table
 
+	annotation PBI_ResultType = Table
+
