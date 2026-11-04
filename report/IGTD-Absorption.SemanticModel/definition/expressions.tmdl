@@ -125,32 +125,6 @@ expression FCP_Overrides =
 
 	annotation PBI_ResultType = Table
 
-expression Check_New_Parts =
-		let
-		    MPS      = Table.SelectRows(MPS_Item_Master, each [Business] = "IGTD"),
-		    CleanKey = (k) => if k = null then null
-		                 else Text.TrimStart(Text.Remove(Text.From(k), {"-", " ", "\"}), "0"),
-		
-		    USAct    = Table.Distinct(Table.AddColumn(
-		                 Table.SelectColumns(Fact_MB51_Units, {"material"}),
-		                 "Match Key", each CleanKey([material]), type text), {"Match Key"}),
-		    CRAct    = Table.Distinct(Table.AddColumn(
-		                 Table.SelectColumns(CR_MB51_Units, {"material"}),
-		                 "Match Key", each CleanKey([material]), type text), {"Match Key"}),
-		    AllAct   = Table.Buffer(Table.Distinct(Table.Combine({
-		                 Table.SelectColumns(USAct, {"Match Key"}),
-		                 Table.SelectColumns(CRAct, {"Match Key"})}))),
-		
-		    Missing  = Table.NestedJoin(MPS, {"Match Key"}, AllAct, {"Match Key"}, "A", JoinKind.LeftAnti),
-		    Result   = Table.SelectColumns(Missing,
-		                 {"Site", "12NC", "Final Pack 12 NC", "Product Description", "Product Line", "Match Key"}),
-		    Sorted   = Table.Sort(Result, {{"Site", Order.Ascending}, {"Product Line", Order.Ascending}})
-		in
-		    Sorted
-	lineageTag: 80cd3328-f16f-4cf2-aaca-3f086a7b05a2
-
-	annotation PBI_ResultType = Table
-
 expression Check_Count_Candidates =
 		let
 		    CleanKey = (k) => if k = null then null
@@ -158,16 +132,17 @@ expression Check_Count_Candidates =
 		    Counted  = List.Buffer(List.Select(List.Transform(
 		                 Dim_Subassemblies_Counted[Material_Text] & Dim_Subassemblies_Counted[TLA]
 		                 & Dim_Subassemblies_Counted[FPA], CleanKey), each _ <> null)),
+		    Posted   = List.Buffer(List.Distinct(List.Transform(Fact_MB51_Units[material], CleanKey))),
 		    MPS      = Table.SelectRows(MPS_Item_Master, each [Business] = "IGTD"
 		                 and List.Contains({"COS", "PLY", "FRE"}, Text.Trim(Text.From([Site])))),
-		    Parts    = Table.Distinct(MPS, {"12NC"}),
-		    Missing  = Table.SelectRows(Parts, each
-		                 not List.Contains(Counted, CleanKey([12NC]))
+		    Parts    = Table.AddColumn(Table.Distinct(MPS, {"12NC"}), "Key", each CleanKey([12NC]), type text),
+		    Missed   = Table.SelectRows(Parts, each
+		                 List.Contains(Posted, [Key])
+		                 and not List.Contains(Counted, [Key])
 		                 and not List.Contains(Counted, CleanKey([Final Pack 12 NC]))),
-		    Result   = Table.SelectColumns(Missing, {"Site", "12NC", "Final Pack 12 NC", "Product Description", "Product Line"}),
-		    Sorted   = Table.Sort(Result, {{"Site", Order.Ascending}, {"Product Line", Order.Ascending}})
+		    Result   = Table.SelectColumns(Missed, {"Site", "12NC", "Final Pack 12 NC", "Product Description", "Product Line"})
 		in
-		    Sorted
+		    Result
 	lineageTag: c69d14af-4466-4579-8590-021bba178147
 
 	annotation PBI_ResultType = Table
