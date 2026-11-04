@@ -134,7 +134,7 @@
                     "Entity": "IGTD Material Detail"
                   }
                 },
-                "Property": "IGTD Detail MPS Units"
+                "Property": "IGTD Detail Actual Absorption"
               }
             },
             "direction": "Descending"

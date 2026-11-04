@@ -54,51 +54,45 @@ table 'IGTD Material Detail'
 
 	measure 'IGTD Detail Actual Absorption' =
 			
-			VAR MaterialKeysUS =
-			    CALCULATETABLE (
-			        VALUES ( 'IGTD Material Detail'[Material] ),
-			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "US" )
-			    )
-			VAR MaterialKeysCR =
-			    CALCULATETABLE (
-			        VALUES ( 'IGTD Material Detail'[Material] ),
-			        KEEPFILTERS ( 'IGTD Material Detail'[Region] = "CR" )
-			    )
-			VAR ProductLines =
-			    VALUES ( 'IGTD Product Lines'[Product Line] )
-			VAR Sites =
-			    VALUES ( 'IGTD Sites'[Site] )
-			VAR RowRegion =
-			    SELECTEDVALUE ( 'IGTD Material Detail'[Region] )
-			VAR USSelected =
-			    COUNTROWS (
-			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "US" )
-			    ) > 0
-			VAR CRSelected =
-			    COUNTROWS (
-			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "CR" )
-			    ) > 0
-			VAR US =
-			    IF (
-			        USSelected && ( ISBLANK ( RowRegion ) || RowRegion = "US" ),
-			        CALCULATE (
-			            [Actual Absorption $ (Abs)],
-			            TREATAS ( ProductLines, Product_Line_Map[product_line] ),
-			            TREATAS ( Sites, Dim_Site_Dim[site_code] ),
-			            TREATAS ( MaterialKeysUS, Dim_Material_Master[material] )
+			IF (
+			    NOT ISINSCOPE ( 'IGTD Material Detail'[Material] ),
+			    [IGTD PL Actual Absorption],
+			    VAR MaterialKeysUS =
+			        CALCULATETABLE (
+			            VALUES ( 'IGTD Material Detail'[Material] ),
+			            KEEPFILTERS ( 'IGTD Material Detail'[Region] = "US" )
 			        )
-			    )
-			VAR CR =
-			    IF (
-			        CRSelected && ( ISBLANK ( RowRegion ) || RowRegion = "CR" ),
-			        CALCULATE (
-			            [CR Actual Absorption $ (Abs)],
-			            TREATAS ( ProductLines, CR_Dim_Product_Line[product_line] ),
-			            TREATAS ( MaterialKeysCR, CR_FS_Absorption[part_number_lookup] )
+			    VAR MaterialKeysCR =
+			        CALCULATETABLE (
+			            VALUES ( 'IGTD Material Detail'[Material] ),
+			            KEEPFILTERS ( 'IGTD Material Detail'[Region] = "CR" )
 			        )
-			    )
-			RETURN
-			    US + CR
+			    VAR ProductLines = VALUES ( 'IGTD Product Lines'[Product Line] )
+			    VAR Sites = VALUES ( 'IGTD Sites'[Site] )
+			    VAR RowRegion = SELECTEDVALUE ( 'IGTD Material Detail'[Region] )
+			    VAR USSelected = COUNTROWS ( FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "US" ) ) > 0
+			    VAR CRSelected = COUNTROWS ( FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "CR" ) ) > 0
+			    VAR US =
+			        IF (
+			            USSelected && RowRegion = "US",
+			            CALCULATE (
+			                [Actual Absorption $ (Abs)],
+			                TREATAS ( ProductLines, Product_Line_Map[product_line] ),
+			                TREATAS ( Sites, Dim_Site_Dim[site_code] ),
+			                TREATAS ( MaterialKeysUS, Dim_Material_Master[material] )
+			            )
+			        )
+			    VAR CR =
+			        IF (
+			            CRSelected && RowRegion = "CR",
+			            CALCULATE (
+			                [CR IGTD Site Actual Absorption],
+			                TREATAS ( ProductLines, CR_Dim_Product_Line[product_line] ),
+			                TREATAS ( MaterialKeysCR, CR_FS_Absorption[part_number_lookup] )
+			            )
+			        )
+			    RETURN US + CR
+			)
 		lineageTag: 12cd7537-255b-430f-a41a-af79f462b967
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -126,19 +120,16 @@ table 'IGTD Material Detail'
 			VAR RowRegion =
 			    SELECTEDVALUE ( 'IGTD Material Detail'[Region] )
 			VAR USSelected =
-			    COUNTROWS (
-			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "US" )
-			    ) > 0
+			    COUNTROWS ( FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "US" ) ) > 0
 			VAR CRSelected =
-			    COUNTROWS (
-			        FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "CR" )
-			    ) > 0
+			    COUNTROWS ( FILTER ( Sites, LEFT ( 'IGTD Sites'[Site], 2 ) = "CR" ) ) > 0
 			VAR US =
 			    IF (
 			        USSelected && ( ISBLANK ( RowRegion ) || RowRegion = "US" ),
 			        CALCULATE (
 			            [IGTD PL MPS Units],
-			            KEEPFILTERS ( USKeyRows )
+			            KEEPFILTERS ( USKeyRows ),
+			            KEEPFILTERS ( LEFT ( MPS_Volumes[Report Site], 2 ) = "US" )
 			        )
 			    )
 			VAR CR =
@@ -146,7 +137,8 @@ table 'IGTD Material Detail'
 			        CRSelected && ( ISBLANK ( RowRegion ) || RowRegion = "CR" ),
 			        CALCULATE (
 			            [IGTD PL MPS Units],
-			            TREATAS ( MaterialKeysCR, MPS_Volumes[Match Key] )
+			            TREATAS ( MaterialKeysCR, MPS_Volumes[Match Key] ),
+			            KEEPFILTERS ( MPS_Volumes[Report Site] = "CR9A" )
 			        )
 			    )
 			RETURN
@@ -260,28 +252,33 @@ table 'IGTD Material Detail'
 		mode: import
 		source =
 				
-				DISTINCT (
-				    UNION (
+				VAR CRMats =
+				    DISTINCT (
 				        SELECTCOLUMNS (
-				            FILTER (
-				                Dim_Material_Master,
-				                NOT ISBLANK ( Dim_Material_Master[material] )
-				            ),
-				            "Region", "US",
-				            "Material", Dim_Material_Master[material],
-				            "Description", Dim_Material_Master[material_description]
-				        ),
-				        SELECTCOLUMNS (
-				            FILTER (
-				                CR_Material_Master,
-				                NOT ISBLANK ( CR_Material_Master[material] )
-				            ),
-				            "Region", "CR",
-				            "Material", CR_Material_Master[material],
-				            "Description", CR_Material_Master[material_description]
+				            FILTER ( CR_Material_Master, NOT ISBLANK ( CR_Material_Master[material] ) ),
+				            "Material", CR_Material_Master[material]
 				        )
 				    )
-				)
+				VAR CRRows =
+				    SELECTCOLUMNS (
+				        FILTER ( CR_Material_Master, NOT ISBLANK ( CR_Material_Master[material] ) ),
+				        "Region", "CR",
+				        "Material", CR_Material_Master[material],
+				        "Description", CR_Material_Master[material_description]
+				    )
+				VAR USRows =
+				    SELECTCOLUMNS (
+				        FILTER (
+				            Dim_Material_Master,
+				            NOT ISBLANK ( Dim_Material_Master[material] )
+				                && NOT ( Dim_Material_Master[material] IN CRMats )
+				        ),
+				        "Region", "US",
+				        "Material", Dim_Material_Master[material],
+				        "Description", Dim_Material_Master[material_description]
+				    )
+				RETURN
+				    DISTINCT ( UNION ( USRows, CRRows ) )
 
 	annotation PBI_Id = da7b938b01af475595a7988b50159771
 

@@ -149,10 +149,10 @@
                     "Entity": "CR_MB51_Units"
                   }
                 },
-                "Property": "plant"
+                "Property": "final_pack_12nc"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
